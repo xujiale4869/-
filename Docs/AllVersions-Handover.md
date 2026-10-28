@@ -31,4 +31,4 @@ Library、Temp、Builds 与独立可执行程序留在本地，按用户给定 U
 已检查 Force Text；主工程 Visible Meta Files 已设置。没有批量重命名原 Deepsea 脚本或重做场景。
 
 ## 云端状态
-用户已创建私有仓库 https://github.com/xujiale4869/- ，origin 已绑定，本机认证已连通。主分支及四个归档分支正在上传；实际完成状态以 GitHub 分支和 git ls-remote 核对结果为准。取回方法见根目录 GITHUB_HANDOVER.md。
+用户已创建私有仓库 https://github.com/xujiale4869/- ，origin 已绑定，本机认证已连通。2026-10-28 主分支及四个归档分支已成功推送，Git LFS 资源上传完成；五个分支均已设置 origin 跟踪。取回方法见根目录 GITHUB_HANDOVER.md。
