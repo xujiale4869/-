@@ -1,0 +1,1 @@
+{"name":"lantern-ward","version":"0.1.0","private":true,"description":"Original offline tower-defense game","scripts":{"build":"python build.py","test":"node tests/engine.test.js","test:balance":"node tests/balance.js","test:dom":"node tests/dom.test.cjs"},"devDependencies":{"@napi-rs/canvas":"^0.1.80","happy-dom":"^20.0.0","playwright":"^1.59.0"}}

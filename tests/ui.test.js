@@ -1,0 +1,20 @@
+const {chromium}=require('playwright');const assert=require('node:assert/strict');const path=require('node:path');const ROOT=path.resolve(__dirname,'..');
+(async()=>{
+const browser=await chromium.launch({headless:true,...(process.env.GAME_BROWSER?{executablePath:process.env.GAME_BROWSER}:{}),args:['--no-sandbox','--disable-dev-shm-usage']});const page=await browser.newPage({viewport:{width:1280,height:800}});const errors=[];page.on('pageerror',e=>errors.push(e.message));
+await page.goto('file://'+path.join(ROOT,'dist/LanternWard.html')+'?test=1');await page.waitForTimeout(600);await page.screenshot({path:path.join(ROOT,'dist/title-preview.png')});
+await page.locator('#newGame').click();
+await page.mouse.click(130,370);await page.locator('[data-build="spark"]').click();assert.equal(await page.evaluate(()=>window.__test.game.coins),180);
+await page.mouse.click(425,348);await page.locator('[data-build="bloom"]').click();assert.equal(await page.evaluate(()=>window.__test.game.coins),70);
+await page.mouse.click(265,240);await page.locator('[data-build="spark"]').click();assert.equal(await page.evaluate(()=>window.__test.game.coins),0);
+await page.mouse.click(100,600);await page.locator('#startWave').click();await page.evaluate(()=>{window.__test.step(1200)});await page.screenshot({path:path.join(ROOT,'dist/gameplay-preview.png')});
+await page.evaluate(()=>{window.__test.step(7000)});assert.equal(await page.evaluate(()=>window.__test.game.phase),'ready');assert.equal(await page.evaluate(()=>window.__test.game.life),20);
+const saved=await page.evaluate(()=>window.__test.game.snapshot());await page.reload();await page.locator('#continueGame').click();assert.equal(await page.evaluate(()=>window.__test.game.wave),1);assert.equal(await page.evaluate(()=>window.__test.game.towers.length),3);
+await page.locator('#pause').click();assert(await page.locator('#resumeBtn').isVisible());const before=await page.evaluate(()=>window.__test.game.time);await page.waitForTimeout(180);assert.equal(await page.evaluate(()=>window.__test.game.time),before);await page.locator('#resumeBtn').click();
+await page.locator('#help').click();assert(await page.locator('#closeHelp').isVisible());await page.locator('#closeHelp').click();await page.locator('#speed').click();assert.equal(await page.locator('#speed').innerText(),'2×');
+await page.locator('#menuBtn').click();await page.locator('#confirmBack').click();assert(await page.locator('#menu').isVisible());await page.locator('#newGame').click();assert(await page.locator('#confirmNew').isVisible());await page.locator('#confirmNew').click();assert.equal(await page.evaluate(()=>window.__test.game.wave),0);
+await page.evaluate(()=>{window.__test.game.coins=10000;window.__test.select(0);});await page.locator('[data-build="spark"]').click();await page.locator('#upgradeBtn').click();assert.equal(await page.evaluate(()=>window.__test.game.towers[0].level),1);await page.locator('#sellBtn').click();assert.equal(await page.evaluate(()=>window.__test.game.towers.length),0);
+await page.locator('#startWave').click();await page.evaluate(()=>{window.__test.step(300)});await page.locator('#spell').click();await page.mouse.click(180,280);assert(await page.evaluate(()=>window.__test.game.spellCooldown>0));
+await page.evaluate(()=>{const g=window.__test.game;while(g.phase!=='defeat'&&g.wave<12){if(g.phase==='ready')g.startWave();window.__test.step(7500)}});assert(await page.locator('#againBtn').isVisible());assert.equal(await page.evaluate(()=>window.__test.game.phase),'defeat');
+assert.deepEqual(errors,[]);console.log('PASS browser interactions, build, upgrade, sell, spell, pause, speed, reload/resume, defeat dialog; no page errors');console.log('Screenshots saved.');
+await browser.close();
+})().catch(e=>{console.error(e);process.exit(1)});
