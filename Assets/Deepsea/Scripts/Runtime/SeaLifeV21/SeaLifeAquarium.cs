@@ -42,7 +42,7 @@ namespace Deepsea {
    Box("背玻璃",t,new Vector3(0,1.5f,.98f),new Vector3(3.5f,1.4f,.018f),glass);Box("左玻璃",t,new Vector3(-1.75f,1.5f,0),new Vector3(.018f,1.4f,1.95f),glass);Box("右玻璃",t,new Vector3(1.75f,1.5f,0),new Vector3(.018f,1.4f,1.95f),glass);Box("前玻璃",t,new Vector3(0,1.5f,-.98f),new Vector3(3.5f,1.4f,.018f),glass);Box("局部水面",t,new Vector3(0,2.1f,0),new Vector3(3.45f,.015f,1.9f),waterTint);
    var rock=Primitive("缸内主石",PrimitiveType.Sphere,t,new Vector3(.9f,1.05f,.48f),new Vector3(.65f,.45f,.45f),stone);rock.localRotation=Quaternion.Euler(8,32,0);
    if(kelp){var source=world.GetComponentsInChildren<MeshFilter>(true).FirstOrDefault(f=>f.name.Contains("Kelp"));if(source!=null){var mesh=Instantiate(source.sharedMesh);var b=mesh.bounds;var v=mesh.vertices;var scale=new Vector3(.45f/Mathf.Max(.01f,b.size.x),1.05f/Mathf.Max(.01f,b.size.y),.32f/Mathf.Max(.01f,b.size.z));for(int j=0;j<v.Length;j++)v[j]=Vector3.Scale(v[j]-new Vector3(b.center.x,b.min.y,b.center.z),scale);mesh.vertices=v;mesh.RecalculateBounds();for(int j=0;j<2;j++){var plant=Group("缸景绿色长带海带",t,new Vector3(-1.1f+j*.65f,.92f,.43f));plant.gameObject.AddComponent<MeshFilter>().sharedMesh=mesh;plant.gameObject.AddComponent<MeshRenderer>().sharedMaterial=leafMat;}}}
-   WorldText("展缸 "+(char)('A'+index),t,new Vector3(0,.46f,-1.065f),.65f);return t;
+   WorldText("展缸 "+(char)('A'+index),t,new Vector3(0,.46f,-1.065f),.65f);DecorateTankV25(t,index);return t;
   }
  }
 }

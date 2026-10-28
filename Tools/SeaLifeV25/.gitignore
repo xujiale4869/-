@@ -1,0 +1,8 @@
+Staging/
+Before/
+Install-V25.ps1
+Finalize-V25.ps1
+install.zip
+preview-transfer.zip
+*.b64
+normal-save-before.json

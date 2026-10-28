@@ -1,0 +1,11 @@
+﻿{
+    "passed":  true,
+    "changed":  [
+                    "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeActivities.cs",
+                    "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeAquarium.cs"
+                ],
+    "twoExactCreationHooks":  true,
+    "unchanged":  254,
+    "count":  256,
+    "normalPlayerSaveUnchanged":  true
+}

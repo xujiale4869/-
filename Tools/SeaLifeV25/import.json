@@ -1,0 +1,72 @@
+{
+    "passed": true,
+    "meshes": [
+        {
+            "name": "Fish_0_SilverBream",
+            "vertices": 793,
+            "triangles": 1260,
+            "submeshes": 1,
+            "size": {
+                "x": 0.6904100179672241,
+                "y": 0.6136550903320313,
+                "z": 1.065199851989746
+            }
+        },
+        {
+            "name": "Fish_1_BluefinTuna",
+            "vertices": 793,
+            "triangles": 1260,
+            "submeshes": 1,
+            "size": {
+                "x": 0.794350802898407,
+                "y": 0.5399882793426514,
+                "z": 1.269399881362915
+            }
+        },
+        {
+            "name": "Fish_2_GoldButterfly",
+            "vertices": 793,
+            "triangles": 1260,
+            "submeshes": 1,
+            "size": {
+                "x": 0.6411161422729492,
+                "y": 0.7957697510719299,
+                "z": 0.9229599237442017
+            }
+        },
+        {
+            "name": "AquariumTank_V25_Frame",
+            "vertices": 1953,
+            "triangles": 1980,
+            "submeshes": 3,
+            "size": {
+                "x": 3.640000104904175,
+                "y": 2.455000162124634,
+                "z": 2.119999647140503
+            }
+        },
+        {
+            "name": "AquariumTank_V25_Interior",
+            "vertices": 1714,
+            "triangles": 2410,
+            "submeshes": 2,
+            "size": {
+                "x": 3.359999895095825,
+                "y": 0.7663193941116333,
+                "z": 1.8599998950958253
+            }
+        },
+        {
+            "name": "AquariumTank_V25_Glass",
+            "vertices": 263,
+            "triangles": 240,
+            "submeshes": 1,
+            "size": {
+                "x": 3.442000150680542,
+                "y": 1.4199999570846558,
+                "z": 1.941999912261963
+            }
+        }
+    ],
+    "shaderErrors": []
+}

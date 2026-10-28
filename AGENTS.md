@@ -136,3 +136,10 @@ Tools/AgentSkillSources保存五个已有美术/UI工具的185个文件，来源
 4K窗口请求被限制为2880x1800，采用3840x2160离屏场景加本机窗口呈现，B10G11R11_UFloatPack32、renderScale=1；最终约56.42FPS/P95 19.35ms，未达到稳定60或4K高刷，不称为4K显示器原生测试。最终证据Verification/sea-surface-v24-review05和sea-surface-v24-4k-review05；32项1080p检查通过，两次运行0错误0警告，build-05成功但仍有历史构建警告。
 视频8秒240张1080p引擎帧按30fps固定步长录制，交付缩为720p；不是实时录屏或性能证据。测试使用唯一临时存档。未做全海湾浅水/全地图长期性能、完整人工钓鱼/水族馆回归，UI/生态/钓鱼人物动作未重做。
 新增四份水下材质shader与运行时克隆，原材质/shader不改；0.25–0.85m水深渐变降低法线/遮罩/BRDF细节，岸上及水下相机保留完整路径。新增源码/Shader/资源在SeaSurfaceV24目录；v23主类只加波形采样和F7两个可选钩子，备份Tools/SeaSurfaceV24/Before/SeaLifeNavigationV23.cs。构建使用已验证Unity方法，冻结清单用于核对，不自动恢复覆盖；显式Prepare/TuneAndBuild/PrepareBudgetAndBuild属于生成步骤，会覆盖对应v24资源。accepted/源码包依赖既有v23环境，并非完整工程。
+
+
+## 2026-10-28 v25：用户提供的鱼类与展缸包实际接入
+用户要求执行所附六文件交接。新场景 CoastSeaLifeV25.unity 继承 v24 海面/船控，程序 Builds/SeaLifeV25/Guichao-SeaLifeV25.exe；正常存档路径/产品名保持 v21。桌面“深海灯塔-鱼类与展缸-v25”和“深海灯塔-v25展缸演示”；后者只有临时样本，不写正常收藏。报告 Docs/SeaLifeV25/README.md（另存 art-v25）。
+Blender 实际导出六FBX、三张512贴图与六个可编辑源文件。修复原稿重复反向面异常、PNG上下翻转、眼睛UV、FBX朝向/单位、柜体沙床尺寸与材质槽；数据主类拆到匹配文件名。运行时等待Ready，鱼/缸创建时更新，无每帧全场景反射扫描；路径拥有朝向，摆尾不累积偏航，暂停立即停止。旧源码只在SeaLifeActivities/SeaLifeAquarium各加一个可选钩子，旧场景未挂组件时为空操作。
+最终 build-02 成功，仍有历史 OceanSurface.cs 过时API警告；Verification/sea-life-v25-review02 60项检查通过、运行0错误0警告。正常存档SHA前后相同，256旧输入仅上述两文件变化（254项哈希相同）。review01暂停失败已修复，不作为最终证据。1080p固定镜头600帧，旧鱼137.88FPS/P95 8.23ms、新鱼136.99/P95 9.12ms；单缸近景369.23/P95 3.19ms。非全地图、长期或4K测试。
+六秒视频为144帧/24fps固定步长引擎录制，分享720p，非实时性能证据。未将SO经济字段接管旧鱼价/容量，未做完整PBR贴图、真实体积散射、微气泡、UI/人物钓鱼动作/海湾生态重做；不称最终美术认可。普通再构建 Deepsea.Editor.SeaLifeV25Build.Build；显式 ImportAndBuild 才重新生成v25资产/场景。旧版本构建保留。

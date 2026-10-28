@@ -1,0 +1,50 @@
+﻿{
+    "passed":  true,
+    "files":  [
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaLifeV25/Models/AquariumTank_V25_Frame.fbx",
+                      "bytes":  48844,
+                      "sha256":  "c42c06b97e860e6140e450b31c30171f93be8b38e7cffbfd40a01c1442fa2a1b"
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaLifeV25/Models/AquariumTank_V25_Glass.fbx",
+                      "bytes":  21916,
+                      "sha256":  "cfd075777266d2207935a5c551565018db6a52419dae5156a785319c66c08d53"
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaLifeV25/Models/AquariumTank_V25_Interior.fbx",
+                      "bytes":  81884,
+                      "sha256":  "bc5ed93559f640160f6bfa0f986b29fe09148b3769fc7e1363b3ad85ac760e84"
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaLifeV25/Models/Fish_0_SilverBream.fbx",
+                      "bytes":  47548,
+                      "sha256":  "3a95fd2d3ccde61393a4d75061c0362eea367d6661a28e96dfcd41a34388472e"
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaLifeV25/Models/Fish_1_BluefinTuna.fbx",
+                      "bytes":  47500,
+                      "sha256":  "478b6c4fc3b398b920fc3a4b0db1cc8d40276ee8053982267f5f7fd59dee844d"
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaLifeV25/Models/Fish_2_GoldButterfly.fbx",
+                      "bytes":  47436,
+                      "sha256":  "2af615243d944f4fd08665a850e57852bebc01c494354d2afd9522f3f6f1327c"
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaLifeV25/Textures/Fish_0_SilverBream_Albedo.png",
+                      "bytes":  273247,
+                      "sha256":  "74449da0a62f6130c214ef10df8591477ae1c442962e65a24768afa15cc5a2ce"
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaLifeV25/Textures/Fish_1_BluefinTuna_Albedo.png",
+                      "bytes":  234785,
+                      "sha256":  "96ff44af8f33d8a98847219356b866b942dbf124bb017dbaf34b863848d1f744"
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaLifeV25/Textures/Fish_2_GoldButterfly_Albedo.png",
+                      "bytes":  344077,
+                      "sha256":  "8f78f0074327e739df711a98191b5a802bc747157f11094eca1973aa7ac8be80"
+                  }
+              ]
+}
