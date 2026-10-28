@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "source": "local Git and local LFS objects; GitHub upload is not verified",
+  "checks": [
+    "Main source cloned from committed objects",
+    "Five fixed upstream checkouts restored",
+    "LFS assets restored and object hashes verified",
+    "Restored dependency and skill snapshot validation passed",
+    "Restored tracked bytes match the commit"
+  ],
+  "commit": "435e3bec927703816e60362df915760252c310be",
+  "repositoryChecks": 57,
+  "temporaryCloneRemoved": true
+}

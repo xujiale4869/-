@@ -112,3 +112,13 @@ v13 工程检查通过不等于美术获认可。后续优先构图、地形大�
 ## 2026-10-28 v22：水面首轮修订
 用户选择先处理水面后已完成独立版。报告 C:/Users/许嘉乐/Documents/ChatGPT/深海灯塔/art-v22/reference-analysis.md，桌面“深海灯塔-水面修订-v22”，程序 Builds/SeaLifeWaterV22/Guichao-SeaWater.exe，场景 CoastSeaLifeWaterV22.unity。F7原/新水面对照；窗口仍沿用v21产品名和正常存档目录。移除新shader的随机碎光层，新增34869顶点/68992面缓浪网格、船身视觉响应、历史尾迹与浮漂/落叶高度接入，原控制器和碰撞不变。
 最终 Verification/sea-water-v22-review03/ 与 delivery 副本，38项检查通过；原生1080p锁60固定镜头600帧59.98834FPS/P95 16.67730ms，运行0错误0警告，不代表全工程或全地图。旧源/水材质/旧场景/设置清单199项哈希一致。Tools/SeaLifeWaterV22/Rebuild-Water.ps1默认只校验23项冻结输入，不自动恢复覆盖；-Build使用保存好的v22场景，显式Prepare才重新生成。前两轮尾迹草稿不作交付。浅水搁浅、物理水阻/划桨、UI、生态与钓鱼动作未重做，用户尚未评价新水面观感。具体边界以报告和工具说明为准。
+
+## 2026-10-28 Git仓库与第三方内容实际保存
+
+桌面实际Unity工程已初始化Git主仓库（main）。五个既有上游工具采用固定提交子模块保存，来源在.gitmodules；三项UPM本地引用保持原路径。BoatAttack、Tiled Directional Flow、FastNoiseLite、NVJOB、Lucide的实际文件和许可已纳入主仓库，不把保留参考等同于当前场景启用。
+
+Tools/AgentSkillSources保存五个已有美术/UI工具的185个文件，来源/版本/文件SHA256在sources.lock.json；原用户技能安装未改。上游.gitattributes以.upstream归档，映射可还原。Git属性保留原文件字节，大资产使用LFS，ProjectSettings保持普通可读文本。
+
+本轮仓库检查57项通过，Unity依赖检查21项通过、当前v22场景221项引用可解析。本机从提交435e3be克隆主仓库、恢复五个子仓库与LFS、核对源码和工具快照通过；证据Verification/repository-integration/。这不代表新增船控/水面功能或v23实机验收。v23同时在制作，整理期间出现的后续改动须按git status另行核对，不能当成已验收稳定版。
+
+远端尚未配置，GitHub推送未完成；需要明确目标仓库及可写连接后再推送，不能把本地提交称为GitHub已保存。详情Docs/GitHub内容接入-20261028.md。新增整理脚本是本轮维护入口，日常只读检查用Tools/RepositoryIntegration/verify_repository.py；不要反复执行一次性导入脚本覆盖档案。
