@@ -1,0 +1,15 @@
+{
+    "passed": true,
+    "failure": "",
+    "resolution": "1920x1080",
+    "gpu": "Intel(R) Arc(TM) 130T GPU (16GB)",
+    "scope": "Independent real-time 3D visual sample. Original navigation, walking and cave gameplay are retained in v15 and are not claimed integrated here.",
+    "triangles": 743425,
+    "corals": 311,
+    "kelp": 63,
+    "fish": 178,
+    "fps": 62.20712309434284,
+    "p95Ms": 18.843000754714013,
+    "p99Ms": 19.033299759030343,
+    "renderScale": 1.0
+}

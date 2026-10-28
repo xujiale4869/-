@@ -1,0 +1,15 @@
+[submodule "Tools/CoastSlice/UnityMeshSimplifier"]
+	path = Tools/CoastSlice/UnityMeshSimplifier
+	url = https://github.com/Whinarn/UnityMeshSimplifier.git
+[submodule "Tools/StyleCandidates/ACGImporter"]
+	path = Tools/StyleCandidates/ACGImporter
+	url = https://github.com/z3lx/acg-importer.git
+[submodule "Tools/StyleCandidates/StylizedTrees"]
+	path = Tools/StyleCandidates/StylizedTrees
+	url = https://github.com/mozankatip/StylizedTrees.git
+[submodule "Tools/StyleCandidates/VertexBlend"]
+	path = Tools/StyleCandidates/VertexBlend
+	url = https://github.com/cathyhlshih/UnityURPVertexBlendTriplanarShader.git
+[submodule "Tools/StyleCandidates/VolumetricLight"]
+	path = Tools/StyleCandidates/VolumetricLight
+	url = https://github.com/CristianQiu/Unity-URP-Volumetric-Light.git

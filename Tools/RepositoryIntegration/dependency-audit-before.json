@@ -1,0 +1,56 @@
+{
+  "root": "C:\\Users\\许嘉乐\\Desktop\\深海灯塔-Unity海陆-v0.3",
+  "nestedRepositories": [
+    {
+      "path": "Tools/CoastSlice/UnityMeshSimplifier",
+      "sha": "53fdb3122645bcd3ad2c258235200dff3dfbaa9b",
+      "url": "https://github.com/Whinarn/UnityMeshSimplifier.git",
+      "dirty": false,
+      "changes": []
+    },
+    {
+      "path": "Tools/StyleCandidates/ACGImporter",
+      "sha": "d7af21b84b7b2522e3c1152fc0e63e07569c4f13",
+      "url": "https://github.com/z3lx/acg-importer.git",
+      "dirty": false,
+      "changes": []
+    },
+    {
+      "path": "Tools/StyleCandidates/StylizedTrees",
+      "sha": "58b417fdb348e1f5350901efa380a539dc8c2b3f",
+      "url": "https://github.com/mozankatip/StylizedTrees.git",
+      "dirty": false,
+      "changes": []
+    },
+    {
+      "path": "Tools/StyleCandidates/VertexBlend",
+      "sha": "4eb831a2523cad1c0a220185d6d29bc13db92ff8",
+      "url": "https://github.com/cathyhlshih/UnityURPVertexBlendTriplanarShader.git",
+      "dirty": false,
+      "changes": []
+    },
+    {
+      "path": "Tools/StyleCandidates/VolumetricLight",
+      "sha": "354ebc5b6ed3c2c40dc9797c813b56d5da213c4e",
+      "url": "https://github.com/CristianQiu/Unity-URP-Volumetric-Light.git",
+      "dirty": false,
+      "changes": []
+    }
+  ],
+  "dependencies": {
+    "com.unity.render-pipelines.universal": "14.0.11",
+    "com.unity.modules.audio": "1.0.0",
+    "com.unity.modules.imgui": "1.0.0",
+    "com.unity.modules.imageconversion": "1.0.0",
+    "com.unity.modules.jsonserialize": "1.0.0",
+    "com.unity.modules.physics": "1.0.0",
+    "com.unity.modules.particlesystem": "1.0.0",
+    "com.unity.modules.ui": "1.0.0",
+    "com.unity.ugui": "1.0.0",
+    "com.unity.textmeshpro": "3.0.6",
+    "com.unity.modules.screencapture": "1.0.0",
+    "com.z3lx.acg-importer": "file:../Tools/StyleCandidates/ACGImporter",
+    "com.cqf.urpvolumetricfog": "file:../Tools/StyleCandidates/VolumetricLight",
+    "com.whinarn.unitymeshsimplifier": "file:../Tools/CoastSlice/UnityMeshSimplifier"
+  }
+}

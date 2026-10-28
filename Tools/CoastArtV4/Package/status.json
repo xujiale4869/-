@@ -1,0 +1,15 @@
+{
+  "version": "CoastArtV4",
+  "status": "source-prepared-device-offline",
+  "remoteApplied": false,
+  "unityCompiled": false,
+  "runtimeVerified": false,
+  "performanceVerified": false,
+  "desktopShortcutUpdated": false,
+  "localChecks": [
+    "balanced delimiters in 8 source/shader files",
+    "change scope excludes accepted geometry and session",
+    "source hashes recorded"
+  ],
+  "next": "Reconnect device and verify current project before applying."
+}

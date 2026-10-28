@@ -1,0 +1,21 @@
+{
+  "source": "original procedural Blender models",
+  "inferred": "dimensions and unseen sides",
+  "objects": [
+    {
+      "name": "EN_CoralBranch_LOD0",
+      "triangles": 1120,
+      "vertices": 630
+    },
+    {
+      "name": "EN_CoralPlate_LOD0",
+      "triangles": 1792,
+      "vertices": 1024
+    },
+    {
+      "name": "EN_CoralBrain_LOD0",
+      "triangles": 828,
+      "vertices": 433
+    }
+  ]
+}

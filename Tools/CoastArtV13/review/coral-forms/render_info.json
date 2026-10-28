@@ -1,0 +1,60 @@
+{
+  "blend": "C:\\Users\\\u8bb8\u5609\u4e50\\Documents\\ChatGPT\\\u6df1\u6d77\u706f\u5854\\art-v13\\EN_CoralHabitat_master.blend",
+  "mode": "material",
+  "engine": "cycles",
+  "bbox_min": [
+    -0.5013728737831116,
+    -0.5688428282737732,
+    0.0
+  ],
+  "bbox_max": [
+    6.339286804199219,
+    0.4366191327571869,
+    1.1026253700256348
+  ],
+  "size_xyz": [
+    6.8406596183776855,
+    1.0054619312286377,
+    1.1026253700256348
+  ],
+  "objects": [
+    "EN_CoralBranch_LOD0",
+    "EN_CoralFan_LOD0",
+    "EN_CoralPlate_LOD0",
+    "EN_CoralBrain_LOD0",
+    "EN_CoralFlower_LOD0"
+  ],
+  "renders": {
+    "front": {
+      "file": "C:\\Users\\\u8bb8\u5609\u4e50\\Documents\\ChatGPT\\\u6df1\u6d77\u706f\u5854\\art-v13\\review\\coral-forms\\material_front.png",
+      "az_el_lens": [
+        0,
+        0,
+        0
+      ],
+      "distance": 14.18405020236969
+    },
+    "threequarter": {
+      "file": "C:\\Users\\\u8bb8\u5609\u4e50\\Documents\\ChatGPT\\\u6df1\u6d77\u706f\u5854\\art-v13\\review\\coral-forms\\material_threequarter.png",
+      "az_el_lens": [
+        35,
+        15,
+        50
+      ],
+      "distance": 11.511114491763777
+    },
+    "ref": {
+      "file": "C:\\Users\\\u8bb8\u5609\u4e50\\Documents\\ChatGPT\\\u6df1\u6d77\u706f\u5854\\art-v13\\review\\coral-forms\\material_ref.png",
+      "az_el_lens": [
+        18.0,
+        42.0,
+        50.0
+      ],
+      "distance": 11.686602660085283
+    },
+    "gameplay": {
+      "file": "C:\\Users\\\u8bb8\u5609\u4e50\\Documents\\ChatGPT\\\u6df1\u6d77\u706f\u5854\\art-v13\\review\\coral-forms\\material_gameplay_160px.png",
+      "subject_px": 160
+    }
+  }
+}

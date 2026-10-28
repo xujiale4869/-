@@ -1,0 +1,29 @@
+{
+  "created": "2026-10-23",
+  "content": "Original procedural Blender coral meshes; existing Poly Haven scanned rocks and texture licences retained",
+  "models": {
+    "source": "original procedural Blender models",
+    "inferred": "dimensions and unseen sides",
+    "objects": [
+      {
+        "name": "EN_CoralBranch_LOD0",
+        "triangles": 1120,
+        "vertices": 630
+      },
+      {
+        "name": "EN_CoralPlate_LOD0",
+        "triangles": 1792,
+        "vertices": 1024
+      },
+      {
+        "name": "EN_CoralBrain_LOD0",
+        "triangles": 828,
+        "vertices": 433
+      }
+    ]
+  },
+  "generator": "C:\\Users\\许嘉乐\\Documents\\ChatGPT\\深海灯塔\\art-v11\\build\\03_coral_library.py",
+  "reference": "User supplied concept image, used for visual direction; not a runtime background or texture",
+  "base_project": "C:\\Users\\许嘉乐\\Desktop\\深海灯塔-Unity海陆-v0.3",
+  "new_colliders": 0
+}

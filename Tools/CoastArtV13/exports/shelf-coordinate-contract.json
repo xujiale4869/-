@@ -1,0 +1,10 @@
+{
+  "unityOrigin": [
+    72,
+    -21.5631046295166,
+    96
+  ],
+  "mapping": "blender=(unity.x-72,96-unity.z,unity.y-floor)",
+  "source": "exact engine mesh archive, not the collision terrain",
+  "inferred": "Art-directed bathymetry from a perspective concept. Unseen shape and dimensions inferred. Original physics unchanged."
+}

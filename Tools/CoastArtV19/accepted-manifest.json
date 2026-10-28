@@ -1,0 +1,72 @@
+[
+  {
+    "path": "Assets/Deepsea/Scripts/Editor/CoastMapleBuild.cs",
+    "sha256": "98c8a8ae1c9cdb9e091eb44fa10fef3e3f8780e86b6ec64e76c0c979998d671d",
+    "bytes": 9700
+  },
+  {
+    "path": "Assets/Deepsea/Scripts/Runtime/CoastMapleRuntime.cs",
+    "sha256": "8ad3c16fff44be11b77940941cc7ec5273d6280fa705a7827a515c1779d1a582",
+    "bytes": 16357
+  },
+  {
+    "path": "Assets/Deepsea/Scripts/Runtime/CoastMapleLeaves.cs",
+    "sha256": "194832dc77095c08d07e5c4e14e95a08cabf436e75e28b6bca767bab0d021ead",
+    "bytes": 3897
+  },
+  {
+    "path": "Assets/Deepsea/Shaders/CoastMapleSurface.shader",
+    "sha256": "ffc97801c042ee45ebea0fab99e29c0c8a80d2f9e6137d3bc2d12eca4c89efdc",
+    "bytes": 8010
+  },
+  {
+    "path": "Assets/Deepsea/Shaders/CoastLeafRipple.shader",
+    "sha256": "aa07113cffda00d9b4ac9903210e872b9310e56b2944cda5d679c1dfdef0bb3f",
+    "bytes": 801
+  },
+  {
+    "path": "Assets/Deepsea/ThirdParty/CoastArtV19/Limestone-Albedo.png",
+    "sha256": "686f93ca567a051cd323bea72958694c4abc6ea45b8fdc314b46fe801062e206",
+    "bytes": 3825308
+  },
+  {
+    "path": "Assets/Deepsea/ThirdParty/CoastArtV19/Limestone-Normal.png",
+    "sha256": "4f81d333f0916e8c7c1e688bc15c8ca25fb2e251f36b252645a6114a624987fd",
+    "bytes": 2925497
+  },
+  {
+    "path": "Assets/Deepsea/ThirdParty/CoastArtV19/Limestone-Roughness.png",
+    "sha256": "8e24e723471a2e5a12046daa974410a34da1e1dfe5ecfb4ec6be2656d455062d",
+    "bytes": 534082
+  },
+  {
+    "path": "Assets/Deepsea/ThirdParty/CoastArtV19/MapleBark-Albedo.png",
+    "sha256": "e52d0535d2c9c5cd37ffa657983e382c427ff53b059324352837b1b4037d9696",
+    "bytes": 4067452
+  },
+  {
+    "path": "Assets/Deepsea/ThirdParty/CoastArtV19/MapleBark-Normal.png",
+    "sha256": "8f66db477d89e935e06963248606f17b391e7ab347c9f57eb945b8a18c96ed0a",
+    "bytes": 3057473
+  },
+  {
+    "path": "Assets/Deepsea/ThirdParty/CoastArtV19/MapleBark-Roughness.png",
+    "sha256": "8202d1154e7f6742c54d785a24f902850ee11c3e88ef335e6170fce39d2cded3",
+    "bytes": 571363
+  },
+  {
+    "path": "Assets/Deepsea/ThirdParty/CoastArtV19/MapleLeaf-Albedo.png",
+    "sha256": "f34c23d2b14d98f27266c4f207c44058c73315fe40c2bfc3e8fbee597e763e9f",
+    "bytes": 1700794
+  },
+  {
+    "path": "Assets/Deepsea/ThirdParty/CoastArtV19/RockCoverage.png",
+    "sha256": "39a9482c404daef00292819bd9e41343dc618e2131f6254429690cd6e93618c9",
+    "bytes": 16233
+  },
+  {
+    "path": "Assets/Deepsea/ThirdParty/CoastArtV19/MapleCape.json",
+    "sha256": "dfcc40e780262b7390d9f1cb48dc3816a7caf773603d494d79ac85a6c78b4b95",
+    "bytes": 96364144
+  }
+]

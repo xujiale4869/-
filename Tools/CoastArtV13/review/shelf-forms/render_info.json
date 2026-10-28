@@ -1,0 +1,63 @@
+{
+  "blend": "C:\\Users\\\u8bb8\u5609\u4e50\\Documents\\ChatGPT\\\u6df1\u6d77\u706f\u5854\\art-v13\\EN_ContinuousShelf_master.blend",
+  "mode": "clay",
+  "engine": "workbench",
+  "bbox_min": [
+    -34.0,
+    -46.0,
+    0.0
+  ],
+  "bbox_max": [
+    34.0,
+    46.0,
+    21.249780654907227
+  ],
+  "size_xyz": [
+    68.0,
+    92.0,
+    21.249780654907227
+  ],
+  "objects": [
+    "EN_ContinuousShelf0_LOD0",
+    "EN_ContinuousShelf1_LOD0",
+    "EN_ContinuousShelf2_LOD0",
+    "EN_ContinuousShelf3_LOD0",
+    "EN_ContinuousShelf4_LOD0",
+    "EN_ContinuousShelf5_LOD0",
+    "EN_ContinuousShelf6_LOD0",
+    "EN_ContinuousShelf7_LOD0"
+  ],
+  "renders": {
+    "front": {
+      "file": "C:\\Users\\\u8bb8\u5609\u4e50\\Documents\\ChatGPT\\\u6df1\u6d77\u706f\u5854\\art-v13\\review\\shelf-forms\\clay_front.png",
+      "az_el_lens": [
+        0,
+        0,
+        0
+      ],
+      "distance": 182.0
+    },
+    "threequarter": {
+      "file": "C:\\Users\\\u8bb8\u5609\u4e50\\Documents\\ChatGPT\\\u6df1\u6d77\u706f\u5854\\art-v13\\review\\shelf-forms\\clay_threequarter.png",
+      "az_el_lens": [
+        35,
+        15,
+        50
+      ],
+      "distance": 194.8161794138543
+    },
+    "ref": {
+      "file": "C:\\Users\\\u8bb8\u5609\u4e50\\Documents\\ChatGPT\\\u6df1\u6d77\u706f\u5854\\art-v13\\review\\shelf-forms\\clay_ref.png",
+      "az_el_lens": [
+        18.0,
+        42.0,
+        50.0
+      ],
+      "distance": 284.2203055016788
+    },
+    "gameplay": {
+      "file": "C:\\Users\\\u8bb8\u5609\u4e50\\Documents\\ChatGPT\\\u6df1\u6d77\u706f\u5854\\art-v13\\review\\shelf-forms\\clay_gameplay_256px.png",
+      "subject_px": 256
+    }
+  }
+}

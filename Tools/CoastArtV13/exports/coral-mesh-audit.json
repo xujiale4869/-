@@ -1,0 +1,30 @@
+{
+  "growthSource": "NejcHirci/procedural-corals @25e89f97c2f9639b7a3de60406d2d293058857d2, MIT, algorithm adapted in coral_growth.py",
+  "objects": [
+    {
+      "name": "EN_CoralBranch_LOD0",
+      "triangles": 1640,
+      "vertices": 984
+    },
+    {
+      "name": "EN_CoralPlate_LOD0",
+      "triangles": 1008,
+      "vertices": 576
+    },
+    {
+      "name": "EN_CoralBrain_LOD0",
+      "triangles": 478,
+      "vertices": 241
+    },
+    {
+      "name": "EN_CoralFan_LOD0",
+      "triangles": 1040,
+      "vertices": 624
+    },
+    {
+      "name": "EN_CoralFlower_LOD0",
+      "triangles": 854,
+      "vertices": 443
+    }
+  ]
+}

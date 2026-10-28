@@ -1,0 +1,17 @@
+{
+  "status": "source_prepared_not_installed_or_built",
+  "remote_device": "e2b1bd59-ca62-4a64-84fe-828e50d6f7b2",
+  "remote_project": "C:\\Users\\许嘉乐\\Desktop\\深海灯塔-Unity海陆-v0.3",
+  "reference": "Reference-Stage2.png",
+  "pending_remote_read": "aa5b5b15-b5d3-4176-9c82-dba6b78331cc",
+  "remote_read_status": "2026-10-21: device listed Offline, last seen 12h ago; no device online",
+  "existing_v2_unchanged": true,
+  "next": [
+    "Restore remote device connectivity",
+    "Install package with backed-up original IslandTerrain/OceanSurface hooks",
+    "Run Deepsea.Editor.CoastBlockoutBuild.Build",
+    "Run -whitebox-check; inspect controller-based sailing and walking all waypoints",
+    "Review reference/no-water/orthographic screenshots against target; revise until close",
+    "Only after passing actual validation add independent desktop entry and save evidence"
+  ]
+}

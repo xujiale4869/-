@@ -1,0 +1,70 @@
+{
+  "version": "v16-independent-art-sample",
+  "acceptedMeaning": "Technical frozen delivery, user visual approval not implied",
+  "files": [
+    {
+      "path": "Assets/Deepsea/ThirdParty/CoastArtV16/CoastalPine-Atlas.png",
+      "frozenPath": "Assets/Deepsea/ThirdParty/CoastArtV16/CoastalPine-Atlas.png",
+      "encoding": "copy",
+      "sha256": "96eeabc4eabea907c35af3fa214eab052ca63a14938a9b41944ec714f077f382",
+      "sourceSha256": "96eeabc4eabea907c35af3fa214eab052ca63a14938a9b41944ec714f077f382"
+    },
+    {
+      "path": "Assets/Deepsea/ThirdParty/CoastArtV16/CoastalTimber-Albedo.png",
+      "frozenPath": "Assets/Deepsea/ThirdParty/CoastArtV16/CoastalTimber-Albedo.png",
+      "encoding": "copy",
+      "sha256": "dfb640d10fe53428d72128bd4baba17310db4154e59822ec1bc8f45cb9a20122",
+      "sourceSha256": "dfb640d10fe53428d72128bd4baba17310db4154e59822ec1bc8f45cb9a20122"
+    },
+    {
+      "path": "Assets/Deepsea/ThirdParty/CoastArtV16/CoralTissue-Atlas.png",
+      "frozenPath": "Assets/Deepsea/ThirdParty/CoastArtV16/CoralTissue-Atlas.png",
+      "encoding": "copy",
+      "sha256": "7965530ca5806b1c1bc3f8083f3ab36531d1890d88b4b342fbd1a93d49a81a68",
+      "sourceSha256": "7965530ca5806b1c1bc3f8083f3ab36531d1890d88b4b342fbd1a93d49a81a68"
+    },
+    {
+      "path": "Assets/Deepsea/ThirdParty/CoastArtV16/CoastalShowcase.json",
+      "frozenPath": "Assets/Deepsea/ThirdParty/CoastArtV16/CoastalShowcase.json.gz",
+      "encoding": "gzip",
+      "sha256": "808f4500706e84fedc60f8857c32ca210de86f97ece324e883415e0d08fd8dda",
+      "sourceSha256": "09af56a6743c74f8c0feb000dbf68661ef303210db278607782616f78fc0a90e"
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Runtime/CoastShowcaseData.cs",
+      "frozenPath": "Assets/Deepsea/Scripts/Runtime/CoastShowcaseData.cs",
+      "encoding": "copy",
+      "sha256": "342141c8582bfc6fc835f6c29d817e5850540734a20d9ee692ccdeddc0d1ac51",
+      "sourceSha256": "342141c8582bfc6fc835f6c29d817e5850540734a20d9ee692ccdeddc0d1ac51"
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Runtime/CoastShowcaseRuntime.cs",
+      "frozenPath": "Assets/Deepsea/Scripts/Runtime/CoastShowcaseRuntime.cs",
+      "encoding": "copy",
+      "sha256": "18971ffed7536fa6348bd553820944de63d2cb1a52dca2895a7f53ed28ea7451",
+      "sourceSha256": "18971ffed7536fa6348bd553820944de63d2cb1a52dca2895a7f53ed28ea7451"
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Editor/CoastShowcaseBuild.cs",
+      "frozenPath": "Assets/Deepsea/Scripts/Editor/CoastShowcaseBuild.cs",
+      "encoding": "copy",
+      "sha256": "3cfa0d4ffd79f0004c3481627d60c968313255179beaf806acf38c780d25d351",
+      "sourceSha256": "3cfa0d4ffd79f0004c3481627d60c968313255179beaf806acf38c780d25d351"
+    },
+    {
+      "path": "Assets/Deepsea/Shaders/CoastShowcaseSurface.shader",
+      "frozenPath": "Assets/Deepsea/Shaders/CoastShowcaseSurface.shader",
+      "encoding": "copy",
+      "sha256": "0996950f06d64eb08a6951b29e3840f73d7d6253b317a25719a8df60e9f828ca",
+      "sourceSha256": "0996950f06d64eb08a6951b29e3840f73d7d6253b317a25719a8df60e9f828ca"
+    },
+    {
+      "path": "Assets/Deepsea/Shaders/CoastShowcaseFoam.shader",
+      "frozenPath": "Assets/Deepsea/Shaders/CoastShowcaseFoam.shader",
+      "encoding": "copy",
+      "sha256": "9f53d2de488638d9090f32ac9c7f4279dc48ab1e57d965a0fbfd1890158c4146",
+      "sourceSha256": "9f53d2de488638d9090f32ac9c7f4279dc48ab1e57d965a0fbfd1890158c4146"
+    }
+  ],
+  "regeneration": "New draft requires new checks; no byte-identical generator promise"
+}

@@ -1,0 +1,1453 @@
+{
+  "blend": "C:\\Users\\\u8bb8\u5609\u4e50\\Documents\\ChatGPT\\\u6df1\u6d77\u706f\u5854\\art-v14\\AR_CoastLighthouse_delivery.blend",
+  "summary": {
+    "tris_by_lod": {
+      "0": 19320
+    },
+    "fail": [],
+    "warn": []
+  },
+  "objects": [
+    {
+      "name": "AR_CoastLighthouse_TaperedShaft_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 8344,
+        "verts_evaluated": 4174,
+        "verts": 4174,
+        "faces": 8344,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 22615,
+        "materials": [
+          "Plaster",
+          "Glass"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_Reveal0_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 472,
+        "verts_evaluated": 236,
+        "verts": 236,
+        "faces": 472,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 1416,
+        "materials": [
+          "Trim"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_Inset0_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 64,
+        "verts_evaluated": 34,
+        "verts": 34,
+        "faces": 64,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 192,
+        "materials": [
+          "Glass"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_WindowMullion0_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 108,
+        "verts_evaluated": 56,
+        "verts": 56,
+        "faces": 108,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 324,
+        "materials": [
+          "Wood"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_WindowSill0_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 108,
+        "verts_evaluated": 56,
+        "verts": 56,
+        "faces": 108,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 324,
+        "materials": [
+          "Trim"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_Reveal1_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 472,
+        "verts_evaluated": 236,
+        "verts": 236,
+        "faces": 472,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 1416,
+        "materials": [
+          "Trim"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_Inset1_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 64,
+        "verts_evaluated": 34,
+        "verts": 34,
+        "faces": 64,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 192,
+        "materials": [
+          "Lens"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_WindowMullion1_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 108,
+        "verts_evaluated": 56,
+        "verts": 56,
+        "faces": 108,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 324,
+        "materials": [
+          "Wood"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_WindowSill1_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 108,
+        "verts_evaluated": 56,
+        "verts": 56,
+        "faces": 108,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 324,
+        "materials": [
+          "Trim"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_Reveal2_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 472,
+        "verts_evaluated": 236,
+        "verts": 236,
+        "faces": 472,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 1356,
+        "materials": [
+          "Trim"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_Inset2_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 64,
+        "verts_evaluated": 34,
+        "verts": 34,
+        "faces": 64,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 189,
+        "materials": [
+          "Wood"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_DoorPlank0_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 108,
+        "verts_evaluated": 56,
+        "verts": 56,
+        "faces": 108,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 324,
+        "materials": [
+          "Wood"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_DoorPlank1_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 108,
+        "verts_evaluated": 56,
+        "verts": 56,
+        "faces": 108,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 324,
+        "materials": [
+          "Wood"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_DoorPlank2_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 108,
+        "verts_evaluated": 56,
+        "verts": 56,
+        "faces": 108,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 270,
+        "materials": [
+          "Wood"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_DoorPlank3_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 108,
+        "verts_evaluated": 56,
+        "verts": 56,
+        "faces": 108,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 216,
+        "materials": [
+          "Wood"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_DoorPlank4_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 108,
+        "verts_evaluated": 56,
+        "verts": 56,
+        "faces": 108,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 216,
+        "materials": [
+          "Wood"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_DoorStrap0_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 108,
+        "verts_evaluated": 56,
+        "verts": 56,
+        "faces": 108,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 270,
+        "materials": [
+          "Iron"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_DoorStrap1_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 108,
+        "verts_evaluated": 56,
+        "verts": 56,
+        "faces": 108,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 270,
+        "materials": [
+          "Iron"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_DoorHandle_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 28,
+        "verts_evaluated": 16,
+        "verts": 16,
+        "faces": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 60,
+        "materials": [
+          "Iron"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_Footing_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 716,
+        "verts_evaluated": 360,
+        "verts": 360,
+        "faces": 716,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 1494,
+        "materials": [
+          "Stone"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_BaseCourse_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 428,
+        "verts_evaluated": 216,
+        "verts": 216,
+        "faces": 428,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 896,
+        "materials": [
+          "Trim"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_Cornice_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 716,
+        "verts_evaluated": 360,
+        "verts": 360,
+        "faces": 716,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 2148,
+        "materials": [
+          "Trim"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_GalleryDeck_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 428,
+        "verts_evaluated": 216,
+        "verts": 216,
+        "faces": 428,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 1284,
+        "materials": [
+          "Iron"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_ChamberFoot_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 188,
+        "verts_evaluated": 96,
+        "verts": 96,
+        "faces": 188,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 564,
+        "materials": [
+          "Roof"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_BalconyPost0_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 28,
+        "verts_evaluated": 16,
+        "verts": 16,
+        "faces": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 75,
+        "materials": [
+          "Iron"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_GalleryBrace0_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 28,
+        "verts_evaluated": 16,
+        "verts": 16,
+        "faces": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 68,
+        "materials": [
+          "Iron"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_BalconyPost1_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 28,
+        "verts_evaluated": 16,
+        "verts": 16,
+        "faces": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 48,
+        "materials": [
+          "Iron"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_BalconyPost2_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 28,
+        "verts_evaluated": 16,
+        "verts": 16,
+        "faces": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 48,
+        "materials": [
+          "Iron"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_GalleryBrace2_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 28,
+        "verts_evaluated": 16,
+        "verts": 16,
+        "faces": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 48,
+        "materials": [
+          "Iron"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_BalconyPost3_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 28,
+        "verts_evaluated": 16,
+        "verts": 16,
+        "faces": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 70,
+        "materials": [
+          "Iron"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_BalconyPost4_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 28,
+        "verts_evaluated": 16,
+        "verts": 16,
+        "faces": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 84,
+        "materials": [
+          "Iron"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_GalleryBrace4_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 28,
+        "verts_evaluated": 16,
+        "verts": 16,
+        "faces": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 84,
+        "materials": [
+          "Iron"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_BalconyPost5_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 28,
+        "verts_evaluated": 16,
+        "verts": 16,
+        "faces": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 84,
+        "materials": [
+          "Iron"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_BalconyPost6_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 28,
+        "verts_evaluated": 16,
+        "verts": 16,
+        "faces": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 84,
+        "materials": [
+          "Iron"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_GalleryBrace6_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 28,
+        "verts_evaluated": 16,
+        "verts": 16,
+        "faces": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 84,
+        "materials": [
+          "Iron"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_BalconyPost7_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 28,
+        "verts_evaluated": 16,
+        "verts": 16,
+        "faces": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 84,
+        "materials": [
+          "Iron"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_BalconyPost8_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 28,
+        "verts_evaluated": 16,
+        "verts": 16,
+        "faces": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 84,
+        "materials": [
+          "Iron"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_GalleryBrace8_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 28,
+        "verts_evaluated": 16,
+        "verts": 16,
+        "faces": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 84,
+        "materials": [
+          "Iron"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_BalconyPost9_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 28,
+        "verts_evaluated": 16,
+        "verts": 16,
+        "faces": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 84,
+        "materials": [
+          "Iron"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_BalconyPost10_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 28,
+        "verts_evaluated": 16,
+        "verts": 16,
+        "faces": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 84,
+        "materials": [
+          "Iron"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_GalleryBrace10_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 28,
+        "verts_evaluated": 16,
+        "verts": 16,
+        "faces": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 84,
+        "materials": [
+          "Iron"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_BalconyPost11_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 28,
+        "verts_evaluated": 16,
+        "verts": 16,
+        "faces": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 84,
+        "materials": [
+          "Iron"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_BalconyUpper_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 768,
+        "verts_evaluated": 384,
+        "verts": 384,
+        "faces": 768,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 2112,
+        "materials": [
+          "Iron"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_BalconyLower_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 768,
+        "verts_evaluated": 384,
+        "verts": 384,
+        "faces": 768,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 2112,
+        "materials": [
+          "Iron"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_ChamberPost0_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 28,
+        "verts_evaluated": 16,
+        "verts": 16,
+        "faces": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 66,
+        "materials": [
+          "Roof"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_LanternPane0_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 12,
+        "verts_evaluated": 8,
+        "verts": 8,
+        "faces": 12,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 36,
+        "materials": [
+          "Glass"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_ChamberPost1_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 28,
+        "verts_evaluated": 16,
+        "verts": 16,
+        "faces": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 48,
+        "materials": [
+          "Roof"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_LanternPane1_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 12,
+        "verts_evaluated": 8,
+        "verts": 8,
+        "faces": 12,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 36,
+        "materials": [
+          "Glass"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_ChamberPost2_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 28,
+        "verts_evaluated": 16,
+        "verts": 16,
+        "faces": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 66,
+        "materials": [
+          "Roof"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_LanternPane2_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 12,
+        "verts_evaluated": 8,
+        "verts": 8,
+        "faces": 12,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 36,
+        "materials": [
+          "Glass"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_ChamberPost3_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 28,
+        "verts_evaluated": 16,
+        "verts": 16,
+        "faces": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 84,
+        "materials": [
+          "Roof"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_LanternPane3_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 12,
+        "verts_evaluated": 8,
+        "verts": 8,
+        "faces": 12,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 36,
+        "materials": [
+          "Glass"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_ChamberPost4_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 28,
+        "verts_evaluated": 16,
+        "verts": 16,
+        "faces": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 84,
+        "materials": [
+          "Roof"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_LanternPane4_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 12,
+        "verts_evaluated": 8,
+        "verts": 8,
+        "faces": 12,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 36,
+        "materials": [
+          "Glass"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_ChamberPost5_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 28,
+        "verts_evaluated": 16,
+        "verts": 16,
+        "faces": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 84,
+        "materials": [
+          "Roof"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_LanternPane5_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 12,
+        "verts_evaluated": 8,
+        "verts": 8,
+        "faces": 12,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 36,
+        "materials": [
+          "Glass"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_ChamberPost6_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 28,
+        "verts_evaluated": 16,
+        "verts": 16,
+        "faces": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 84,
+        "materials": [
+          "Roof"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_LanternPane6_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 12,
+        "verts_evaluated": 8,
+        "verts": 8,
+        "faces": 12,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 36,
+        "materials": [
+          "Glass"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_ChamberPost7_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 28,
+        "verts_evaluated": 16,
+        "verts": 16,
+        "faces": 28,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 84,
+        "materials": [
+          "Roof"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_LanternPane7_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 12,
+        "verts_evaluated": 8,
+        "verts": 8,
+        "faces": 12,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 36,
+        "materials": [
+          "Glass"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_LanternHeader_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 768,
+        "verts_evaluated": 384,
+        "verts": 384,
+        "faces": 768,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 2100,
+        "materials": [
+          "Roof"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_Roof_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 716,
+        "verts_evaluated": 360,
+        "verts": 360,
+        "faces": 716,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 2148,
+        "materials": [
+          "Roof"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_Finial_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 44,
+        "verts_evaluated": 24,
+        "verts": 24,
+        "faces": 44,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 116,
+        "materials": [
+          "Iron"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_LensCore_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 252,
+        "verts_evaluated": 128,
+        "verts": 128,
+        "faces": 252,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 692,
+        "materials": [
+          "Lens"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_LensRing0_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 192,
+        "verts_evaluated": 96,
+        "verts": 96,
+        "faces": 192,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 516,
+        "materials": [
+          "Lens"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_LensRing1_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 192,
+        "verts_evaluated": 96,
+        "verts": 96,
+        "faces": 192,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 516,
+        "materials": [
+          "Lens"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_LensRing2_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 192,
+        "verts_evaluated": 96,
+        "verts": 96,
+        "faces": 192,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 516,
+        "materials": [
+          "Lens"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_LensRing3_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 192,
+        "verts_evaluated": 96,
+        "verts": 96,
+        "faces": 192,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 516,
+        "materials": [
+          "Lens"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_LensRing4_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 192,
+        "verts_evaluated": 96,
+        "verts": 96,
+        "faces": 192,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 516,
+        "materials": [
+          "Lens"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_LensRing5_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 192,
+        "verts_evaluated": 96,
+        "verts": 96,
+        "faces": 192,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 516,
+        "materials": [
+          "Lens"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_LensRing6_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 192,
+        "verts_evaluated": 96,
+        "verts": 96,
+        "faces": 192,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 516,
+        "materials": [
+          "Lens"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "AR_CoastLighthouse_LensRing7_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 192,
+        "verts_evaluated": 96,
+        "verts": 96,
+        "faces": 192,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 516,
+        "materials": [
+          "Lens"
+        ],
+        "modifiers": []
+      }
+    }
+  ]
+}

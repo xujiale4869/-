@@ -1,0 +1,34 @@
+{
+  "objects": [
+    {
+      "name": "EN_ReefBoulder1_LOD0",
+      "vertices": 802,
+      "triangles": 1600
+    },
+    {
+      "name": "EN_ReefBoulder2_LOD0",
+      "vertices": 802,
+      "triangles": 1600
+    },
+    {
+      "name": "EN_ReefBoulder3_LOD0",
+      "vertices": 802,
+      "triangles": 1600
+    },
+    {
+      "name": "EN_ReefCliff1_LOD0",
+      "vertices": 802,
+      "triangles": 1600
+    },
+    {
+      "name": "EN_ReefCliff2_LOD0",
+      "vertices": 802,
+      "triangles": 1600
+    },
+    {
+      "name": "EN_ReefCliff3_LOD0",
+      "vertices": 802,
+      "triangles": 1600
+    }
+  ]
+}

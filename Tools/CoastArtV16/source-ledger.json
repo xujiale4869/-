@@ -1,0 +1,65 @@
+{
+  "reference": "User supplied 576f4eaa-bdbe-415f-86f9-478dbc62cde2.png. Used as visual reference, not a runtime background.",
+  "existingAssets": [
+    {
+      "source": "Poly Haven boulder_01",
+      "local": "Assets/Deepsea/ThirdParty/CoastSlice/boulder_01",
+      "license": "CC0 per preserved SOURCE-LICENSE.txt",
+      "use": "Existing scan, reduced to 3200 polygons, copied with limited shape changes and retained UV. No new network download."
+    },
+    {
+      "source": "Poly Haven island_tree_01 diffuse / existing terrain textures",
+      "license": "CC0 per same local record",
+      "use": "Bark/ground source maps only. Pine geometry and placements newly authored."
+    },
+    {
+      "source": "Project v14/v15 lighthouse, rowboat, fisherman and clean ribbon kelp; approved v12 water",
+      "use": "Reused original project assets. Exact actors and water in editable Unity scene; Blender master contains the new environment only."
+    }
+  ],
+  "generatedTextures": [
+    {
+      "path": "textures/CoastalPine-Atlas.png",
+      "pixels": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "provider": "Native image_gen tool",
+      "promptBrief": "Square transparent 2x2 atlas of irregular wide flattened coastal pine needle sprays; realistic fine needles/twigs, olive/deep forest green with yellow tips; neutral illumination; no trunk, ground, cast shadows, labels or full tree.",
+      "use": "Bent alpha-tested 3D canopy cards; source alpha retained.",
+      "sha256": "96eeabc4eabea907c35af3fa214eab052ca63a14938a9b41944ec714f077f382"
+    },
+    {
+      "path": "textures/CoastalTimber-Albedo.png",
+      "pixels": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "provider": "Native image_gen tool",
+      "promptBrief": "Flat seamless PBR base colour aged coastal timber; vertical grain, weathered gray-brown/silver beige, fine fibers/cracks/knots; neutral diffuse; no plank boundaries, nails, perspective or directional lighting.",
+      "use": "Real 3D pier/steps with independent bevels and varied UV offsets.",
+      "sha256": "dfb640d10fe53428d72128bd4baba17310db4154e59822ec1bc8f45cb9a20122"
+    },
+    {
+      "path": "textures/CoralTissue-Atlas.png",
+      "pixels": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "provider": "Native image_gen tool",
+      "promptBrief": "Precise 2x2 tissue atlas: upper-left lavender tiny polyps; upper-right muted mustard foliose pores; lower-left sage brain coral ridges; lower-right salmon polyps. Flat continuous macro surfaces, neutral illumination; no full coral specimens/background/labels.",
+      "use": "Tissue on 3D coral; atlas UV addressing plus limited colour compensation in new material for preserved water absorption.",
+      "sha256": "7965530ca5806b1c1bc3f8083f3ab36531d1890d88b4b342fbd1a93d49a81a68"
+    }
+  ],
+  "tools": {
+    "Blender": "5.2.2 LTS",
+    "Unity": "2022.3.62f3c1 URP",
+    "newGithubDependencies": "None this iteration; reuse installed tools and existing licensed project assets."
+  },
+  "promptRecord": "PromptBrief fields archive generation intent, not an asserted verbatim transcript of full tool prompts.",
+  "qualityLimit": "Technical pass and frozen inputs are not user acceptance of art, and do not prove concept reproduction."
+}

@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-24",
+  "version": "v14",
+  "project": "C:\\Users\\许嘉乐\\Desktop\\深海灯塔-Unity海陆-v0.3",
+  "scope": "Foundation modelling and materials; no new coral species or scatter attempts; existing placements resampled against the new geometry.",
+  "lighthouse": "Original locally authored tapered architecture, exact Unity mesh JSON and editable Blender master.",
+  "textures": "Existing project 2K plaster, coastal stone and timber. Original source/license files remain in ThirdParty/CoastArtV4 and CoastArtV7 and the built player ThirdParty folder.",
+  "terrain": "Original physical terrain and controller sources retained; rendered normals improved. Reef profile/creases authored locally using existing unmodified FastNoiseLite.",
+  "water": {
+    "approvedBaseline": "v12",
+    "coreShaderSha256": "4a7fdfa9164a208a8136c192cb3284ea335d2b60e5ec03f7fe7a652ac02c015c",
+    "exactCoreShaderRestore": true,
+    "refraction": 0.0022,
+    "caveat": "The whole frame is not pixel-identical: geometry, material continuity and submerged shadow fill changed."
+  },
+  "lighthouseJsonSha256": "28528bbfffa24eddd9bec4410961314022b3ac607025ac115e98a47088d2b889",
+  "reproduction": "Accepted JSON is frozen. A material-only rerun produced a UV float difference <=2.39e-7; generator output is not claimed to be byte-identical.",
+  "runtimeChanges": [
+    "Assets/Deepsea/Scripts/Runtime/CoastArtDetails.cs",
+    "Assets/Deepsea/Scripts/Runtime/CoastBlockoutCheck.cs",
+    "Assets/Deepsea/Scripts/Runtime/CoastBlockoutSession.cs",
+    "Assets/Deepsea/Scripts/Runtime/CoastEcology.cs",
+    "Assets/Deepsea/Scripts/Runtime/CoastMaterialsAppearance.cs",
+    "Assets/Deepsea/Scripts/Runtime/CoastReefCanopy.cs",
+    "Assets/Deepsea/Scripts/Runtime/CoastShelfLandform.cs",
+    "Assets/Deepsea/Scripts/Runtime/CoastShelfShape.cs"
+  ],
+  "originalRuntimeFilesUnchanged": 77,
+  "qualityStatus": "Still below reference concept; standalone checks do not establish user art approval."
+}

@@ -1,0 +1,77 @@
+{
+  "source": "https://www.innerscene.com/tools/library/3d-parts/rowing-boat-d14b7296",
+  "license": "CC0",
+  "sha256": "dada73f8190968b45e945588b006cfa41d2ea3d40b7f6a59d6917d45c1192b36",
+  "sourceBytes": 6128308,
+  "parts": 77,
+  "vertices": 54591,
+  "triangles": 101140,
+  "sourceBounds": [
+    [
+      -2.109745979309082,
+      0.0,
+      -0.6569952964782715
+    ],
+    [
+      2.109745979309082,
+      0.609000027179718,
+      0.6569952964782715
+    ]
+  ],
+  "targetBounds": [
+    [
+      -0.825,
+      -0.1,
+      -2.075
+    ],
+    [
+      0.825,
+      0.68,
+      2.075
+    ]
+  ],
+  "materials": [
+    {
+      "name": "Original finished oak",
+      "image": "oak_boat_2k.png",
+      "metallic": 0,
+      "roughness": 0.5099999904632568
+    },
+    {
+      "name": "Original natural cord",
+      "image": "rope_boat_2k.png",
+      "metallic": 0,
+      "roughness": 0.8500000238418579
+    },
+    {
+      "name": "Original fine-grained teak decking",
+      "image": "deck_teak_boat_2k.png",
+      "metallic": 0,
+      "roughness": 0.5400000214576721
+    },
+    {
+      "name": "Original brass",
+      "image": "brass_boat_2k.png",
+      "metallic": 0.8600000143051147,
+      "roughness": 0.27000001072883606
+    },
+    {
+      "name": "Original brown grained saddle leather",
+      "image": "leather_brown_boat_2k.png",
+      "metallic": 0,
+      "roughness": 0.5600000023841858
+    },
+    {
+      "name": "Original white marine gelcoat",
+      "image": "gelcoat_white_boat_2k.png",
+      "metallic": 0,
+      "roughness": 0.25999999046325684
+    },
+    {
+      "name": "Original polished steel",
+      "image": "polished_steel_boat_2k.png",
+      "metallic": 0.9399999976158142,
+      "roughness": 0.23000000417232513
+    }
+  ]
+}

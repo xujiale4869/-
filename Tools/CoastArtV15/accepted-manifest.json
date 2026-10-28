@@ -1,0 +1,134 @@
+{
+  "version": "v15",
+  "scope": "Frozen accepted local art sources and meshes; original collider/controller source excluded",
+  "files": [
+    {
+      "path": "Assets/Deepsea/Resources/CoastMaterials/Ground.mat",
+      "sha256": "2d63b9c0f2182f2888f7efdb0697c521101eaab37ced0ebcb62935b61ed1a841"
+    },
+    {
+      "path": "Assets/Deepsea/Resources/CoastMaterials/Look.asset",
+      "sha256": "adee7b1b128ccda9f010d1eaf0ab6e874a78b1dd416580f890e65f0a5d3605e8"
+    },
+    {
+      "path": "Assets/Deepsea/Resources/CoastMaterials/Water.mat",
+      "sha256": "2aed006c49b9b79c7dd91810658f4dab781582de945a277cddc16a21f7cfb394"
+    },
+    {
+      "path": "Assets/Deepsea/Resources/CoastShelf/Coverage.png",
+      "sha256": "8942dab65da789965634d8fa7619aabe17baffaf530aa7740aafd0559b0c6c80"
+    },
+    {
+      "path": "Assets/Deepsea/Resources/CoastShelf/Coverage.png.meta",
+      "sha256": "6344533c9a9b8ad275ebb0c6476f202fcf501f7f57f543cfe9785331ea214640"
+    },
+    {
+      "path": "Assets/Deepsea/Resources/CoastShelf/Shelf.mat",
+      "sha256": "8c60e956a185aa4be93e4e77a8c535bce01eb4c456e508d04368da7700e50ada"
+    },
+    {
+      "path": "Assets/Deepsea/Resources/CoastShelf/Shelf.mat.meta",
+      "sha256": "76a65dde09ab973c39dd859c5d762e4e5cd55fa11e7ac8d2e3005b560bf74430"
+    },
+    {
+      "path": "Assets/Deepsea/Resources/CoastShelf/Shelf0.asset",
+      "sha256": "661b5b78f90e6b8069461402b47ec46c6bbc16d9b585d06fca550ea29b15e710"
+    },
+    {
+      "path": "Assets/Deepsea/Resources/CoastShelf/Shelf0.asset.meta",
+      "sha256": "6d406f6920915a459bf4a65ba9a7a5073cc490c5b635609a5c8bdde7cda44f8e"
+    },
+    {
+      "path": "Assets/Deepsea/Resources/CoastShelf/Shelf1.asset",
+      "sha256": "b7dcf84c813000f1cc2eafb71f2c082aeac4a7b77b68ffe596ae3d5c2273b790"
+    },
+    {
+      "path": "Assets/Deepsea/Resources/CoastShelf/Shelf1.asset.meta",
+      "sha256": "722506b0ba238bef644e98ccd55ed30070a3e032af759a5d2e6bdab25e7385ff"
+    },
+    {
+      "path": "Assets/Deepsea/Resources/CoastShelf/Shelf2.asset",
+      "sha256": "ccaa95b4666f50f78a38e7234e0d872a27f64e5948c1513e2c2f16c4cec26ea7"
+    },
+    {
+      "path": "Assets/Deepsea/Resources/CoastShelf/Shelf2.asset.meta",
+      "sha256": "1dcd1c5389208b6f9243811e7c98a11b9933e0d9f6937191d3c9c1442e1271fd"
+    },
+    {
+      "path": "Assets/Deepsea/Resources/CoastShelf/Shelf3.asset",
+      "sha256": "b0928139bbc96500b96cba97d7075162d9f419391acf1d857a689a03c8b3fa1c"
+    },
+    {
+      "path": "Assets/Deepsea/Resources/CoastShelf/Shelf3.asset.meta",
+      "sha256": "6d6b0a6c8bece03c6d527c9700c9f9e4d20a8f5ceb018ea47a1f67401c811a2c"
+    },
+    {
+      "path": "Assets/Deepsea/Resources/CoastShelf/Shelf4.asset",
+      "sha256": "ee32c0208348e98a51d2e11c94f4ecb9eb75ae29168b720d5d7d2022a189ade8"
+    },
+    {
+      "path": "Assets/Deepsea/Resources/CoastShelf/Shelf4.asset.meta",
+      "sha256": "2d74c99654b67c3721f8e4d2e4e53f88f6b2b7808f94cf1dec7cd253129e1fda"
+    },
+    {
+      "path": "Assets/Deepsea/Resources/CoastShelf/Shelf5.asset",
+      "sha256": "820761d7d6077f7a12ca77de48579c10eca479ef00f1f90eb09daff94625bfa9"
+    },
+    {
+      "path": "Assets/Deepsea/Resources/CoastShelf/Shelf5.asset.meta",
+      "sha256": "98d42199c7b7b05ffba30b9c97d98d85d3bbf420be03449aedccf6c298ce1137"
+    },
+    {
+      "path": "Assets/Deepsea/Resources/CoastShelf/Shelf6.asset",
+      "sha256": "80005e228f3372d195e9a900be7397b99afc6d0340efd7419ea37a8cabe2f71d"
+    },
+    {
+      "path": "Assets/Deepsea/Resources/CoastShelf/Shelf6.asset.meta",
+      "sha256": "dfd1ee32f89d34e961f6fcb62e88b7456b3856fcadf66ca6bbe43861d3d4090e"
+    },
+    {
+      "path": "Assets/Deepsea/Resources/CoastShelf/Shelf7.asset",
+      "sha256": "5139d12a3405e859eba0e2a62a96f45cd62ca40e0493d035b61b4a8bf542c70a"
+    },
+    {
+      "path": "Assets/Deepsea/Resources/CoastShelf/Shelf7.asset.meta",
+      "sha256": "085aa2e27786626fdd978696e828522791f4b25658ddbf20acd7bdc0731b3f92"
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Editor/CoastMaterialsBuild.cs",
+      "sha256": "dbf970d491e2e265e641509f35680cf4e43a408a2f9178063d79a3f29eade448"
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Editor/CoastShelfBuild.cs",
+      "sha256": "091416ebb461eb2c60dacc530d4b31234d889ee57079913d3c16c66ceb1331e4"
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Runtime/CoastArtDetails.cs",
+      "sha256": "6215170869896d5fe17f3d08e4c5a5774a5d05a9494fc799e63157f299418435"
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Runtime/CoastBlockoutCheck.cs",
+      "sha256": "93e0a3f0c249670cc4d110e01e0b8b3e59494953093ae47e79dd97973539292d"
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Runtime/CoastGroundSmoothing.cs",
+      "sha256": "9105701ea4669675c7e476c4130b0376fb52b0abb23ae0e384c7c1eda736f7bd"
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Runtime/CoastMaterialsAppearance.cs",
+      "sha256": "9018ba6f1cd7cff4edb6ef597b2f17b5f6d91fcd26abf3fcbcb5669c82395ec3"
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Runtime/CoastShelfShape.cs",
+      "sha256": "ed376534a5a4b0df82438befd07489d2b86b50ba4be16b09d292fa635bd5aed6"
+    },
+    {
+      "path": "Assets/Deepsea/Shaders/CoastFoundationWater.shader",
+      "sha256": "4a7fdfa9164a208a8136c192cb3284ea335d2b60e5ec03f7fe7a652ac02c015c"
+    },
+    {
+      "path": "Assets/Deepsea/Shaders/CoastHabitatGround.shader",
+      "sha256": "156fdedcada6f14ddf6e922a8fc93e0b30db4a9a41f937eda1660d240ec16778"
+    }
+  ]
+}

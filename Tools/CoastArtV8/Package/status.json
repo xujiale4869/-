@@ -1,0 +1,37 @@
+﻿{
+    "version":  "CoastMaterials-Stage3-v8-Habitat",
+    "status":  "implemented-built-and-verified",
+    "remoteBackup":  "Tools/CoastArtV8/Before-20261022-225758",
+    "desktopShortcut":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－材质光照制作版.lnk",
+    "executable":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔-Unity海陆-v0.3\\Builds\\CoastArtV8\\GuichaoBay-ArtV8.exe",
+    "interactivePid":  10860,
+    "sourceFilesVerified":  19,
+    "benchmark":  {
+                      "fps":  97.15908849391477,
+                      "p95Ms":  12.16930000000005,
+                      "renderResolution":  "1920x1080",
+                      "window":  "1920x1080",
+                      "p99Ms":  13.968399999999548,
+                      "renderScale":  1.0
+                  },
+    "protectedFilesUnchanged":  334,
+    "heroBoatTriangles":  18000,
+    "heroCharacterTriangles":  6088,
+    "heroMaterialsIntact":  true,
+    "heroEnvelopeSafe":  true,
+    "heroAddedColliders":  0,
+    "visualRockSurfaces":  179,
+    "caveVisualBodySamples":  3520,
+    "visualObstructions":  0,
+    "habitatGrass":  752,
+    "habitatShrubs":  44,
+    "habitatTriangles":  273956,
+    "fernTrianglesPerPlant":  1200,
+    "habitatPathClearance":  2.6775858402252199,
+    "habitatPerformance":  [
+                               "cover-off fps=99.45 meanMs=10.055",
+                               "new-foliage-off fps=99.88 meanMs=10.012",
+                               "both-off fps=100.03 meanMs=9.997"
+                           ],
+    "referenceArtMatched":  false
+}

@@ -1,0 +1,262 @@
+using UnityEngine;
+using UnityEngine.Rendering;
+namespace Deepsea {
+/// <summary>One grass nursery, its fish school, and two visiting seabirds. No gameplay colliders.</summary>
+public sealed class CoastalEcology : MonoBehaviour {
+ public enum SchoolState { Sheltering, Feeding, Scattered, Returning }
+ public const int SchoolSize=18;
+ sealed class Fish { public Transform root;public Vector3 p,v; }
+ sealed class Bird { public Transform root,shadow;public Renderer renderer;public Vector3 p; }
+ readonly Fish[] fish=new Fish[SchoolSize];readonly Bird[] birds=new Bird[2];
+ readonly Collider[] overlap=new Collider[16];
+ readonly Vector3[] nextP=new Vector3[SchoolSize],nextV=new Vector3[SchoolSize];
+ MaterialPropertyBlock block;
+ readonly System.Random random=new System.Random(31859);
+ GameDirector game;ShoreHabitat grass;OceanSurface water;Wildlife wildlife;
+ Transform root;Material fishMaterial,birdMaterial,shadowMaterial;
+ Vector3 home,food,threat,passTarget,passOrigin,passDirection,passEnd;
+ float stateAt,stateUntil,nextVisit,passAt,passStartHeight,scaredUntil,boatBend;
+ int activeBird=-1,nextBird;bool shadowAlarm,contact,boatNear;
+ const float PassDuration=7.8f,Dip=.45f;
+ public bool Ready {get;private set;}
+ public bool BirdVisitsEnabled {get;set;}=true;
+ public SchoolState State {get;private set;}
+ public string LastThreat {get;private set;}="";
+ public int BirdCount {get{return Ready?birds.Length:0;}}
+ public int FishCount {get{return Ready?SchoolSize:0;}}
+ public int VisitsStarted {get;private set;}
+ public int LowPasses {get;private set;}
+ public int VisitsAborted {get;private set;}
+ public int BirdScares {get;private set;}
+ public int BoatScares {get;private set;}
+ public int ReturnsCompleted {get;private set;}
+ public int CollisionAvoidances {get;private set;}
+ public float SurfaceActivity {get;private set;}
+ public float MinimumAirClearance {get;private set;}=100;
+ public float MinimumBedClearance {get;private set;}=100;
+ public float TargetErrorAtLaunch {get;private set;}
+ public Vector3 Home {get{return home;}}
+ public Vector3 FeedingPoint {get{return food;}}
+ public bool Passing {get{return activeBird>=0;}}
+ public float PassProgress {get{return Passing?Mathf.Clamp01((Time.time-passAt)/PassDuration):0;}}
+ public Vector3 SchoolCentre {get;private set;}
+ public float MeanHomeDistance {get;private set;}
+ public Vector3 BirdPosition(int i){return birds[i].p;}
+ public Vector3 FishPosition(int i){return fish[i].root.position;}
+ float Range(float a,float b){return Mathf.Lerp(a,b,(float)random.NextDouble());}
+ public static Vector3 Current(float t){
+  float a=(22+Mathf.Sin(t*.055f)*9)*Mathf.Deg2Rad;
+  return new Vector3(Mathf.Sin(a),0,Mathf.Cos(a));
+ }
+ public void Initialize(GameDirector director,ShoreHabitat habitat){
+  block=new MaterialPropertyBlock();
+  game=director;grass=habitat;water=OceanSurface.Active;wildlife=game.World.Root.GetComponent<Wildlife>();
+  Mesh fishMesh=Resources.Load<Mesh>("Wildlife/SwimmingFish"),birdMesh=Resources.Load<Mesh>("Wildlife/CoastalBird");
+  if(fishMesh==null||birdMesh==null||grass.NurseryTufts==0){Debug.LogError("Coastal ecology missing mesh or planted habitat");return;}
+  home=grass.NurseryCentre+Vector3.right*.75f;home.y=0;
+  food=home+new Vector3(3.3f,0,.8f);
+  if(!SwimClear(home)||!SwimClear(food)){Debug.LogError("Nursery has no safe open-water feeding edge");return;}
+  root=VisualFactory.Group("海草栖息区 · 鱼群与海鸟联动",game.World.Root,Vector3.zero);
+  fishMaterial=new Material(Shader.Find("Deepsea/MarineFish"));
+  fishMaterial.SetColor("_Tint",new Color(.38f,.69f,.62f,.86f));fishMaterial.SetFloat("_Submerged",1);
+  birdMaterial=new Material(Shader.Find("Deepsea/Seabird"));
+  shadowMaterial=new Material(Shader.Find("Deepsea/SeabirdShadow"));
+  for(int i=0;i<SchoolSize;i++){
+   Vector3 p=home;
+   for(int attempt=0;attempt<40;attempt++){
+    float a=Range(0,Mathf.PI*2),r=Range(.5f,2.4f);Vector3 q=home+new Vector3(Mathf.Sin(a)*r,0,Mathf.Cos(a)*r);
+    if(SwimClear(q)){p=q;break;}
+   }
+   float angle=Range(0,Mathf.PI*2);
+   var f=new Fish{p=p,v=new Vector3(Mathf.Sin(angle),0,Mathf.Cos(angle))*.8f};
+   f.root=MeshObject("海草边的小银鱼",fishMesh,fishMaterial);
+   f.root.localScale=Vector3.one*Range(.65f,.86f);
+   block.Clear();block.SetFloat("_Phase",i*1.79f);f.root.GetComponent<Renderer>().SetPropertyBlock(block);fish[i]=f;
+  }
+  for(int i=0;i<birds.Length;i++){
+   var b=new Bird();b.root=MeshObject("低掠海鸟 · "+(i+1),birdMesh,birdMaterial);
+   b.renderer=b.root.GetComponent<Renderer>();b.root.localScale=Vector3.one*(1.8f+i*.12f);
+   b.shadow=MeshObject("海鸟随波投影",birdMesh,shadowMaterial);
+   b.shadow.localScale=new Vector3(1.8f,.018f,1.8f);
+   b.p=Orbit(i,Time.time);b.root.position=b.p;birds[i]=b;
+  }
+  SetState(SchoolState.Sheltering,Range(8,11));nextVisit=Time.time+7;
+  Ready=true;SchoolCentre=home;PublishCurrent();
+ }
+ Transform MeshObject(string label,Mesh mesh,Material material){
+  var go=new GameObject(label);go.layer=4;go.transform.SetParent(root,false);
+  go.AddComponent<MeshFilter>().sharedMesh=mesh;var r=go.AddComponent<MeshRenderer>();r.sharedMaterial=material;
+  r.shadowCastingMode=ShadowCastingMode.Off;r.receiveShadows=false;return go.transform;
+ }
+ bool SwimClear(Vector3 p){
+  if(IslandTerrain.Contains(p)||water.BottomHeight(p.x,p.z)>OceanSurface.SeaLevel-.65f)return false;
+  p.y=.35f;return !Physics.CheckSphere(p,.48f,Physics.AllLayers,QueryTriggerInteraction.Ignore);
+ }
+ bool EscapeClear(Vector3 p){
+  if(IslandTerrain.Contains(p)||water.BottomHeight(p.x,p.z)>OceanSurface.SeaLevel-.65f)return false;
+  p.y=.35f;int count=Physics.OverlapSphereNonAlloc(p,.48f,overlap,Physics.AllLayers,QueryTriggerInteraction.Ignore);
+  if(count==overlap.Length)return false;
+  for(int i=0;i<count;i++)if(!overlap[i].transform.IsChildOf(game.Boat.transform))return false;
+  return true;
+ }
+ void SetState(SchoolState state,float duration){State=state;stateAt=Time.time;stateUntil=Time.time+duration;}
+ void Scare(Vector3 origin,bool vessel){
+  threat=origin;scaredUntil=Time.time+(vessel?4.5f:4);LastThreat=vessel?"boat":"bird";
+  if(State!=SchoolState.Scattered){if(vessel)BoatScares++;else BirdScares++;}
+  SetState(SchoolState.Scattered,4.5f);
+ }
+ void Update(){
+  if(!Ready||game.Paused)return;
+  float dt=Mathf.Min(Time.deltaTime,.05f),t=Time.time;
+  Vector3 boat=game.Boat.transform.position;boat.y=0;
+  bool near=(boat-SchoolCentre).sqrMagnitude<7.5f*7.5f||(boat-home).sqrMagnitude<6.5f*6.5f;
+  if(near){
+   if(!boatNear||State!=SchoolState.Scattered)Scare(boat,true);
+   threat=boat;scaredUntil=t+4.5f;
+  }
+  boatNear=near;
+  if(State==SchoolState.Scattered&&t>=scaredUntil)SetState(SchoolState.Returning,5.5f);
+  else if(State==SchoolState.Returning&&t>=stateUntil&&MeanHomeDistance<3.6f){ReturnsCompleted++;SetState(SchoolState.Sheltering,Range(14,22));}
+  else if(State==SchoolState.Sheltering&&t>=stateUntil)SetState(SchoolState.Feeding,Range(15,19));
+  else if(State==SchoolState.Feeding&&t>=stateUntil)SetState(SchoolState.Sheltering,Range(18,27));
+  float activity=State==SchoolState.Feeding?1:0;
+  SurfaceActivity=Mathf.MoveTowards(SurfaceActivity,activity,dt*.65f);
+  UpdateFish(dt,t);UpdateBirds(dt,t);PublishCurrent();
+ }
+ void UpdateFish(float dt,float t){
+  Vector3 target=State==SchoolState.Feeding?food:home;
+  target+=new Vector3(Mathf.Sin(t*.27f)*.6f,0,Mathf.Cos(t*.23f)*.65f);
+  for(int i=0;i<SchoolSize;i++){
+   Fish f=fish[i];int count=0;Vector3 heading=Vector3.zero,separation=Vector3.zero,centre=Vector3.zero;
+   for(int j=0;j<SchoolSize;j++){
+    if(i==j)continue;Vector3 delta=fish[j].p-f.p;float d=delta.sqrMagnitude;
+    if(d<12.25f){count++;heading+=fish[j].v.normalized;centre+=fish[j].p;if(d<.8f)separation-=delta/Mathf.Max(.08f,d);}
+   }
+   bool scared=State==SchoolState.Scattered;
+   float fear=scared?Mathf.Clamp01(1-(f.p-threat).magnitude/10):0;
+   float speed=scared?Mathf.Lerp(1.1f,2.9f,fear):State==SchoolState.Returning?1.55f:1.0f;
+   Vector3 accel=SchoolSteering.Acceleration(f.v,heading,separation,centre,f.p,count,target,speed);
+   if(scared){Vector3 away=f.p-threat;away.y=0;accel=accel*.28f+away.normalized*9*fear;}
+   else {
+    // A real return must overcome collective alignment and finish at the planted habitat.
+    Vector3 seek=(target-f.p).normalized*speed-f.v;
+    accel+=Vector3.ClampMagnitude(seek,3)*(State==SchoolState.Returning?2.4f:1.1f);
+   }
+   accel+=Current(t)*.13f;
+   Vector3 dir=f.v.normalized;
+   if(!SwimClear(f.p+dir*1.6f)){
+    Vector3 right=Quaternion.Euler(0,70,0)*dir,left=Quaternion.Euler(0,-70,0)*dir;
+    accel+=(SwimClear(f.p+right*1.6f)?right:SwimClear(f.p+left*1.6f)?left:-dir)*8;
+   }
+   Vector3 v=f.v+accel*dt;v=v.normalized*Mathf.Clamp(v.magnitude,.5f,speed);
+   Vector3 p=f.p+v*dt;
+   if(!SwimClear(p)){
+    Vector3 away=f.p-game.Boat.transform.position;away.y=0;
+    bool overlapBoat=scared&&boatNear&&away.sqrMagnitude<2.6f*2.6f&&!SwimClear(f.p);
+    Vector3 escape=f.p+away.normalized*speed*dt;
+    if(overlapBoat&&EscapeClear(escape)){v=away.normalized*speed;p=escape;}
+    else{v=Quaternion.Euler(0,110,0)*v;p=f.p;}
+   }
+   nextP[i]=p;nextV[i]=v;
+  }
+  SchoolCentre=Vector3.zero;MeanHomeDistance=0;
+  for(int i=0;i<SchoolSize;i++){
+   Fish f=fish[i];f.p=nextP[i];f.v=nextV[i];Vector3 p=f.p;
+   float sea=OceanSurface.Height(p,t),bottom=water.BottomHeight(p.x,p.z);
+   float depth=State==SchoolState.Scattered?.8f:Mathf.Lerp(.56f,.24f,SurfaceActivity);
+   p.y=Mathf.Min(sea-.13f,Mathf.Max(bottom+.16f,sea-depth-.045f*Mathf.Sin(t*1.4f+i)));
+   f.root.SetPositionAndRotation(p,Quaternion.LookRotation(f.v));
+   MinimumBedClearance=Mathf.Min(MinimumBedClearance,p.y-bottom);
+   SchoolCentre+=f.p;MeanHomeDistance+=(f.p-home).magnitude;
+  }
+  SchoolCentre/=SchoolSize;MeanHomeDistance/=SchoolSize;
+ }
+ Vector3 Orbit(int i,float t){
+  float a=t*.145f+i*Mathf.PI;
+  Vector3 p=home+new Vector3(12+Mathf.Cos(a)*7.5f,0,3+Mathf.Sin(a)*10);
+  p.y=OceanSurface.Height(p,t)+5.5f+i*.9f+Mathf.Sin(t*.38f+i)*.3f;return p;
+ }
+ public bool TryBeginPass(){
+  if(!Ready||Passing||boatNear||State!=SchoolState.Feeding||SurfaceActivity<.8f||Time.time-stateAt<2.5f||Time.time<nextVisit)return false;
+  Vector3 target=SchoolCentre;target.y=0;
+  if((target-food).sqrMagnitude>4.5f*4.5f)return false;
+  Vector3 boat=game.Boat.transform.position;boat.y=0;if((target-boat).sqrMagnitude<10*10)return false;
+  int index=nextBird%birds.Length;passOrigin=birds[index].p;passTarget=target;
+  passDirection=(target-passOrigin);passDirection.y=0;passDirection.Normalize();
+  passEnd=target+passDirection*13+Vector3.Cross(Vector3.up,passDirection)*2.5f;
+  passStartHeight=passOrigin.y-OceanSurface.Height(passOrigin,Time.time);
+  for(int step=0;step<=72;step++){
+   Vector3 p=PassPoint(step/72f,Time.time);
+   if(!AirClear(p,.75f))return false;
+   if(step>0&&Physics.Linecast(PassPoint((step-1)/72f,Time.time),p,Physics.AllLayers,QueryTriggerInteraction.Ignore))return false;
+  }
+  TargetErrorAtLaunch=(target-SchoolCentre).magnitude;
+  activeBird=index;nextBird++;passAt=Time.time;shadowAlarm=contact=false;VisitsStarted++;
+  return true;
+ }
+ Vector3 PassPoint(float u,float t){
+  Vector3 p;float height;
+  if(u<=Dip){float q=u/Dip;Vector3 control=passTarget-passDirection*5;
+   p=(1-q)*(1-q)*passOrigin+2*(1-q)*q*control+q*q*passTarget;
+   height=Mathf.Lerp(passStartHeight,.28f,Mathf.SmoothStep(0,1,q));
+  }else{float q=(u-Dip)/(1-Dip);Vector3 control=passTarget+passDirection*6;
+   p=(1-q)*(1-q)*passTarget+2*(1-q)*q*control+q*q*passEnd;
+   height=Mathf.Lerp(.28f,6.2f,Mathf.SmoothStep(0,1,q));
+  }
+  p.y=OceanSurface.Height(p,t)+height;return p;
+ }
+ bool AirClear(Vector3 p,float radius){
+  if(p.y<IslandTerrain.Height(p.x,p.z)+radius)return false;
+  return !Physics.CheckSphere(p,radius,Physics.AllLayers,QueryTriggerInteraction.Ignore);
+ }
+ void UpdateBirds(float dt,float t){
+  bool visible=game.CameraFollow.Overview||(game.Boat.transform.position-home).sqrMagnitude<85*85;
+  for(int i=0;i<birds.Length;i++){
+   Bird b=birds[i];Vector3 previous=b.p;float flap=.55f,bank=0;
+   if(i==activeBird){
+    float u=(t-passAt)/PassDuration;Vector3 intended=PassPoint(Mathf.Clamp01(u),t);
+    Vector3 boat=game.Boat.transform.position;boat.y=0;
+    bool boatInterrupt=(boat-passTarget).sqrMagnitude<8.5f*8.5f||(boat-intended).sqrMagnitude<6.5f*6.5f;
+    if(boatInterrupt||!AirClear(intended,.5f)||Physics.Linecast(previous,intended,Physics.AllLayers,QueryTriggerInteraction.Ignore)){
+     VisitsAborted++;if(!boatInterrupt)CollisionAvoidances++;activeBird=-1;nextVisit=t+Range(32,46);
+     intended=b.p+Vector3.up*.8f*dt;
+    }else{
+     b.p=intended;flap=Mathf.Abs(u-Dip)<.22f?0:.45f;bank=Mathf.Sin(u*Mathf.PI*2)*5;
+     MinimumAirClearance=Mathf.Min(MinimumAirClearance,b.p.y-OceanSurface.Height(b.p,t));
+     if(!shadowAlarm&&u>=Dip-.07f){shadowAlarm=true;Scare(passTarget,false);}
+     if(!contact&&u>=Dip){contact=true;LowPasses++;if(wildlife!=null&&wildlife.Effects!=null)wildlife.Effects.Impact(passTarget,.30f);}
+     if(u>=1){activeBird=-1;nextVisit=t+Range(35,52);}
+    }
+   }else{
+    Vector3 goal=Orbit(i,t);Vector3 candidate=Vector3.MoveTowards(b.p,goal,4.7f*dt);
+    if(AirClear(candidate,.6f))b.p=candidate;else b.p+=Vector3.up*dt*2;
+    flap=Mathf.Sin(t*.6f+i)>.35f?.85f:.06f;bank=Mathf.Sin(t*.145f+i)*9;
+   }
+   Vector3 motion=b.p-previous;
+   if(motion.sqrMagnitude>.000001f){
+    Quaternion rotation=Quaternion.LookRotation(motion.normalized)*Quaternion.Euler(0,0,bank);
+    b.root.rotation=Quaternion.Slerp(b.root.rotation,rotation,dt*5);
+   }
+   b.root.position=b.p;b.root.gameObject.SetActive(visible);
+   block.Clear();block.SetFloat("_Flap",flap);block.SetFloat("_Phase",i*2.37f);b.renderer.SetPropertyBlock(block);
+   Vector3 shadow=b.p+new Vector3(.45f,0,-.3f)*(b.p.y*.25f);
+   shadow.y=OceanSurface.Height(shadow,t)+.035f;
+   float yaw=b.root.eulerAngles.y;b.shadow.SetPositionAndRotation(shadow,Quaternion.Euler(0,yaw,0));
+   block.Clear();block.SetFloat("_Opacity",Mathf.Lerp(.22f,.065f,Mathf.Clamp01((b.p.y-OceanSurface.SeaLevel)/7)));
+   b.shadow.GetComponent<Renderer>().SetPropertyBlock(block);b.shadow.gameObject.SetActive(visible);
+  }
+  if(BirdVisitsEnabled&&visible)TryBeginPass();
+ }
+ void PublishCurrent(){
+  Vector3 flow=Current(Time.time);Shader.SetGlobalVector("_BayHabitatFlow",new Vector4(flow.x,0,flow.z,1));
+  Vector3 boat=game.Boat.transform.position;
+  boatBend=Mathf.MoveTowards(boatBend,Mathf.Clamp01(game.Boat.Speed/2),Time.deltaTime*.8f);
+  Shader.SetGlobalVector("_BayGrassBoat",new Vector4(boat.x,boat.z,boatBend,0));
+ }
+ void OnDestroy(){
+  if(root!=null)Destroy(root.gameObject);
+  foreach(var m in new[]{fishMaterial,birdMaterial,shadowMaterial})if(m!=null)Destroy(m);
+  Shader.SetGlobalVector("_BayGrassBoat",Vector4.zero);
+ }
+}
+}

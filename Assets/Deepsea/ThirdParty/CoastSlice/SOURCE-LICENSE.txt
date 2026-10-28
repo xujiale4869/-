@@ -1,0 +1,2 @@
+Powered by Poly Haven — https://polyhaven.com/ — Assets are CC0 1.0. Models: coastal_cliff_01, boulder_01. Metadata and download MD5 recorded in Tools/CoastSlice.Additional CC0 models: island_tree_01, fern_02. https://polyhaven.com/a/island_tree_01 https://polyhaven.com/a/fern_02
+CC0 textures: aerial_sand, weathered_brown_planks, forest_ground_04, grass_path_2. Each source https://polyhaven.com/a/{asset_id}. UnityMeshSimplifier MIT revision 53fdb3122645bcd3ad2c258235200dff3dfbaa9b.

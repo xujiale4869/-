@@ -1,0 +1,16 @@
+{
+  "newTexture": {
+    "path": "textures/Limewash-Albedo.png",
+    "sha256": "996ad270ea28b459d3bf8fe7dba609861d922f94328ec9359540852c2f893662",
+    "sourcePixels": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "provider": "Native image_gen",
+    "promptBrief": "Seamless square neutral grey-white lime-plaster PBR base colour for coastal lighthouse. Fine mineral grains, tiny cracks and sparse chips exposing pale limestone, low broad contrast, no yellow/brown blotches or bricks; no perspective, shadows, objects or text. Strong base/rain weathering supplied separately by engine masks. Requested2048; actual returned dimensions recorded.",
+    "usage": "sRGB, repeat, trilinear, max2048, BC high-quality importer; existing fine plaster normal with .23 strength, localized shader masks and roughness; no newly baked matched normal claimed."
+  },
+  "existing": "CC0 scan/albedo/normal/roughness from existing boulder_01; existing plaster normal and original tower mesh; no new GitHub dependency/download. New shaders use source textures with localized masks, not a landscape image.",
+  "scope": "Only tower and4 adjacent rocks have new materials;43 real footing blocks and3 dry-land contact patches. Refined stone shader has wet/dry, source roughness, upper moss, contact colour; architecture has localized base exposure/window rain/limited metal oxidation."
+}

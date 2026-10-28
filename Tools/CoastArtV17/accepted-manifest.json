@@ -1,0 +1,58 @@
+{
+  "version": "v17-material-refinement",
+  "frozenMeaning": "Technically checked delivery; no user final art approval implied",
+  "files": [
+    {
+      "path": "Assets/Deepsea/ThirdParty/CoastArtV17/LandPatch.json",
+      "frozenPath": "Assets/Deepsea/ThirdParty/CoastArtV17/LandPatch.json.gz",
+      "encoding": "gzip",
+      "sha256": "6012b307907ed4fd7009e015cfc14b610d656e07ac0b5fd7f2ac75505c9760db",
+      "sourceSha256": "17b2d02f3a9ed866a716b6b290d661061547feb2724c80587e3befa2dc615b30"
+    },
+    {
+      "path": "Assets/Deepsea/ThirdParty/CoastArtV17/Limewash-Albedo.png",
+      "frozenPath": "Assets/Deepsea/ThirdParty/CoastArtV17/Limewash-Albedo.png",
+      "encoding": "copy",
+      "sha256": "996ad270ea28b459d3bf8fe7dba609861d922f94328ec9359540852c2f893662",
+      "sourceSha256": "996ad270ea28b459d3bf8fe7dba609861d922f94328ec9359540852c2f893662"
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Editor/CoastRefinementBuild.cs",
+      "frozenPath": "Assets/Deepsea/Scripts/Editor/CoastRefinementBuild.cs",
+      "encoding": "copy",
+      "sha256": "6fd75482eb247372b9c5d47378725bcc61aabbb3c874e2ac04bed3dc72d9d1f7",
+      "sourceSha256": "6fd75482eb247372b9c5d47378725bcc61aabbb3c874e2ac04bed3dc72d9d1f7"
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Runtime/CoastRefinementRuntime.cs",
+      "frozenPath": "Assets/Deepsea/Scripts/Runtime/CoastRefinementRuntime.cs",
+      "encoding": "copy",
+      "sha256": "d0baee4918ebfbd292082c73e80f4ec27be2721cce1394d82fbc7c4223d0d890",
+      "sourceSha256": "d0baee4918ebfbd292082c73e80f4ec27be2721cce1394d82fbc7c4223d0d890"
+    },
+    {
+      "path": "Assets/Deepsea/Shaders/CoastRefinedArchitecture.shader",
+      "frozenPath": "Assets/Deepsea/Shaders/CoastRefinedArchitecture.shader",
+      "encoding": "copy",
+      "sha256": "8a6bf99e2ee1fbd90a96f1b6fefec3045bf74c1ccc70dbfef7ebdbc7226cd2a1",
+      "sourceSha256": "8a6bf99e2ee1fbd90a96f1b6fefec3045bf74c1ccc70dbfef7ebdbc7226cd2a1"
+    },
+    {
+      "path": "Assets/Deepsea/Shaders/CoastRefinedStone.shader",
+      "frozenPath": "Assets/Deepsea/Shaders/CoastRefinedStone.shader",
+      "encoding": "copy",
+      "sha256": "77c3f309892553d5ca00dcd6fd5aad2290e2df50877654ea8252543a0eecc048",
+      "sourceSha256": "77c3f309892553d5ca00dcd6fd5aad2290e2df50877654ea8252543a0eecc048"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "Assets/Deepsea/ThirdParty/CoastArtV16/CoastalShowcase.json",
+      "sha256": "808f4500706e84fedc60f8857c32ca210de86f97ece324e883415e0d08fd8dda"
+    },
+    {
+      "path": "Assets/Deepsea/ThirdParty/CoastSlice/boulder_01/boulder_01_rough_2k.exr",
+      "sha256": "8d295ee0bcbebecfc1c92ab159828a33a69095fada961a7d6ae46df3cc986aca"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+﻿Coast Art V4 - texture sources
+Seaside Rock: https://polyhaven.com/a/seaside_rock
+Worn Plaster Wall: https://polyhaven.com/a/worn_plaster_wall
+Author: Dimitrios Savva (as listed on the asset pages).
+License: CC0. https://polyhaven.com/license
+2K diffuse, OpenGL normal and AO/roughness/metal maps. Official download checksums recorded in texture-sources.json.

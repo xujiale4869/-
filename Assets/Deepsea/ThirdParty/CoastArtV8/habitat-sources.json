@@ -1,0 +1,92 @@
+﻿[
+    {
+        "asset":  "grass_medium_01",
+        "map":  "FBX",
+        "file":  "grass_medium_01\\grass_medium_01.fbx",
+        "bytes":  1056796,
+        "url":  "https://dl.polyhaven.org/file/ph-assets/Models/fbx/1k/grass_medium_01/grass_medium_01_1k.fbx",
+        "md5":  "1983d7917839afc27471e9c223180aef",
+        "license":  "CC0",
+        "source":  "https://polyhaven.com/a/grass_medium_01"
+    },
+    {
+        "asset":  "grass_medium_01",
+        "map":  "Diffuse",
+        "file":  "grass_medium_01\\grass_medium_01_diff_1k.jpg",
+        "bytes":  395673,
+        "url":  "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/grass_medium_01/grass_medium_01_diff_1k.jpg",
+        "md5":  "6b18ed50d776fd20c1304d9994bd764e",
+        "license":  "CC0",
+        "source":  "https://polyhaven.com/a/grass_medium_01"
+    },
+    {
+        "asset":  "grass_medium_01",
+        "map":  "Alpha",
+        "file":  "grass_medium_01\\grass_medium_01_alpha_1k.png",
+        "bytes":  648718,
+        "url":  "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/grass_medium_01/grass_medium_01_alpha_1k.png",
+        "md5":  "6b5b251ef1ca9a69ab9f49def66d758a",
+        "license":  "CC0",
+        "source":  "https://polyhaven.com/a/grass_medium_01"
+    },
+    {
+        "asset":  "shrub_02",
+        "map":  "FBX",
+        "file":  "shrub_02\\shrub_02.fbx",
+        "bytes":  832300,
+        "url":  "https://dl.polyhaven.org/file/ph-assets/Models/fbx/1k/shrub_02/shrub_02_1k.fbx",
+        "md5":  "f4d00cbfa3dd3a6594e5b63c6324cb42",
+        "license":  "CC0",
+        "source":  "https://polyhaven.com/a/shrub_02"
+    },
+    {
+        "asset":  "shrub_02",
+        "map":  "Diffuse",
+        "file":  "shrub_02\\shrub_02_diff_1k.jpg",
+        "bytes":  395120,
+        "url":  "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/shrub_02/shrub_02_diff_1k.jpg",
+        "md5":  "3f4ae281928de030c7d4e41ad5b88a8b",
+        "license":  "CC0",
+        "source":  "https://polyhaven.com/a/shrub_02"
+    },
+    {
+        "asset":  "shrub_02",
+        "map":  "Alpha",
+        "file":  "shrub_02\\shrub_02_alpha_1k.png",
+        "bytes":  91741,
+        "url":  "https://dl.polyhaven.org/file/ph-assets/Models/png/1k/shrub_02/shrub_02_alpha_1k.png",
+        "md5":  "64a1f609d80ea076b43412498a3d2db5",
+        "license":  "CC0",
+        "source":  "https://polyhaven.com/a/shrub_02"
+    },
+    {
+        "asset":  "grass_path_2",
+        "map":  "Diffuse",
+        "file":  "grass_path_2\\grass_path_2_diff_1k.jpg",
+        "bytes":  716010,
+        "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/grass_path_2/grass_path_2_diff_1k.jpg",
+        "md5":  "48cebe95af233211c9469a9bfe2f42f2",
+        "license":  "CC0",
+        "source":  "https://polyhaven.com/a/grass_path_2"
+    },
+    {
+        "asset":  "grass_path_2",
+        "map":  "nor_gl",
+        "file":  "grass_path_2\\grass_path_2_nor_gl_1k.jpg",
+        "bytes":  831959,
+        "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/grass_path_2/grass_path_2_nor_gl_1k.jpg",
+        "md5":  "aa04d930b6af2bd7e3252e31776822bd",
+        "license":  "CC0",
+        "source":  "https://polyhaven.com/a/grass_path_2"
+    },
+    {
+        "asset":  "grass_path_2",
+        "map":  "arm",
+        "file":  "grass_path_2\\grass_path_2_arm_1k.jpg",
+        "bytes":  201977,
+        "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/grass_path_2/grass_path_2_arm_1k.jpg",
+        "md5":  "707c614eee91685bebb8af64cb74dc08",
+        "license":  "CC0",
+        "source":  "https://polyhaven.com/a/grass_path_2"
+    }
+]

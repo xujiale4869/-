@@ -1,0 +1,119 @@
+{
+  "file": "C:\\Users\\\u8bb8\u5609\u4e50\\Documents\\ChatGPT\\\u6df1\u6d77\u706f\u5854\\art-v14\\exports\\EN_FracturedReef.glb",
+  "errors": [],
+  "meshes": [
+    {
+      "name": "EN_ContinuousShelf0_LOD0",
+      "tris": 4392,
+      "verts": 13176,
+      "uv": true,
+      "materials": [
+        "ShelfGeometryPreview"
+      ],
+      "skinned": false,
+      "shape_keys": 0
+    },
+    {
+      "name": "EN_ContinuousShelf1_LOD0",
+      "tris": 4850,
+      "verts": 14550,
+      "uv": true,
+      "materials": [
+        "ShelfGeometryPreview"
+      ],
+      "skinned": false,
+      "shape_keys": 0
+    },
+    {
+      "name": "EN_ContinuousShelf2_LOD0",
+      "tris": 5188,
+      "verts": 15564,
+      "uv": true,
+      "materials": [
+        "ShelfGeometryPreview"
+      ],
+      "skinned": false,
+      "shape_keys": 0
+    },
+    {
+      "name": "EN_ContinuousShelf3_LOD0",
+      "tris": 4784,
+      "verts": 14352,
+      "uv": true,
+      "materials": [
+        "ShelfGeometryPreview"
+      ],
+      "skinned": false,
+      "shape_keys": 0
+    },
+    {
+      "name": "EN_ContinuousShelf4_LOD0",
+      "tris": 3182,
+      "verts": 9546,
+      "uv": true,
+      "materials": [
+        "ShelfGeometryPreview"
+      ],
+      "skinned": false,
+      "shape_keys": 0
+    },
+    {
+      "name": "EN_ContinuousShelf5_LOD0",
+      "tris": 4394,
+      "verts": 13182,
+      "uv": true,
+      "materials": [
+        "ShelfGeometryPreview"
+      ],
+      "skinned": false,
+      "shape_keys": 0
+    },
+    {
+      "name": "EN_ContinuousShelf6_LOD0",
+      "tris": 4866,
+      "verts": 14598,
+      "uv": true,
+      "materials": [
+        "ShelfGeometryPreview"
+      ],
+      "skinned": false,
+      "shape_keys": 0
+    },
+    {
+      "name": "EN_ContinuousShelf7_LOD0",
+      "tris": 4636,
+      "verts": 13908,
+      "uv": true,
+      "materials": [
+        "ShelfGeometryPreview"
+      ],
+      "skinned": false,
+      "shape_keys": 0
+    }
+  ],
+  "armatures": [],
+  "clips": [],
+  "materials": [
+    "ShelfGeometryPreview"
+  ],
+  "images": [],
+  "bounds_m": {
+    "min": [
+      -25.1756,
+      -46.0,
+      0.0
+    ],
+    "max": [
+      34.0,
+      46.0,
+      20.0754
+    ],
+    "size": [
+      59.1756,
+      92.0,
+      20.0754
+    ]
+  },
+  "height_m": 20.0754,
+  "render": "C:\\Users\\\u8bb8\u5609\u4e50\\Documents\\ChatGPT\\\u6df1\u6d77\u706f\u5854\\art-v14\\review\\shelf-roundtrip\\roundtrip_clay_threequarter.png"
+}

@@ -1,0 +1,8 @@
+﻿Coastal Habitat v8 - CC0 assets from Poly Haven.
+Grass Medium 01: https://polyhaven.com/a/grass_medium_01
+Shrub 02: https://polyhaven.com/a/shrub_02
+Grass Path 2: https://polyhaven.com/a/grass_path_2
+License: https://polyhaven.com/license (CC0)
+1K FBX, diffuse/alpha for plant meshes; 1K diffuse, OpenGL normal and ARM for ground.
+Source URLs, original sizes and verified MD5 hashes are recorded in habitat-sources.json.
+Meshes are reduced while retaining their original texture coordinates.

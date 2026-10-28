@@ -1,0 +1,106 @@
+{
+  "oldScriptShaderFilesCompared": 339,
+  "changedOriginalFiles": [],
+  "unchangedV16SourceInputs": [
+    {
+      "path": "Assets/Deepsea/ThirdParty/CoastArtV16/CoastalPine-Atlas.png",
+      "same": true
+    },
+    {
+      "path": "Assets/Deepsea/ThirdParty/CoastArtV16/CoastalTimber-Albedo.png",
+      "same": true
+    },
+    {
+      "path": "Assets/Deepsea/ThirdParty/CoastArtV16/CoralTissue-Atlas.png",
+      "same": true
+    },
+    {
+      "path": "Assets/Deepsea/ThirdParty/CoastArtV16/CoastalShowcase.json",
+      "same": true
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Runtime/CoastShowcaseData.cs",
+      "same": true
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Runtime/CoastShowcaseRuntime.cs",
+      "same": true
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Editor/CoastShowcaseBuild.cs",
+      "same": true
+    },
+    {
+      "path": "Assets/Deepsea/Shaders/CoastShowcaseSurface.shader",
+      "same": true
+    },
+    {
+      "path": "Assets/Deepsea/Shaders/CoastShowcaseFoam.shader",
+      "same": true
+    }
+  ],
+  "unchangedOtherEnvironmentMeshes": [
+    "EN_Coral_CoralGold_01_LOD0.asset",
+    "EN_Coral_CoralGold_02_LOD0.asset",
+    "EN_Coral_CoralGold_03_LOD0.asset",
+    "EN_Coral_CoralGold_04_LOD0.asset",
+    "EN_Coral_CoralGold_05_LOD0.asset",
+    "EN_Coral_CoralGold_06_LOD0.asset",
+    "EN_Coral_CoralLavender_01_LOD0.asset",
+    "EN_Coral_CoralLavender_02_LOD0.asset",
+    "EN_Coral_CoralLavender_03_LOD0.asset",
+    "EN_Coral_CoralLavender_04_LOD0.asset",
+    "EN_Coral_CoralLavender_05_LOD0.asset",
+    "EN_Coral_CoralLavender_06_LOD0.asset",
+    "EN_Coral_CoralMint_01_LOD0.asset",
+    "EN_Coral_CoralMint_02_LOD0.asset",
+    "EN_Coral_CoralMint_03_LOD0.asset",
+    "EN_Coral_CoralMint_04_LOD0.asset",
+    "EN_Coral_CoralMint_05_LOD0.asset",
+    "EN_Coral_CoralMint_06_LOD0.asset",
+    "EN_Coral_CoralSalmon_01_LOD0.asset",
+    "EN_Coral_CoralSalmon_02_LOD0.asset",
+    "EN_Coral_CoralSalmon_03_LOD0.asset",
+    "EN_Coral_CoralSalmon_04_LOD0.asset",
+    "EN_Coral_CoralSalmon_05_LOD0.asset",
+    "EN_Coral_CoralSalmon_06_LOD0.asset",
+    "EN_Foam_Foam_03_LOD0.asset",
+    "EN_ForegroundPine_Bark_04_LOD0.asset",
+    "EN_ForegroundPine_Foliage_04_LOD0.asset",
+    "EN_Foreground_Rock_02_LOD0.asset",
+    "EN_Foreground_Rock_03_LOD0.asset",
+    "EN_Ground_Sand_01_LOD0.asset",
+    "EN_Ground_Sand_02_LOD0.asset",
+    "EN_Ground_Sand_03_LOD0.asset",
+    "EN_Ground_Sand_04_LOD0.asset",
+    "EN_Ground_Sand_05_LOD0.asset",
+    "EN_Ground_Sand_06_LOD0.asset",
+    "EN_Kelp_Kelp_01_LOD0.asset",
+    "EN_Kelp_Kelp_02_LOD0.asset",
+    "EN_Kelp_Kelp_03_LOD0.asset",
+    "EN_Kelp_Kelp_04_LOD0.asset",
+    "EN_Kelp_Kelp_05_LOD0.asset",
+    "EN_Kelp_Kelp_06_LOD0.asset",
+    "EN_LandPlants_Kelp_02_LOD0.asset",
+    "EN_LandPlants_Kelp_03_LOD0.asset",
+    "EN_LandPlants_Kelp_04_LOD0.asset",
+    "EN_LandPlants_Kelp_05_LOD0.asset",
+    "EN_LandPlants_Kelp_06_LOD0.asset",
+    "EN_Pier_Glow_04_LOD0.asset",
+    "EN_Pier_Iron_04_LOD0.asset",
+    "EN_Pier_Rope_04_LOD0.asset",
+    "EN_Pier_Wood_04_LOD0.asset",
+    "EN_Pine_Bark_04_LOD0.asset",
+    "EN_Pine_Foliage_04_LOD0.asset",
+    "EN_Reef_Rock_01_LOD0.asset",
+    "EN_Reef_Rock_02_LOD0.asset",
+    "EN_Reef_Rock_03_LOD0.asset",
+    "EN_Reef_Rock_04_LOD0.asset",
+    "EN_Reef_Rock_05_LOD0.asset",
+    "EN_Reef_Rock_06_LOD0.asset"
+  ],
+  "unexpectedMeshDifferences": [],
+  "waterCoreSha256": "4a7fdfa9164a208a8136c192cb3284ea335d2b60e5ec03f7fe7a652ac02c015c",
+  "v16ExecutableRetained": true,
+  "scope": "Byte comparisons cover old source and frozen v16 inputs plus same-named unchanged environment mesh assets. No original gameplay integration is claimed."
+}

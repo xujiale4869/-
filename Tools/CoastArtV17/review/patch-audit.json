@@ -1,0 +1,13 @@
+{
+  "focusObjects": [
+    "EN_Headland02_LOD0",
+    "EN_Headland03_LOD0",
+    "EN_Headland04_LOD0",
+    "EN_InlandOutcrop0_LOD0"
+  ],
+  "contactVertexChanges": 359,
+  "maxVertexMoveM": 0.08557758566617829,
+  "triangles": 149281,
+  "masonryBlocks": 43,
+  "source": "v16 Land replaced with same evaluated objects;4 focus rocks get contact sampling and material. All other scene geometry from v16 unchanged."
+}

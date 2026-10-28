@@ -1,0 +1,22 @@
+[
+  {
+    "name": "EN_CoralBrain_LOD0_Mesh",
+    "hasVertexColour": true
+  },
+  {
+    "name": "EN_CoralBranch_LOD0_Mesh",
+    "hasVertexColour": true
+  },
+  {
+    "name": "EN_CoralFan_LOD0_Mesh",
+    "hasVertexColour": true
+  },
+  {
+    "name": "EN_CoralFlower_LOD0_Mesh",
+    "hasVertexColour": true
+  },
+  {
+    "name": "EN_CoralPlate_LOD0_Mesh",
+    "hasVertexColour": true
+  }
+]

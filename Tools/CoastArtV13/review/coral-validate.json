@@ -1,0 +1,112 @@
+{
+  "blend": "C:\\Users\\\u8bb8\u5609\u4e50\\Documents\\ChatGPT\\\u6df1\u6d77\u706f\u5854\\art-v13\\EN_CoralHabitat_master.blend",
+  "summary": {
+    "tris_by_lod": {
+      "0": 5020
+    },
+    "fail": [],
+    "warn": []
+  },
+  "objects": [
+    {
+      "name": "EN_CoralBranch_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 1640,
+        "verts_evaluated": 984,
+        "verts": 984,
+        "faces": 1640,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 82,
+        "uv_loops_outside_0_1": 0,
+        "materials": [
+          "EN_CoralBranch_LOD0_Color"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "EN_CoralFan_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 1040,
+        "verts_evaluated": 624,
+        "verts": 624,
+        "faces": 1040,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 52,
+        "uv_loops_outside_0_1": 0,
+        "materials": [
+          "EN_CoralFan_LOD0_Color"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "EN_CoralPlate_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 1008,
+        "verts_evaluated": 576,
+        "verts": 576,
+        "faces": 1008,
+        "boundary_edges": 144,
+        "nonmanifold_edges": 0,
+        "islands": 3,
+        "uv_loops_outside_0_1": 0,
+        "materials": [
+          "EN_CoralPlate_LOD0_Color"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "EN_CoralBrain_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 478,
+        "verts_evaluated": 241,
+        "verts": 241,
+        "faces": 478,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 1,
+        "uv_loops_outside_0_1": 0,
+        "materials": [
+          "EN_CoralBrain_LOD0_Color"
+        ],
+        "modifiers": []
+      }
+    },
+    {
+      "name": "EN_CoralFlower_LOD0",
+      "type": "MESH",
+      "warn": [],
+      "fail": [],
+      "info": {
+        "tris_evaluated": 854,
+        "verts_evaluated": 443,
+        "verts": 443,
+        "faces": 854,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "islands": 8,
+        "uv_loops_outside_0_1": 0,
+        "materials": [
+          "EN_CoralFlower_LOD0_Color"
+        ],
+        "modifiers": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.IO;
+using UnityEngine;
+namespace Deepsea {
+/// <summary>Opt-in paired comparison at gameplay zoom and close-ups, plus fixed-camera motion.</summary>
+public sealed class ReefGardenCheck:MonoBehaviour {
+ static bool Requested {get{return Array.IndexOf(Environment.GetCommandLineArgs(),"-reef-garden-check")>=0;}}
+ static bool Baseline {get{return Array.IndexOf(Environment.GetCommandLineArgs(),"-reef-garden-baseline")>=0;}}
+ bool Video {get{return Array.IndexOf(Environment.GetCommandLineArgs(),"-reef-garden-demo")>=0;}}
+ [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]static void Before(){if(Requested){GameDirector.VerificationMode=true;ReefGarden.Enabled=!Baseline;Time.captureFramerate=20;}}
+ [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]static void After(){if(Requested)FindObjectOfType<GameDirector>().gameObject.AddComponent<ReefGardenCheck>();}
+ string Dir {get{return "Verification/reef-garden-v1/"+(Baseline?"before":"after");}}
+ GameDirector game;string failure="";int frames;
+ void Awake(){Application.logMessageReceived+=Log;}
+ void OnDestroy(){Application.logMessageReceived-=Log;Time.timeScale=1;Time.captureFramerate=0;}
+ void Log(string s,string stack,LogType type){if(type==LogType.Error||type==LogType.Exception||type==LogType.Assert)failure+=s+"; ";}
+ void Require(bool test,string message){if(!test)failure+=message+"; ";}
+ void View(Vector3 focus,float size){var rot=Quaternion.Euler(55,0,0);focus.y=0;game.Camera.transform.SetPositionAndRotation(focus-rot*Vector3.forward*160,rot);game.Camera.orthographicSize=size;}
+ void Capture(string name){var image=ScreenCapture.CaptureScreenshotAsTexture();File.WriteAllBytes(Dir+"/"+name+".png",image.EncodeToPNG());Destroy(image);}
+ IEnumerator Start(){
+  Directory.CreateDirectory(Dir);Screen.SetResolution(1280,720,FullScreenMode.Windowed);
+  while(Time.frameCount<5||OceanSurface.Active==null||!OceanSurface.Active.BathymetryReady)yield return new WaitForEndOfFrame();
+  game=GetComponent<GameDirector>();var garden=FindObjectOfType<ReefGarden>();var ecology=FindObjectOfType<CoastalEcology>();
+  game.UI.Close();game.HarbourMenu=false;game.CameraFollow.enabled=false;game.SetPause(false);foreach(var canvas in FindObjectsOfType<Canvas>())canvas.enabled=false;
+  ecology.BirdVisitsEnabled=false;FindObjectOfType<Wildlife>().AmbientFlights=false;
+  game.Boat.Moor(new Vector3(54,0,91),Quaternion.identity);View(new Vector3(54,0,91),23);
+  FindObjectOfType<ShorelineAtmosphere>().SetPreviewTime(ShoreCycle.Period*.53f);
+  while(Time.frameCount<50)yield return new WaitForEndOfFrame();
+  Require(garden!=null&&garden.Ready,"Garden missing");Require(game.World.Root.GetComponentsInChildren<Collider>().Length==44,"Navigation collider count changed");
+  Require(ecology.Ready&&ecology.FishCount==18&&ecology.BirdCount==2,"Existing ecosystem missing");
+  Require(Vector3.Distance(game.Boat.transform.position,new Vector3(54,0,91))<.1f,"Boat pose not settled");
+  if(!Baseline){Require(garden.BenthosCount>=40,"Insufficient seabed animals");Require(garden.CoralCount>=35&&garden.BranchCorals>0&&garden.PlateCorals>0,"Insufficient coral colonies");Require(garden.BladeCount>=400&&garden.TuftCount>=65,"Insufficient grass patches");Require(garden.TriangleCount<220000&&garden.RendererCount==2,"Geometry budget exceeded");Require(garden.HighestTip<=OceanSurface.SeaLevel-.40f,"Plant reaches sea surface");Require(garden.MinimumLandingDistance>=6,"Plants occupy berth");}
+  foreach(string name in new[]{"Deepsea/ReefCoral","Deepsea/Seagrass","Deepsea/Ocean"}){var shader=Shader.Find(name);Require(shader!=null&&shader.isSupported,"Unsupported shader "+name);}
+  var life=FindObjectOfType<LivingReef>();Require(life!=null&&life.FishCount==70&&life.SpeciesCount==4,"New reef schools missing");Require(life.InvalidPositions==0&&life.MinBed>.30f&&life.MinSurface>.35f,"New fish depth failed");float captured=Time.time;Time.timeScale=0;yield return new WaitForEndOfFrame();Capture("normal");
+  View(new Vector3(63,0,89),8);yield return new WaitForEndOfFrame();Capture("reef");
+  View(new Vector3(51,0,83),7);yield return new WaitForEndOfFrame();Capture("grass");
+  View(new Vector3(54,0,103),8);yield return new WaitForEndOfFrame();Capture("north");
+  Time.timeScale=1;
+  if(Video){
+   FindObjectOfType<ShorelineAtmosphere>().SetPreviewTime(-1);
+   foreach(var shot in new[]{new Vector4(54,91,23,6),new Vector4(54,103,8,5),new Vector4(51,83,7,5)}){
+    View(new Vector3(shot.x,0,shot.y),shot.z);
+    for(int i=0;i<Mathf.RoundToInt(shot.w*20);i++){yield return new WaitForEndOfFrame();Capture("video-"+(frames++).ToString("0000"));}
+   }
+  }
+  Require(life.InvalidPositions==0&&life.MinBed>.30f&&life.MinSurface>.35f,"New fish motion depth failed");File.WriteAllText(Dir+"/living-reef.json","{\"fish\":"+life.FishCount+",\"species\":"+life.SpeciesCount+",\"invalid\":"+life.InvalidPositions+",\"minBed\":"+life.MinBed.ToString(System.Globalization.CultureInfo.InvariantCulture)+",\"minSurface\":"+life.MinSurface.ToString(System.Globalization.CultureInfo.InvariantCulture)+",\"avoidances\":"+life.Avoidances+"}"); // Root records
+  var result=new Result{passed=failure=="",baseline=Baseline,detail=failure==""?"Paired material view, coral/grass counts, two renderer budget, submerged tips, open berth and unchanged colliders passed":failure,captureTime=captured,corals=garden.CoralCount,branchCorals=garden.BranchCorals,plateCorals=garden.PlateCorals,tufts=garden.TuftCount,blades=garden.BladeCount,triangles=garden.TriangleCount,renderers=garden.RendererCount,highestTip=garden.HighestTip,minimumLandingDistance=garden.MinimumLandingDistance,bakeMilliseconds=garden.BakeMilliseconds,colliders=game.World.Root.GetComponentsInChildren<Collider>().Length,videoFrames=frames,coralRoots=garden.CoralRoots.ToArray(),grassRoots=garden.GrassRoots.ToArray()};
+  File.WriteAllText(Dir+"/result.json",JsonUtility.ToJson(result,true));Debug.Log(failure==""?"REEF_GARDEN_PLAYER_OK":"REEF_GARDEN_PLAYER_FAILED "+failure);Time.captureFramerate=0;Application.Quit(failure==""?0:1);
+ }
+ [Serializable]class Result{public bool passed,baseline;public string detail;public float captureTime,highestTip,minimumLandingDistance;public double bakeMilliseconds;public int corals,branchCorals,plateCorals,tufts,blades,triangles,renderers,colliders,videoFrames;public Vector3[] coralRoots,grassRoots;}
+}
+}

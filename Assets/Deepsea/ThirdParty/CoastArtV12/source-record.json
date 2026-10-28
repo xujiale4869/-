@@ -1,0 +1,16 @@
+{
+  "tool": "Blender Rock Generator",
+  "repository": "https://github.com/blender/blender-addons/tree/b1fbf73a08cfb68b14bb328590a9bb6602d96916/add_mesh_extra_objects/add_mesh_rocks",
+  "commit": "b1fbf73a08cfb68b14bb328590a9bb6602d96916",
+  "toolLicense": "GPL-2.0-or-later",
+  "changes": [
+    "crease_edge attribute compatibility",
+    "set_normals_from_faces compatibility; final bmesh normals recalculated"
+  ],
+  "output": "6 newly generated normalized reef meshes; original shapes adjusted by local script",
+  "note": "tool Python is kept outside Assets and is not included in player; existing Poly Haven texture attributions remain in prior source records",
+  "productionAdaptation": "Generated mass cleaned to hull, subdivided with bounded erosion; 6 variants. Final runtime uses generated bulk plus one short scanned crown per tall reef.",
+  "runtimeInstances": 39,
+  "authoredCaustics": "Periodic wave normal ray-density splatting; shared light texture on sand, stone and coral",
+  "rebuildPolicy": "Default tool command syncs frozen accepted output. Regenerate creates new variants and requires new acceptance; byte-identical procedural regeneration was not achieved."
+}

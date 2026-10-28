@@ -1,0 +1,94 @@
+[
+  {
+    "path": "Assets\\Deepsea\\Scripts\\Runtime\\SeaLifeWaterV22\\SeaLifeWaterHooksV22.cs",
+    "sha256": "4AEE61689A126C678E5369140C2941A041C9D084A952C383E3195B2F395C023D"
+  },
+  {
+    "path": "Assets\\Deepsea\\Scripts\\Runtime\\SeaLifeWaterV22\\SeaLifeWaterHooksV22.cs.meta",
+    "sha256": "B29CD91C1A28EF37687BAED952193B5CB0400FEDAAE153FA225A94A01F9ADC21"
+  },
+  {
+    "path": "Assets\\Deepsea\\Scripts\\Runtime\\SeaLifeWaterV22\\SeaLifeWaterReviewV22.cs",
+    "sha256": "39EC05B7D5EFA71975DE25703045B05541E36FE24A322EA1FA54CA4AAB40F292"
+  },
+  {
+    "path": "Assets\\Deepsea\\Scripts\\Runtime\\SeaLifeWaterV22\\SeaLifeWaterReviewV22.cs.meta",
+    "sha256": "B57C815CAC00662EEC4727957E448BE09A4E89517BBD89D337F36FF7621A860C"
+  },
+  {
+    "path": "Assets\\Deepsea\\Scripts\\Runtime\\SeaLifeWaterV22\\SeaLifeWaterV22.cs",
+    "sha256": "AD05F249786EA33DB2B6DC4CFF4E455361371E41B15F2874D3E08250ED702AFB"
+  },
+  {
+    "path": "Assets\\Deepsea\\Scripts\\Runtime\\SeaLifeWaterV22\\SeaLifeWaterV22.cs.meta",
+    "sha256": "10E038448473E6ACC1429CA76C840BAECB0C963EDEE9B41F66BB4143BFC235B8"
+  },
+  {
+    "path": "Assets\\Deepsea\\Scripts\\Editor\\SeaLifeWaterV22\\SeaLifeWaterBuildV22.cs",
+    "sha256": "37864C90710DF84A73F5E721AA5C40F99EE724490F029C48D6C69A24FF1E1D1F"
+  },
+  {
+    "path": "Assets\\Deepsea\\Scripts\\Editor\\SeaLifeWaterV22\\SeaLifeWaterBuildV22.cs.meta",
+    "sha256": "9394A56FE7EE5F2369278F3F0EE119027F96C517CDF2232D9208032D8FC7580D"
+  },
+  {
+    "path": "Assets\\Deepsea\\Shaders\\SeaLifeWaterV22\\SeaLifeWakeV22.shader",
+    "sha256": "D0000260DD0376BC5E72B787A0541163CE1EEBD1969F63F2E1EBDBF5845656FB"
+  },
+  {
+    "path": "Assets\\Deepsea\\Shaders\\SeaLifeWaterV22\\SeaLifeWakeV22.shader.meta",
+    "sha256": "B9AE4E1BDB6612DF0F4B267EAB1EF0B962AB07DD8A6B2DE242E6B79AB14DBB34"
+  },
+  {
+    "path": "Assets\\Deepsea\\Shaders\\SeaLifeWaterV22\\SeaLifeWaterV22.shader",
+    "sha256": "8B529B67AA1D6778A66F1880A21DE4E5385AE0297F0101124CE8985953A1A19A"
+  },
+  {
+    "path": "Assets\\Deepsea\\Shaders\\SeaLifeWaterV22\\SeaLifeWaterV22.shader.meta",
+    "sha256": "8D92A479B16F33177B73C8D3A0C99D51C46A625EE3F8B000BCC3FCD1ED8D25F5"
+  },
+  {
+    "path": "Assets\\Deepsea\\Shaders\\SeaLifeWaterV22\\WaterV22Waves.hlsl",
+    "sha256": "17F37218C245107FDA92A89E6320E6D548C3944418574619ABD11E63A411AF55"
+  },
+  {
+    "path": "Assets\\Deepsea\\Shaders\\SeaLifeWaterV22\\WaterV22Waves.hlsl.meta",
+    "sha256": "7A6E3664A84C5D154C9D8B72A59599AD700E639247C437D2240C845093FB60AD"
+  },
+  {
+    "path": "Assets\\Deepsea\\Resources\\SeaLifeWaterV22\\Wake.mat",
+    "sha256": "F869F1E25D228120E3A08618329139DB80147523400A085C9033F7501B27E481"
+  },
+  {
+    "path": "Assets\\Deepsea\\Resources\\SeaLifeWaterV22\\Wake.mat.meta",
+    "sha256": "BBA47F28E768C9A5DB2F7F201D43231F5607AB498040934D051CC749639C11FA"
+  },
+  {
+    "path": "Assets\\Deepsea\\Resources\\SeaLifeWaterV22\\Water.mat",
+    "sha256": "C05C836B2AC1A3BABADAA8F5ADA1669B95999D23E13D9D9E1BE13D36D9979E28"
+  },
+  {
+    "path": "Assets\\Deepsea\\Resources\\SeaLifeWaterV22\\Water.mat.meta",
+    "sha256": "4C8B74A51681F0D00EEECB037E284791D5368A69128B529E90151B9FB756C826"
+  },
+  {
+    "path": "Assets\\Deepsea\\Resources\\SeaLifeWaterV22\\WaterMesh.asset",
+    "sha256": "277191A0A4340DBDE210F33E4796D9E0F40B7401FFCFE28FBC02FB5E7AF4E08D"
+  },
+  {
+    "path": "Assets\\Deepsea\\Resources\\SeaLifeWaterV22\\WaterMesh.asset.meta",
+    "sha256": "1E0A5B6AD0EF9E6F0EE32EE3EBE85830E3F24DE229054C0589030E93B86CED73"
+  },
+  {
+    "path": "Assets\\Deepsea\\Scenes\\CoastSeaLifeWaterV22.unity",
+    "sha256": "B1F5E5FF622F2F6105D4618D8C98E9CAF6D5DB6E1C184B44EC140D1044E42FC8"
+  },
+  {
+    "path": "Assets\\Deepsea\\Scenes\\CoastSeaLifeWaterV22.unity.meta",
+    "sha256": "EFBD864C77F90B268882AB61F98857F72D75FCDC988224087C246D5E3786186C"
+  },
+  {
+    "path": "Tools\\SeaLifeWaterV22\\Rebuild-Water.ps1",
+    "sha256": "F58A5AB475C4598735F255C9E39BC55C5EE94D21FF0277EFFA07B86D98EB3A16"
+  }
+]

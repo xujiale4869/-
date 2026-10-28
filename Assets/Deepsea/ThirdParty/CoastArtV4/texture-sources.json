@@ -1,0 +1,62 @@
+﻿[
+    {
+        "asset":  "seaside_rock",
+        "map":  "Diffuse",
+        "file":  "seaside_rock_diff_2k.jpg",
+        "bytes":  3883057,
+        "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/seaside_rock/seaside_rock_diff_2k.jpg",
+        "md5":  "f70bd6084c9b634daaea40b0cee34c20",
+        "license":  "CC0",
+        "source":  "https://polyhaven.com/a/seaside_rock"
+    },
+    {
+        "asset":  "seaside_rock",
+        "map":  "nor_gl",
+        "file":  "seaside_rock_nor_gl_2k.jpg",
+        "bytes":  4527854,
+        "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/seaside_rock/seaside_rock_nor_gl_2k.jpg",
+        "md5":  "28f8bd7b913f55b92d333217d02e8d1a",
+        "license":  "CC0",
+        "source":  "https://polyhaven.com/a/seaside_rock"
+    },
+    {
+        "asset":  "seaside_rock",
+        "map":  "arm",
+        "file":  "seaside_rock_arm_2k.jpg",
+        "bytes":  2590567,
+        "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/seaside_rock/seaside_rock_arm_2k.jpg",
+        "md5":  "0ab1a7c17d00aa56c27c274168821032",
+        "license":  "CC0",
+        "source":  "https://polyhaven.com/a/seaside_rock"
+    },
+    {
+        "asset":  "worn_plaster_wall",
+        "map":  "Diffuse",
+        "file":  "worn_plaster_wall_diff_2k.jpg",
+        "bytes":  3096042,
+        "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/worn_plaster_wall/worn_plaster_wall_diff_2k.jpg",
+        "md5":  "113c336124507f4b3fc7d440f6fd8346",
+        "license":  "CC0",
+        "source":  "https://polyhaven.com/a/worn_plaster_wall"
+    },
+    {
+        "asset":  "worn_plaster_wall",
+        "map":  "nor_gl",
+        "file":  "worn_plaster_wall_nor_gl_2k.jpg",
+        "bytes":  2935964,
+        "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/worn_plaster_wall/worn_plaster_wall_nor_gl_2k.jpg",
+        "md5":  "737e4eb8ec9af427c8aafe46675409d9",
+        "license":  "CC0",
+        "source":  "https://polyhaven.com/a/worn_plaster_wall"
+    },
+    {
+        "asset":  "worn_plaster_wall",
+        "map":  "arm",
+        "file":  "worn_plaster_wall_arm_2k.jpg",
+        "bytes":  1644844,
+        "url":  "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/worn_plaster_wall/worn_plaster_wall_arm_2k.jpg",
+        "md5":  "4131b686f55a1e47777f58931d423b66",
+        "license":  "CC0",
+        "source":  "https://polyhaven.com/a/worn_plaster_wall"
+    }
+]

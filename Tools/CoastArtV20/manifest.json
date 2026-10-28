@@ -1,0 +1,57 @@
+[
+  {
+    "file": "FineShore.json",
+    "destination": "Assets/Deepsea/ThirdParty/CoastArtV20/FineShore.json",
+    "sha256": "754f72d42b64a3b72c7f8980b0bb7beb4aeaa40bc34708249867d5c993dcaea8"
+  },
+  {
+    "file": "TreeContact.json",
+    "destination": "Assets/Deepsea/ThirdParty/CoastArtV20/TreeContact.json",
+    "sha256": "61d69ed7987a92f0984bb3fe0dc52d0dbb6c3ea3567e360be5436d9757f9c89e"
+  },
+  {
+    "file": "CoastFineShoreBuild.cs",
+    "destination": "Assets/Deepsea/Scripts/Editor/CoastFineShoreBuild.cs",
+    "sha256": "3ac1cf1765d0836736ccbed5539eb1706d5e816faf87673759804023002bd4ba"
+  },
+  {
+    "file": "CoastFineShoreAudit.cs",
+    "destination": "Assets/Deepsea/Scripts/Editor/CoastFineShoreAudit.cs",
+    "sha256": "50742fc4bf16871f7b32a57e08ecc7ef58d3d7ae3ddd1debff7837d529959c33"
+  },
+  {
+    "file": "CoastFineShoreRuntime.cs",
+    "destination": "Assets/Deepsea/Scripts/Runtime/CoastFineShoreRuntime.cs",
+    "sha256": "3c1c0b34ba1c91054e1898c555b4f3f712441f7c1b266a712b648da951290579"
+  },
+  {
+    "file": "CoastFineStone.shader",
+    "destination": "Assets/Deepsea/Shaders/CoastFineStone.shader",
+    "sha256": "bc1a598383ddbfeaa77c36988d320055f56620b42e4841dade6a063a36c2d120"
+  },
+  {
+    "file": "CoastSunGlintStudy.shader",
+    "destination": "Assets/Deepsea/Shaders/CoastSunGlintStudy.shader",
+    "sha256": "a1dd8048a217bd777ee14eaaf2806b6f8f9fd985070fb49d40576d0569b8ed40"
+  },
+  {
+    "file": "FineShore_basecolor.png",
+    "destination": "Assets/Deepsea/ThirdParty/CoastArtV20/FineShore_basecolor.png",
+    "sha256": "ea4fb1b25204835500d33abe8135449c4a38ddfd745452e698692b8abd9cc801"
+  },
+  {
+    "file": "FineShore_normal.png",
+    "destination": "Assets/Deepsea/ThirdParty/CoastArtV20/FineShore_normal.png",
+    "sha256": "ed655a0cf05e0e9073c2ef83ac45b559740cf6d6bf4723d54c6363a91a83589b"
+  },
+  {
+    "file": "FineShore_ao.png",
+    "destination": "Assets/Deepsea/ThirdParty/CoastArtV20/FineShore_ao.png",
+    "sha256": "5ff77de78ef26e296e0bba61c879c19afdb19f140971ea1eaa1bcafcc282ab04"
+  },
+  {
+    "file": "FineShore_roughness.png",
+    "destination": "Assets/Deepsea/ThirdParty/CoastArtV20/FineShore_roughness.png",
+    "sha256": "1e4d6b6ff9a1a5fde259c292e7d6700ff0608be61ac2693b09b39c3cd7cb1667"
+  }
+]

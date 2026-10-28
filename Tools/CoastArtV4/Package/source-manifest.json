@@ -1,0 +1,50 @@
+[
+  {
+    "source": "Editor/CoastMaterialsBuild.cs",
+    "target": "Assets/Deepsea/Scripts/Editor/CoastMaterialsBuild.cs",
+    "sha256": "f34e26952914aeebb633f8d116adc757b7f8bcfc296ca04ce0d8bfec96cd724c",
+    "beforeSha256": "6b62858f20361b2cbd2b0bedbd35b12a9f51e20c474296d0aadcf3888a846030"
+  },
+  {
+    "source": "Runtime/CoastArtDetails.cs",
+    "target": "Assets/Deepsea/Scripts/Runtime/CoastArtDetails.cs",
+    "sha256": "9a6b03f354627da8b2b5f9b3edeec08d1228c8e1920a80c2d38eaf060a733a29",
+    "beforeSha256": null
+  },
+  {
+    "source": "Runtime/CoastBlockoutCheck.cs",
+    "target": "Assets/Deepsea/Scripts/Runtime/CoastBlockoutCheck.cs",
+    "sha256": "7bf1030f856e2c588e80c5edfd77b90d818d9b425c54eba13d6fae7cc74e7db6",
+    "beforeSha256": "825657b1fa80d47307826de3654c2e10e6f7b67a08dd8abbe2510f87b899501f"
+  },
+  {
+    "source": "Runtime/CoastEcology.cs",
+    "target": "Assets/Deepsea/Scripts/Runtime/CoastEcology.cs",
+    "sha256": "099584608dea662c58598f45af1562dd4accee4fc2419bffa89059cca06dce3c",
+    "beforeSha256": "a067763ca280946d796eec434149ba3e3ca68ac19d8651ed886fa89eaba1c320"
+  },
+  {
+    "source": "Runtime/CoastMaterialsAppearance.cs",
+    "target": "Assets/Deepsea/Scripts/Runtime/CoastMaterialsAppearance.cs",
+    "sha256": "123c6e8f5fe4d80f260e3ffb4230c35c13e95f5a50e21c80a469bbbf494566fa",
+    "beforeSha256": "79c9eb6bf7bfb99fae23d238e2a1b50c7494e828bbb4c33ee87ee370b8a3e508"
+  },
+  {
+    "source": "Shaders/CoastEcology.shader",
+    "target": "Assets/Deepsea/Shaders/CoastEcology.shader",
+    "sha256": "14df74a8e65382db2270ec03dd956efcf2ddc56c7f75600c155ca6d686186d99",
+    "beforeSha256": "65808437c4b743809d2620180982e70fa0f46f354d2cf7d3354bf2bea82056e2"
+  },
+  {
+    "source": "Shaders/CoastFoundation.shader",
+    "target": "Assets/Deepsea/Shaders/CoastFoundation.shader",
+    "sha256": "c7a5a67da34c0b7ec8dca6285d6b89458b4f5320d519d361d8cdbf501cd416ae",
+    "beforeSha256": "9c9e3a266f8d6f5ab0626bb9e09bf184a00decb490014531de9ef350d1278ecf"
+  },
+  {
+    "source": "Shaders/CoastFoundationWater.shader",
+    "target": "Assets/Deepsea/Shaders/CoastFoundationWater.shader",
+    "sha256": "937a1074c7b8b3b04ebb48e4b2276bdd229169154fab3e8d59819055111a487c",
+    "beforeSha256": "df89d18d097de37a1b8e5f6ec91e927e6c4a087414afb5c9045c3e2db274fde2"
+  }
+]

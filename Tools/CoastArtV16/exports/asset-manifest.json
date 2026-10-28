@@ -1,0 +1,32 @@
+{
+  "triangles": 738144,
+  "batches": 63,
+  "corals": 311,
+  "kelp": 63,
+  "mapping": "Unity(x,y,z) -> Blender(-x,-z,y), winding reversed at each boundary",
+  "source": "01_scene.py + 02_life.py; original hand-directed layout and shapes; reference unseen geometry inferred",
+  "texture": "CoastalPine-Atlas.png, generated via native imagegen, RGBA; sRGB colour + alpha clip; not a scene background",
+  "gameplay": "Independent visual sample; old v15/gameplay/physics not changed",
+  "units": "metres",
+  "masterAxes": "Blender Z up, Unity(x,y,z) -> Blender(-x,-z,y)",
+  "masterBounds": {
+    "min": [
+      -48.0,
+      -44.0,
+      -17.871675491333008
+    ],
+    "max": [
+      40.0,
+      40.0,
+      12.986770629882812
+    ]
+  },
+  "glbVerticalOffsetM": 17.871675491333008,
+  "restoreGlb": "glTF Y up -> Unity world: X=-glTF.X, Y=glTF.Y-glbVerticalOffsetM, Z=glTF.Z; reverse triangle winding for X handedness flip. Exact Unity JSON needs no conversion.",
+  "materialScope": "GLB approximates base colour; Blender packs generated and scanned diffuse textures. Exact water, triplanar ground, coral atlas addressing, caustics, kelp and lighting are in Unity, not portable GLB shaders.",
+  "textureContract": "Generated colour maps sRGB; pine RGBA alpha clip .4 in Unity; existing rock OpenGL normal Non-Color in source/Unity normal import; roughness constants .78-.90. No new normal/roughness bake claimed.",
+  "texelDensity": "Source rock UV and 2K scan retained. All three generated source maps are 1254x1254; pine/coral quadrant627px before importer scaling. Repeating UV/card sizing, no uniform unique-UV texel density claimed.",
+  "lodScope": "Single LOD environment visual prototype, grouped/cullable in Unity. No shipping LOD transition acceptance.",
+  "inferred": "Unseen geometry, scale, back sides, underwater floor and tree branching inferred from one perspective concept.",
+  "shaderBaseline": "CoastFoundationWater SHA256 4a7fdfa9164a208a8136c192cb3284ea335d2b60e5ec03f7fe7a652ac02c015c; _Refraction .0022"
+}

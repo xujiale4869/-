@@ -1,0 +1,47 @@
+Shader "Deepsea/CoastSliceSurface" {
+Properties {
+_BaseMap("Albedo",2D)="white"{} _BumpMap("Normal",2D)="bump"{} _BaseColor("Tint",Color)=(1,1,1,1)
+_Triplanar("World mapping",Float)=0 _Scale("Scale",Float)=.22 _Moss("Moss",Range(0,1))=.2 _Smoothness("Smoothness",Range(0,1))=.18 _BumpScale("Normal strength",Float)=.7
+}
+SubShader {Tags{"RenderType"="Opaque" "RenderPipeline"="UniversalPipeline"}
+Pass {Tags{"LightMode"="UniversalForward"}
+HLSLPROGRAM
+#pragma target 3.5
+#pragma vertex vert
+#pragma fragment frag
+#pragma multi_compile _ _MAIN_LIGHT_SHADOWS _MAIN_LIGHT_SHADOWS_CASCADE _MAIN_LIGHT_SHADOWS_SCREEN
+#pragma multi_compile_fragment _ _SHADOWS_SOFT
+#pragma multi_compile_fog
+#include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
+#include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
+#include "../ThirdParty/BoatAttack/BayCaustics.hlsl"
+TEXTURE2D(_BaseMap);SAMPLER(sampler_BaseMap);TEXTURE2D(_BumpMap);SAMPLER(sampler_BumpMap);
+CBUFFER_START(UnityPerMaterial)
+float4 _BaseColor;float4 _BaseMap_ST;float _Triplanar,_Scale,_Moss,_Smoothness,_BumpScale;
+CBUFFER_END
+struct A{float4 p:POSITION;float3 n:NORMAL;float4 tangent:TANGENT;float2 uv:TEXCOORD0;};
+struct V{float4 p:SV_POSITION;float3 world:TEXCOORD0;float3 n:TEXCOORD1;float2 uv:TEXCOORD2;float4 tangent:TEXCOORD3;float fog:TEXCOORD4;};
+V vert(A a){V o;o.world=TransformObjectToWorld(a.p.xyz);o.p=TransformWorldToHClip(o.world);o.n=TransformObjectToWorldNormal(a.n);o.tangent=float4(TransformObjectToWorldDir(a.tangent.xyz),a.tangent.w*GetOddNegativeScale());o.uv=TRANSFORM_TEX(a.uv,_BaseMap);o.fog=ComputeFogFactor(o.p.z);return o;}
+float hash(float2 p){return frac(sin(dot(p,float2(127.1,311.7)))*43758.5453);}
+float noise(float2 p){float2 a=floor(p),f=frac(p);f=f*f*(3-2*f);return lerp(lerp(hash(a),hash(a+float2(1,0)),f.x),lerp(hash(a+float2(0,1)),hash(a+1),f.x),f.y);}
+half4 frag(V i):SV_Target{
+float3 n=normalize(i.n);float3 w=pow(abs(n),4);w/=max(.001,w.x+w.y+w.z);
+float3 tex=SAMPLE_TEXTURE2D(_BaseMap,sampler_BaseMap,i.uv).rgb;
+float3 tp=SAMPLE_TEXTURE2D(_BaseMap,sampler_BaseMap,i.world.zy*_Scale).rgb*w.x+SAMPLE_TEXTURE2D(_BaseMap,sampler_BaseMap,i.world.xz*_Scale).rgb*w.y+SAMPLE_TEXTURE2D(_BaseMap,sampler_BaseMap,i.world.xy*_Scale).rgb*w.z;
+tex=lerp(tex,tp,_Triplanar);float3 c=tex*_BaseColor.rgb;
+float patch=noise(i.world.xz*.52)+noise(i.world.xz*1.8)*.28;
+float moss=_Moss*smoothstep(.38,.77,patch)*smoothstep(.15,.80,n.y)*smoothstep(-.1,1.2,i.world.y);
+c=lerp(c,c*float3(.40,.59,.29),moss*.78);
+float wet=1-smoothstep(-.28,.42,i.world.y);c*=1-wet*.28;
+if(_Triplanar<.5){float3 nm=UnpackNormalScale(SAMPLE_TEXTURE2D(_BumpMap,sampler_BumpMap,i.uv),_BumpScale);float3 t=normalize(i.tangent.xyz);float3 b=cross(n,t)*i.tangent.w;n=normalize(t*nm.x+b*nm.y+n*nm.z);}
+InputData input=(InputData)0;input.positionWS=i.world;input.normalWS=n;input.viewDirectionWS=GetWorldSpaceNormalizeViewDir(i.world);input.shadowCoord=TransformWorldToShadowCoord(i.world);input.bakedGI=SampleSH(n);input.normalizedScreenSpaceUV=GetNormalizedScreenSpaceUV(i.p);input.shadowMask=half4(1,1,1,1);
+SurfaceData surface=(SurfaceData)0;surface.albedo=c;surface.specular=half3(.04,.04,.04);surface.smoothness=_Smoothness+wet*.22;surface.normalTS=half3(0,0,1);surface.occlusion=1;surface.alpha=1;
+half4 color=UniversalFragmentPBR(input,surface);if(i.world.y<-.3)color.rgb+=BayCaustics(i.world,GetMainLight().direction)*.35;color.rgb=MixFog(color.rgb,i.fog);return color;
+}
+ENDHLSL
+}
+UsePass "Universal Render Pipeline/Lit/ShadowCaster"
+UsePass "Universal Render Pipeline/Lit/DepthOnly"
+UsePass "Universal Render Pipeline/Lit/DepthNormals"
+}
+}

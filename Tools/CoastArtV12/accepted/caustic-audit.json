@@ -1,0 +1,47 @@
+{
+  "method": "periodic wave normals, forward light-density splatting",
+  "raySamples": 2359296,
+  "resolution": [
+    512,
+    512
+  ],
+  "tileable": true,
+  "waves": [
+    [
+      3,
+      2,
+      1,
+      0.24
+    ],
+    [
+      5,
+      -3,
+      0.62,
+      1.6
+    ],
+    [
+      2,
+      7,
+      0.45,
+      3.2
+    ],
+    [
+      8,
+      3,
+      0.28,
+      4.1
+    ],
+    [
+      7,
+      -6,
+      0.22,
+      2.0
+    ],
+    [
+      11,
+      5,
+      0.12,
+      5.2
+    ]
+  ]
+}

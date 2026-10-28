@@ -1,0 +1,8 @@
+{
+  "originalScriptAndShaderFilesCompared": 329,
+  "changedOriginalFiles": [],
+  "waterCoreSha256": "4a7fdfa9164a208a8136c192cb3284ea335d2b60e5ec03f7fe7a652ac02c015c",
+  "waterMatchesV12": true,
+  "v15ExecutablePresent": true,
+  "scope": "Old source files compared byte-for-byte with pre-v16 backup. New v16 source files and its isolated assets/scene were added; shared GraphicsSettings only gains included v16 shaders. No old executable rebuild claimed."
+}

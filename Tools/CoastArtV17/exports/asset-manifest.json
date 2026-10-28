@@ -1,0 +1,8 @@
+{
+  "triangles": 149281,
+  "batches": 10,
+  "glbVerticalOffsetM": 1.814394235610962,
+  "sourceScope": "Land rocks,4 contact lips,43 foundation stones only; lighthouse full mesh and exact weathering remain in Unity scene.",
+  "mapping": "Master Blender(-UnityX,-UnityZ,UnityY); GLB Y up with vertical offset; JSON exact Unity vertices.",
+  "materialScope": "GLB geometry/partial material preview; new PBR material logic lives in isolated Unity shaders."
+}

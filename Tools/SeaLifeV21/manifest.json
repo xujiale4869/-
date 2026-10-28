@@ -1,0 +1,171 @@
+{
+  "schema": 1,
+  "scope": "Only new v21 source, material, font and scene inputs; existing v20 dependencies required",
+  "files": [
+    {
+      "path": "Assets/Deepsea/Resources/SeaLifeV21.meta",
+      "sha256": "6A0AFF8628C0F117F54415AA57D381559E156F1B5E307955036366AF972B9A31",
+      "bytes": 172
+    },
+    {
+      "path": "Assets/Deepsea/Resources/SeaLifeV21/Glass.mat",
+      "sha256": "7FF48950B7BA28970D3B38FF0400A3A6D4486F39151F4601842874355AFC3D3B",
+      "bytes": 782
+    },
+    {
+      "path": "Assets/Deepsea/Resources/SeaLifeV21/Glass.mat.meta",
+      "sha256": "C1977E9BDED9DFBEE519672E8474E564C86479CC72CC7B772FE715FD26D77DB5",
+      "bytes": 188
+    },
+    {
+      "path": "Assets/Deepsea/Resources/SeaLifeV21/Noto-OFL.txt",
+      "sha256": "6B67654D28CB03A295C7CDEC640DDAA189C252D3A81664E67E3F36FE9CB7475F",
+      "bytes": 4417
+    },
+    {
+      "path": "Assets/Deepsea/Resources/SeaLifeV21/Noto-OFL.txt.meta",
+      "sha256": "8F674DE594DB3F140F182091D07CC9BAFDE2FA28F4C969A44E7A511F21B594FC",
+      "bytes": 158
+    },
+    {
+      "path": "Assets/Deepsea/Resources/SeaLifeV21/SeaLifeChinese.asset",
+      "sha256": "1B480C460E39BF5A76BC815CEFA0EEF8901AC4F41C0F39406952C3D743000DF9",
+      "bytes": 8628870
+    },
+    {
+      "path": "Assets/Deepsea/Resources/SeaLifeV21/SeaLifeChinese.asset.meta",
+      "sha256": "E824B19E43A08B49F12F074E86CD42EB264FB125CE9C10A7AF60F89EF28C72A6",
+      "bytes": 189
+    },
+    {
+      "path": "Assets/Deepsea/Resources/SeaLifeV21/SeaLifeNotoSansSC.otf",
+      "sha256": "A2B93E6C2DB05D6BBBF6F27D413EC73269735B7B679019C8A5AA9670FF0FFBF2",
+      "bytes": 8482020
+    },
+    {
+      "path": "Assets/Deepsea/Resources/SeaLifeV21/SeaLifeNotoSansSC.otf.meta",
+      "sha256": "548CB3CA969649BCF9F4C939A65B5C213FC68B07A4F975138294BA4440954912",
+      "bytes": 477
+    },
+    {
+      "path": "Assets/Deepsea/Resources/SeaLifeV21/Surface.mat",
+      "sha256": "4805FDAD49E727C39A673CDC09ECFE0F6504BDBF94CB077F2CE7F7ADA78AD4FA",
+      "bytes": 3598
+    },
+    {
+      "path": "Assets/Deepsea/Resources/SeaLifeV21/Surface.mat.meta",
+      "sha256": "8E56DCE18D02F8464CF647BBC489876C72615E4D9DDE670D8D7B620EC00B97B7",
+      "bytes": 188
+    },
+    {
+      "path": "Assets/Deepsea/Scenes/CoastSeaLife.unity",
+      "sha256": "A52979F1680EA8CA0D67BF8012491DEBD4BFF605E28AF7209EA479B34CBECB76",
+      "bytes": 267873
+    },
+    {
+      "path": "Assets/Deepsea/Scenes/CoastSeaLife.unity.meta",
+      "sha256": "850EF5FDE59FDF43336AA71904F244068C9AE94E3825C2057A12E2F3A064651F",
+      "bytes": 155
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Editor/SeaLifeV21.meta",
+      "sha256": "43AE3B7051A58FFC26649AFF8E4F1433BD3485D62A471B006A1138CF6A290DF5",
+      "bytes": 172
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Editor/SeaLifeV21/SeaLifeBuild.cs",
+      "sha256": "FFB57B8982DDFF86900949557E359A4E1EF85DCA3527CCD7AAC10EA67344EF3A",
+      "bytes": 5563
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Editor/SeaLifeV21/SeaLifeBuild.cs.meta",
+      "sha256": "5FA88966635D68600B7749DCEA199E0B95E1C6827F496B7BA805571167115127",
+      "bytes": 243
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Runtime/SeaLifeV21.meta",
+      "sha256": "AE304B0F80D62EF44AC0C5AA4F2180C391F86C2A009BEFDEEF16779654D9929A",
+      "bytes": 172
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeActivities.cs",
+      "sha256": "A1236F2ABA49ACA8ABFE380C37DF0442D96D385B939D13FDAB006228B1B9E42A",
+      "bytes": 14605
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeActivities.cs.meta",
+      "sha256": "51769DD46A17F6FA4E309E85A0FE95099808A5F4A3120CCD977AC3D152E31539",
+      "bytes": 243
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeAquarium.cs",
+      "sha256": "49490AE84A5D1D0F272DB455720699529F243DEAFEC6657FC8629506185CAF70",
+      "bytes": 8565
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeAquarium.cs.meta",
+      "sha256": "FEB802D5D32D7384EB4C7D049804E3ECAF328EF8BB062613111BD220F545246E",
+      "bytes": 243
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeGlass.shader",
+      "sha256": "2DFD937D2341EBCF879066052C9C6BADE06645A6F41995CBF8FBEEDABE34B85F",
+      "bytes": 1093
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeGlass.shader.meta",
+      "sha256": "C89712FE95B50BF2E1719B0A3EE539D950B18BD0745AE179FE484032B901F2DD",
+      "bytes": 204
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeReview.cs",
+      "sha256": "C90A40CEC48DEE1C5170816A77DAEADDDEF478B6442D411A47BE620E59E86024",
+      "bytes": 9599
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeReview.cs.meta",
+      "sha256": "2953FFB0ABCD5512F3C2E471AD005D4B4B8C410E3C5CA1B1B5B80B3714CBE1F2",
+      "bytes": 243
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeRuntime.cs",
+      "sha256": "82AEB756C8354511F7ED576F5139FF7BB1D12F45C3E0FF65E8B2E212B431A672",
+      "bytes": 17753
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeRuntime.cs.meta",
+      "sha256": "56643EC3A108DDB1AB41507E55935DE89B97586B6A0FF07BAA98E3F46A5C5EA2",
+      "bytes": 243
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeState.cs",
+      "sha256": "63209D5CA88ED43DD5405C9755B92ABAC0896CC0411B4318C5A67CD129CE7543",
+      "bytes": 2591
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeState.cs.meta",
+      "sha256": "1E24F76912DFEA53CFEA872F7A2BEE76F351CBA408DB3C3DCAB37F80B888B108",
+      "bytes": 243
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeSurface.shader",
+      "sha256": "4EA3264CDA4A6EBBBD283A4AFFF548B038660629E5A987E8A565338657DB7C57",
+      "bytes": 3574
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeSurface.shader.meta",
+      "sha256": "87CB3BB34CB749BAD44A4D4722F5B5B27F24608E5696501BD9683143BDF30772",
+      "bytes": 204
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeUI.cs",
+      "sha256": "3DA82917579F65B2702DECEA13AE0D77069B5DB1E6C84ABE8D449D2F713A38DE",
+      "bytes": 11907
+    },
+    {
+      "path": "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeUI.cs.meta",
+      "sha256": "AD11C3B28CA4389A66840C2D96DF5D9FB54F61C80CFA2632573957F75251BF72",
+      "bytes": 243
+    }
+  ]
+}

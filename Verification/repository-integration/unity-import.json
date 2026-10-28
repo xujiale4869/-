@@ -1,0 +1,37 @@
+{
+    "passed": true,
+    "unityVersion": "2022.3.62f3c1",
+    "scene": "Assets/Deepsea/Scenes/CoastSeaLifeWaterV22.unity",
+    "checks": [
+        "Unity resolves com.z3lx.acg-importer: True",
+        "Unity resolves com.whinarn.unitymeshsimplifier: True",
+        "Unity resolves com.cqf.urpvolumetricfog: True",
+        "Unity resolves com.unity.render-pipelines.universal: True",
+        "Present: Assets/Deepsea/ThirdParty/BoatAttack/GerstnerWaves.hlsl: True",
+        "Present: Assets/Deepsea/Shaders/Includes/TiledCurrent.hlsl: True",
+        "Present: Assets/Deepsea/ThirdParty/BoatAttack/LICENSE.md: True",
+        "Present: Assets/Deepsea/ThirdParty/NVJOB/NVJOB-LICENSE.txt: True",
+        "Present: Assets/Deepsea/ThirdParty/FastNoiseLite/LICENSE.txt: True",
+        "Present: Assets/Deepsea/Resources/UI/Lucide-LICENSE.txt: True",
+        "Present: Tools/AgentSkillSources/sources.lock.json: True",
+        "Present: .gitmodules: True",
+        "Present: .gitattributes: True",
+        "Current water mesh imports with real vertex data: True",
+        "Current water material and shader resolve: True",
+        "Current water shader has no compiler errors: True",
+        "Current life scene opens: True",
+        "Current scene retains life runtime: True",
+        "Current scene retains water runtime: True",
+        "Old gameplay chain is not reintroduced: True",
+        "Scene asset dependency graph resolves: True"
+    ],
+    "failures": [],
+    "packages": [
+        "com.z3lx.acg-importer@0.1.0 (Local)",
+        "com.whinarn.unitymeshsimplifier@3.1.1 (Local)",
+        "com.cqf.urpvolumetricfog@0.5.91 (Local)",
+        "com.unity.render-pipelines.universal@14.0.12 (BuiltIn)"
+    ],
+    "sceneDependencies": 221,
+    "scope": "Repository dependency restoration/import check. Does not claim a new gameplay build or manual playtest."
+}

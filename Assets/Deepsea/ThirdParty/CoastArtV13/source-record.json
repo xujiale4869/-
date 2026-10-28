@@ -1,0 +1,33 @@
+{
+  "inferred": "Shape and dimensions from a single perspective reference; original gameplay physics preserved",
+  "tools": [
+    {
+      "path": "CSharp/FastNoiseLite.cs",
+      "name": "FastNoiseLite",
+      "commit": "785f37a9ad76e283586a379675085f2063ae03f7",
+      "license": "MIT",
+      "use": "Original continuous reef bathymetry; unmodified C# source",
+      "repository": "https://github.com/Auburn/FastNoiseLite",
+      "integration": "Reuses existing same-ref FastNoiseLite 1.1.1; no duplicate class installed",
+      "existingSourceSha256": "6ea912aa6c50a25c982b9ead54317169fedeee55298517ea75d49e364557d13b"
+    },
+    {
+      "path": "src/my-generator/CoralGenerator.ts",
+      "name": "Procedural Coral Generator",
+      "commit": "25e89f97c2f9639b7a3de60406d2d293058857d2",
+      "license": "MIT",
+      "use": "Space-colonization growth adapted to Blender Python; original mesh construction and fixed local seeds",
+      "repository": "https://github.com/NejcHirci/procedural-corals"
+    }
+  ],
+  "date": "2026-10-23",
+  "runtime": {
+    "shelfTriangles": 35044,
+    "coralInstances": 512,
+    "coralTriangles": 570152,
+    "fish": 196,
+    "deepShoal": 108,
+    "visualRouteSamples": 31360,
+    "visualRouteObstructions": 0
+  }
+}

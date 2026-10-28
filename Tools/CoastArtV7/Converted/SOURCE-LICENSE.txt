@@ -1,0 +1,4 @@
+Rowing boat, Innerscene original model. CC0 public domain.
+https://www.innerscene.com/tools/library/3d-parts/rowing-boat-d14b7296
+https://creativecommons.org/publicdomain/zero/1.0/
+Original UVs and embedded textures retained. Geometry fitted to the accepted boat visual envelope.

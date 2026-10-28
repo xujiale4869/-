@@ -1,0 +1,10 @@
+{
+  "unityOrigin": [
+    72,
+    -21.563373565673828,
+    96
+  ],
+  "mapping": "Blender=(Unity.x-72,96-Unity.z,Unity.y-floor)",
+  "scope": "render geometry; shader must be rebuilt in another engine; original collision terrain unchanged",
+  "triangles": 36292
+}

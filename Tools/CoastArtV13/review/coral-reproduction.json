@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "scope": "Blender rerun of the v13 seeded coral generator reproduces the accepted JSON bytes on this host",
+  "sha256": "30177105abcc5ab99d0bb49ee4713a57d41b282626178099340341f89b5d8d36"
+}

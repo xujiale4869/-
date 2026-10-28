@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "failure": "",
+  "resolution": "1920x1080",
+  "benchmarkRenderScale": 1.0,
+  "fps": 76.2781621755727,
+  "p95Ms": 14.65519999999998,
+  "p99Ms": 15.492799999996976,
+  "foundationTriangles": 19320,
+  "foundationMaterials": 8,
+  "foundationColliders": 0,
+  "shelfChunks": 8,
+  "shelfTriangles": 36292,
+  "shelfVisualRouteSamples": 31360,
+  "shelfVisualObstructions": 0,
+  "ecologyFish": 196,
+  "deepShoalFish": 108,
+  "walkingPoints": 12,
+  "sailingDistance": 15.703322410583496,
+  "reefCorals": 511,
+  "ecologyKelp": 108,
+  "kelpRootGap": 0.06655740737915039,
+  "kelpRootSink": 0.19692063331604004,
+  "waterCoreRestored": true,
+  "lighthouseValidation": {
+    "fail": 0,
+    "warn": 0
+  },
+  "qualityStatus": "Below supplied concept; no numerical aesthetic certification"
+}

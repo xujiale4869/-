@@ -1,0 +1,10 @@
+{
+  "triangles": 738144,
+  "batches": 63,
+  "corals": 311,
+  "kelp": 63,
+  "mapping": "Unity(x,y,z) -> Blender(-x,-z,y), winding reversed at each boundary",
+  "source": "01_scene.py + 02_life.py; original hand-directed layout and shapes; reference unseen geometry inferred",
+  "texture": "CoastalPine-Atlas.png, generated via native imagegen, RGBA; sRGB colour + alpha clip; not a scene background",
+  "gameplay": "Independent visual sample; old v15/gameplay/physics not changed"
+}

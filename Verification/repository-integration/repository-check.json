@@ -1,0 +1,237 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "label": "Local Unity package exists: com.z3lx.acg-importer",
+      "passed": true
+    },
+    {
+      "label": "Local Unity package exists: com.cqf.urpvolumetricfog",
+      "passed": true
+    },
+    {
+      "label": "Local Unity package exists: com.whinarn.unitymeshsimplifier",
+      "passed": true
+    },
+    {
+      "label": "Fixed registered submodule: Tools/CoastSlice/UnityMeshSimplifier",
+      "passed": true
+    },
+    {
+      "label": "Installed checkout matches: Tools/CoastSlice/UnityMeshSimplifier",
+      "passed": true
+    },
+    {
+      "label": "Fixed registered submodule: Tools/StyleCandidates/ACGImporter",
+      "passed": true
+    },
+    {
+      "label": "Installed checkout matches: Tools/StyleCandidates/ACGImporter",
+      "passed": true
+    },
+    {
+      "label": "Fixed registered submodule: Tools/StyleCandidates/StylizedTrees",
+      "passed": true
+    },
+    {
+      "label": "Installed checkout matches: Tools/StyleCandidates/StylizedTrees",
+      "passed": true
+    },
+    {
+      "label": "Fixed registered submodule: Tools/StyleCandidates/VertexBlend",
+      "passed": true
+    },
+    {
+      "label": "Installed checkout matches: Tools/StyleCandidates/VertexBlend",
+      "passed": true
+    },
+    {
+      "label": "Fixed registered submodule: Tools/StyleCandidates/VolumetricLight",
+      "passed": true
+    },
+    {
+      "label": "Installed checkout matches: Tools/StyleCandidates/VolumetricLight",
+      "passed": true
+    },
+    {
+      "label": "No unregistered embedded repositories",
+      "passed": true
+    },
+    {
+      "label": "Dependency source retained: BoatAttack water",
+      "passed": true
+    },
+    {
+      "label": "Actual integration path exists: BoatAttack water",
+      "passed": true
+    },
+    {
+      "label": "Dependency source retained: Tiled Directional Flow",
+      "passed": true
+    },
+    {
+      "label": "Actual integration path exists: Tiled Directional Flow",
+      "passed": true
+    },
+    {
+      "label": "Dependency source retained: FastNoiseLite",
+      "passed": true
+    },
+    {
+      "label": "Actual integration path exists: FastNoiseLite",
+      "passed": true
+    },
+    {
+      "label": "Dependency source retained: NVJOB Boids",
+      "passed": true
+    },
+    {
+      "label": "Actual integration path exists: NVJOB Boids",
+      "passed": true
+    },
+    {
+      "label": "Dependency source retained: Lucide",
+      "passed": true
+    },
+    {
+      "label": "Actual integration path exists: Lucide",
+      "passed": true
+    },
+    {
+      "label": "Dependency source retained: ACG Importer",
+      "passed": true
+    },
+    {
+      "label": "Actual integration path exists: ACG Importer",
+      "passed": true
+    },
+    {
+      "label": "Dependency source retained: UnityMeshSimplifier",
+      "passed": true
+    },
+    {
+      "label": "Actual integration path exists: UnityMeshSimplifier",
+      "passed": true
+    },
+    {
+      "label": "Dependency source retained: VolumetricLight",
+      "passed": true
+    },
+    {
+      "label": "Actual integration path exists: VolumetricLight",
+      "passed": true
+    },
+    {
+      "label": "Dependency source retained: StylizedTrees",
+      "passed": true
+    },
+    {
+      "label": "Dependency source retained: Vertex Blend Triplanar",
+      "passed": true
+    },
+    {
+      "label": "Complete skill source snapshot: style-loop",
+      "passed": true
+    },
+    {
+      "label": "Skill entry retained: style-loop",
+      "passed": true
+    },
+    {
+      "label": "Skill snapshot file hashes match: style-loop",
+      "passed": true
+    },
+    {
+      "label": "Complete skill source snapshot: ai-game-art-pipeline",
+      "passed": true
+    },
+    {
+      "label": "Skill entry retained: ai-game-art-pipeline",
+      "passed": true
+    },
+    {
+      "label": "Skill snapshot file hashes match: ai-game-art-pipeline",
+      "passed": true
+    },
+    {
+      "label": "Complete skill source snapshot: blender-image-to-3d",
+      "passed": true
+    },
+    {
+      "label": "Skill entry retained: blender-image-to-3d",
+      "passed": true
+    },
+    {
+      "label": "Skill snapshot file hashes match: blender-image-to-3d",
+      "passed": true
+    },
+    {
+      "label": "Complete skill source snapshot: impeccable",
+      "passed": true
+    },
+    {
+      "label": "Skill entry retained: impeccable",
+      "passed": true
+    },
+    {
+      "label": "Skill snapshot file hashes match: impeccable",
+      "passed": true
+    },
+    {
+      "label": "Complete skill source snapshot: ui-ux-pro-max",
+      "passed": true
+    },
+    {
+      "label": "Skill entry retained: ui-ux-pro-max",
+      "passed": true
+    },
+    {
+      "label": "Skill snapshot file hashes match: ui-ux-pro-max",
+      "passed": true
+    },
+    {
+      "label": "Tracked in main repository: Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeRuntime.cs",
+      "passed": true
+    },
+    {
+      "label": "Tracked in main repository: Assets/Deepsea/Scripts/Runtime/SeaLifeWaterV22/SeaLifeWaterV22.cs",
+      "passed": true
+    },
+    {
+      "label": "Tracked in main repository: Assets/Deepsea/Scenes/CoastSeaLifeWaterV22.unity",
+      "passed": true
+    },
+    {
+      "label": "Tracked in main repository: Packages/manifest.json",
+      "passed": true
+    },
+    {
+      "label": "Tracked in main repository: ProjectSettings/ProjectVersion.txt",
+      "passed": true
+    },
+    {
+      "label": "Tracked in main repository: Tools/SeaLifeWaterV22/Rebuild-Water.ps1",
+      "passed": true
+    },
+    {
+      "label": "Tracked in main repository: Tools/AgentSkillSources/sources.lock.json",
+      "passed": true
+    },
+    {
+      "label": "Tracked in main repository: .gitmodules",
+      "passed": true
+    },
+    {
+      "label": "Tracked in main repository: .gitattributes",
+      "passed": true
+    },
+    {
+      "label": "Large assets are LFS pointers rather than oversized Git blobs",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "scope": "Repository restoration and dependency evidence; not new gameplay validation",
+  "trackedEntries": 3865,
+  "largestGitBlobBytes": 24102265
+}
