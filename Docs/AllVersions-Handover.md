@@ -31,5 +31,4 @@ Library、Temp、Builds 与独立可执行程序留在本地，按用户给定 U
 已检查 Force Text；主工程 Visible Meta Files 已设置。没有批量重命名原 Deepsea 脚本或重做场景。
 
 ## 云端状态
-本机无 gh CLI，仓库无远程地址；连接的 GitHub 插件未列出可用仓库，也没有创建仓库工具。
-本地 Git 提交不等于 GitHub 上传。需要提供可写的目标仓库地址后才能完成远程绑定和推送。
+用户已创建私有仓库 https://github.com/xujiale4869/- ，origin 已绑定，本机认证已连通。主分支及四个归档分支正在上传；实际完成状态以 GitHub 分支和 git ls-remote 核对结果为准。取回方法见根目录 GITHUB_HANDOVER.md。
