@@ -68,6 +68,12 @@ Shader "Deepsea/SeaLifeNavigationV23"
  // Broad, restrained sun reflection; no random bright microfacet cells.
  float highlight=pow(saturate(dot(n,normalize(sun.direction+v))),48);
  c+=sun.color*highlight*.16*sun.shadowAttenuation*_CoastWaterDetails;
+ // Coherent crest shading follows the displaced mesh, so motion reads from the overhead camera.
+ float crest=smoothstep(-.035,.09,i.world.y+.22);
+ c*=1+(crest-.5)*.045*smoothstep(.3,1.4,thickness);
+ float flowTrace=pow(saturate(.5+.5*sin(p.x*.92+p.y*.46-t*1.8+.35*sin(p.y*.65))),18);
+ flowTrace*=.5+.5*sin(p.y*.48-p.x*.21+t*.22);
+ c+=half3(.003,.006,.007)*flowTrace*smoothstep(.3,1.4,thickness);
  // Slow coherent reflection bands make movement readable without whitening the bay.
  float band=.5+.5*sin(p.x*.59+p.y*.30-t*1.25);
  c+=half3(.003,.006,.007)*(band-.5)*smoothstep(.25,1.2,thickness);

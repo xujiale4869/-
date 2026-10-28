@@ -1,0 +1,8 @@
+# Third-party sources used in v23
+
+- Unity-Technologies/boat-attack-water: commit 45d6e8c52a9f615fd6b83a91cdd0e9fda9ea86d3, Runtime/Shaders/GerstnerWaves.hlsl (blob 019430e01b0018bb429f7275d501b40aea706b50). Unity Companion License. The directional phase, wavelength-dependent angular frequency and horizontal/vertical displacement are ported into WaterV23Waves.hlsl and NavigationWaveV23.cs. Replaced package globals/structured buffers with three fixed gentle waves, added inverse world-coordinate queries and explicit pause time. No Boat Attack meshes, textures, packages or renderer features imported.
+  https://github.com/Unity-Technologies/boat-attack-water/tree/45d6e8c52a9f615fd6b83a91cdd0e9fda9ea86d3
+- Habrador/Unity-Boat-physics-Tutorial: commit 29f8c8d531e34062aea66bbc2d0627696b68b0bf, Assets/Scripts/Boat/Physics/BoatPhysicsMath.cs (blob 077ef04140a01dbc9819ef8088971266ebab9fb4). MIT, Copyright (c) 2020 Erik Nordeus. ResistanceCoefficient and the viscous resistance equation are adapted into NavigationResistanceV23. Simplified to a horizontal hull, added zero-speed/finite guards and tuned effective wetted area for the existing mass. The acceleration, braking, rudder smoothing, bank, collision hull and bounded wakes are local code. Full triangular submerged-mesh buoyancy, sample scenes and debug dependencies were not imported.
+  https://github.com/Habrador/Unity-Boat-physics-Tutorial/tree/29f8c8d531e34062aea66bbc2d0627696b68b0bf
+
+Upstream source copies use .txt extensions to avoid compiling their unrelated sample types. Licenses and source notices ship beside the build in Licenses/SeaLifeNavigationV23.

@@ -1,4 +1,4 @@
-# 深海灯塔当前工程
+﻿# 深海灯塔当前工程
 
 原可玩版本仍为 v15；最新独立美术样板为 v20 局部岸岩与水面碎光，见 Docs/岸岩精修-v20.md，输出 Builds/CoastArtV20/MistCape-FineShore.exe。v19与更早版本均保留，以下历史记录仅供追溯。
 
@@ -122,3 +122,17 @@ Tools/AgentSkillSources保存五个已有美术/UI工具的185个文件，来源
 本轮仓库检查57项通过，Unity依赖检查21项通过、当前v22场景221项引用可解析。本机从提交435e3be克隆主仓库、恢复五个子仓库与LFS、核对源码和工具快照通过；证据Verification/repository-integration/。这不代表新增船控/水面功能或v23实机验收。v23同时在制作，整理期间出现的后续改动须按git status另行核对，不能当成已验收稳定版。
 
 远端尚未配置，GitHub推送未完成；需要明确目标仓库及可写连接后再推送，不能把本地提交称为GitHub已保存。详情Docs/GitHub内容接入-20261028.md。新增整理脚本是本轮维护入口，日常只读检查用Tools/RepositoryIntegration/verify_repository.py；不要反复执行一次性导入脚本覆盖档案。
+
+## 2026-10-28 v23：GitHub波浪与惯性船控
+用户授权查找GitHub水面流动和船控实现并直接应用，不兼容部分自行实现。已在v22基线接入Boat Attack Gerstner公式与Habrador水阻公式，固定提交、原始源码及许可见Tools/SeaLifeNavigationV23/ThirdParty。UPM/URP版本未改；推进、制动、舵向平滑、转向惯性、随波船身与历史尾迹为适配实现。
+最新报告C:/Users/许嘉乐/Documents/ChatGPT/深海灯塔/art-v23/reference-analysis.md。桌面“深海灯塔-流动水面与船控-v23”和“深海灯塔-v23航行演示”。程序Builds/SeaLifeNavigationV23/Guichao-SeaNavigation.exe；场景CoastSeaLifeNavigationV23.unity；构建Deepsea.Editor.SeaLifeNavigationBuildV23.Build。原v22程序保留，产品名/存档沿用v21。W推进、松键滑行、S制动倒车、A/D平滑转向；F7为v22水材质/原推进算法对照，共享新碰撞/尾迹/视觉层，不是完整旧版二进制还原。
+最终Verification/sea-navigation-v23-review03，46项自动检查通过，运行0错误0警告；1080p锁60固定600帧帧率和P95见最终报告。实际引擎144帧/12fps演示，不是实时性能证据。57项旧文件清单中，仅SeaLifeRuntime.cs增加一处FixedUpdate路由，其余56哈希一致；不是全工程所有资产哈希声明。build-04成功，有20项构建警告，不报全工程无警告。工具Rebuild-Navigation.ps1默认只核对冻结输入，不自动覆盖；accepted依赖旧环境，非全工程备份。显式Prepare会从v22重新生成v23场景。
+已测人工测试障碍阻挡与倒退脱离，没有全海湾浅水逐段验收；UI、生态群落与钓鱼人物动作未重做，没有完整人工钓鱼/水族馆回归或用户已认可美术的声明。
+
+## 2026-10-28 v24：海面层次与性能样板
+用户明确否定v23的波浪滚动感、海面/水下层次与性能。本轮独立v24样板以海面为主、浅水隐现为目标，增加方向性滚动波、深度/朝向/浪峰控制的可见度、青蓝反光。旧美术/干净绿色海带保留，用户尚未评价本轮效果；不将检查通过当作美术认可。
+桌面“深海灯塔-海面层次与性能-v24”和“深海灯塔-v24海浪演示”。报告C:/Users/许嘉乐/Documents/ChatGPT/深海灯塔/art-v24/reference-analysis.md；程序Builds/SeaSurfaceV24/Guichao-SeaSurface.exe；场景CoastSeaSurfaceV24.unity；默认构建Deepsea.Editor.SeaSurfaceBuildV24.Build。F7对照水面，F9帧率。正常产品名/存档沿用v21。
+实际取消限帧，原v23状态同镜头1080p58.53–65.03FPS；v24最终147.55–148.92FPS，主画面renderScale=1。FXAA替4倍MSAA、半分辨率折射颜色副本、水下细节分级和单次接触阴影滤波。保留阴影与原AO采样精度/强度；画面存在抗锯齿和水下细节取舍。61项原输入清单只允许v23主类两个可选钩子变化，其余60项哈希一致；不是全工程哈希声明。
+4K窗口请求被限制为2880x1800，采用3840x2160离屏场景加本机窗口呈现，B10G11R11_UFloatPack32、renderScale=1；最终约56.42FPS/P95 19.35ms，未达到稳定60或4K高刷，不称为4K显示器原生测试。最终证据Verification/sea-surface-v24-review05和sea-surface-v24-4k-review05；32项1080p检查通过，两次运行0错误0警告，build-05成功但仍有历史构建警告。
+视频8秒240张1080p引擎帧按30fps固定步长录制，交付缩为720p；不是实时录屏或性能证据。测试使用唯一临时存档。未做全海湾浅水/全地图长期性能、完整人工钓鱼/水族馆回归，UI/生态/钓鱼人物动作未重做。
+新增四份水下材质shader与运行时克隆，原材质/shader不改；0.25–0.85m水深渐变降低法线/遮罩/BRDF细节，岸上及水下相机保留完整路径。新增源码/Shader/资源在SeaSurfaceV24目录；v23主类只加波形采样和F7两个可选钩子，备份Tools/SeaSurfaceV24/Before/SeaLifeNavigationV23.cs。构建使用已验证Unity方法，冻结清单用于核对，不自动恢复覆盖；显式Prepare/TuneAndBuild/PrepareBudgetAndBuild属于生成步骤，会覆盖对应v24资源。accepted/源码包依赖既有v23环境，并非完整工程。

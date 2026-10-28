@@ -1,0 +1,266 @@
+﻿[
+    {
+        "path":  "Assets/Deepsea/Resources/SeaSurfaceV24.meta",
+        "sha256":  "81F13DFAA0835596EA3F22CF547F4198AC865A38F9022067D3D4EEF91C1FD40F"
+    },
+    {
+        "path":  "Assets/Deepsea/Resources/SeaSurfaceV24/BudgetCoastFoundation.mat",
+        "sha256":  "11A5AC204F6A0E3BA8EC141F0AD9DDEEAEB873720758F59F650C2DF6E1B1AC15"
+    },
+    {
+        "path":  "Assets/Deepsea/Resources/SeaSurfaceV24/BudgetCoastFoundation.mat.meta",
+        "sha256":  "10C069CAAFFC903FAEE6A12F65C9B987C1BA239B983B3B4F71421DA77E0D1B70"
+    },
+    {
+        "path":  "Assets/Deepsea/Resources/SeaSurfaceV24/BudgetCoastMapleSurface.mat",
+        "sha256":  "95ECE56EEB38EED16715D62F09B1779DCDC9CCBDA5DBF1811565A982DA11779B"
+    },
+    {
+        "path":  "Assets/Deepsea/Resources/SeaSurfaceV24/BudgetCoastMapleSurface.mat.meta",
+        "sha256":  "60EFDD22DE0BE738EB6C2B4C0671C4E74D6651DEC1D18D8A7D8C599FB6311D7F"
+    },
+    {
+        "path":  "Assets/Deepsea/Resources/SeaSurfaceV24/BudgetCoastShelfLit.mat",
+        "sha256":  "0A742BDD939E413E0A3F873B1D50E98F1BAD28E12F930667EF9D832284118517"
+    },
+    {
+        "path":  "Assets/Deepsea/Resources/SeaSurfaceV24/BudgetCoastShelfLit.mat.meta",
+        "sha256":  "06E05D1387E5A36EBD8C9EFD750CA39359262D771BD5AB6692226794BED15715"
+    },
+    {
+        "path":  "Assets/Deepsea/Resources/SeaSurfaceV24/BudgetCoastShowcaseSurface.mat",
+        "sha256":  "63FF31FF4FA26693DA6C738BC75857E3F137B1BDFC0B0A99C361686465CF6A0E"
+    },
+    {
+        "path":  "Assets/Deepsea/Resources/SeaSurfaceV24/BudgetCoastShowcaseSurface.mat.meta",
+        "sha256":  "E66E4E91D34A4D6BBA0E4898AC54EBAE3BBE1734C579A65C7CCECD76501CE70A"
+    },
+    {
+        "path":  "Assets/Deepsea/Resources/SeaSurfaceV24/Pipeline.asset",
+        "sha256":  "E721C7CE5A0F865259E31F686196E6AFAC7D750E98C7B739AD144C18CCAC71F9"
+    },
+    {
+        "path":  "Assets/Deepsea/Resources/SeaSurfaceV24/Pipeline.asset.meta",
+        "sha256":  "29277A5EAEA6A027DF153A07CC9A748E580005110C493410BF2377BF60D3F433"
+    },
+    {
+        "path":  "Assets/Deepsea/Resources/SeaSurfaceV24/PipelineMSAA2.asset",
+        "sha256":  "0864CF7A02EEB72F896C5640BB7B97155B2E28BADD36F8F744ED194D263A438E"
+    },
+    {
+        "path":  "Assets/Deepsea/Resources/SeaSurfaceV24/PipelineMSAA2.asset.meta",
+        "sha256":  "8DBAA0BD2CFD9CA3314E132851B4B111640D31C6F56B1E5CD6DC9D0310ABB0CF"
+    },
+    {
+        "path":  "Assets/Deepsea/Resources/SeaSurfaceV24/Water.mat",
+        "sha256":  "FC5E5FC372311ABCC69E35C8219CEEBDEAA7BFB2B1288D34233E04E0D32FDE52"
+    },
+    {
+        "path":  "Assets/Deepsea/Resources/SeaSurfaceV24/Water.mat.meta",
+        "sha256":  "FACA9A4A685F97A8B3DE2D177A29BFDB3B9746E68B5D536A3540DA78CDE32670"
+    },
+    {
+        "path":  "Assets/Deepsea/Scenes/CoastSeaSurfaceV24.unity",
+        "sha256":  "544340DC4ED7B2FCC6F4543B7106AA5403D11EADC14B6497B2EFDB12FC2F1107"
+    },
+    {
+        "path":  "Assets/Deepsea/Scenes/CoastSeaSurfaceV24.unity.meta",
+        "sha256":  "DD466AC019C38AFA4B9F44B5B044E1CBD1F5DD91785A76427D701F67F52D4E97"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Editor/SeaSurfaceV24.meta",
+        "sha256":  "BA297C5175B8AFC74ECC792AF13BD7CB183A91A01C911AF03EAC3D5C0A79001C"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Editor/SeaSurfaceV24/SeaSurfaceBuildV24.cs",
+        "sha256":  "F7CBEAFC96B399E6517E659E30FE3D6A7692C827C5C0E10D93889A7925E4194C"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Editor/SeaSurfaceV24/SeaSurfaceBuildV24.cs.meta",
+        "sha256":  "3139653106CFE6C00DD8FDE9A73C52F58FEEFF5CC9BE3DA3FF6E9AF2841796E4"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeNavigationV23/SeaLifeNavigationV23.cs",
+        "sha256":  "356B1C42F00747FBED3F32721E1386FF8759F44C307A178BCE202BDBD681E9DA"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeNavigationV23/SeaLifeNavigationV23.cs.meta",
+        "sha256":  "9C05DAE231AE9341335E54FB5F554D75B4EA9B5E8D3A3FA4F82311FF5503C109"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24.meta",
+        "sha256":  "E3C7F44F6022B32C9978C071B28B7B0283FE7F5D7AC521D6E056AA6AEAE2B71C"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/OceanWaveV24.cs",
+        "sha256":  "AA2F2606ABEE74464BB51E7ABCEC974B3FAA1034A5E41463E91BE8DF191F7011"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/OceanWaveV24.cs.meta",
+        "sha256":  "55640E416284AB3D27BB06BA17EEB60B13564D5C1B31C55DDC0D07F964585E0B"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaAmbientBudgetV24.cs",
+        "sha256":  "6CC4FB409372D1FA31B320F50D715652B5E27D21F5A3DB31493741284AB87C4A"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaAmbientBudgetV24.cs.meta",
+        "sha256":  "80598EFAFCD73FBFD203CB1105DD887E57ABD39D194205440D40ECE505690225"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaDepthBudgetV24.cs",
+        "sha256":  "DFA912BDE74EF30EB68BA8B9C7E901D6D2418541F90BB44765416497BB3A2107"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaDepthBudgetV24.cs.meta",
+        "sha256":  "BE5F8CCE3F460C1831E5C00520230D5EC215BEE89F86C7982032D74C329F7089"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaFrameDescriptorV24.cs",
+        "sha256":  "520D3DC6A15FA341F64DB44F16C795ED4B58E63C3DB34E0C6D7E01BCD18C0DD0"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaFrameDescriptorV24.cs.meta",
+        "sha256":  "03231DD65DB073F6C0A8F56E25781BD27E3F060A44D42CAECE8146CBC6AA6156"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaSurfaceReviewV24.cs",
+        "sha256":  "864D8758682C623E802DA90463C0924A886A5940F8083D9D312EB74B200FA99B"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaSurfaceReviewV24.cs.meta",
+        "sha256":  "691467F5F722921744159ED9FB95B45456F072D75D32C9E8C950A404A9749332"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaSurfaceV24.cs",
+        "sha256":  "12CCCDB6746EFC1CAA4A67B773BE163F094BCC12634BB3C31CED17B85181304F"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaSurfaceV24.cs.meta",
+        "sha256":  "1C145319B102D9091DAD65CC26AD750F0870C85C2FC6AA710349C49B7BF36DA1"
+    },
+    {
+        "path":  "Assets/Deepsea/Shaders/SeaSurfaceV24.meta",
+        "sha256":  "40EAD5E6E5BE2B3EB1183E5C24F7F9D79DF7695E9DB8C1E2D862DF8BCB257E69"
+    },
+    {
+        "path":  "Assets/Deepsea/Shaders/SeaSurfaceV24/OceanV24Waves.hlsl",
+        "sha256":  "0792DCBEC640CBFA258E3649C2E108D81DCE5A0A4E0A1DE02B5E2A099DF40D98"
+    },
+    {
+        "path":  "Assets/Deepsea/Shaders/SeaSurfaceV24/OceanV24Waves.hlsl.meta",
+        "sha256":  "2BA420D6C41C8FE5CA81D41D63AC8DF6F6243AA6936892FF1F7C45722D461A69"
+    },
+    {
+        "path":  "Assets/Deepsea/Shaders/SeaSurfaceV24/SeaSurfaceV24.shader",
+        "sha256":  "A772E47F5B388EDD470736ABBADCB8AFD5ABA7DA3FE2E5051825C034D5EFFCC6"
+    },
+    {
+        "path":  "Assets/Deepsea/Shaders/SeaSurfaceV24/SeaSurfaceV24.shader.meta",
+        "sha256":  "08E076FB85453DF98DAB446273A2F309611D65CAA8FDC9EB6735A8FE326F946C"
+    },
+    {
+        "path":  "Assets/Deepsea/Shaders/SeaSurfaceV24/V24CoastFoundation.shader",
+        "sha256":  "E71BA9F160C8F66B31CB9F728F31C64C3FC071B59B85402AD8F79D03B06CBEEB"
+    },
+    {
+        "path":  "Assets/Deepsea/Shaders/SeaSurfaceV24/V24CoastFoundation.shader.meta",
+        "sha256":  "E6F5BDCDE0C0109D059337AE28E1DF9EEC7262FE78299747F27A384DD620E0B7"
+    },
+    {
+        "path":  "Assets/Deepsea/Shaders/SeaSurfaceV24/V24CoastMapleSurface.shader",
+        "sha256":  "9EF232E177563EAE5C43F7ACC5F9E7A0D262B558B6E9677C4FBFD0CC0C535C4F"
+    },
+    {
+        "path":  "Assets/Deepsea/Shaders/SeaSurfaceV24/V24CoastMapleSurface.shader.meta",
+        "sha256":  "8B2AC4B1E37BA26ADB9F21EA76EEDE3C0C3582EDAA62F286D2C83E2CEBB95961"
+    },
+    {
+        "path":  "Assets/Deepsea/Shaders/SeaSurfaceV24/V24CoastShelfLit.shader",
+        "sha256":  "A768707F47AEC9642CD66B95DB5056E267A344EA6726F0CD1126301BEEBEECF3"
+    },
+    {
+        "path":  "Assets/Deepsea/Shaders/SeaSurfaceV24/V24CoastShelfLit.shader.meta",
+        "sha256":  "B53AEECACB7B51564666E9EEFAA80A2D26D110F4097D809729A649A8E4AA7FDD"
+    },
+    {
+        "path":  "Assets/Deepsea/Shaders/SeaSurfaceV24/V24CoastShowcaseSurface.shader",
+        "sha256":  "4732A1829E76F8887262BE549B9527B129145AC0E2EC47AEE78F4CD8773DE6B4"
+    },
+    {
+        "path":  "Assets/Deepsea/Shaders/SeaSurfaceV24/V24CoastShowcaseSurface.shader.meta",
+        "sha256":  "29B909059193EA0424D49D2D191A7F6A4CD3669C59A5D4283F2F6BBEB4189062"
+    },
+    {
+        "path":  "Tools/SeaSurfaceV24/README.md",
+        "sha256":  "39164862AFB8DC196C777A5F23E43554738C875D612FAC0DC01CDEAF0C01821A"
+    },
+    {
+        "path":  "Tools/SeaSurfaceV24/reference-analysis.md",
+        "sha256":  "39972AB51C3BB58B87629688720B8FBB8F01B0EA3B9CAAFF3EFFF2B40FBDB6A6"
+    },
+    {
+        "path":  "Tools/SeaSurfaceV24/ThirdParty/font-provenance.json",
+        "sha256":  "1639F4219A2367E3BEE961E19FCD88516F9EC9C6CFC074C41418F3782268502A"
+    },
+    {
+        "path":  "Tools/SeaSurfaceV24/ThirdParty/Licenses/font-provenance.json",
+        "sha256":  "1639F4219A2367E3BEE961E19FCD88516F9EC9C6CFC074C41418F3782268502A"
+    },
+    {
+        "path":  "Tools/SeaSurfaceV24/ThirdParty/Licenses/Noto-OFL.txt",
+        "sha256":  "6B67654D28CB03A295C7CDEC640DDAA189C252D3A81664E67E3F36FE9CB7475F"
+    },
+    {
+        "path":  "Tools/SeaSurfaceV24/ThirdParty/Licenses/SeaLifeNavigationV23/BoatAttack/GerstnerWaves.hlsl.txt",
+        "sha256":  "542D363F6B51230DCD6F973607BC2428B60A3FA2F7DEE0447F1E8448A925FD94"
+    },
+    {
+        "path":  "Tools/SeaSurfaceV24/ThirdParty/Licenses/SeaLifeNavigationV23/BoatAttack/LICENSE.md",
+        "sha256":  "A5BDA865F1F85E813D22D4BD8534B4C30A8AE7A8BD7B6F15C38FEBD08E81A429"
+    },
+    {
+        "path":  "Tools/SeaSurfaceV24/ThirdParty/Licenses/SeaLifeNavigationV23/BoatAttack/Unity-Companion-License.txt",
+        "sha256":  "DCE87DEEE9904255160AA3BBBB7F886711747D8545B1D7875C83590666E69BFB"
+    },
+    {
+        "path":  "Tools/SeaSurfaceV24/ThirdParty/Licenses/SeaLifeNavigationV23/Habrador/BoatPhysicsMath.cs.txt",
+        "sha256":  "0EBD49BA220009E2BCA027B294BD9E08845E10DC65AD96572FBACD1834AEDC4C"
+    },
+    {
+        "path":  "Tools/SeaSurfaceV24/ThirdParty/Licenses/SeaLifeNavigationV23/Habrador/LICENSE",
+        "sha256":  "4BB5EE859D66367DC9240D4D40BDC19583A3009D926746AB55AC510FDBF92EDD"
+    },
+    {
+        "path":  "Tools/SeaSurfaceV24/ThirdParty/Licenses/SeaLifeNavigationV23/SOURCES.md",
+        "sha256":  "E4165C101490ABD6E80882B41277F3486A81D4D7677F1DC9C3AABF0CBC96D26D"
+    },
+    {
+        "path":  "Tools/SeaSurfaceV24/ThirdParty/Noto-OFL.txt",
+        "sha256":  "6B67654D28CB03A295C7CDEC640DDAA189C252D3A81664E67E3F36FE9CB7475F"
+    },
+    {
+        "path":  "Tools/SeaSurfaceV24/ThirdParty/SeaLifeNavigationV23/BoatAttack/GerstnerWaves.hlsl.txt",
+        "sha256":  "542D363F6B51230DCD6F973607BC2428B60A3FA2F7DEE0447F1E8448A925FD94"
+    },
+    {
+        "path":  "Tools/SeaSurfaceV24/ThirdParty/SeaLifeNavigationV23/BoatAttack/LICENSE.md",
+        "sha256":  "A5BDA865F1F85E813D22D4BD8534B4C30A8AE7A8BD7B6F15C38FEBD08E81A429"
+    },
+    {
+        "path":  "Tools/SeaSurfaceV24/ThirdParty/SeaLifeNavigationV23/BoatAttack/Unity-Companion-License.txt",
+        "sha256":  "DCE87DEEE9904255160AA3BBBB7F886711747D8545B1D7875C83590666E69BFB"
+    },
+    {
+        "path":  "Tools/SeaSurfaceV24/ThirdParty/SeaLifeNavigationV23/Habrador/BoatPhysicsMath.cs.txt",
+        "sha256":  "0EBD49BA220009E2BCA027B294BD9E08845E10DC65AD96572FBACD1834AEDC4C"
+    },
+    {
+        "path":  "Tools/SeaSurfaceV24/ThirdParty/SeaLifeNavigationV23/Habrador/LICENSE",
+        "sha256":  "4BB5EE859D66367DC9240D4D40BDC19583A3009D926746AB55AC510FDBF92EDD"
+    },
+    {
+        "path":  "Tools/SeaSurfaceV24/ThirdParty/SeaLifeNavigationV23/SOURCES.md",
+        "sha256":  "E4165C101490ABD6E80882B41277F3486A81D4D7677F1DC9C3AABF0CBC96D26D"
+    }
+]

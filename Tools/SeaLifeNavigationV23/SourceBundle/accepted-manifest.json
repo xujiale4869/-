@@ -1,0 +1,166 @@
+﻿[
+    {
+        "path":  "Assets/Deepsea/Resources/SeaLifeNavigationV23.meta",
+        "sha256":  "4AA883A3D7EB3AFCEDA017054C1D7A70CB0B7C8B6A61529DC46F07CDD2EDE6FF"
+    },
+    {
+        "path":  "Assets/Deepsea/Resources/SeaLifeNavigationV23/Wake.mat",
+        "sha256":  "69ADCA845EDE6BEE03A69A15E02EC865431CFA6F22365DD3655D9F293BFDE56D"
+    },
+    {
+        "path":  "Assets/Deepsea/Resources/SeaLifeNavigationV23/Wake.mat.meta",
+        "sha256":  "130921F2C6B7700BCCA046A581C99260EE81CBA468FDE1E6D8E7EACFD0D05E94"
+    },
+    {
+        "path":  "Assets/Deepsea/Resources/SeaLifeNavigationV23/Water.mat",
+        "sha256":  "CAD2EF85FBF966DE422C038AECCEC556E8184322A52615962B9ED66496C447BD"
+    },
+    {
+        "path":  "Assets/Deepsea/Resources/SeaLifeNavigationV23/Water.mat.meta",
+        "sha256":  "052D4EBB6739028B05504C19AD92F646F674EEC321752287CA1EAC0C92105667"
+    },
+    {
+        "path":  "Assets/Deepsea/Scenes/CoastSeaLifeNavigationV23.unity",
+        "sha256":  "43F607473E9561361315242695AA2082937E50511294089E60FAA656A5AAFF11"
+    },
+    {
+        "path":  "Assets/Deepsea/Scenes/CoastSeaLifeNavigationV23.unity.meta",
+        "sha256":  "EDEBCB84443DDC94569ED5A034317B86367176DDB096F46415A06567705C8E2F"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Editor/SeaLifeNavigationV23.meta",
+        "sha256":  "928E6C6C85E2EDA9223B480CFAECC5E8935D650DE1D6806DD45F3286EF52160A"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Editor/SeaLifeNavigationV23/SeaLifeNavigationBuildV23.cs",
+        "sha256":  "C41B911E1CAC25C1671A1C007F390975D49ECA81799D698F885C4AA543580BF6"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Editor/SeaLifeNavigationV23/SeaLifeNavigationBuildV23.cs.meta",
+        "sha256":  "18577BE2A7382BFEF50E6A31DBE6FA3C85CF5EC04DCF9142A342D9D05E1EAFF0"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeNavigationV23.meta",
+        "sha256":  "28FB4E61F69BA1AF320A436D882DC5D4100624CAC95437CD6B99364DBA814E58"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeNavigationV23/NavigationResistanceV23.cs",
+        "sha256":  "AE2D2ECBC5224B2EF5923A746B2527574BD6B12FBEF7DC32313CECD8F856168F"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeNavigationV23/NavigationResistanceV23.cs.meta",
+        "sha256":  "F4A52FF8DABCB2F377E63F7D1E099BFC554665850BEBEAAD79B9F84F0B16F716"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeNavigationV23/NavigationWaveV23.cs",
+        "sha256":  "D0DFB1E8567E191D7F134848AFFDB4857BFF738E26783FB18C8E255995A44EB3"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeNavigationV23/NavigationWaveV23.cs.meta",
+        "sha256":  "C531B50F194873097596F487F223A157BF7FF8C5AC0427248949A9E0E851D2D1"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeNavigationV23/SeaLifeNavigationHooksV23.cs",
+        "sha256":  "3A5D4C350640019908D0289F1A67A8178BA65AA38B00BCD46076F29A14E90333"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeNavigationV23/SeaLifeNavigationHooksV23.cs.meta",
+        "sha256":  "497DCEAB2F5592BC382DE40BF777AED462E27CEA6FD5395E44AA732C716AC504"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeNavigationV23/SeaLifeNavigationMotorV23.cs",
+        "sha256":  "D2EE31F0405CBE119F6DE9DA6254F99FF50E50D17B6E0A47E7519C108F2F9EEE"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeNavigationV23/SeaLifeNavigationMotorV23.cs.meta",
+        "sha256":  "D1A3B021C2DA26B888F0E53F0C95E45A2E86BBEAA9701CEE6C94C335D2A43F16"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeNavigationV23/SeaLifeNavigationReviewV23.cs",
+        "sha256":  "5631BD049AFCBF8F5DE3B4A82FFA335FF750C36BCF4B015DA6022234103A8C01"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeNavigationV23/SeaLifeNavigationReviewV23.cs.meta",
+        "sha256":  "C56CFCA9E26D672DCF36A2967A80B320AC2A7DD552B88859764F0610B1AA9C8E"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeNavigationV23/SeaLifeNavigationV23.cs",
+        "sha256":  "A3F40D119B89FF0EAA72CEB6B4929ECEF301F8481A3A8883DB82C0AE8E59639A"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeNavigationV23/SeaLifeNavigationV23.cs.meta",
+        "sha256":  "9C05DAE231AE9341335E54FB5F554D75B4EA9B5E8D3A3FA4F82311FF5503C109"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeRuntime.cs",
+        "sha256":  "23737A24A4BD9D1B6D0384944D7E4E0A0C2131E434AD34EF3EE255F7B198531A"
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeRuntime.cs.meta",
+        "sha256":  "56643EC3A108DDB1AB41507E55935DE89B97586B6A0FF07BAA98E3F46A5C5EA2"
+    },
+    {
+        "path":  "Assets/Deepsea/Shaders/SeaLifeNavigationV23.meta",
+        "sha256":  "1D627FDCCEBB137FC48309F13A12E2410F7DE0ABBEED1CB51952C1B36E8C897F"
+    },
+    {
+        "path":  "Assets/Deepsea/Shaders/SeaLifeNavigationV23/SeaLifeNavigationV23.shader",
+        "sha256":  "AED613DA437C51F974F46D23A5AF4D0EE8FB081E1D9710CF95F9A045CB65F656"
+    },
+    {
+        "path":  "Assets/Deepsea/Shaders/SeaLifeNavigationV23/SeaLifeNavigationV23.shader.meta",
+        "sha256":  "03092F6B5F58C041D5ED53A505158FEFC3A7B46F063927E46B34045F64950AD7"
+    },
+    {
+        "path":  "Assets/Deepsea/Shaders/SeaLifeNavigationV23/SeaLifeWakeV23.shader",
+        "sha256":  "0B5E9C6A7D89AE8C377719CDCB6268474F2707ADD635CAF34B9CF011AD27EB6E"
+    },
+    {
+        "path":  "Assets/Deepsea/Shaders/SeaLifeNavigationV23/SeaLifeWakeV23.shader.meta",
+        "sha256":  "58B7F3B5574710DA16AD63A4D8479EC0556F2C565315F4BCD2936803D453F4BC"
+    },
+    {
+        "path":  "Assets/Deepsea/Shaders/SeaLifeNavigationV23/WaterV23Waves.hlsl",
+        "sha256":  "B1C58A5B5B99FD6E044574A803B619237DC4B1886582B2410E1C0761E2FA50F2"
+    },
+    {
+        "path":  "Assets/Deepsea/Shaders/SeaLifeNavigationV23/WaterV23Waves.hlsl.meta",
+        "sha256":  "7C2409E46FC96629F862C3FE9587616EA2801558575898326DB4A0B0A86E49EF"
+    },
+    {
+        "path":  "Tools/SeaLifeNavigationV23/README-tools.md",
+        "sha256":  "B770B107C8554B61D16590FDECCEEA588A9CFB1A7EB2FEF81AF4155046AAD7AE"
+    },
+    {
+        "path":  "Tools/SeaLifeNavigationV23/Rebuild-Navigation.ps1",
+        "sha256":  "6E1DB7297CF039B50C0A0A86E5825FB00DBA089C6BE124FEBAEA1109DD4CF449"
+    },
+    {
+        "path":  "Tools/SeaLifeNavigationV23/reference-analysis.md",
+        "sha256":  "97F3A0A640D3DE50E7393CA9C8D372D7F893E8CE04C2A4FF18D6923B2007933F"
+    },
+    {
+        "path":  "Tools/SeaLifeNavigationV23/ThirdParty/BoatAttack/GerstnerWaves.hlsl.txt",
+        "sha256":  "542D363F6B51230DCD6F973607BC2428B60A3FA2F7DEE0447F1E8448A925FD94"
+    },
+    {
+        "path":  "Tools/SeaLifeNavigationV23/ThirdParty/BoatAttack/LICENSE.md",
+        "sha256":  "A5BDA865F1F85E813D22D4BD8534B4C30A8AE7A8BD7B6F15C38FEBD08E81A429"
+    },
+    {
+        "path":  "Tools/SeaLifeNavigationV23/ThirdParty/BoatAttack/Unity-Companion-License.txt",
+        "sha256":  "DCE87DEEE9904255160AA3BBBB7F886711747D8545B1D7875C83590666E69BFB"
+    },
+    {
+        "path":  "Tools/SeaLifeNavigationV23/ThirdParty/Habrador/BoatPhysicsMath.cs.txt",
+        "sha256":  "0EBD49BA220009E2BCA027B294BD9E08845E10DC65AD96572FBACD1834AEDC4C"
+    },
+    {
+        "path":  "Tools/SeaLifeNavigationV23/ThirdParty/Habrador/LICENSE",
+        "sha256":  "4BB5EE859D66367DC9240D4D40BDC19583A3009D926746AB55AC510FDBF92EDD"
+    },
+    {
+        "path":  "Tools/SeaLifeNavigationV23/ThirdParty/SOURCES.md",
+        "sha256":  "E4165C101490ABD6E80882B41277F3486A81D4D7677F1DC9C3AABF0CBC96D26D"
+    }
+]
