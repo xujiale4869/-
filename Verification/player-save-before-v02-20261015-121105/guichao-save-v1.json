@@ -1,0 +1,25 @@
+{
+    "schema": 1,
+    "parts": 5,
+    "equipment": 1,
+    "records": 0,
+    "residents": 9,
+    "recoveredBoats": 2,
+    "voyages": 3,
+    "repairDebt": 0,
+    "winch": false,
+    "charts": false,
+    "net": true,
+    "beacon": true,
+    "fishRecorded": false,
+    "completed": [
+        "inner-crate-a",
+        "fishing-boat-b-people",
+        "fishing-boat-b",
+        "wreck-kit",
+        "fishing-boat-a-people",
+        "fishing-boat-a",
+        "inner-crate-b",
+        "beacon-equipment"
+    ]
+}

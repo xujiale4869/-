@@ -1,0 +1,11 @@
+{
+    "unity_version":  "2022.3.62f3c1",
+    "windows_build":  "passed",
+    "startup_window":  "归潮湾 - 深海灯塔",
+    "startup_running":  true,
+    "startup_responding":  true,
+    "startup_error_matches":  0,
+    "exe_sha256":  "059c313352892718258a120b87bdc6fc7c23ce67181084abe14f86f204f5dddb",
+    "managed_sha256":  "3d1ec26f0a6456ba73e9df532a0b39d892341075d602d0237884c2917d3ab673",
+    "checked_at":  "2026-10-15T12:13:36.2979331+08:00"
+}
