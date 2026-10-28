@@ -78,7 +78,7 @@
       "installedAlready": true,
       "installedFilesChanged": false,
       "filesSha256": {
-        ".gitattributes": "67aae7664f061f131cc7e0463ebfa92f5f7e247588622119d56290b02d7ccee9",
+        ".gitattributes.upstream": "67aae7664f061f131cc7e0463ebfa92f5f7e247588622119d56290b02d7ccee9",
         ".gitignore": "4eea44bdb190febbb19fcd57824a4e10a52d15fb82b4125b0f275251ba085e3b",
         "README.md": "d296f27fbf8018217508500807b613c19244ea3f045e25fcd381c2bdfe3ec76d",
         "SKILL.md": "432e5a8d4e8e59f228eff2d6ac758edb897b2e5a983eb6d4aec8626e8e3ce301",
@@ -91,6 +91,9 @@
         "references/style-bible-template.md": "24f2caec1d9ae6aece7453130d29cb45eae1a0222b3421371c483ae5dc0e5af8",
         "references/style-dna-template.md": "ffd0abd8087a7712036df1f3230b734cfa56f03d64a3b7e01f959e5f6549cdca",
         "references/workflow.md": "0b643725542a60e66f992e3bf77ec8de22f950e56d1b61f4189bcaf79537eb44"
+      },
+      "archivedPolicyFiles": {
+        ".gitattributes.upstream": ".gitattributes"
       }
     },
     {
@@ -130,7 +133,8 @@
         "examples/providers/http_video_provider_example.py": "882b6b9187d6be139b4f5bb705892fad819244862e642857876af126383c5f71",
         "examples/providers/minimal_provider_example.py": "add6386a09f4ae0a8ea2e869867f98d12fed0b79230569171e6ac827eaf04640",
         "examples/providers/README.md": "373446383b8886bc4c6eef95c817adbb7173e0ca56144cad133fe4d38aa0ede6"
-      }
+      },
+      "archivedPolicyFiles": {}
     },
     {
       "name": "blender-image-to-3d",
@@ -157,7 +161,8 @@
         "scripts/roundtrip.py": "64b3e969e70e3eda6975390ce3a20f40c048641acc0a502b145b0f802f6d34f6",
         "scripts/validate.py": "f68ce7332eddaca02ae4813a715f3db6e1bf2b3ac5a5721b3cb9ceef70a691c3",
         "scripts/world_gate.py": "d7c4d50df6f49d59f496d8c84a5aec38586105cb1ee5dc41cfb2d54c3b932693"
-      }
+      },
+      "archivedPolicyFiles": {}
     },
     {
       "name": "impeccable",
@@ -231,7 +236,8 @@
         "reference/degraded/manual-edit-applier.md": "5fae7f8a2fc3ddd49ad0a413446dc44daedef5b6b7de5eb935bd2fbfad646d58",
         "scripts/data/font-index-failures.json": "835f19a0a3812f3652dd6979a2ce5597f654fd01f26e1b420b92d5f42b997ce4",
         "scripts/data/font-index.json": "47edbdfaf27073c47033d1ac7dfee881be49e2dcbda7671d1157300481dde6da"
-      }
+      },
+      "archivedPolicyFiles": {}
     },
     {
       "name": "ui-ux-pro-max",
@@ -311,7 +317,8 @@
         "scripts/tests/fixtures/catalogs/phosphor-package.json": "500588c757d6de03e3d7e69b27a8b8b1f88ccf6bb0333e4c1e9b0d6a4f112475",
         "scripts/tests/fixtures/catalogs/phosphor-react-exports.json": "d79f2ee0afdbc2f87776733e145df3538a16a25d7c2fba0056bb48295dad0ded",
         "scripts/tests/fixtures/catalogs/phosphor-react-package.json": "1c57a1d76bcc0cdd3632d4c18b9c0e79576b4591df39831c9607e5d0eb4f2cec"
-      }
+      },
+      "archivedPolicyFiles": {}
     }
   ],
   "submodules": [
