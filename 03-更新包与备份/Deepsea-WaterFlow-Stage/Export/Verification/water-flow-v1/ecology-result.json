@@ -1,0 +1,22 @@
+{
+    "passed": true,
+    "detail": "Windows URP, natural school-targeted visit, bird scatter and return, vessel scatter and return, interrupted low pass, water and bed clearance passed",
+    "fish": 18,
+    "birds": 2,
+    "birdVisiblePixels": 274,
+    "visits": 2,
+    "lowPasses": 1,
+    "aborted": 1,
+    "birdScares": 1,
+    "boatScares": 2,
+    "returns": 2,
+    "minimumBirdGeometry": 0.03237605094909668,
+    "minimumAirClearance": 0.2801201641559601,
+    "minimumBedClearance": 0.301078736782074,
+    "targetError": 0.0,
+    "vesselEscapeDistance": 2.826678991317749,
+    "escapeDistanceBefore": 3.117199659347534,
+    "escapeDistanceAfter": 5.943878650665283,
+    "measuredBoatX": 50.652183532714847,
+    "measuredBoatZ": 83.6617202758789
+}

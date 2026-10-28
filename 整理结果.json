@@ -1,0 +1,97 @@
+﻿{
+    "passed":  true,
+    "date":  "2026-10-19T21:25:00.4617397+08:00",
+    "archive":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频",
+    "buildCount":  16,
+    "videoCount":  14,
+    "verifiedCopies":  2286,
+    "links":  [
+                  {
+                      "path":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\最新水面演示.lnk",
+                      "target":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\02-演示视频\\17-生态活动V1.mp4",
+                      "exists":  true
+                  },
+                  {
+                      "path":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\04-历史入口\\深海灯塔-四层光影-v0.14.lnk",
+                      "target":  "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+                      "exists":  true
+                  },
+                  {
+                      "path":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\04-历史入口\\深海灯塔-归潮湾试玩.lnk",
+                      "target":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\01-历史版本\\01-Unity浅海-v0.1\\GuichaoBay.exe",
+                      "exists":  true
+                  },
+                  {
+                      "path":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\04-历史入口\\深海灯塔-新UI与居民协作-v0.3.lnk",
+                      "target":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\01-历史版本\\03-居民与界面-v0.3\\GuichaoBay.exe",
+                      "exists":  true
+                  },
+                  {
+                      "path":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\04-历史入口\\深海灯塔-海陆远征-v0.2.lnk",
+                      "target":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\01-历史版本\\02-海陆远征-v0.2\\GuichaoBay.exe",
+                      "exists":  true
+                  },
+                  {
+                      "path":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\04-历史入口\\深海灯塔－岸浪演示.lnk",
+                      "target":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\02-演示视频\\coast-v1--coast-demo.mp4",
+                      "exists":  true
+                  },
+                  {
+                      "path":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\04-历史入口\\深海灯塔－岸边细节演示.lnk",
+                      "target":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\02-演示视频\\coast-detail-v1--coast-detail-demo.mp4",
+                      "exists":  true
+                  },
+                  {
+                      "path":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\04-历史入口\\深海灯塔－水流演示.lnk",
+                      "target":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\02-演示视频\\water-flow-v1--water-flow-demo.mp4",
+                      "exists":  true
+                  },
+                  {
+                      "path":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\04-历史入口\\深海灯塔－水面演示.lnk",
+                      "target":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\02-演示视频\\water-player-shallow-v3--water-motion-24fps.mp4",
+                      "exists":  true
+                  },
+                  {
+                      "path":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\04-历史入口\\深海灯塔－水面质感V1.lnk",
+                      "target":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\01-历史版本\\14-水面质感\\GuichaoBay.exe",
+                      "exists":  true
+                  },
+                  {
+                      "path":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\04-历史入口\\深海灯塔－浅滩光影演示.lnk",
+                      "target":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\02-演示视频\\water-polish-v1--water-polish-demo.mp4",
+                      "exists":  true
+                  },
+                  {
+                      "path":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\04-历史入口\\深海灯塔－浅滩演示.lnk",
+                      "target":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\02-演示视频\\shore-v1--shallow-shore-demo.mp4",
+                      "exists":  true
+                  },
+                  {
+                      "path":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\04-历史入口\\深海灯塔－海洋生物版.lnk",
+                      "target":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\01-历史版本\\07-飞鱼与海洋生物\\GuichaoBay.exe",
+                      "exists":  true
+                  },
+                  {
+                      "path":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\04-历史入口\\深海灯塔－海草与海鸟演示.lnk",
+                      "target":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\02-演示视频\\ecology-v1--seagrass-seabirds-demo.mp4",
+                      "exists":  true
+                  },
+                  {
+                      "path":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\04-历史入口\\深海灯塔－海草与珊瑚V1.lnk",
+                      "target":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\01-历史版本\\15-海草与珊瑚V1\\GuichaoBay.exe",
+                      "exists":  true
+                  },
+                  {
+                      "path":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\04-历史入口\\深海灯塔－生态群落V2.lnk",
+                      "target":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\01-历史版本\\16-生态群落V2\\GuichaoBay.exe",
+                      "exists":  true
+                  },
+                  {
+                      "path":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\04-历史入口\\深海灯塔－飞鱼演示.lnk",
+                      "target":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\02-演示视频\\marine-life-v1--flying-fish-demo.mp4",
+                      "exists":  true
+                  }
+              ],
+    "currentGame":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔-Unity海陆-v0.3\\Builds\\ReefLifeV1\\GuichaoBay.exe",
+    "latestVideo":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\02-演示视频\\17-生态活动V1.mp4"
+}

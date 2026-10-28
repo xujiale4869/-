@@ -1,0 +1,13 @@
+{
+    "passed": true,
+    "baseline": true,
+    "detail": "Current bounds, reef deflection, original coast/ecology/audio, shader support and moving water passed",
+    "flowBakeMilliseconds": 132.2422,
+    "captureTime": 2.5,
+    "minimumSpeed": 0.2499999850988388,
+    "maximumSpeed": 1.3500001430511475,
+    "maximumTurnDegrees": 71.45806121826172,
+    "obstacles": 5,
+    "flowChangedPixels": 42045,
+    "colliders": 44
+}

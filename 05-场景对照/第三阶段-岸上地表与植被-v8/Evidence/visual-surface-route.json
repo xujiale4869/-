@@ -1,0 +1,8 @@
+{
+    "passed": true,
+    "visualSurfaces": 179,
+    "caveBodySamples": 3520,
+    "visualObstructions": 0,
+    "affineFitError": 0.0000171661376953125,
+    "failures": []
+}

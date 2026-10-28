@@ -1,0 +1,26 @@
+{
+    "passed": true,
+    "failure": "",
+    "resolution": "1920x1080",
+    "gpu": "Intel(R) Arc(TM) 130T GPU (16GB)",
+    "scene": "Assets/Deepsea/Scenes/CoastBlockout.unity",
+    "sharedPrefab": "EastCoast-Blockout-1",
+    "navigation": "",
+    "validationScope": "Rendering only; controller/physics acceptance is recorded separately in coast-blockout-v1",
+    "terrainTriangles": 74992,
+    "rockMasses": 185,
+    "walkingPoints": 0,
+    "sailingDistance": 0.0,
+    "walkDistance": 0.0,
+    "walkVerticalError": 0.0,
+    "fps": 0.0,
+    "meanMs": 0.0,
+    "p95Ms": 0.0,
+    "p99Ms": 0.0,
+    "reached": [],
+    "depthSamples": [
+        "(55.00, 94.00) layout=-3.48797 physical=-3.48803 collider=地形块-0-0",
+        "(62.51, 98.00) layout=-2.285743 physical=-2.285743 collider=中央礁脊-8",
+        "(73.00, 98.00) layout=-21.53205 physical=-21.53112 collider=地形块-1-1"
+    ]
+}

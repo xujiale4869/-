@@ -1,0 +1,16 @@
+{
+  "Assets/Deepsea/Scripts/Runtime/OceanSurface.cs": "cf59114d8db93f41eac8504b02421155b45e4ebb9b8213f444d952b071f0f44d",
+  "Assets/Deepsea/Shaders/Ocean.shader": "2daddc831ef12c7a9a286f5b196de0835180a033218e67166732540f4db7ff20",
+  "Assets/Deepsea/Shaders/CoastalGround.shader": "d49da63724f3c1612b14489dfab682f24d0c2b9b74c3aa3ee4c67f4dc97bfd06",
+  "Assets/Deepsea/Shaders/ShoreSwash.shader": "f0acb37c3acd3a1757ef9fc1e7f6347f61ea4c53b65e5d10831693b7f38d7a82",
+  "Assets/Deepsea/Shaders/Includes/SurfWash.hlsl": "0b7e7fa01c595b61d5ce559f4f362cce58857bc28bd84e668376577fca100d65",
+  "Assets/Deepsea/Scripts/Runtime/ShoreCycle.cs": "00047c6c9fc398ec77b3d40e42adec0e477618cc0929328c828037df08a53af2",
+  "Assets/Deepsea/Scripts/Runtime/ShorelineAtmosphere.cs": "fed470948a735bc25f650e9cbba7021af7b8af0256e592eca768e17bc423dfcf",
+  "Assets/Deepsea/Scripts/Runtime/BoatWake.cs": "b25ff15b13f9e96b2e2beaddaceec87a5ccb879856b2401d094d6c2b8b9c2943",
+  "Assets/Deepsea/Shaders/WakeFoam.shader": "d592f3c9a4d542d67f0445bb0bc4fc3ad9d8358f572be0fa49853990c5e44ea4",
+  "Assets/Deepsea/Scripts/Runtime/IslandTerrain.cs": "e92fb726c61544bdf4d11be499ce67aa79df45434c397fb05a8c4f78dc5346e4",
+  "Assets/Deepsea/Scripts/Runtime/VisualFactory.cs": "ad0288fa90e0471afb3b2e544be0af70c263d9d74505d8ab35a835fd3b2f3492",
+  "Assets/Deepsea/Scripts/Runtime/SeabedRelief.cs": "73c9002a4418d52c92e6adac687a94d8e2b3e2314da51aed1808f36e4b31699e",
+  "Assets/Deepsea/Scripts/Runtime/GameDirector.cs": "c4095891afffccbc1b4715114529d9be8b8cd1ef283c3b6b96dc3a5d26bc8375",
+  "Assets/Deepsea/Scripts/Runtime/BoatController.cs": "63622bc87e4e61893c11fe58977952855625b42945408b4ee7713a3dda3cbe67"
+}

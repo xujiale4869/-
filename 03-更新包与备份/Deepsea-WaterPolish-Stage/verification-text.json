@@ -1,0 +1,61 @@
+﻿{
+    "value":  [
+                  {
+                      "text":  "fileFormatVersion: 2\nguid: 3d8d2e6d743922800de8cdd89caa3dbd\nShaderImporter:\n  externalObjects: {}\n  defaultTextures: []\n  nonModifiableTextures: []\n  preprocessorOverride: 0\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+                      "path":  "Assets/Deepsea/Shaders/Ocean.shader.meta"
+                  },
+                  {
+                      "text":  "fileFormatVersion: 2\nguid: 735a747018f0422e91621833b5f34e92\nMonoImporter:\n  externalObjects: {}\n  serializedVersion: 2\n  defaultReferences: []\n  executionOrder: 0\n  icon: {instanceID: 0}\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+                      "path":  "Assets/Deepsea/ThirdParty/FastNoiseLite/FastNoiseLite.cs.meta"
+                  },
+                  {
+                      "text":  "fileFormatVersion: 2\nguid: 12dfb76d958f465aa6b9ad60673b27b3\nTextScriptImporter:\n  externalObjects: {}\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+                      "path":  "Assets/Deepsea/ThirdParty/FastNoiseLite/LICENSE.txt.meta"
+                  },
+                  {
+                      "text":  "fileFormatVersion: 2\nguid: 38bd1e7d97be48a4a3fd6194687f1c07\nTextScriptImporter:\n  externalObjects: {}\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+                      "path":  "Assets/Deepsea/ThirdParty/FastNoiseLite/SOURCE.md.meta"
+                  },
+                  {
+                      "text":  "fileFormatVersion: 2\nguid: f2f447994d3f446cb526523a176c3dd9\nMonoImporter:\n  externalObjects: {}\n  serializedVersion: 2\n  defaultReferences: []\n  executionOrder: 0\n  icon: {instanceID: 0}\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+                      "path":  "Assets/Deepsea/Scripts/Editor/WaterPolishBuild.cs.meta"
+                  },
+                  {
+                      "text":  "fileFormatVersion: 2\nguid: 065b673e58084b8a886117626ec3ae99\nMonoImporter:\n  externalObjects: {}\n  serializedVersion: 2\n  defaultReferences: []\n  executionOrder: 0\n  icon: {instanceID: 0}\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+                      "path":  "Assets/Deepsea/Scripts/Runtime/WaterPolishCheck.cs.meta"
+                  },
+                  {
+                      "text":  "fileFormatVersion: 2\nguid: ba884c864dfaffe41b027969262ab389\nMonoImporter:\n  externalObjects: {}\n  serializedVersion: 2\n  defaultReferences: []\n  executionOrder: 0\n  icon: {instanceID: 0}\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+                      "path":  "Assets/Deepsea/Scripts/Runtime/EcologyPlayerCapture.cs.meta"
+                  },
+                  {
+                      "text":  "fileFormatVersion: 2\nguid: 1b57f883dcc1f404bba617bd9ec8b5d8\nMonoImporter:\n  externalObjects: {}\n  serializedVersion: 2\n  defaultReferences: []\n  executionOrder: 0\n  icon: {instanceID: 0}\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+                      "path":  "Assets/Deepsea/Scripts/Runtime/OceanSurface.cs.meta"
+                  },
+                  {
+                      "text":  "fileFormatVersion: 2\nguid: edbdba3ecf034233981bb9aa93e86557\nMonoImporter:\n  externalObjects: {}\n  serializedVersion: 2\n  defaultReferences: []\n  executionOrder: 0\n  icon: {instanceID: 0}\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeabedRelief.cs.meta"
+                  },
+                  {
+                      "text":  "{\n    \"passed\": true,\n    \"baseline\": true,\n    \"detail\": \"Windows rendering, bounded seabed, existing coast/audio/ecology, fish clearance and moving open water passed\",\n    \"bakeMilliseconds\": 722.0611,\n    \"captureTime\": 2.5,\n    \"minBed\": -12.0,\n    \"maxBed\": -0.5799999833106995,\n    \"minimumFishBedClearance\": 0.9541999101638794,\n    \"flowChangedPixels\": 39135,\n    \"colliders\": 44\n}",
+                      "path":  "Verification/water-polish-v1/before/result.json"
+                  },
+                  {
+                      "text":  "{\n    \"passed\": true,\n    \"baseline\": false,\n    \"detail\": \"Windows rendering, bounded seabed, existing coast/audio/ecology, fish clearance and moving open water passed\",\n    \"bakeMilliseconds\": 1687.2485000000001,\n    \"captureTime\": 2.5,\n    \"minBed\": -12.0,\n    \"maxBed\": -0.5799999833106995,\n    \"minimumFishBedClearance\": 0.9758021831512451,\n    \"flowChangedPixels\": 42045,\n    \"colliders\": 44\n}",
+                      "path":  "Verification/water-polish-v1/after/result.json"
+                  },
+                  {
+                      "text":  "{\"unityVersion\":\"2022.3.62f3c1\",\"passed\":true,\"detail\":\"Terrain crossing passed.\"}",
+                      "path":  "Verification/water-polish-v1/terrain-result.json"
+                  },
+                  {
+                      "text":  "{\n    \"passed\": true,\n    \"detail\": \"Windows URP, natural school-targeted visit, bird scatter and return, vessel scatter and return, interrupted low pass, water and bed clearance passed\",\n    \"fish\": 18,\n    \"birds\": 2,\n    \"birdVisiblePixels\": 283,\n    \"visits\": 2,\n    \"lowPasses\": 1,\n    \"aborted\": 1,\n    \"birdScares\": 1,\n    \"boatScares\": 2,\n    \"returns\": 2,\n    \"minimumBirdGeometry\": 0.03330874443054199,\n    \"minimumAirClearance\": 0.28012019395828249,\n    \"minimumBedClearance\": 0.2200000286102295,\n    \"targetError\": 0.0,\n    \"vesselEscapeDistance\": 2.8234832286834719,\n    \"escapeDistanceBefore\": 3.183973550796509,\n    \"escapeDistanceAfter\": 6.0074567794799809,\n    \"measuredBoatX\": 50.652183532714847,\n    \"measuredBoatZ\": 83.6617202758789\n}",
+                      "path":  "Verification/water-polish-v1/ecology-result.json"
+                  },
+                  {
+                      "text":  "[\r\n    {\r\n        \"expected\":  \"1608b4fc381566e0879784e06fcfecfa9239cb892ede01a2e95ac03898f4f6d5\",\r\n        \"path\":  \"Assets/Deepsea/ThirdParty/FastNoiseLite.meta\",\r\n        \"actual\":  \"1608b4fc381566e0879784e06fcfecfa9239cb892ede01a2e95ac03898f4f6d5\",\r\n        \"matches\":  true\r\n    },\r\n    {\r\n        \"expected\":  \"e6b48fdec9acf34a11037a61ea9146dfa605ffcc31f83640ba10ab644c7fb137\",\r\n        \"path\":  \"Assets/Deepsea/Shaders/Ocean.shader\",\r\n        \"actual\":  \"e6b48fdec9acf34a11037a61ea9146dfa605ffcc31f83640ba10ab644c7fb137\",\r\n        \"matches\":  true\r\n    },\r\n    {\r\n        \"expected\":  \"4566630e2bf00f8b8d47ed613a03448670e6f1d64df1d2a2b9402085c7cc5bc0\",\r\n        \"path\":  \"Assets/Deepsea/ThirdParty/FastNoiseLite/FastNoiseLite.cs.meta\",\r\n        \"actual\":  \"4566630e2bf00f8b8d47ed613a03448670e6f1d64df1d2a2b9402085c7cc5bc0\",\r\n        \"matches\":  true\r\n    },\r\n    {\r\n        \"expected\":  \"d4d8148a3682e72940fcd2f7de86b8f3774fcfd3857d98a6635207aa2410cbe5\",\r\n        \"path\":  \"Assets/Deepsea/ThirdParty/FastNoiseLite/LICENSE.txt.meta\",\r\n        \"actual\":  \"d4d8148a3682e72940fcd2f7de86b8f3774fcfd3857d98a6635207aa2410cbe5\",\r\n        \"matches\":  true\r\n    },\r\n    {\r\n        \"expected\":  \"6ea912aa6c50a25c982b9ead54317169fedeee55298517ea75d49e364557d13b\",\r\n        \"path\":  \"Assets/Deepsea/ThirdParty/FastNoiseLite/FastNoiseLite.cs\",\r\n        \"actual\":  \"6ea912aa6c50a25c982b9ead54317169fedeee55298517ea75d49e364557d13b\",\r\n        \"matches\":  true\r\n    },\r\n    {\r\n        \"expected\":  \"9e5450dbf46eeea5c8ba222b4a2f0ab6ff5edbb52d87ca187b6ff48c3076986e\",\r\n        \"path\":  \"Assets/Deepsea/ThirdParty/FastNoiseLite/LICENSE.txt\",\r\n        \"actual\":  \"9e5450dbf46eeea5c8ba222b4a2f0ab6ff5edbb52d87ca187b6ff48c3076986e\",\r\n        \"matches\":  true\r\n    },\r\n    {\r\n        \"expected\":  \"4a183e893138c87f8f991485f4e5ffc444f750ecce01c79f36b8192da345764f\",\r\n        \"path\":  \"Assets/Deepsea/ThirdParty/FastNoiseLite/SOURCE.md\",\r\n        \"actual\":  \"4a183e893138c87f8f991485f4e5ffc444f750ecce01c79f36b8192da345764f\",\r\n        \"matches\":  true\r\n    },\r\n    {\r\n        \"expected\":  \"9361fb1f84f470bac7e5f0312103e92ff9b4b4af1bc5c3025526cf777fee01c7\",\r\n        \"path\":  \"Assets/Deepsea/ThirdParty/FastNoiseLite/SOURCE.md.meta\",\r\n        \"actual\":  \"9361fb1f84f470bac7e5f0312103e92ff9b4b4af1bc5c3025526cf777fee01c7\",\r\n        \"matches\":  true\r\n    },\r\n    {\r\n        \"expected\":  \"8291755640baffc279bd32180f9991215efe0a6a2b5a9f027606195ba09725c2\",\r\n        \"path\":  \"Assets/Deepsea/Scripts/Editor/WaterPolishBuild.cs.meta\",\r\n        \"actual\":  \"8291755640baffc279bd32180f9991215efe0a6a2b5a9f027606195ba09725c2\",\r\n        \"matches\":  true\r\n    },\r\n    {\r\n        \"expected\":  \"b3a1f9acce78578955fb579a7f5635e40168d012fb70fb1917c73c7071ddccac\",\r\n        \"path\":  \"Assets/Deepsea/Scripts/Editor/WaterPolishBuild.cs\",\r\n        \"actual\":  \"b3a1f9acce78578955fb579a7f5635e40168d012fb70fb1917c73c7071ddccac\",\r\n        \"matches\":  true\r\n    },\r\n    {\r\n        \"expected\":  \"96eb7b9a02103fd58c86c2547f5b10338d3a36f9b5b613eae6add2b711839689\",\r\n        \"path\":  \"Assets/Deepsea/Scripts/Runtime/WaterPolishCheck.cs\",\r\n        \"actual\":  \"96eb7b9a02103fd58c86c2547f5b10338d3a36f9b5b613eae6add2b711839689\",\r\n        \"matches\":  true\r\n    },\r\n    {\r\n        \"expected\":  \"c56e4e3a3ddb8e922a8e5600aa778f89f45fbca79dbbcabf3dc937434d71d736\",\r\n        \"path\":  \"Assets/Deepsea/Scripts/Runtime/EcologyPlayerCapture.cs\",\r\n        \"actual\":  \"c56e4e3a3ddb8e922a8e5600aa778f89f45fbca79dbbcabf3dc937434d71d736\",\r\n        \"matches\":  true\r\n    },\r\n    {\r\n        \"expected\":  \"2fb95c22957efe190d6914be7663185c5fdd526c9160c2e4f3a79222775ca3cb\",\r\n        \"path\":  \"Assets/Deepsea/Scripts/Runtime/SeabedRelief.cs.meta\",\r\n        \"actual\":  \"2fb95c22957efe190d6914be7663185c5fdd526c9160c2e4f3a79222775ca3cb\",\r\n        \"matches\":  true\r\n    },\r\n    {\r\n        \"expected\":  \"304cd63f769a4800598898f34a89d191f4956085b7ba7f83fc28c5951fa8b0fa\",\r\n        \"path\":  \"Assets/Deepsea/Scripts/Runtime/OceanSurface.cs\",\r\n        \"actual\":  \"304cd63f769a4800598898f34a89d191f4956085b7ba7f83fc28c5951fa8b0fa\",\r\n        \"matches\":  true\r\n    },\r\n    {\r\n        \"expected\":  \"73c9002a4418d52c92e6adac687a94d8e2b3e2314da51aed1808f36e4b31699e\",\r\n        \"path\":  \"Assets/Deepsea/Scripts/Runtime/SeabedRelief.cs\",\r\n        \"actual\":  \"73c9002a4418d52c92e6adac687a94d8e2b3e2314da51aed1808f36e4b31699e\",\r\n        \"matches\":  true\r\n    },\r\n    {\r\n        \"expected\":  \"202c59c1c6999499c127082452297bfd5f77df11f2c757aebfc940837ea89ef9\",\r\n        \"path\":  \"Assets/Deepsea/Scripts/Runtime/WaterPolishCheck.cs.meta\",\r\n        \"actual\":  \"202c59c1c6999499c127082452297bfd5f77df11f2c757aebfc940837ea89ef9\",\r\n        \"matches\":  true\r\n    }\r\n]\r\n",
+                      "path":  "Verification/water-polish-v1/source-audit.json"
+                  }
+              ],
+    "Count":  14
+}

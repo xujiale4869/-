@@ -1,0 +1,82 @@
+﻿[
+    {
+        "text":  "fileFormatVersion: 2\nguid: 0af4a6c77869464eac6455129e8f4435\nfolderAsset: yes\nDefaultImporter:\n  externalObjects: {}\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+        "path":  "Assets/Deepsea/Resources/Coast.meta"
+    },
+    {
+        "text":  "fileFormatVersion: 2\nguid: c6abc24a1300b80499f51952cf7850f4\nAudioImporter:\n  externalObjects: {}\n  serializedVersion: 7\n  defaultSettings:\n    serializedVersion: 2\n    loadType: 0\n    sampleRateSetting: 0\n    sampleRateOverride: 44100\n    compressionFormat: 1\n    quality: 0.75\n    conversionMode: 0\n    preloadAudioData: 1\n  platformSettingOverrides: {}\n  forceToMono: 1\n  normalize: 1\n  loadInBackground: 0\n  ambisonic: 0\n  3D: 1\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+        "path":  "Assets/Deepsea/Resources/Coast/OceanSurf.ogg.meta"
+    },
+    {
+        "text":  "fileFormatVersion: 2\nguid: 479b2f2851678094fbeab26b3fd8ce74\nNativeFormatImporter:\n  externalObjects: {}\n  mainObjectFileID: 4300000\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+        "path":  "Assets/Deepsea/Resources/Wildlife/CoastalBird.asset.meta"
+    },
+    {
+        "text":  "fileFormatVersion: 2\nguid: 3d58bf81c69c4b8baa86321051e3a9aa\nMonoImporter:\n  externalObjects: {}\n  serializedVersion: 2\n  defaultReferences: []\n  executionOrder: 0\n  icon: {instanceID: 0}\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+        "path":  "Assets/Deepsea/Scripts/Editor/CoastBuild.cs.meta"
+    },
+    {
+        "text":  "fileFormatVersion: 2\nguid: cc8c6f33c1bc0b543953369b4d9b27e9\nMonoImporter:\n  externalObjects: {}\n  serializedVersion: 2\n  defaultReferences: []\n  executionOrder: 0\n  icon: {instanceID: 0}\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastalEcology.cs.meta"
+    },
+    {
+        "text":  "fileFormatVersion: 2\nguid: 82d05c5369044fef91962c2e1e35347c\nMonoImporter:\n  externalObjects: {}\n  serializedVersion: 2\n  defaultReferences: []\n  executionOrder: 0\n  icon: {instanceID: 0}\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastMixCapture.cs.meta"
+    },
+    {
+        "text":  "fileFormatVersion: 2\nguid: a8dee8a57d6e4bfeb8ecca82a2b75d67\nMonoImporter:\n  externalObjects: {}\n  serializedVersion: 2\n  defaultReferences: []\n  executionOrder: 0\n  icon: {instanceID: 0}\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastPlayerCapture.cs.meta"
+    },
+    {
+        "text":  "fileFormatVersion: 2\nguid: b51735b0c3d34250930290dcbe85d631\nMonoImporter:\n  externalObjects: {}\n  serializedVersion: 2\n  defaultReferences: []\n  executionOrder: 0\n  icon: {instanceID: 0}\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+        "path":  "Assets/Deepsea/Scripts/Runtime/ShoreCycle.cs.meta"
+    },
+    {
+        "text":  "fileFormatVersion: 2\nguid: f87c400ea23449cbbf1224a267275aac\nMonoImporter:\n  externalObjects: {}\n  serializedVersion: 2\n  defaultReferences: []\n  executionOrder: 0\n  icon: {instanceID: 0}\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+        "path":  "Assets/Deepsea/Scripts/Runtime/ShorelineAtmosphere.cs.meta"
+    },
+    {
+        "text":  "fileFormatVersion: 2\nguid: e3d8fa462cd01ab4481037134f7d6c90\nShaderImporter:\n  externalObjects: {}\n  defaultTextures: []\n  nonModifiableTextures: []\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+        "path":  "Assets/Deepsea/Shaders/CoastalGround.shader.meta"
+    },
+    {
+        "text":  "fileFormatVersion: 2\nguid: c4fcf51e56264591b1f9cb1fb9b9439d\nShaderImporter:\n  externalObjects: {}\n  defaultTextures: []\n  nonModifiableTextures: []\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+        "path":  "Assets/Deepsea/Shaders/ShoreSwash.shader.meta"
+    },
+    {
+        "text":  "fileFormatVersion: 2\nguid: f4d727d6d73b4c7f817792269c96177b\nShaderIncludeImporter:\n  externalObjects: {}\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+        "path":  "Assets/Deepsea/Shaders/Includes/SurfWash.hlsl.meta"
+    },
+    {
+        "text":  "fileFormatVersion: 2\nguid: f1827d65a702427486704501d6a38b1e\nfolderAsset: yes\nDefaultImporter:\n  externalObjects: {}\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+        "path":  "Assets/Deepsea/ThirdParty/CoastSources.meta"
+    },
+    {
+        "text":  "fileFormatVersion: 2\nguid: dd946bc1f072ae64aacc061d61bb5fcb\nTextScriptImporter:\n  externalObjects: {}\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+        "path":  "Assets/Deepsea/ThirdParty/CoastSources/Audio-upstream-README.md.meta"
+    },
+    {
+        "text":  "fileFormatVersion: 2\nguid: bdfd495b3aaee64488c5ba6d3f712d8e\nTextScriptImporter:\n  externalObjects: {}\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+        "path":  "Assets/Deepsea/ThirdParty/CoastSources/Moonseal-LICENSE.txt.meta"
+    },
+    {
+        "text":  "fileFormatVersion: 2\nguid: fcff496737de4fe428ed8675c50d2218\nTextScriptImporter:\n  externalObjects: {}\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n",
+        "path":  "Assets/Deepsea/ThirdParty/CoastSources/SOURCE.md.meta"
+    },
+    {
+        "text":  "%YAML 1.1\n%TAG !u! tag:unity3d.com,2011:\n--- !u!30 \u00261\nGraphicsSettings:\n  m_ObjectHideFlags: 0\n  serializedVersion: 15\n  m_Deferred:\n    m_Mode: 1\n    m_Shader: {fileID: 69, guid: 0000000000000000f000000000000000, type: 0}\n  m_DeferredReflections:\n    m_Mode: 1\n    m_Shader: {fileID: 74, guid: 0000000000000000f000000000000000, type: 0}\n  m_ScreenSpaceShadows:\n    m_Mode: 1\n    m_Shader: {fileID: 64, guid: 0000000000000000f000000000000000, type: 0}\n  m_DepthNormals:\n    m_Mode: 1\n    m_Shader: {fileID: 62, guid: 0000000000000000f000000000000000, type: 0}\n  m_MotionVectors:\n    m_Mode: 1\n    m_Shader: {fileID: 75, guid: 0000000000000000f000000000000000, type: 0}\n  m_LightHalo:\n    m_Mode: 1\n    m_Shader: {fileID: 105, guid: 0000000000000000f000000000000000, type: 0}\n  m_LensFlare:\n    m_Mode: 1\n    m_Shader: {fileID: 102, guid: 0000000000000000f000000000000000, type: 0}\n  m_VideoShadersIncludeMode: 2\n  m_AlwaysIncludedShaders:\n  - {fileID: 7, guid: 0000000000000000f000000000000000, type: 0}\n  - {fileID: 15104, guid: 0000000000000000f000000000000000, type: 0}\n  - {fileID: 15105, guid: 0000000000000000f000000000000000, type: 0}\n  - {fileID: 15106, guid: 0000000000000000f000000000000000, type: 0}\n  - {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}\n  - {fileID: 10770, guid: 0000000000000000f000000000000000, type: 0}\n  - {fileID: 10783, guid: 0000000000000000f000000000000000, type: 0}\n  - {fileID: 4800000, guid: 59017f430dbd6676472b38ce9f9e0916, type: 3}\n  - {fileID: 4800000, guid: 3d8d2e6d743922800de8cdd89caa3dbd, type: 3}\n  - {fileID: 4800000, guid: 2aa438cc3168bf88964c040a15953d4e, type: 3}\n  - {fileID: 4800000, guid: 131793ebf297c7841836d6a98bdd1f7d, type: 3}\n  - {fileID: 4800000, guid: b6bc94d2c005bdb46924c34ec2fced9c, type: 3}\n  - {fileID: 4800000, guid: 86feebc05d3161b46a02e7b7ca0a2d3c, type: 3}\n  - {fileID: 4800000, guid: e3d8fa462cd01ab4481037134f7d6c90, type: 3}\n  - {fileID: 4800000, guid: e6ba2dc8ff08643458973c963b5ebcc3, type: 3}\n  - {fileID: 4800000, guid: 65c911deea1bf3d4e89dd2d9b24c8b49, type: 3}\n  - {fileID: 4800000, guid: 1e13c644a85179343a73b72802818255, type: 3}\n  - {fileID: 4800000, guid: c4fcf51e56264591b1f9cb1fb9b9439d, type: 3}\n  m_PreloadedShaders: []\n  m_PreloadShadersBatchTimeLimit: -1\n  m_SpritesDefaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}\n  m_CustomRenderPipeline: {fileID: 11400000, guid: c8dbd6070e201a345bfb2f4077a8186c, type: 2}\n  m_TransparencySortMode: 0\n  m_TransparencySortAxis: {x: 0, y: 0, z: 1}\n  m_DefaultRenderingPath: 1\n  m_DefaultMobileRenderingPath: 1\n  m_TierSettings: []\n  m_LightmapStripping: 0\n  m_FogStripping: 0\n  m_InstancingStripping: 0\n  m_BrgStripping: 0\n  m_LightmapKeepPlain: 1\n  m_LightmapKeepDirCombined: 1\n  m_LightmapKeepDynamicPlain: 1\n  m_LightmapKeepDynamicDirCombined: 1\n  m_LightmapKeepShadowMask: 1\n  m_LightmapKeepSubtractive: 1\n  m_FogKeepLinear: 1\n  m_FogKeepExp: 1\n  m_FogKeepExp2: 1\n  m_AlbedoSwatchInfos: []\n  m_LightsUseLinearIntensity: 0\n  m_LightsUseColorTemperature: 0\n  m_DefaultRenderingLayerMask: 1\n  m_LogWhenShaderIsCompiled: 0\n  m_SRPDefaultSettings:\n    UnityEngine.Rendering.Universal.UniversalRenderPipeline: {fileID: 11400000, guid: 2f8904088c9ee754db23bf3f7a4f600e, type: 2}\n  m_LightProbeOutsideHullStrategy: 1\n  m_CameraRelativeLightCulling: 0\n  m_CameraRelativeShadowCulling: 0\n",
+        "path":  "ProjectSettings/GraphicsSettings.asset"
+    },
+    {
+        "text":  "{\n    \"passed\": true,\n    \"detail\": \"Windows shaders, readable shore cycle, two refined reefs, unchanged collider count, actual listener distance and audio mute passed\",\n    \"shoreChangedPixels\": 4189,\n    \"refinedRocks\": 2,\n    \"nearVolume\": 0.10545042157173157,\n    \"farVolume\": 0.0,\n    \"mutedVolume\": 0.0\n}",
+        "path":  "Verification/coast-v1/result.json"
+    },
+    {
+        "text":  "{\"unityVersion\":\"2022.3.62f3c1\",\"passed\":true,\"detail\":\"Terrain crossing passed.\"}",
+        "path":  "Verification/coast-v1/terrain-result.json"
+    },
+    {
+        "text":  "{\r\n    \"seconds\":  18.005333333333333,\r\n    \"passed\":  true,\r\n    \"source\":  \"Windows standalone AudioListener DSP mix, music temporarily muted in diagnostic only\",\r\n    \"channels\":  2,\r\n    \"segments\":  [\r\n                     {\r\n                         \"rms\":  0.0041883221190427977,\r\n                         \"durationSeconds\":  4,\r\n                         \"peak\":  0.033782958984375,\r\n                         \"startSeconds\":  1\r\n                     },\r\n                     {\r\n                         \"rms\":  0,\r\n                         \"durationSeconds\":  4,\r\n                         \"peak\":  0,\r\n                         \"startSeconds\":  7\r\n                     },\r\n                     {\r\n                         \"rms\":  0,\r\n                         \"durationSeconds\":  4,\r\n                         \"peak\":  0,\r\n                         \"startSeconds\":  13\r\n                     }\r\n                 ],\r\n    \"order\":  [\r\n                  \"near east shore\",\r\n                  \"far from east shore\",\r\n                  \"near shore with effects volume zero\"\r\n              ],\r\n    \"listening\":  \"Recorded output measured; no claim of subjective speaker/headphone audition\",\r\n    \"sampleRate\":  48000\r\n}\r\n",
+        "path":  "Verification/coast-v1/audio-result.json"
+    }
+]

@@ -1,0 +1,27 @@
+﻿{
+    "version":  "CoastMaterials-Stage3-v7-Hero",
+    "status":  "implemented-built-and-verified",
+    "remoteBackup":  "Tools/CoastArtV7/Before-20261022-214025",
+    "desktopShortcut":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－材质光照制作版.lnk",
+    "executable":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔-Unity海陆-v0.3\\Builds\\CoastArtV7\\GuichaoBay-ArtV7.exe",
+    "interactivePid":  28512,
+    "sourceFilesVerified":  15,
+    "benchmark":  {
+                      "fps":  67.95127071679223,
+                      "p95Ms":  17.67639999999915,
+                      "renderResolution":  "1920x1080",
+                      "window":  "1920x1080",
+                      "p99Ms":  20.729300000002838,
+                      "renderScale":  1.0
+                  },
+    "protectedFilesUnchanged":  334,
+    "heroBoatTriangles":  18000,
+    "heroCharacterTriangles":  6088,
+    "heroMaterialsIntact":  true,
+    "heroEnvelopeSafe":  true,
+    "heroAddedColliders":  0,
+    "visualRockSurfaces":  179,
+    "caveVisualBodySamples":  3520,
+    "visualObstructions":  0,
+    "referenceArtMatched":  false
+}

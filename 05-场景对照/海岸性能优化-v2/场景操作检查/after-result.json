@@ -1,0 +1,11 @@
+{
+    "passed": true,
+    "detail": "Imported scene rendered; ring ground, landing and boarding verified. Visual quality requires image review.",
+    "navigation": "start=(55.00, 0.00, 94.00) end=(60.34, 0.00, 108.67) distance=15.61621 simulatedSeconds=6 physicsSteps=300 paused=False moored=False kinematic=False contacts=",
+    "rocks": 41,
+    "corals": 222,
+    "trees": 6,
+    "ferns": 58,
+    "newColliders": 6,
+    "meanFrameMs": 11.478546142578125
+}

@@ -1,0 +1,9 @@
+{
+    "passed": true,
+    "detail": "Imported graph, two rock material swaps, imported cliff model, eight tree prefabs and unchanged navigation rendered. Volumetric fog held off after initial orthographic errors.",
+    "rocks": 2,
+    "trees": 8,
+    "treeTriangles": 47184,
+    "cliffVertices": 22930,
+    "videoFrames": 120
+}

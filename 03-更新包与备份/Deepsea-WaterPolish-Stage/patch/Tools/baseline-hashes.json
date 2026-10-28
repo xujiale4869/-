@@ -1,0 +1,6 @@
+{
+  "Assets/Deepsea/Scripts/Runtime/OceanSurface.cs": "e113c610866d10c24eb8ff57160ab4624a5e8ae6c21104b2b8f242b292d14095",
+  "Assets/Deepsea/Shaders/Ocean.shader": "d9ab21dbe39102167a25867aac870bd537e97ad8cfb9baae5c94ba2ccbf56455",
+  "Assets/Deepsea/Shaders/CoastalGround.shader": "d49da63724f3c1612b14489dfab682f24d0c2b9b74c3aa3ee4c67f4dc97bfd06",
+  "Assets/Deepsea/Scripts/Editor/ProjectSetup.cs": "78414799ccb54299214b95a1a37fcec738659bcdd8d94707034d8b9fb4c98b57"
+}

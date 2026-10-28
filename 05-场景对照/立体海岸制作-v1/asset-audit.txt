@@ -1,0 +1,27 @@
+coastal_cliff_01 / coastal_cliff_01_LOD0 mats=coastal_cliff_01
+coastal_cliff_01 / coastal_cliff_01_LOD1 mats=coastal_cliff_01
+coastal_cliff_01 / coastal_cliff_01_LOD2 mats=coastal_cliff_01
+coastal_cliff_01 / coastal_cliff_01_LOD3 mats=coastal_cliff_01
+MESH coastal_cliff_01 coastal_cliff_01_LOD0 vertices=238684 bounds=Center: (-0.01, 0.01, 0.05), Extents: (0.46, 0.05, 0.05)
+MESH coastal_cliff_01 coastal_cliff_01_LOD1 vertices=121525 bounds=Center: (-0.01, 0.01, 0.05), Extents: (0.46, 0.05, 0.05)
+MESH coastal_cliff_01 coastal_cliff_01_LOD2 vertices=62252 bounds=Center: (-0.01, 0.01, 0.05), Extents: (0.46, 0.05, 0.05)
+MESH coastal_cliff_01 coastal_cliff_01_LOD3 vertices=32185 bounds=Center: (-0.01, 0.01, 0.05), Extents: (0.46, 0.05, 0.05)
+boulder_01 / boulder_01_LOD0 mats=boulder_01
+boulder_01 / boulder_01_LOD1 mats=boulder_01
+boulder_01 / boulder_01_LOD2 mats=boulder_01
+boulder_01 / boulder_01_LOD3 mats=boulder_01
+MESH boulder_01 boulder_01_LOD0 vertices=86776 bounds=Center: (0.00, 0.00, 0.00), Extents: (0.01, 0.01, 0.01)
+MESH boulder_01 boulder_01_LOD1 vertices=19805 bounds=Center: (0.00, 0.00, 0.00), Extents: (0.01, 0.01, 0.01)
+MESH boulder_01 boulder_01_LOD2 vertices=10624 bounds=Center: (0.00, 0.00, 0.00), Extents: (0.01, 0.01, 0.01)
+MESH boulder_01 boulder_01_LOD3 vertices=5818 bounds=Center: (0.00, 0.00, 0.00), Extents: (0.01, 0.01, 0.01)
+TREE_REDUCED 1023922
+island_tree_01 / island_tree_01 mats=island_tree_01,island_tree_01_leaves,island_tree_01_branches
+MESH island_tree_01 island_tree_01 vertices=1023922 bounds=Center: (0.00, 0.00, 0.02), Extents: (0.02, 0.02, 0.03)
+fern_02 / fern_02_a mats=fern_02
+fern_02 / fern_02_b mats=fern_02
+fern_02 / fern_02_c mats=fern_02
+fern_02 / fern_02_d mats=fern_02
+MESH fern_02 fern_02_a vertices=537 bounds=Center: (0.00, 0.00, 0.00), Extents: (0.00, 0.00, 0.00)
+MESH fern_02 fern_02_b vertices=1627 bounds=Center: (0.00, 0.00, 0.00), Extents: (0.00, 0.00, 0.00)
+MESH fern_02 fern_02_c vertices=1533 bounds=Center: (0.00, 0.00, 0.00), Extents: (0.00, 0.00, 0.00)
+MESH fern_02 fern_02_d vertices=556 bounds=Center: (0.00, 0.00, 0.00), Extents: (0.00, 0.00, 0.00)

@@ -1,0 +1,19 @@
+{
+    "passed": true,
+    "baseline": false,
+    "detail": "Material/reef polish, normal control-path cruise/turn/stop, wake dissipation and live recovery teleport passed",
+    "captureTime": 2.5,
+    "minimumFishBedClearance": 0.9758021831512451,
+    "cruiseSpeed": 6.51997184753418,
+    "turnDegrees": 144.94198608398438,
+    "stoppedSpeed": 0.001054902095347643,
+    "wakeWeightAtTurn": 23.308059692382814,
+    "wakeWeightAfterStop": 0.21976014971733094,
+    "largestVisibleWakeEdge": 2.945712089538574,
+    "travelDistance": 25.462038040161134,
+    "teleportWakeBefore": 6.428019046783447,
+    "teleportWakeAfter": 0.0,
+    "timberRenderers": 22,
+    "colliders": 44,
+    "videoFrames": 370
+}

@@ -1,0 +1,12 @@
+﻿{
+    "passed":  true,
+    "build":  "CoastDetailV1",
+    "buildFinished":  "2026-10-18T00:13:27.4498126+08:00",
+    "videoEncodeExit":  0,
+    "videoDecodeExit":  0,
+    "videoBytes":  2479889,
+    "videoSHA256":  "657a90b8933351b20828cdc1ab0c640515b27a9937b21619413eb910b6f27db2",
+    "videoFrames":  370,
+    "videoSeconds":  18.5,
+    "note":  "Fixed 20 fps capture with automated normal input/physics control path. Not a frame-rate benchmark or manual keyboard playtest."
+}

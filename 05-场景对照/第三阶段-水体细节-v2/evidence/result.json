@@ -1,0 +1,53 @@
+{
+    "passed": true,
+    "failure": "",
+    "resolution": "1920x1080",
+    "gpu": "Intel(R) Arc(TM) 130T GPU (16GB)",
+    "scene": "Assets/Deepsea/Scenes/CoastBlockout.unity",
+    "sharedPrefab": "EastCoast-Blockout-3-Natural",
+    "navigation": "start=(54.50, 0.00, 94.00) end=(69.27, 0.00, 88.62) seconds=6.000505 physicsSteps=300 contacts=",
+    "validationScope": "Rendering, timed frame sample, original boat controller and full walking/boarding course",
+    "terrainTriangles": 74992,
+    "rockMasses": 180,
+    "walkingPoints": 12,
+    "cavePathSamples": 160,
+    "actualFishBodySamples": 3520,
+    "scannedRockMeshes": 77,
+    "styledRenderers": 312,
+    "appearanceVersion": "CoastMaterials-Stage3-v2-Water",
+    "navigationFrameLimit": 60,
+    "characterStepOffset": 0.47999998927116396,
+    "stairSamples": [
+        "(29.25, 96.64) height=2.99 collider=石阶",
+        "(28.85, 96.72) height=3.14 collider=石阶",
+        "(28.60, 96.80) height=3.14 collider=石阶",
+        "(28.15, 96.95) height=3.29 collider=石阶"
+    ],
+    "cavePassageClear": true,
+    "sailingDistance": 15.719295501708985,
+    "walkDistance": 42.60069274902344,
+    "walkVerticalError": 0.39375901222229006,
+    "fps": 128.22992343359213,
+    "meanMs": 7.798491750000001,
+    "p95Ms": 8.987099999998805,
+    "p99Ms": 9.84460000000098,
+    "reached": [
+        "outward 0 (46.00, 0.74, 94.00) reached=True",
+        "outward 1 (35.78, 0.78, 94.00) reached=True",
+        "outward 2 (33.27, 1.37, 94.90) reached=True",
+        "outward 3 (31.26, 2.47, 95.88) reached=True",
+        "outward 4 (28.28, 3.54, 96.90) reached=True",
+        "outward 5 (27.15, 4.37, 95.22) reached=True",
+        "return 5 (27.15, 4.37, 95.22) reached=True",
+        "return 4 (27.88, 3.69, 96.74) reached=True",
+        "return 3 (30.74, 2.70, 96.06) reached=True",
+        "return 2 (32.77, 1.68, 95.11) reached=True",
+        "return 1 (35.23, 0.98, 94.11) reached=True",
+        "return 0 (45.73, 0.78, 94.00) reached=True"
+    ],
+    "depthSamples": [
+        "(55.00, 94.00) layout=-3.238621 physical=-3.238698 collider=地形块-0-0",
+        "(65.13, 98.00) layout=-5.702324 physical=-5.702324 collider=中央礁脊-8 · 扫描形体",
+        "(69.95, 82.00) layout=-21.48878 physical=-21.49026 collider=地形块-0-0"
+    ]
+}

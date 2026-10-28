@@ -1,0 +1,10 @@
+﻿{
+    "passed":  true,
+    "build":  "WaterFlowV1",
+    "built":  "2026-10-17T23:37:17.6270771+08:00",
+    "videoEncodeExit":  0,
+    "videoDecodeExit":  0,
+    "videoBytes":  767549,
+    "videoSHA256":  "40840d7cd35f9011ee2a2216d815a0608b94ae436914723c9398d80dfa3b2519",
+    "note":  "Controlled 20 fps capture; not a frame-rate benchmark. No audio track."
+}

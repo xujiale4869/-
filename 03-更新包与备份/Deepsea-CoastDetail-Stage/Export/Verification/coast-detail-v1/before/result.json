@@ -1,0 +1,19 @@
+{
+    "passed": true,
+    "baseline": true,
+    "detail": "Settled material/reef comparison, existing coast/ecology and collider count passed",
+    "captureTime": 2.5,
+    "minimumFishBedClearance": 0.9758021831512451,
+    "cruiseSpeed": 0.0,
+    "turnDegrees": 0.0,
+    "stoppedSpeed": 0.0,
+    "wakeWeightAtTurn": 0.0,
+    "wakeWeightAfterStop": 0.0,
+    "largestVisibleWakeEdge": 0.0,
+    "travelDistance": 0.0,
+    "teleportWakeBefore": 0.0,
+    "teleportWakeAfter": 0.0,
+    "timberRenderers": 0,
+    "colliders": 44,
+    "videoFrames": 0
+}

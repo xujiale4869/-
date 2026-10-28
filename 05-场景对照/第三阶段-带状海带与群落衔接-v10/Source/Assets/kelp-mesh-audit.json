@@ -1,0 +1,52 @@
+{
+  "asset": "KelpRibbon.obj",
+  "purpose": "Actual Unity model source; not gameplay screenshot",
+  "vertices": 518,
+  "triangles": 690,
+  "bounds_min": [
+    -0.1504342485512852,
+    -0.002461852403788155,
+    -0.16819597010595444
+  ],
+  "bounds_max": [
+    0.3838475078366591,
+    1.0,
+    0.19594695074711166
+  ],
+  "min_triangle_area": 5.451025083373011e-05,
+  "normals_unit": true,
+  "uv_vertices": 518,
+  "ribbons": [
+    {
+      "ribbon": 0,
+      "length_to_width": 14.94,
+      "rows": 20
+    },
+    {
+      "ribbon": 1,
+      "length_to_width": 24.49,
+      "rows": 20
+    },
+    {
+      "ribbon": 2,
+      "length_to_width": 20.01,
+      "rows": 20
+    },
+    {
+      "ribbon": 3,
+      "length_to_width": 13.62,
+      "rows": 20
+    },
+    {
+      "ribbon": 4,
+      "length_to_width": 24.19,
+      "rows": 20
+    },
+    {
+      "ribbon": 5,
+      "length_to_width": 21.99,
+      "rows": 20
+    }
+  ],
+  "runtime_verification": "pending Unity device connection"
+}

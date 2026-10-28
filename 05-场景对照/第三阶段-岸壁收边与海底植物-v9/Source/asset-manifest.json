@@ -1,0 +1,12 @@
+[
+  {
+    "source": "Assets/KelpBlade-Albedo.jpg",
+    "target": "Assets/Deepsea/Resources/CoastMarine/KelpBlade-Albedo.jpg",
+    "sha256": "2558b45ee791e342c889fc14f41b3ed48def3b46877ebddb6bda6e92aaa5c6d2"
+  },
+  {
+    "source": "Assets/source-record.json",
+    "target": "Assets/Deepsea/ThirdParty/CoastArtV9/source-record.json",
+    "sha256": "7283a3b094181c1da306ee5b758e545f374d34f604c527d67f848e4a95f65950"
+  }
+]

@@ -1,0 +1,10 @@
+{
+    "passed": true,
+    "detail": "Imported scene rendered; ring ground, landing and boarding verified. Visual quality requires image review.",
+    "rocks": 41,
+    "corals": 220,
+    "trees": 6,
+    "ferns": 58,
+    "newColliders": 6,
+    "meanFrameMs": 23.120704650878908
+}

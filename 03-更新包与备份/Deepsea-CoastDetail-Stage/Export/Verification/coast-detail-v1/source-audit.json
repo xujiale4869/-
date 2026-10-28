@@ -1,0 +1,67 @@
+﻿[
+    {
+        "path":  "Assets/Deepsea/Scripts/Editor/CoastalDetailBuild.cs",
+        "sha256":  "5ab45799c38989114f8321a5ee32c0885b0bfef8e369d5b8c3b42381804508b7",
+        "matches":  true
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/BoatController.cs",
+        "sha256":  "30731d61a6c41d11748e38d941f435b4550ea892cd250f0177f80d086e91f7ef",
+        "matches":  true
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/BoatWake.cs",
+        "sha256":  "cb622af5d8cd2df9e05a6b063f304c0e85eeaeb42b77c359ab894978c3fd6567",
+        "matches":  true
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastalDetail.cs",
+        "sha256":  "a27e13b83148c7cc151bdd06f20730b04777ce47f203d10f74b24ce435d9a60d",
+        "matches":  true
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastalDetailCheck.cs",
+        "sha256":  "2f0a5e16e12e56fbbfedf7e6a8d1b718c51883185530ce3a781265919a4dc969",
+        "matches":  true
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/OceanSurface.cs",
+        "sha256":  "2b9e6830509df8894cef542e46e3a65eb0f6af0c6bc16fb9e530eb7da39bcc23",
+        "matches":  true
+    },
+    {
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeabedRelief.cs",
+        "sha256":  "486711d6067fe2dd2a4febf03b82d1d7f64df5ab1cc6db0c30d74f0c4d890fa1",
+        "matches":  true
+    },
+    {
+        "path":  "Assets/Deepsea/Shaders/CoastalGround.shader",
+        "sha256":  "616c7a00d4c744c6e9738801549f06f53d59d73ba828a8afaf8023ed5a78b6d6",
+        "matches":  true
+    },
+    {
+        "path":  "Assets/Deepsea/Shaders/CoastalTimber.shader",
+        "sha256":  "693cfdbfbe1a94d4901f6084e1f5c92242cb429ec956cc5893dcf61e29e0c9c4",
+        "matches":  true
+    },
+    {
+        "path":  "Assets/Deepsea/Shaders/Includes/CoastDetail.hlsl",
+        "sha256":  "fab65a976e7dd82fd7a3ebaf64bb5cebecdf68c17e36e52c1ea48390338c7cba",
+        "matches":  true
+    },
+    {
+        "path":  "Assets/Deepsea/Shaders/Includes/SurfWash.hlsl",
+        "sha256":  "e3fcb7cb55594af422840caf251f09465a23bceecbc941bb07b899d9a60ddd10",
+        "matches":  true
+    },
+    {
+        "path":  "Assets/Deepsea/Shaders/Ocean.shader",
+        "sha256":  "fbb7dc5ff94ca0611bae92b22bfa38fed7dbf441694075e22529f203a86f03fa",
+        "matches":  true
+    },
+    {
+        "path":  "Assets/Deepsea/Shaders/ShoreSwash.shader",
+        "sha256":  "a6a65dcb7db02412c4b49d7a7a641003c4a3eba22fbdce77446fc5c540b8c8ea",
+        "matches":  true
+    }
+]

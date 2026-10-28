@@ -1,0 +1,38 @@
+{
+    "meshes": [
+        {
+            "asset": "grass_medium_01",
+            "node": "grass_medium_01_small_b_LOD0",
+            "sourceTriangles": 653,
+            "reducedTriangles": 300,
+            "bounds": {
+                "x": 1.6106981039047242,
+                "y": 0.9831187129020691,
+                "z": 1.7901495695114136
+            }
+        },
+        {
+            "asset": "shrub_02",
+            "node": "shrub_02_d_LOD0",
+            "sourceTriangles": 5188,
+            "reducedTriangles": 1099,
+            "bounds": {
+                "x": 0.8659346699714661,
+                "y": 0.992963969707489,
+                "z": 0.8809559345245361
+            }
+        },
+        {
+            "asset": "fern_02",
+            "node": "fern_02",
+            "sourceTriangles": 6232,
+            "reducedTriangles": 1200,
+            "bounds": {
+                "x": 1.934704065322876,
+                "y": 0.3904467821121216,
+                "z": 1.699228286743164
+            }
+        }
+    ],
+    "mask": "512x512 linear RGBA; cover/path/variation/placement"
+}

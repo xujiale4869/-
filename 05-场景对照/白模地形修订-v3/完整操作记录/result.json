@@ -1,0 +1,43 @@
+{
+    "passed": true,
+    "failure": "",
+    "resolution": "1920x1080",
+    "gpu": "Intel(R) Arc(TM) 130T GPU (16GB)",
+    "scene": "Assets/Deepsea/Scenes/CoastBlockout.unity",
+    "sharedPrefab": "EastCoast-Blockout-3-Natural",
+    "navigation": "start=(54.50, 0.00, 94.00) end=(69.30, 0.00, 88.61) seconds=6.004178 physicsSteps=300 contacts=",
+    "validationScope": "Rendering, timed frame sample, original boat controller and full walking/boarding course",
+    "terrainTriangles": 74992,
+    "rockMasses": 180,
+    "walkingPoints": 12,
+    "cavePathSamples": 160,
+    "actualFishBodySamples": 3520,
+    "scannedRockMeshes": 77,
+    "cavePassageClear": true,
+    "sailingDistance": 15.749162673950196,
+    "walkDistance": 42.59857940673828,
+    "walkVerticalError": 0.658217191696167,
+    "fps": 169.49951201090509,
+    "meanMs": 5.899721999999994,
+    "p95Ms": 7.371000000000905,
+    "p99Ms": 8.122099999999577,
+    "reached": [
+        "outward 0 (46.00, 0.74, 94.00) reached=True",
+        "outward 1 (35.80, 0.78, 94.00) reached=True",
+        "outward 2 (33.29, 1.37, 94.90) reached=True",
+        "outward 3 (31.28, 2.47, 95.87) reached=True",
+        "outward 4 (28.29, 3.53, 96.91) reached=True",
+        "outward 5 (27.18, 4.37, 95.26) reached=True",
+        "return 5 (27.18, 4.37, 95.26) reached=True",
+        "return 4 (27.87, 3.96, 96.72) reached=True",
+        "return 3 (30.70, 2.72, 96.07) reached=True",
+        "return 2 (32.72, 1.70, 95.13) reached=True",
+        "return 1 (35.22, 0.97, 94.12) reached=True",
+        "return 0 (45.69, 0.78, 94.00) reached=True"
+    ],
+    "depthSamples": [
+        "(55.00, 94.00) layout=-3.238621 physical=-3.238698 collider=地形块-0-0",
+        "(65.13, 98.00) layout=-5.702324 physical=-5.702324 collider=中央礁脊-8 · 扫描形体",
+        "(69.95, 82.00) layout=-21.48878 physical=-21.49026 collider=地形块-0-0"
+    ]
+}

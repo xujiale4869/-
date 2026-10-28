@@ -1,0 +1,12 @@
+﻿{
+    "passed":  true,
+    "date":  "2026-10-19T22:51:47.9635673+08:00",
+    "exe":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔-Unity海陆-v0.3\\Builds\\NaturalCoastV1\\GuichaoBay.exe",
+    "previewArgs":  "-natural-preview",
+    "video":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\02-演示视频\\自然海岸V1-场景结构演示.mp4",
+    "comparison":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－版本与视频\\05-场景对照\\自然海岸V1",
+    "trees":  8,
+    "kelp":  104,
+    "navigation":  "full expedition passed",
+    "ecology":  "passed"
+}

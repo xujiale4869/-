@@ -1,0 +1,12 @@
+{
+  "asset": "KelpBlade-Albedo.jpg",
+  "assetType": "AI-generated albedo texture, not photographed or scanned",
+  "generator": "built-in ImageGen",
+  "sourceOutput": "exec-ab13f457-884e-446e-85b0-76fbe3a163f2.png",
+  "sha256": "2558b45ee791e342c889fc14f41b3ed48def3b46877ebddb6bda6e92aaa5c6d2",
+  "runtimeResolution": "1024x1024",
+  "treatment": "RGB, resized 1024x1024, JPEG quality91; no other pixel edit",
+  "prompt": "CLEAN GREEN fresh healthy seaweed leaf surface, full frame orthographic albedo; soft longitudinal folds and subtle veins, low contrast; no brown, rust, dirt, spots, crust, scars, baked shadow or scene.",
+  "status": "green replacement; rejected brown test image excluded",
+  "notes": "This is an asset on three-dimensional fronds, not a simulated gameplay image."
+}

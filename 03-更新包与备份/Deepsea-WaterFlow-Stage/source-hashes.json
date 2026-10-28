@@ -1,0 +1,38 @@
+[
+  {
+    "path": "Assets/Deepsea/Scripts/Editor/WaterFlowBuild.cs",
+    "sha256": "38f9d21fd1f529050dafcb3d18d9a599a6651d30093506bc820ca382bc5bebfb"
+  },
+  {
+    "path": "Assets/Deepsea/Scripts/Runtime/OceanSurface.cs",
+    "sha256": "cf59114d8db93f41eac8504b02421155b45e4ebb9b8213f444d952b071f0f44d"
+  },
+  {
+    "path": "Assets/Deepsea/Scripts/Runtime/ShallowWaterFlow.cs",
+    "sha256": "22db410697c92058ade9fabb53732a51703c2e740a4ae252bf7eb0460c2b0922"
+  },
+  {
+    "path": "Assets/Deepsea/Scripts/Runtime/WaterFlowCheck.cs",
+    "sha256": "62e4fe771a1d8f41f74ed1fbab0ebcca285107490384be6818429e53d26a669a"
+  },
+  {
+    "path": "Assets/Deepsea/Shaders/Includes/TiledCurrent.hlsl",
+    "sha256": "fbc5975d9596e6f96a5678d8c60fcdacddf463acca2e0a8aa85738e7971140f3"
+  },
+  {
+    "path": "Assets/Deepsea/Shaders/Ocean.shader",
+    "sha256": "2daddc831ef12c7a9a286f5b196de0835180a033218e67166732540f4db7ff20"
+  },
+  {
+    "path": "Assets/Deepsea/ThirdParty/TiledDirectionalFlow/LICENSE.txt",
+    "sha256": "ed471ce09ebcba676424c710e333080cb130c160049f2ec5f8935a2f54d883aa"
+  },
+  {
+    "path": "Assets/Deepsea/ThirdParty/TiledDirectionalFlow/SOURCE.md",
+    "sha256": "c25495ea18e4ed92e40e0df80417cc49a3a7bc2ca0fc3238c0d2734ab0577530"
+  },
+  {
+    "path": "Assets/Deepsea/ThirdParty/TiledDirectionalFlow/Upstream.shader.txt",
+    "sha256": "72612d7597ef0e7a151bb0530c7f1bada51eb3084db42366fa1ab0ce1ae9debc"
+  }
+]

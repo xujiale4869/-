@@ -1,0 +1,22 @@
+﻿{
+    "version":  "CoastMaterials-Stage3-v6-Water",
+    "status":  "implemented-built-and-verified",
+    "remoteBackup":  "Tools/CoastArtV6/Before-20261022-203207",
+    "desktopShortcut":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔－材质光照制作版.lnk",
+    "executable":  "C:\\Users\\许嘉乐\\Desktop\\深海灯塔-Unity海陆-v0.3\\Builds\\CoastArtV6\\GuichaoBay-ArtV6.exe",
+    "interactivePid":  15708,
+    "sourceFilesVerified":  11,
+    "benchmark":  {
+                      "fps":  71.95806327247321,
+                      "p95Ms":  15.929299999999813,
+                      "renderResolution":  "1920x1080",
+                      "window":  "1920x1080",
+                      "p99Ms":  18.429099999998756,
+                      "renderScale":  1.0
+                  },
+    "protectedFilesUnchanged":  334,
+    "visualRockSurfaces":  179,
+    "caveVisualBodySamples":  3520,
+    "visualObstructions":  0,
+    "referenceArtMatched":  false
+}
