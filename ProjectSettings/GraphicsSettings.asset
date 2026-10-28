@@ -1,3 +1,112 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8a55c3cda5f42fa4486dd3a6e0b816b3195389fe637e1c05f1b2544d3668b4e9
-size 5698
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!30 &1
+GraphicsSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 15
+  m_Deferred:
+    m_Mode: 1
+    m_Shader: {fileID: 69, guid: 0000000000000000f000000000000000, type: 0}
+  m_DeferredReflections:
+    m_Mode: 1
+    m_Shader: {fileID: 74, guid: 0000000000000000f000000000000000, type: 0}
+  m_ScreenSpaceShadows:
+    m_Mode: 1
+    m_Shader: {fileID: 64, guid: 0000000000000000f000000000000000, type: 0}
+  m_DepthNormals:
+    m_Mode: 1
+    m_Shader: {fileID: 62, guid: 0000000000000000f000000000000000, type: 0}
+  m_MotionVectors:
+    m_Mode: 1
+    m_Shader: {fileID: 75, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightHalo:
+    m_Mode: 1
+    m_Shader: {fileID: 105, guid: 0000000000000000f000000000000000, type: 0}
+  m_LensFlare:
+    m_Mode: 1
+    m_Shader: {fileID: 102, guid: 0000000000000000f000000000000000, type: 0}
+  m_VideoShadersIncludeMode: 2
+  m_AlwaysIncludedShaders:
+  - {fileID: 7, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 15104, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 15105, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 15106, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10770, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10783, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 4800000, guid: 59017f430dbd6676472b38ce9f9e0916, type: 3}
+  - {fileID: 4800000, guid: 3d8d2e6d743922800de8cdd89caa3dbd, type: 3}
+  - {fileID: 4800000, guid: 2aa438cc3168bf88964c040a15953d4e, type: 3}
+  - {fileID: 4800000, guid: 131793ebf297c7841836d6a98bdd1f7d, type: 3}
+  - {fileID: 4800000, guid: b6bc94d2c005bdb46924c34ec2fced9c, type: 3}
+  - {fileID: 4800000, guid: 86feebc05d3161b46a02e7b7ca0a2d3c, type: 3}
+  - {fileID: 4800000, guid: e3d8fa462cd01ab4481037134f7d6c90, type: 3}
+  - {fileID: 4800000, guid: e6ba2dc8ff08643458973c963b5ebcc3, type: 3}
+  - {fileID: 4800000, guid: 65c911deea1bf3d4e89dd2d9b24c8b49, type: 3}
+  - {fileID: 4800000, guid: 1e13c644a85179343a73b72802818255, type: 3}
+  - {fileID: 4800000, guid: c4fcf51e56264591b1f9cb1fb9b9439d, type: 3}
+  - {fileID: 4800000, guid: 049fa58e70e97194886e02a12ac819a8, type: 3}
+  - {fileID: 4800000, guid: 58af60c78a635294c84bb34919305d60, type: 3}
+  - {fileID: 4800000, guid: 71aff83bed9679f498dc056d43aecc5e, type: 3}
+  - {fileID: 4800000, guid: 44a379d362ad61840bd40ddb1d020732, type: 3}
+  - {fileID: 4800000, guid: ae3cde58af1d7894d817102f437358e9, type: 3}
+  - {fileID: 4800000, guid: 72f8f92da120f344caa289b1cd007eee, type: 3}
+  - {fileID: 4800000, guid: 2535d9954899eb64686d9b2e66d15db5, type: 3}
+  - {fileID: 4800000, guid: 709b4eea3c96bca4694be34e09e5e719, type: 3}
+  - {fileID: 4800000, guid: 1028965db5b362142bd0f1bceddcee92, type: 3}
+  - {fileID: 4800000, guid: d3c8ccbfa02e6164ba3f539418400b15, type: 3}
+  - {fileID: 4800000, guid: 77f803b737a08ff4a83aefd6097f6849, type: 3}
+  - {fileID: 4800000, guid: dc6705d8ee782f3459d98cf06a6f67ed, type: 3}
+  - {fileID: 4800000, guid: f7ec37b0ad3fe4a40bf6c966d9017597, type: 3}
+  - {fileID: 4800000, guid: 2f948192e4d1af449a3e23ed3da77da3, type: 3}
+  - {fileID: 4800000, guid: 09d75c5260dacaf4fb13ca9d88e7e427, type: 3}
+  - {fileID: 4800000, guid: d393924d7cdad064dade5006514f129b, type: 3}
+  - {fileID: 4800000, guid: 603225f64efafae4191a2f20d9033ccd, type: 3}
+  - {fileID: 4800000, guid: 5e2f1cc9b67ac7a458529e97959964f3, type: 3}
+  - {fileID: 4800000, guid: f43338dff6b3d15468dd59ed46d82427, type: 3}
+  - {fileID: 4800000, guid: 477eeddc903c14140a08d7051cb7dae7, type: 3}
+  - {fileID: 4800000, guid: 66085493ddacf444abe0f832d98c4a2c, type: 3}
+  - {fileID: 4800000, guid: b5d13908b227ebb488ff4a19c4397537, type: 3}
+  - {fileID: 4800000, guid: 086054d2a1f32eb40bb3214513d3887d, type: 3}
+  - {fileID: 4800000, guid: 6f51f7af9b168ef4da1280e59a626375, type: 3}
+  - {fileID: 4800000, guid: 2d7eb9c41c1e1fa498cc0c3723096fe3, type: 3}
+  - {fileID: 4800000, guid: 2dccf674713ad1745ae36d2ba33d4ef7, type: 3}
+  - {fileID: 4800000, guid: 50377fafc47cd9943aa3ddd2a1099581, type: 3}
+  - {fileID: 4800000, guid: d089bd192c07ea64abf47ca6d1ec1236, type: 3}
+  - {fileID: 4800000, guid: 4566d3b331d106944acfb6cd083a3b05, type: 3}
+  - {fileID: 4800000, guid: 02f525f280fa94143a879a9b668f61b8, type: 3}
+  - {fileID: 4800000, guid: c31f8b17aa4e3214fa428b0d151ff578, type: 3}
+  - {fileID: 4800000, guid: 5c36bd00fed086e40831f6dc21a7a0cd, type: 3}
+  - {fileID: 4800000, guid: 9b0981431ad88084db1a39b256c82f08, type: 3}
+  m_PreloadedShaders: []
+  m_PreloadShadersBatchTimeLimit: -1
+  m_SpritesDefaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_CustomRenderPipeline: {fileID: 11400000, guid: c8dbd6070e201a345bfb2f4077a8186c, type: 2}
+  m_TransparencySortMode: 0
+  m_TransparencySortAxis: {x: 0, y: 0, z: 1}
+  m_DefaultRenderingPath: 1
+  m_DefaultMobileRenderingPath: 1
+  m_TierSettings: []
+  m_LightmapStripping: 0
+  m_FogStripping: 0
+  m_InstancingStripping: 2
+  m_BrgStripping: 0
+  m_LightmapKeepPlain: 1
+  m_LightmapKeepDirCombined: 1
+  m_LightmapKeepDynamicPlain: 1
+  m_LightmapKeepDynamicDirCombined: 1
+  m_LightmapKeepShadowMask: 1
+  m_LightmapKeepSubtractive: 1
+  m_FogKeepLinear: 1
+  m_FogKeepExp: 1
+  m_FogKeepExp2: 1
+  m_AlbedoSwatchInfos: []
+  m_LightsUseLinearIntensity: 0
+  m_LightsUseColorTemperature: 0
+  m_DefaultRenderingLayerMask: 1
+  m_LogWhenShaderIsCompiled: 0
+  m_SRPDefaultSettings:
+    UnityEngine.Rendering.Universal.UniversalRenderPipeline: {fileID: 11400000, guid: 2f8904088c9ee754db23bf3f7a4f600e, type: 2}
+  m_LightProbeOutsideHullStrategy: 1
+  m_CameraRelativeLightCulling: 0
+  m_CameraRelativeShadowCulling: 0
