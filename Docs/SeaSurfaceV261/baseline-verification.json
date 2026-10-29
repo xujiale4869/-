@@ -1,0 +1,24 @@
+﻿{
+    "passed":  true,
+    "normalSaveUnchanged":  true,
+    "coreSourceMatchesUser":  true,
+    "coreSourceHashes":  [
+                             {
+                                 "sha256":  "ed7fa65ea361314cf33eea0624b97a5feadd27eb724b787ffd07452f0141af7a",
+                                 "path":  "Assets/Deepsea/Shaders/SeaSurfaceV24/SeaSurfaceSparkleV26.shader"
+                             },
+                             {
+                                 "sha256":  "42b6bb32f7d6547ad1aa49a390c233ba735e0bb3658243382ba08bac5ce1909c",
+                                 "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaWaterArtUpgradeV26.cs"
+                             }
+                         ],
+    "oldInputCount":  268,
+    "unchanged":  265,
+    "changed":  [
+                    "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaWaterArtUpgradeV26.cs",
+                    "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaWaterReviewV26.cs",
+                    "Assets/Deepsea/Shaders/SeaSurfaceV24/SeaSurfaceSparkleV26.shader"
+                ],
+    "finalReview":  "review-02",
+    "checks":  34
+}

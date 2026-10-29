@@ -10,7 +10,7 @@ namespace Deepsea {
   [Serializable] class V26Result {
    public bool passed; public string resolution,gpu,savePath,scope="Fixed-camera native-window visual integration; not full gameplay or target-art approval";
    public List<string> checks=new List<string>(),failed=new List<string>(),errors=new List<string>(),warnings=new List<string>();
-   public float baselineFps,v26Fps,baselineP95Ms,v26P95Ms; public int frames=480,fishCount,visibleFish;
+   public float baselineFps,v26Fps,baselineP95Ms,v26P95Ms; public int frames=480,fishCount,visibleFish,goldenFishCount,visibleGoldenFish;
   }
   V26Result result;string evidence;
   void NoteV26(string s,string stack,LogType type){if(type==LogType.Error||type==LogType.Exception||type==LogType.Assert)result.errors.Add(s);else if(type==LogType.Warning)result.warnings.Add(s);}
@@ -47,15 +47,28 @@ namespace Deepsea {
    CheckV26(_v26WaterMaterial.GetTexture("_WaveMap")!=null,"legacy wave slopes retained");
    CheckV26(_trenchSchool.Count==72&&_mantaRay!=null,"72 silver fish and manta created");
    result.fishCount=_trenchSchool.Count;
+   result.goldenFishCount=_reefGoldenSchool.Count;
+   CheckV26(_reefGoldenSchool.Count==28,"28 golden reef fish created");
+   var optics=new[]{"_CausticsIntensity","_CausticsScale","_CausticsSpeed","_GlintIntensity","_GlintScale","_GlintSpeed","_FoamIntensity","_FoamWidth"};
+   var expected=new[]{1.68f,.22f,.34f,3.45f,13.5f,.95f,1.28f,.62f};var serialized=Resources.Load<Material>("SeaSurfaceV26/Water");
+   for(int j=0;j<optics.Length;j++)CheckV26(Mathf.Abs(_v26WaterMaterial.GetFloat(optics[j])-expected[j])<.00001f&&Mathf.Abs(serialized.GetFloat(optics[j])-expected[j])<.00001f,"runtime and serialized "+optics[j]+" unchanged");
+   var entry=EvaluateTrenchSpline(0,SeaLifeRuntime.Sea,1,0,-1,0);var end=EvaluateTrenchSpline(.5f,SeaLifeRuntime.Sea,1,0,-1,0);
+   CheckV26(end.z-entry.z>24.9f,"S corridor extends longitudinally instead of circling");
+   var before=EvaluateTrenchSpline(.9999f,SeaLifeRuntime.Sea,1,0,-1,0);var after=EvaluateTrenchSpline(.0001f,SeaLifeRuntime.Sea,1,0,-1,0);
+   CheckV26(Vector3.Distance(before,after)<.01f,"corridor parameter wrap stays continuous");
+
    yield return new WaitForSeconds(1);
    result.visibleFish=_trenchSchool.Count(f=>f.tr.GetComponent<Renderer>().enabled);CheckV26(result.visibleFish>0,"marine life has safe underwater placements");
+   CheckV26(!FindObjectsOfType<SeaLifeFishMotion>().Any(f=>f.name=="沿用海岬鱼群表现"),"legacy circular school isolated from S corridor");
+   result.visibleGoldenFish=_reefGoldenSchool.Count(f=>f.tr.GetComponent<Renderer>().enabled);CheckV26(result.visibleGoldenFish>0,"golden reef fish have safe underwater placements");
    _game.PlaceBoat(new Vector3(.8f,SeaLifeRuntime.Sea,5.2f),100);_game.SnapWaterCamera();_game.NoticeTime=0;
    var manual=typeof(SeaSurfaceV24).GetField("manual",BindingFlags.Instance|BindingFlags.NonPublic);manual.SetValue(_surface,true);
    typeof(SeaSurfaceV24).GetProperty("Clock").SetValue(_surface,1.5f,null);
+   _game.Paused=true; // Freeze ecology for the same-camera material pair.
    ApplyWaterMode(false);yield return ShotV26("01-baseline");CheckV26(_waterRenderer.sharedMaterial==_originalWaterMaterial,"F6 route restores original material");
    ApplyWaterMode(true);yield return ShotV26("preview");CheckV26(_waterRenderer.sharedMaterial==_v26WaterMaterial,"F6 route applies v26 material");
    typeof(SeaSurfaceV24).GetProperty("Clock").SetValue(_surface,2.5f,null);yield return ShotV26("03-next-wave");
-   manual.SetValue(_surface,false);
+   _game.Paused=false;manual.SetValue(_surface,false);
    yield return PerfV26(false);yield return PerfV26(true);
    float clock=_surface.Clock;Vector3 manta=_mantaRay.position;_game.Paused=true;Time.timeScale=0;
    for(int i=0;i<12;i++)yield return new WaitForEndOfFrame();

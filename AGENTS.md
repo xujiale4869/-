@@ -150,3 +150,14 @@ Blender 实际导出六FBX、三张512贴图与六个可编辑源文件。修复
 原始包在Tools/SeaSurfaceV26/OriginalInputs，详细适配与范围见Docs/SeaSurfaceV26/README.md。控制器等待Ready并只在v26场景/显式参数启动，继承v24波形与暂停时钟，接入焦散/泡沫/渐变贴图并保留Shader资源引用。修复384贴图被Unity缩放、原稿规则亮点、过强焦散、静止尾流与生态路径跳变；新增蝠鲼/72银鱼仍为程序化原型，不作为高精生态或全海湾路径验收。
 263项旧输入中262项哈希一致；唯一变化为SeaSurfaceV24.cs的F7条件加v26 Active判空，避免新旧模式冲突。正常存档SHA不变。build-02成功、新Shader编译错误0，但全包仍24项历史警告；review-02的21项检查通过，运行0错误0警告。1080p可见固定镜头480帧：对照138.90FPS/P95 8.31ms，v26 129.49FPS/P95 8.70ms；非长期/全地图/4K性能声明。
 最终截图与result.json在Docs/SeaSurfaceV26；draft01导入缩放失败且有规则亮点，不作交付依据。本轮未收到目标原图本体，不能称已匹配原图或用户已认可；未做完整人工钓鱼/水族馆回归。新生态两侧保留，F6不是全旧版二进制还原。重建使用Deepsea.Editor.SeaSurfaceBuildV26.Build；ImportAndBuild会显式重建场景。
+
+
+## 2026-10-29 v26.1：完整一体包接入与最终复核
+
+使用用户提供 gpt_v26_1_all_in_one 完整包；主控制器与 Shader 按原文提取（终止换行），SHA 见 Docs/SeaSurfaceV261/README.md。不得自行降低其焦散1.68、碎光3.45、泡沫1.28等原始参数；Resources水材质与运行时值已同步。72银鱼走连续纵向S路径，另28金色礁鱼；本轮未另行重绘珊瑚资产。
+
+独立 partial SeaLegacySchoolIsolationV261 仅在新版控制器启用时停用精确名为“沿用海岬鱼群表现”的34条旧环境鱼，避免旧环形鱼群叠加；原包两文件保持原样。v26.0完整程序在Builds/SeaSurfaceV26-v26.0-backup，旧v26快捷入口改指备份，桌面最新版和v26.1入口指当前SeaSurfaceV26程序，启动参数-forceV26Water。
+
+最终build-02成功、Shader编译错误0；增量构建报告1项历史过时API警告，首轮完整构建24项历史警告，不能称全工程0警告。最终review-02证据Docs/SeaSurfaceV26/result.json及三图：34项通过、运行0错误0警告；原生1080p固定镜头每状态480帧，原水155.72FPS/P95 8.21ms，新水143.55/P95 7.93ms，不外推全地图/长期/4K。F6共用材质切换方法经过检查，非OS键盘事件注入。正常存档SHA不变，临时存档隔离。268项旧输入265不变、3项预期源码变化；Water.mat另有参数序列化更新。完整原始包、基线与交付哈希在Tools/SeaSurfaceV261。
+
+重建Deepsea.Editor.SeaSurfacePolishV261.SyncAndBuild从核心C#同步原始数值并构建现有场景；普通Build保留材质/场景，ImportAndBuild会重生成。review-01旧圈鱼叠加图不作为最终画面，旧v26证据在Docs/SeaSurfaceV261/PreviousV26。本轮仍未收到目标原图，未完成原图匹配/用户美术认可，也未作完整人工钓鱼展缸回归。

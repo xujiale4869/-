@@ -1,0 +1,152 @@
+﻿{
+    "version":  "v26.1",
+    "finalReview":  "review-02",
+    "excludes":  "Generated players, local logs, staging and personal save snapshot",
+    "files":  [
+                  {
+                      "path":  "AGENTS.md",
+                      "sha256":  "e865d6d0f75e3421d26c6c9a1083d44fd2ec909a99a70931e07eeee853ac8f90",
+                      "bytes":  30366
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaSurfaceV26/Water.mat",
+                      "sha256":  "c09653135fd9252fa8c3bd2541d9e8fb776493712601bb5fe41d0dad0bf1b472",
+                      "bytes":  2029
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Editor/SeaSurfaceV26/SeaSurfacePolishV261.cs",
+                      "sha256":  "596b4e834423de149ec6aa750324a13095aba83084ae7dfcbe4c4912317442d6",
+                      "bytes":  2391
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Editor/SeaSurfaceV26/SeaSurfacePolishV261.cs.meta",
+                      "sha256":  "2106824693eb13706ed88221f6987ab2734f1acadba779e7f032153c64f55272",
+                      "bytes":  243
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaLegacySchoolIsolationV261.cs",
+                      "sha256":  "7f928df216ce882a1b03818c6da88d03d976a41e8c1fa9dafda6b0b8d62e5573",
+                      "bytes":  855
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaLegacySchoolIsolationV261.cs.meta",
+                      "sha256":  "eb11cdf97e81269f36a199171b1c09903dfc1f50989ad96fca168d8d4440bfe4",
+                      "bytes":  243
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaWaterArtUpgradeV26.cs",
+                      "sha256":  "42b6bb32f7d6547ad1aa49a390c233ba735e0bb3658243382ba08bac5ce1909c",
+                      "bytes":  27039
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaWaterReviewV26.cs",
+                      "sha256":  "ebc42199decd16a17eb630949f7def94216803fc453d519bdb75cf09715a8411",
+                      "bytes":  7434
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Shaders/SeaSurfaceV24/SeaSurfaceSparkleV26.shader",
+                      "sha256":  "ed7fa65ea361314cf33eea0624b97a5feadd27eb724b787ffd07452f0141af7a",
+                      "bytes":  20960
+                  },
+                  {
+                      "path":  "Docs/SeaSurfaceV26/01-baseline.jpg",
+                      "sha256":  "d1a1fbbb7771af1094fac5288095016b99983f28e100dcf24243c2d8f09857b4",
+                      "bytes":  397585
+                  },
+                  {
+                      "path":  "Docs/SeaSurfaceV26/03-next-wave.jpg",
+                      "sha256":  "9c9cf75e482b5eeae62931099af8923f703ef06f518d506d3c353d4e2a607fc2",
+                      "bytes":  879333
+                  },
+                  {
+                      "path":  "Docs/SeaSurfaceV26/baseline-verification.json",
+                      "sha256":  "84218c7e7d84a0935a53dc34434cca8f141892970955ffa7cb05ed9c0056c8c2",
+                      "bytes":  1156
+                  },
+                  {
+                      "path":  "Docs/SeaSurfaceV26/preview.jpg",
+                      "sha256":  "95de17a2c8732afe47cefd6c044a203eccfd9ce4e5a2ef07e1828e4a91817297",
+                      "bytes":  879154
+                  },
+                  {
+                      "path":  "Docs/SeaSurfaceV26/README.md",
+                      "sha256":  "5ab03150d0fbe4537ef900fa6e66c86edb3d17f030e0c0413502695cf186b34b",
+                      "bytes":  454
+                  },
+                  {
+                      "path":  "Docs/SeaSurfaceV26/result.json",
+                      "sha256":  "2e63d1b5be9f1aa1431c39689652ba906bec8ae7f2aafa8c186505c738c80a33",
+                      "bytes":  2485
+                  },
+                  {
+                      "path":  "Docs/SeaSurfaceV261/baseline-verification.json",
+                      "sha256":  "84218c7e7d84a0935a53dc34434cca8f141892970955ffa7cb05ed9c0056c8c2",
+                      "bytes":  1156
+                  },
+                  {
+                      "path":  "Docs/SeaSurfaceV261/PreviousV26/01-baseline.jpg",
+                      "sha256":  "abd3aee93501b6f42b232801b0dbd18777d6e7c2d4e3d7021b3baeb7c6eb08cb",
+                      "bytes":  387409
+                  },
+                  {
+                      "path":  "Docs/SeaSurfaceV261/PreviousV26/03-next-wave.jpg",
+                      "sha256":  "abe519e5c32c1d9c5f79cbe4723a8dcd466dc779cea1b96c9618aabaece48d42",
+                      "bytes":  566623
+                  },
+                  {
+                      "path":  "Docs/SeaSurfaceV261/PreviousV26/baseline-verification.json",
+                      "sha256":  "49474ca224dd92c92e30d6631b28137c5bc69b5f6db64af4c18a8ff86524d5bc",
+                      "bytes":  276
+                  },
+                  {
+                      "path":  "Docs/SeaSurfaceV261/PreviousV26/preview.jpg",
+                      "sha256":  "6a6e9fd8036656951ecf758c3f61231b3f8be283a191a7708c814bb9d7b7fb23",
+                      "bytes":  566449
+                  },
+                  {
+                      "path":  "Docs/SeaSurfaceV261/PreviousV26/README.md",
+                      "sha256":  "a046b2a415e52b3f3c05e861858d96634fbdcdb2d311a9fde3e9bcce96ace1ad",
+                      "bytes":  4563
+                  },
+                  {
+                      "path":  "Docs/SeaSurfaceV261/PreviousV26/result.json",
+                      "sha256":  "81ba6f6ec95701d4d689e54ce7d541e39dbf2c2d28053da76cea4e21ad0a783c",
+                      "bytes":  1609
+                  },
+                  {
+                      "path":  "Docs/SeaSurfaceV261/README.md",
+                      "sha256":  "c9e1fd2ed94f43d54af400f3642f26a9944c4989d4e8a734eba792c5bb6e0e87",
+                      "bytes":  4928
+                  },
+                  {
+                      "path":  "Tools/SeaSurfaceV26/build.json",
+                      "sha256":  "e7e1964a7fe23b438c40c2c81990a8c329e956c9806afe98507ec1ee72439a1b",
+                      "bytes":  45
+                  },
+                  {
+                      "path":  "Tools/SeaSurfaceV261/.gitignore",
+                      "sha256":  "c20e2d9c327fef251a14f46a8386c196a853cc67cab2e843233a23da56f40de8",
+                      "bytes":  39
+                  },
+                  {
+                      "path":  "Tools/SeaSurfaceV261/baseline.json",
+                      "sha256":  "ecd7e9676435dfc3028c08b256c01cfbdf74f9b229e5f5f5904e6a71cdfddb2f",
+                      "bytes":  46639
+                  },
+                  {
+                      "path":  "Tools/SeaSurfaceV261/build.json",
+                      "sha256":  "e7e1964a7fe23b438c40c2c81990a8c329e956c9806afe98507ec1ee72439a1b",
+                      "bytes":  45
+                  },
+                  {
+                      "path":  "Tools/SeaSurfaceV261/OriginalInputs/gpt_v26_1_all_in_one.md",
+                      "sha256":  "78bb385c9b9b3fb3418fd116649df14366402a66ad5d9b56b63243aea1340eb0",
+                      "bytes":  49825
+                  },
+                  {
+                      "path":  "Tools/SeaSurfaceV261/shortcuts.json",
+                      "sha256":  "f4417e5f32aa903fff0006b0a31030f3ca4ff08dc63722268046e01b5c7e6dae",
+                      "bytes":  921
+                  }
+              ]
+}

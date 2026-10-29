@@ -1,0 +1,20 @@
+﻿[
+    {
+        "entry":  "深海灯塔－最新版.lnk",
+        "target":  "Builds\\SeaSurfaceV26\\Guichao-SeaSurfaceV26.exe",
+        "arguments":  "-forceV26Water -screen-fullscreen 0 -screen-width 1920 -screen-height 1080",
+        "verified":  true
+    },
+    {
+        "entry":  "深海灯塔-全部版本\\版本启动入口\\深海灯塔-水面光学-v26.1.lnk",
+        "target":  "Builds\\SeaSurfaceV26\\Guichao-SeaSurfaceV26.exe",
+        "arguments":  "-forceV26Water -screen-fullscreen 0 -screen-width 1920 -screen-height 1080",
+        "verified":  true
+    },
+    {
+        "entry":  "深海灯塔-全部版本\\版本启动入口\\深海灯塔-水面光学-v26.lnk",
+        "target":  "Builds\\SeaSurfaceV26-v26.0-backup\\Guichao-SeaSurfaceV26.exe",
+        "arguments":  "-water-v26 -screen-fullscreen 0 -screen-width 1920 -screen-height 1080",
+        "verified":  true
+    }
+]

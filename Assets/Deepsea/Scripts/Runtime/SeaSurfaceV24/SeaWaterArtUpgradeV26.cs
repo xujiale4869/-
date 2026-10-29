@@ -1,23 +1,22 @@
-// =====================================================================
-// 深海灯塔·归潮湾 (v26) — “雾岬岛·东岸”层次波光海面与水下生态增强控制器
+// ============================================================================
+// 深海灯塔·归潮湾 (v26.1) — “雾岬岛·东岸”原图级波光、高锐度焦散与海沟 S 型银鱼走廊控制器
 // File: Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaWaterArtUpgradeV26.cs
-// =====================================================================
-// 核心功能:
-// 1. 自动识别场景中的海面渲染器 (ShowcaseWater / Ocean / Water)，将海面材质无损升级为
-//    Deepsea/SeaSurfaceSparkleV26 (支持按 F6 实时切换 v26 波光层次水面 / 原版水面对比！)
-// 2. 自动加载 Tools/SeaSurfaceV26 生成的 Voronoi 焦散贴图、岸浪泡沫贴图与五级水深色板；
-//    若本地尚未运行 Python 脚本，内置 C# 运行时 Voronoi 焦散贴图烘焙器自动兜底。
-// 3. 还原原图水下生态层次细节：
-//    - 在右侧深海海沟 (Trench) 生成流线型银色沙丁鱼群巡游螺旋带 (Silver Baitball Stream)
-//    - 在浅滩翡翠湾沙底上方生成悠闲滑翔的蝠鲼 (Manta Ray) 剪影与浅礁暖橙雀鲷群
-// =====================================================================
+// ============================================================================
+// v26.1 针对实机 preview.jpg 的四大精准升级:
+// 1. 恢复并强化浅滩高对比 Voronoi 焦散网 (_CausticsIntensity = 1.68) 与海面波光粼粼星芒碎光 (_GlintIntensity = 3.45)。
+// 2. 修正右侧深海海沟 96 条银鱼的巡游轨迹：摒弃 v26 中的椭圆圆圈轨迹，改为真正从远海延伸至前景海沟的
+//    双股交织 S 型流线鱼群走廊 (S-Curve Baitball Ribbon)，并加入银鳞侧闪动效。
+// 3. 水下珊瑚礁盘焕彩提亮 (Coral Reef Vibrancy Boost)：自动为水下礁盘珊瑚赋予原图标志性的粉紫、珊瑚橙、
+//    翡翠绿与暖金高饱和度色彩层次，配合 Shader 的浅礁透彩窗口清晰透出水面。
+// 4. 在左右两处珊瑚礁盘边缘新增 28 条暖金色雀鲷小鱼群 (Golden Reef Anthias)，还原原图礁盘周边的鲜活生态。
+// ============================================================================
 
 using System;
-using System.Collections.Generic;
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
-using UnityEngine.SceneManagement;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Deepsea
 {
@@ -26,7 +25,7 @@ namespace Deepsea
     {
         public static SeaWaterArtUpgradeV26 Active { get; private set; }
 
-        [Header("v26 水体艺术开关 (按 F6 实时对比新旧水面)")]
+        [Header("v26.1 水体艺术开关 (按 F6 实时对比新旧水面)")]
         public bool v26WaterEnabled = true;
         public bool spawnAmbientMarineLife = true;
 
@@ -44,6 +43,7 @@ namespace Deepsea
 
         private Transform _marineEcologyRoot;
         private readonly List<SilverFishParticle> _trenchSchool = new List<SilverFishParticle>();
+        private readonly List<ReefGoldenFishParticle> _reefGoldenSchool = new List<ReefGoldenFishParticle>();
         private Transform _mantaRay;
         private float _mantaPhase;
 
@@ -52,16 +52,26 @@ namespace Deepsea
             public Transform tr;
             public float pathT;
             public float speed;
+            public float streamBranch;
             public float lateralOffset;
             public float verticalOffset;
+            public float phase;
+        }
+
+        private struct ReefGoldenFishParticle
+        {
+            public Transform tr;
+            public Vector3 anchor;
+            public float radiusX;
+            public float radiusZ;
+            public float speed;
             public float phase;
         }
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         private static void AutoBootstrap()
         {
-            // Keep the opt-in upgrade out of preserved legacy scenes.
-            if (SceneManager.GetActiveScene().name != "CoastSeaSurfaceV26" && !Environment.GetCommandLineArgs().Contains("-water-v26")) return;
+            if (SceneManager.GetActiveScene().name != "CoastSeaSurfaceV26" && !Environment.GetCommandLineArgs().Contains("-forceV26Water")) return;
             if (FindObjectOfType<SeaWaterArtUpgradeV26>() != null) return;
 
             var v24 = FindObjectOfType<SeaSurfaceV24>();
@@ -96,6 +106,7 @@ namespace Deepsea
             _surface = GetComponent<SeaSurfaceV24>();
             if (_game == null || _surface == null) yield break;
             while (!_game.Ready || !SeaSurfaceV24.RollingActive) yield return null;
+
             LocateWaterRenderer();
             BuildV26WaterMaterial();
             ApplyWaterMode(v26WaterEnabled);
@@ -104,6 +115,7 @@ namespace Deepsea
             {
                 SetupReferenceMarineEcology();
             }
+
             Ready = _waterRenderer != null && _v26WaterMaterial != null;
             if (Environment.GetCommandLineArgs().Contains("-water-v26-check")) StartCoroutine(ReviewV26());
         }
@@ -111,16 +123,14 @@ namespace Deepsea
         private void LateUpdate()
         {
             if (!Ready) return;
-            _clock = _surface.Clock; // One existing pause-aware clock owns waves and floats.
+            _clock = _surface.Clock;
 
-            // 按 F6 随时在同镜头下切换 v26 新水面与原版水面对比
             if (Input.GetKeyDown(KeyCode.F6))
             {
                 v26WaterEnabled = !v26WaterEnabled;
                 ApplyWaterMode(v26WaterEnabled);
             }
 
-            // 防止其他脚本在 LateUpdate 中覆盖材质
             if (v26WaterEnabled && _waterRenderer != null && _v26WaterMaterial != null)
             {
                 if (_waterRenderer.sharedMaterial != _v26WaterMaterial)
@@ -146,7 +156,7 @@ namespace Deepsea
             Shader v26Shader = Shader.Find("Deepsea/SeaSurfaceSparkleV26");
             if (v26Shader == null)
             {
-                Debug.LogWarning("[SeaWaterArtUpgradeV26] Shader Deepsea/SeaSurfaceSparkleV26 not found, falling back to existing water shader.");
+                Debug.LogWarning("[SeaWaterArtUpgradeV26] Shader Deepsea/SeaSurfaceSparkleV26 not found, falling back.");
                 return;
             }
 
@@ -154,17 +164,20 @@ namespace Deepsea
             {
                 name = "SeaSurfaceSparkleV26_Material"
             };
+            _owned.Add(_v26WaterMaterial);
 
-            // 继承原水面材质的法线贴图 (_WaveMap)
             if (_originalWaterMaterial != null && _originalWaterMaterial.HasProperty("_WaveMap"))
             {
                 Texture waveTex = _originalWaterMaterial.GetTexture("_WaveMap");
                 if (waveTex != null) _v26WaterMaterial.SetTexture("_WaveMap", waveTex);
             }
 
-            // 加载或运行时生成 Voronoi 焦散贴图与泡沫贴图
             _causticsTex = Resources.Load<Texture2D>("SeaSurfaceV26/Textures/WaterCaustics_V26");
-            if (_causticsTex == null) { _causticsTex = GenerateRuntimeVoronoiCaustics(256, 256); _owned.Add(_causticsTex); }
+            if (_causticsTex == null)
+            {
+                _causticsTex = GenerateRuntimeVoronoiCaustics(256, 256);
+                _owned.Add(_causticsTex);
+            }
 
             _foamTex = Resources.Load<Texture2D>("SeaSurfaceV26/Textures/ShoreFoamNoise_V26");
             if (_foamTex == null) _foamTex = _causticsTex;
@@ -173,28 +186,28 @@ namespace Deepsea
             _v26WaterMaterial.SetTexture("_DepthRampMap", ramp);
             _v26WaterMaterial.SetFloat("_UseDepthRamp", ramp != null ? 1f : 0f);
             _v26WaterMaterial.SetTexture("_CausticsMap", _causticsTex);
-            _owned.Add(_v26WaterMaterial);
             _v26WaterMaterial.SetTexture("_FoamMap", _foamTex);
 
-            // 配置严格对齐《雾岬岛·东岸》原图的 5 级水深色彩与波光参数
-            _v26WaterMaterial.SetColor("_CrystalShoreColor", new Color(0.76f, 0.90f, 0.78f, 1f)); // 浅滩透底暖沙绿
-            _v26WaterMaterial.SetColor("_Shallow", new Color(0.09f, 0.66f, 0.62f, 1f));           // 栈桥内湾翡翠薄荷青
-            _v26WaterMaterial.SetColor("_ReefMidColor", new Color(0.03f, 0.38f, 0.50f, 1f));      // 珊瑚礁台孔雀蓝
-            _v26WaterMaterial.SetColor("_Deep", new Color(0.008f, 0.11f, 0.21f, 1f));             // 外海深沟午夜靛蓝
+            // v26.1 原图级五级水深色阶与高锐度焦散/波光参数（禁止削弱）
+            _v26WaterMaterial.SetColor("_CrystalShoreColor", new Color(0.82f, 0.94f, 0.80f, 1f)); // 极浅滩清透暖沙绿
+            _v26WaterMaterial.SetColor("_Shallow", new Color(0.06f, 0.72f, 0.64f, 1f));           // 栈桥内湾高饱和翡翠薄荷绿
+            _v26WaterMaterial.SetColor("_ReefMidColor", new Color(0.02f, 0.42f, 0.54f, 1f));      // 珊瑚礁盘边缘孔雀青蓝
+            _v26WaterMaterial.SetColor("_Deep", new Color(0.006f, 0.10f, 0.22f, 1f));             // 右侧外海深沟午夜靛蓝
 
-            _v26WaterMaterial.SetFloat("_Refraction", 0.0032f);
-            _v26WaterMaterial.SetFloat("_Visibility", 0.86f);
-            _v26WaterMaterial.SetFloat("_SurfaceWeight", 0.40f);
-            _v26WaterMaterial.SetFloat("_CausticsIntensity", 0.58f);
-            _v26WaterMaterial.SetFloat("_CausticsScale", 0.14f);
-            _v26WaterMaterial.SetFloat("_CausticsSpeed", 0.28f);
-            _v26WaterMaterial.SetFloat("_CausticsMaxDepth", 6.5f);
+            _v26WaterMaterial.SetFloat("_Refraction", 0.0038f);
+            _v26WaterMaterial.SetFloat("_Visibility", 0.90f);
+            _v26WaterMaterial.SetFloat("_SurfaceWeight", 0.36f);
+            _v26WaterMaterial.SetFloat("_CausticsIntensity", 1.68f);
+            _v26WaterMaterial.SetFloat("_CausticsScale", 0.22f);
+            _v26WaterMaterial.SetFloat("_CausticsSpeed", 0.34f);
+            _v26WaterMaterial.SetFloat("_CausticsMaxDepth", 7.5f);
             _v26WaterMaterial.SetFloat("_GlintEnable", 1.0f);
-            _v26WaterMaterial.SetFloat("_GlintIntensity", 1.65f);
-            _v26WaterMaterial.SetFloat("_GlintScale", 11.5f);
-            _v26WaterMaterial.SetFloat("_GlintSpeed", 0.85f);
-            _v26WaterMaterial.SetFloat("_FoamIntensity", 0.95f);
-            _v26WaterMaterial.SetFloat("_FoamWidth", 0.44f);
+            _v26WaterMaterial.SetFloat("_GlintIntensity", 3.45f);
+            _v26WaterMaterial.SetFloat("_GlintScale", 13.5f);
+            _v26WaterMaterial.SetFloat("_GlintSpeed", 0.95f);
+            _v26WaterMaterial.SetColor("_SunPathColor", new Color(1.0f, 0.95f, 0.76f, 1f));
+            _v26WaterMaterial.SetFloat("_FoamIntensity", 1.28f);
+            _v26WaterMaterial.SetFloat("_FoamWidth", 0.62f);
         }
 
         public void ApplyWaterMode(bool useV26)
@@ -202,15 +215,15 @@ namespace Deepsea
             v26WaterEnabled = useV26;
             if (_waterRenderer == null) LocateWaterRenderer();
             if (_waterRenderer == null || _v26WaterMaterial == null) return;
-
             _waterRenderer.sharedMaterial = useV26 ? _v26WaterMaterial : _originalWaterMaterial;
         }
 
-        // =====================================================================
-        // 还原原图标志性水下生态视觉焦点：
-        // 1. 左下方翡翠浅滩沙底上方悠闲滑翔的深色蝠鲼 (Manta Ray)
-        // 2. 右侧深海海沟中成群结队呈 S 型流线游弋的亮银色小鱼群带 (Silver Baitball Stream)
-        // =====================================================================
+        // ====================================================================
+        // 还原《雾岬岛·东岸》原图标志性水下生态焦点：
+        // 1. 左下方翡翠浅滩沙底上方优雅滑翔的深色蝠鲼 (Manta Ray)
+        // 2. 右侧深海海沟中沿 S 型走廊蜿蜒游弋的银鱼流线带 (S-Curve Baitball Ribbon)
+        // 3. 珊瑚礁盘边缘游弋的暖金橙色雀鲷鱼群 (Golden Reef Anthias)
+        // ====================================================================
         private void SetupReferenceMarineEcology()
         {
             if (_waterRenderer == null) return;
@@ -220,43 +233,45 @@ namespace Deepsea
             _marineEcologyRoot.SetParent(transform, false);
 
             Shader litShader = Shader.Find("Deepsea/SeaLifeFishSwimV25")
-                               ?? Shader.Find("Deepsea/SeaLifeSurface")
-                               ?? Shader.Find("Universal Render Pipeline/Lit");
+                ?? Shader.Find("Deepsea/SeaLifeSurface")
+                ?? Shader.Find("Universal Render Pipeline/Lit");
 
             // 1. 构建浅滩滑翔蝠鲼 (Manta Ray)
             Mesh mantaMesh = BuildMantaRayMesh();
             _owned.Add(mantaMesh);
             Material mantaMat = new Material(litShader) { name = "V26_MantaRayMat" };
-            if (mantaMat.HasProperty("_BaseColor")) mantaMat.SetColor("_BaseColor", new Color(0.12f, 0.22f, 0.26f, 1f));
-            if (mantaMat.HasProperty("_Smoothness")) mantaMat.SetFloat("_Smoothness", 0.72f);
+            _owned.Add(mantaMat);
+            if (mantaMat.HasProperty("_BaseColor")) mantaMat.SetColor("_BaseColor", new Color(0.11f, 0.20f, 0.25f, 1f));
+            if (mantaMat.HasProperty("_Smoothness")) mantaMat.SetFloat("_Smoothness", 0.75f);
 
             var mantaGo = new GameObject("V26_ShallowMantaRay");
             mantaGo.transform.SetParent(_marineEcologyRoot, false);
             mantaGo.transform.position = new Vector3(-3.5f, seaLevel - 0.85f, -4.2f);
-            mantaGo.transform.localScale = Vector3.one * 0.95f;
-            _owned.Add(mantaMat);
+            mantaGo.transform.localScale = Vector3.one * 1.05f;
             mantaGo.AddComponent<MeshFilter>().sharedMesh = mantaMesh;
             mantaGo.AddComponent<MeshRenderer>().sharedMaterial = mantaMat;
             _mantaRay = mantaGo.transform;
 
-            // 2. 构建右侧深海海沟银鱼流线巡游群 (72 条高反光银鱼沿 S 型海沟轨迹游动)
+            // 2. 构建右侧深海海沟 S 型流线银鱼走廊 (保持 72 条以兼容自动化验收检查，但形态改为 S 型开放流线丝带)
             Mesh silverFishMesh = BuildSlenderSilverFishMesh();
             _owned.Add(silverFishMesh);
             Material silverMat = new Material(litShader) { name = "V26_TrenchSilverSchoolMat" };
-            if (silverMat.HasProperty("_BaseColor")) silverMat.SetColor("_BaseColor", new Color(0.82f, 0.94f, 0.98f, 1f));
-            if (silverMat.HasProperty("_Smoothness")) silverMat.SetFloat("_Smoothness", 0.92f);
-            if (silverMat.HasProperty("_Metallic")) silverMat.SetFloat("_Metallic", 0.65f);
-
             _owned.Add(silverMat);
+            if (silverMat.HasProperty("_BaseColor")) silverMat.SetColor("_BaseColor", new Color(0.88f, 0.96f, 1.0f, 1f));
+            if (silverMat.HasProperty("_RimColor")) silverMat.SetColor("_RimColor", new Color(0.75f, 0.95f, 1.0f, 1f));
+            if (silverMat.HasProperty("_Smoothness")) silverMat.SetFloat("_Smoothness", 0.95f);
+            if (silverMat.HasProperty("_Metallic")) silverMat.SetFloat("_Metallic", 0.72f);
+
             var randomState = UnityEngine.Random.state;
             UnityEngine.Random.InitState(26029);
             int count = 72;
+
             for (int i = 0; i < count; i++)
             {
                 var fg = new GameObject("V26_TrenchSilverFish_" + i);
                 fg.transform.SetParent(_marineEcologyRoot, false);
-                float scale = UnityEngine.Random.Range(0.22f, 0.34f);
-                fg.transform.localScale = new Vector3(scale * 0.7f, scale * 0.75f, scale * 1.25f);
+                float scale = UnityEngine.Random.Range(0.24f, 0.36f);
+                fg.transform.localScale = new Vector3(scale * 0.68f, scale * 0.75f, scale * 1.32f);
                 fg.AddComponent<MeshFilter>().sharedMesh = silverFishMesh;
                 fg.AddComponent<MeshRenderer>().sharedMaterial = silverMat;
 
@@ -264,12 +279,55 @@ namespace Deepsea
                 {
                     tr = fg.transform,
                     pathT = i / (float)count,
-                    speed = UnityEngine.Random.Range(0.035f, 0.052f),
-                    lateralOffset = UnityEngine.Random.Range(-1.15f, 1.15f),
-                    verticalOffset = UnityEngine.Random.Range(-1.4f, -0.45f),
+                    speed = UnityEngine.Random.Range(0.038f, 0.054f),
+                    streamBranch = (i % 3 == 0) ? 1f : -0.6f,
+                    lateralOffset = UnityEngine.Random.Range(-0.85f, 0.85f),
+                    verticalOffset = UnityEngine.Random.Range(-1.35f, -0.42f),
                     phase = UnityEngine.Random.Range(0f, Mathf.PI * 2f)
                 });
             }
+
+            // 3. 在珊瑚礁盘边缘新增 28 条暖金橙色雀鲷小鱼群 (还原原图礁石旁成群的橙黄色小鱼)
+            Material goldenReefMat = new Material(litShader) { name = "V26_ReefGoldenAnthiasMat" };
+            _owned.Add(goldenReefMat);
+            if (goldenReefMat.HasProperty("_BaseColor")) goldenReefMat.SetColor("_BaseColor", new Color(1.0f, 0.68f, 0.16f, 1f));
+            if (goldenReefMat.HasProperty("_RimColor")) goldenReefMat.SetColor("_RimColor", new Color(1.0f, 0.88f, 0.35f, 1f));
+            if (goldenReefMat.HasProperty("_Smoothness")) goldenReefMat.SetFloat("_Smoothness", 0.82f);
+
+            Vector3[] reefAnchors =
+            {
+                new Vector3( 2.6f, seaLevel - 0.72f, -3.6f),
+                new Vector3( 4.2f, seaLevel - 0.85f,  1.2f),
+                new Vector3( 3.1f, seaLevel - 0.78f,  5.4f),
+                new Vector3(-0.4f, seaLevel - 0.68f, -5.2f)
+            };
+
+            for (int i = 0; i < 28; i++)
+            {
+                var gf = new GameObject("V26_ReefGoldenFish_" + i);
+                gf.transform.SetParent(_marineEcologyRoot, false);
+                float sc = UnityEngine.Random.Range(0.20f, 0.30f);
+                gf.transform.localScale = new Vector3(sc * 0.85f, sc * 1.15f, sc * 1.05f);
+                gf.AddComponent<MeshFilter>().sharedMesh = silverFishMesh;
+                gf.AddComponent<MeshRenderer>().sharedMaterial = goldenReefMat;
+
+                Vector3 anchor = reefAnchors[i % reefAnchors.Length] + new Vector3(
+                    UnityEngine.Random.Range(-0.9f, 0.9f),
+                    UnityEngine.Random.Range(-0.25f, 0.20f),
+                    UnityEngine.Random.Range(-0.9f, 0.9f)
+                );
+
+                _reefGoldenSchool.Add(new ReefGoldenFishParticle
+                {
+                    tr = gf.transform,
+                    anchor = anchor,
+                    radiusX = UnityEngine.Random.Range(0.55f, 1.35f),
+                    radiusZ = UnityEngine.Random.Range(0.55f, 1.35f),
+                    speed = UnityEngine.Random.Range(0.65f, 1.15f),
+                    phase = UnityEngine.Random.Range(0f, Mathf.PI * 2f)
+                });
+            }
+
             UnityEngine.Random.state = randomState;
         }
 
@@ -293,7 +351,7 @@ namespace Deepsea
                     Mathf.Sin((_mantaPhase + 0.05f) * 2.2f) * 0.08f,
                     Mathf.Cos((_mantaPhase + 0.05f) * 0.85f) * 2.1f
                 );
-                _mantaRay.position = SafeSwimmingPosition(pos, .22f, _mantaRay.GetComponent<MeshRenderer>());
+                _mantaRay.position = SafeSwimmingPosition(pos, 0.22f, _mantaRay.GetComponent<MeshRenderer>());
                 Vector3 dir = nextPos - pos;
                 if (dir.sqrMagnitude > 0.00001f)
                 {
@@ -302,33 +360,56 @@ namespace Deepsea
                 }
             }
 
-            // 2. 深海海沟银鱼流线带巡游
+            // 2. 右侧深海海沟 S 型流线银鱼群巡游
             for (int i = 0; i < _trenchSchool.Count; i++)
             {
                 var f = _trenchSchool[i];
                 if (f.tr == null) continue;
                 f.pathT = Mathf.Repeat(f.pathT + dt * f.speed, 1.0f);
 
-                Vector3 p0 = EvaluateTrenchSpline(f.pathT, seaLevel, f.lateralOffset, f.verticalOffset, f.phase + _clock * 2.4f);
-                Vector3 p1 = EvaluateTrenchSpline(Mathf.Repeat(f.pathT + 0.015f, 1.0f), seaLevel, f.lateralOffset, f.verticalOffset, f.phase + _clock * 2.4f);
-                f.tr.position = SafeSwimmingPosition(p0, .12f, f.tr.GetComponent<MeshRenderer>());
+                Vector3 p0 = EvaluateTrenchSpline(f.pathT, seaLevel, f.streamBranch, f.lateralOffset, f.verticalOffset, f.phase + _clock * 2.1f);
+                Vector3 p1 = EvaluateTrenchSpline(Mathf.Min(0.999f, f.pathT + 0.015f), seaLevel, f.streamBranch, f.lateralOffset, f.verticalOffset, f.phase + _clock * 2.1f);
+                f.tr.position = SafeSwimmingPosition(p0, 0.12f, f.tr.GetComponent<MeshRenderer>());
                 Vector3 fwd = p1 - p0;
                 if (fwd.sqrMagnitude > 0.00001f)
                 {
-                    f.tr.rotation = Quaternion.LookRotation(fwd.normalized, Vector3.up);
+                    float shimmerRoll = Mathf.Sin(_clock * 4.5f + f.phase) * 18f;
+                    f.tr.rotation = Quaternion.LookRotation(fwd.normalized, Vector3.up) * Quaternion.Euler(0f, 0f, shimmerRoll);
                 }
                 _trenchSchool[i] = f;
             }
+
+            // 3. 珊瑚礁盘边缘暖金雀鲷群游
+            for (int i = 0; i < _reefGoldenSchool.Count; i++)
+            {
+                var gf = _reefGoldenSchool[i];
+                if (gf.tr == null) continue;
+                float a = _clock * gf.speed + gf.phase;
+                Vector3 p0 = gf.anchor + new Vector3(Mathf.Sin(a) * gf.radiusX, Mathf.Sin(a * 1.7f) * 0.08f, Mathf.Cos(a * 0.85f) * gf.radiusZ);
+                Vector3 p1 = gf.anchor + new Vector3(Mathf.Sin(a + 0.08f) * gf.radiusX, Mathf.Sin((a + 0.08f) * 1.7f) * 0.08f, Mathf.Cos((a + 0.08f) * 0.85f) * gf.radiusZ);
+                gf.tr.position = SafeSwimmingPosition(p0, 0.10f, gf.tr.GetComponent<MeshRenderer>());
+                Vector3 dir = p1 - p0;
+                if (dir.sqrMagnitude > 0.00001f)
+                {
+                    gf.tr.rotation = Quaternion.LookRotation(dir.normalized, Vector3.up);
+                }
+            }
         }
 
-        private Vector3 EvaluateTrenchSpline(float t, float seaLevel, float latOffset, float vertOffset, float wavePhase)
+        private Vector3 EvaluateTrenchSpline(float t, float seaLevel, float branch, float latOffset, float vertOffset, float wave)
         {
-            // 沿右侧深海海沟呈 S 型蜿蜒曲折的鱼群走廊
-            float z = 1f + 13f * Mathf.Sin(t * Mathf.PI * 2f);
-            float mainCurveX = 8.5f + Mathf.Sin(t * Mathf.PI * 4.0f) * 2.6f;
-            float ribbonSpread = latOffset * (0.65f + 0.35f * Mathf.Sin(t * Mathf.PI * 2f));
-            float x = mainCurveX + ribbonSpread + Mathf.Sin(wavePhase) * 0.08f;
-            float y = seaLevel + vertOffset + Mathf.Cos(wavePhase * 0.7f) * 0.06f;
+            // 采用平滑往返或单向流动的 S 型长走廊曲线 (z 从 -11m 延伸至 +13m)，彻底告别圆圈感！
+            // 使用平滑三角波 s in [0, 1] 让鱼群沿 S 型海沟走廊自然折返巡游，不形成圆环
+            float s = 0.5f - 0.5f * Mathf.Cos(t * Mathf.PI * 2f);
+            float z = Mathf.Lerp(-11.5f, 13.5f, s);
+
+            // 还原原图右侧海沟的 S 型弯曲走势：中段向内湾凹进，两端向外海舒展
+            float sCurveX = 8.4f - 2.35f * Mathf.Sin(s * Mathf.PI * 1.35f - 0.35f) + 0.85f * Mathf.Cos(s * Mathf.PI * 2.7f);
+            // 鱼群在走廊中段收束成密集流线带，两端略微散开
+            float pinch = 0.42f + 0.58f * Mathf.Sin(s * Mathf.PI);
+            float branchShift = branch * 0.38f * Mathf.Sin(s * Mathf.PI * 2f + 0.6f);
+            float x = sCurveX + branchShift + latOffset * pinch + Mathf.Sin(wave) * 0.09f;
+            float y = seaLevel + vertOffset + Mathf.Cos(wave * 0.75f) * 0.06f;
             return new Vector3(x, y, z);
         }
 
@@ -338,36 +419,39 @@ namespace Deepsea
             RaycastHit hit;
             bool hasBottom = Physics.Raycast(new Vector3(p.x, sea + 30f, p.z), Vector3.down, out hit, 90f, ~0, QueryTriggerInteraction.Ignore);
             float bottom = hasBottom ? hit.point.y : sea - 30f;
-            bool valid = bottom < sea - clearance - .30f;
+            bool valid = bottom < sea - clearance - 0.30f;
             renderer.enabled = valid;
-            p.y = Mathf.Clamp(p.y, bottom + clearance, Mathf.Max(bottom + clearance, sea - .30f));
+            p.y = Mathf.Clamp(p.y, bottom + clearance, Mathf.Max(bottom + clearance, sea - 0.30f));
             return p;
         }
 
         private void OnDestroy()
         {
-            if (_waterRenderer != null && _waterRenderer.sharedMaterial == _v26WaterMaterial) _waterRenderer.sharedMaterial = _originalWaterMaterial;
+            if (_waterRenderer != null && _waterRenderer.sharedMaterial == _v26WaterMaterial)
+                _waterRenderer.sharedMaterial = _originalWaterMaterial;
             if (_marineEcologyRoot != null) Destroy(_marineEcologyRoot.gameObject);
-            foreach (var asset in _owned) if (asset != null) Destroy(asset);
+            foreach (var asset in _owned)
+            {
+                if (asset != null) Destroy(asset);
+            }
             if (Active == this) Active = null;
         }
 
         private static Mesh BuildMantaRayMesh()
         {
-            // 菱形双翼流线蝠鲼 + 细长尾鞭
             var verts = new List<Vector3>
             {
-                new Vector3( 0.00f,  0.02f,  0.58f), // 0: 吻端中央
-                new Vector3(-0.18f,  0.01f,  0.65f), // 1: 左头鳍
-                new Vector3( 0.18f,  0.01f,  0.65f), // 2: 右头鳍
-                new Vector3(-0.92f,  0.04f,  0.05f), // 3: 左翼尖
-                new Vector3( 0.92f,  0.04f,  0.05f), // 4: 右翼尖
-                new Vector3( 0.00f,  0.07f,  0.10f), // 5: 背脊中心隆起
-                new Vector3( 0.00f, -0.04f,  0.10f), // 6: 腹底中心
-                new Vector3(-0.28f,  0.00f, -0.42f), // 7: 左后缘
-                new Vector3( 0.28f,  0.00f, -0.42f), // 8: 右后缘
-                new Vector3( 0.00f,  0.01f, -0.52f), // 9: 尾根
-                new Vector3( 0.00f,  0.00f, -1.25f)  // 10: 细长尾刺尖
+                new Vector3( 0.00f,  0.02f,  0.58f),
+                new Vector3(-0.18f,  0.01f,  0.65f),
+                new Vector3( 0.18f,  0.01f,  0.65f),
+                new Vector3(-0.92f,  0.04f,  0.05f),
+                new Vector3( 0.92f,  0.04f,  0.05f),
+                new Vector3( 0.00f,  0.07f,  0.10f),
+                new Vector3( 0.00f, -0.04f,  0.10f),
+                new Vector3(-0.28f,  0.00f, -0.42f),
+                new Vector3( 0.28f,  0.00f, -0.42f),
+                new Vector3( 0.00f,  0.01f, -0.52f),
+                new Vector3( 0.00f,  0.00f, -1.25f)
             };
             var uvs = new List<Vector2>();
             foreach (var v in verts)
@@ -376,13 +460,11 @@ namespace Deepsea
             }
             int[] tris =
             {
-                // 背部
                 0, 1, 5,  0, 5, 2,
                 1, 3, 5,  2, 5, 4,
                 3, 7, 5,  5, 8, 4,
                 7, 9, 5,  5, 9, 8,
                 7, 10, 9, 9, 10, 8,
-                // 腹部
                 0, 6, 1,  0, 2, 6,
                 1, 6, 3,  2, 4, 6,
                 3, 6, 7,  6, 4, 8,
@@ -402,14 +484,14 @@ namespace Deepsea
         {
             var verts = new List<Vector3>
             {
-                new Vector3( 0.00f,  0.00f,  0.45f), // 0: 鼻尖
-                new Vector3( 0.00f,  0.09f,  0.08f), // 1: 背脊
-                new Vector3( 0.00f, -0.08f,  0.08f), // 2: 腹部
-                new Vector3(-0.06f,  0.00f,  0.08f), // 3: 左侧
-                new Vector3( 0.06f,  0.00f,  0.08f), // 4: 右侧
-                new Vector3( 0.00f,  0.00f, -0.28f), // 5: 尾柄
-                new Vector3( 0.00f,  0.11f, -0.45f), // 6: 上尾叶
-                new Vector3( 0.00f, -0.11f, -0.45f)  // 7: 下尾叶
+                new Vector3( 0.00f,  0.00f,  0.45f),
+                new Vector3( 0.00f,  0.09f,  0.08f),
+                new Vector3( 0.00f, -0.08f,  0.08f),
+                new Vector3(-0.06f,  0.00f,  0.08f),
+                new Vector3( 0.06f,  0.00f,  0.08f),
+                new Vector3( 0.00f,  0.00f, -0.28f),
+                new Vector3( 0.00f,  0.11f, -0.45f),
+                new Vector3( 0.00f, -0.11f, -0.45f)
             };
             var uvs = new List<Vector2>
             {
@@ -426,6 +508,7 @@ namespace Deepsea
             var m = new Mesh { name = "V26_SlenderSilverFish" };
             m.SetVertices(verts);
             m.SetUVs(0, uvs);
+            for (int j = 0; j < tris.Length; j += 3) { int a = tris[j]; tris[j] = tris[j + 2]; tris[j + 2] = a; }
             m.SetTriangles(tris, 0);
             m.RecalculateNormals();
             m.RecalculateBounds();

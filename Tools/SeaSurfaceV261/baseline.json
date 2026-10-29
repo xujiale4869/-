@@ -1,0 +1,1074 @@
+﻿[
+    {
+        "sha256":  "5ab45799c38989114f8321a5ee32c0885b0bfef8e369d5b8c3b42381804508b7",
+        "path":  "Assets/Deepsea/Scripts/Editor/CoastalDetailBuild.cs"
+    },
+    {
+        "sha256":  "da7d643e698e307eb465d28571e992ef8636f1a302673ceb7e95d52719acd1c7",
+        "path":  "Assets/Deepsea/Scripts/Editor/CoastBlockoutBuild.cs"
+    },
+    {
+        "sha256":  "2a26f2f5aded98e01d83ae739318be6cc7c44a60d06e26427af558659d18d37a",
+        "path":  "Assets/Deepsea/Scripts/Editor/CoastBuild.cs"
+    },
+    {
+        "sha256":  "6c929ad448260552ca09ad6e23604b0a5091e4cbbb2b38275931e85100bcc631",
+        "path":  "Assets/Deepsea/Scripts/Editor/CoastCoralBuild.cs"
+    },
+    {
+        "sha256":  "6ce175b34da83edae125336dd532096269b4490d203a967d5395ffc4c3221205",
+        "path":  "Assets/Deepsea/Scripts/Editor/CoastDirectionBuild.cs"
+    },
+    {
+        "sha256":  "c554ae2c8575ef4fab967decce9e8931ba4d764c7fff32ab32d82823138378d0",
+        "path":  "Assets/Deepsea/Scripts/Editor/CoastFernTools.cs"
+    },
+    {
+        "sha256":  "50742fc4bf16871f7b32a57e08ecc7ef58d3d7ae3ddd1debff7837d529959c33",
+        "path":  "Assets/Deepsea/Scripts/Editor/CoastFineShoreAudit.cs"
+    },
+    {
+        "sha256":  "3ac1cf1765d0836736ccbed5539eb1706d5e816faf87673759804023002bd4ba",
+        "path":  "Assets/Deepsea/Scripts/Editor/CoastFineShoreBuild.cs"
+    },
+    {
+        "sha256":  "2167ce5e919507c2a2768bbb1f1ef3aeb085362b3b87f145182b595c2116226c",
+        "path":  "Assets/Deepsea/Scripts/Editor/CoastFoundationBuild.cs"
+    },
+    {
+        "sha256":  "847b00334c31a47f19a8bdb25757755c12b0a713d6275345c5c87b881ef84c25",
+        "path":  "Assets/Deepsea/Scripts/Editor/CoastHabitatBuild.cs"
+    },
+    {
+        "sha256":  "1baea2fe455a497002c6d4cac68c6c950ea9d03376a1cead936e367d20d327cd",
+        "path":  "Assets/Deepsea/Scripts/Editor/CoastHeroBuild.cs"
+    },
+    {
+        "sha256":  "98c8a8ae1c9cdb9e091eb44fa10fef3e3f8780e86b6ec64e76c0c979998d671d",
+        "path":  "Assets/Deepsea/Scripts/Editor/CoastMapleBuild.cs"
+    },
+    {
+        "sha256":  "9760e267ce7c55cb8bf3ddab93d14563561aeeaee448ca33e81c66e7673ba563",
+        "path":  "Assets/Deepsea/Scripts/Editor/CoastMarineBuild.cs"
+    },
+    {
+        "sha256":  "dbf970d491e2e265e641509f35680cf4e43a408a2f9178063d79a3f29eade448",
+        "path":  "Assets/Deepsea/Scripts/Editor/CoastMaterialsBuild.cs"
+    },
+    {
+        "sha256":  "4716da32e36a93d103f425cb1d13ded529c139b59fed609194465f46919e93a0",
+        "path":  "Assets/Deepsea/Scripts/Editor/CoastPerfBuild.cs"
+    },
+    {
+        "sha256":  "3b683b157c5926ec5982b7546f68a3ce380d45d266b2d146be447f0150ddec7b",
+        "path":  "Assets/Deepsea/Scripts/Editor/CoastReefRockBuild.cs"
+    },
+    {
+        "sha256":  "6fd75482eb247372b9c5d47378725bcc61aabbb3c874e2ac04bed3dc72d9d1f7",
+        "path":  "Assets/Deepsea/Scripts/Editor/CoastRefinementBuild.cs"
+    },
+    {
+        "sha256":  "091416ebb461eb2c60dacc530d4b31234d889ee57079913d3c16c66ceb1331e4",
+        "path":  "Assets/Deepsea/Scripts/Editor/CoastShelfBuild.cs"
+    },
+    {
+        "sha256":  "3cfa0d4ffd79f0004c3481627d60c968313255179beaf806acf38c780d25d351",
+        "path":  "Assets/Deepsea/Scripts/Editor/CoastShowcaseBuild.cs"
+    },
+    {
+        "sha256":  "0506140ca43a4d0a41eacbfb74e50ced7f5284c4c72532943beea1863524e600",
+        "path":  "Assets/Deepsea/Scripts/Editor/CoastSliceBuild.cs"
+    },
+    {
+        "sha256":  "8bad3d6d1b23efe9179579e7fed72fd8d0b779d3a8bcb2dc768ac216dad92af1",
+        "path":  "Assets/Deepsea/Scripts/Editor/CoastSurfaceValidation.cs"
+    },
+    {
+        "sha256":  "36b6fbd5346dc6d6818fa8beb0b875f4f30ba7d6f39f8b6673e057fd459c23ab",
+        "path":  "Assets/Deepsea/Scripts/Editor/CoastTreeTools.cs"
+    },
+    {
+        "sha256":  "279ded6c337edec20fd0c8173cc8335acc0e2f46722babefba44bd00749d7d2b",
+        "path":  "Assets/Deepsea/Scripts/Editor/EcologyBuild.cs"
+    },
+    {
+        "sha256":  "b8298389c1068b023b7797dd400157e608529998e7a7f50e7e4da0e68f77355d",
+        "path":  "Assets/Deepsea/Scripts/Editor/ExpeditionPlayCheck.cs"
+    },
+    {
+        "sha256":  "c82a046b4d5e903ab46946b2ee8260c7543f1516ae586be82013d63c54ec297a",
+        "path":  "Assets/Deepsea/Scripts/Editor/ExpeditionVerification.cs"
+    },
+    {
+        "sha256":  "5f5f9ab675b5f3f99572bf8705805e7123d8070e6ba0a72e4693866e91c819a8",
+        "path":  "Assets/Deepsea/Scripts/Editor/HabitatArtBuild.cs"
+    },
+    {
+        "sha256":  "b33a64d31c467c37e29923f81265bcc42bd3703195d7b66cb66c225be8cd1501",
+        "path":  "Assets/Deepsea/Scripts/Editor/MarineBuild.cs"
+    },
+    {
+        "sha256":  "041d512a939506c29716142fa07696035e6c11a50a7e4c8e7ae2edae5871c8d0",
+        "path":  "Assets/Deepsea/Scripts/Editor/NaturalCoastBuild.cs"
+    },
+    {
+        "sha256":  "78414799ccb54299214b95a1a37fcec738659bcdd8d94707034d8b9fb4c98b57",
+        "path":  "Assets/Deepsea/Scripts/Editor/ProjectSetup.cs"
+    },
+    {
+        "sha256":  "5d0186fbff8cb5b1470b98ea81b2e6e616b72f47cbb483fa56341e380ef869aa",
+        "path":  "Assets/Deepsea/Scripts/Editor/ReefAbundanceBuild.cs"
+    },
+    {
+        "sha256":  "382d5e167d573721805d12a76c191fa0e7fa6ae868af5f594e12fd9465732047",
+        "path":  "Assets/Deepsea/Scripts/Editor/ReefGardenBuild.cs"
+    },
+    {
+        "sha256":  "448fdc0bc0f78aaf57ab20864a26cbc99dfe719fab381b9d1dad0d45de24e806",
+        "path":  "Assets/Deepsea/Scripts/Editor/ReefLifeBuild.cs"
+    },
+    {
+        "sha256":  "8fbb301e0a1e14835f03f1093a85561e6de7da7fc42a294670f8d55fa618b436",
+        "path":  "Assets/Deepsea/Scripts/Editor/RepositoryIntegrationCheck.cs"
+    },
+    {
+        "sha256":  "2432dfb925519e0e48f482885fa8e9ba8e59523b9f92f7b7cb6a1c8895c957cd",
+        "path":  "Assets/Deepsea/Scripts/Editor/SampleShaderFilter.cs"
+    },
+    {
+        "sha256":  "c33ad1a39ba61eb8526ad7d417a9ee97878b5f8e657c5f597b8c37837522594e",
+        "path":  "Assets/Deepsea/Scripts/Editor/ShoreBuild.cs"
+    },
+    {
+        "sha256":  "8c5a7ef8c8dbb2b7a24850d66328955a3b0e2d184b6272cd3f1e79bd7f4533bc",
+        "path":  "Assets/Deepsea/Scripts/Editor/StyleTrialBuild.cs"
+    },
+    {
+        "sha256":  "eba2ce67e0b2fc9d74c4eb30b0fcdf9c20bb8a5654cf609dbc66ea085cbcde19",
+        "path":  "Assets/Deepsea/Scripts/Editor/UIPrepare.cs"
+    },
+    {
+        "sha256":  "a97dd09ed7f4039d6345254868effbbccbd3759e869b0f95fa71a683b65a40b6",
+        "path":  "Assets/Deepsea/Scripts/Editor/UIWorkCheck.cs"
+    },
+    {
+        "sha256":  "cb237e561c814022f9385d80390413c78571834c4a286f30154a3191424d4078",
+        "path":  "Assets/Deepsea/Scripts/Editor/Verification.cs"
+    },
+    {
+        "sha256":  "d709f5c7b26e8fc1a95704093eb134a836ba1cfdb26c2308032c0787dc66a3c7",
+        "path":  "Assets/Deepsea/Scripts/Editor/WaterCheck.cs"
+    },
+    {
+        "sha256":  "00ca030523b59430aee583555bda2b726b2ba1849260dc1a2d8677ed71494bbe",
+        "path":  "Assets/Deepsea/Scripts/Editor/WaterFinishBuild.cs"
+    },
+    {
+        "sha256":  "38f9d21fd1f529050dafcb3d18d9a599a6651d30093506bc820ca382bc5bebfb",
+        "path":  "Assets/Deepsea/Scripts/Editor/WaterFlowBuild.cs"
+    },
+    {
+        "sha256":  "e72c2dfe01554bd24be0affecb5588462401e0edc553d6e9d000b06e151d5c59",
+        "path":  "Assets/Deepsea/Scripts/Editor/WaterImport.cs"
+    },
+    {
+        "sha256":  "b3a1f9acce78578955fb579a7f5635e40168d012fb70fb1917c73c7071ddccac",
+        "path":  "Assets/Deepsea/Scripts/Editor/WaterPolishBuild.cs"
+    },
+    {
+        "sha256":  "c41b911e1cac25c1671a1c007f390975d49eca81799d698f885c4aa543580bf6",
+        "path":  "Assets/Deepsea/Scripts/Editor/SeaLifeNavigationV23/SeaLifeNavigationBuildV23.cs"
+    },
+    {
+        "sha256":  "ffb57b8982ddff86900949557e359a4e1ef85dca3527ccd7aac10ea67344ef3a",
+        "path":  "Assets/Deepsea/Scripts/Editor/SeaLifeV21/SeaLifeBuild.cs"
+    },
+    {
+        "sha256":  "8e1e5f6f9d616d26949d79eaa900d472ac2ccafae0725e57113383711b0bd8c7",
+        "path":  "Assets/Deepsea/Scripts/Editor/SeaLifeV25/SeaLifeV25Build.cs"
+    },
+    {
+        "sha256":  "37864c90710df84a73f5e721aa5c40f99ee724490f029c48d6c69a24ff1e1d1f",
+        "path":  "Assets/Deepsea/Scripts/Editor/SeaLifeWaterV22/SeaLifeWaterBuildV22.cs"
+    },
+    {
+        "sha256":  "f7cbeafc96b399e6517e659e30fe3d6a7692c827c5c0e10d93889a7925e4194c",
+        "path":  "Assets/Deepsea/Scripts/Editor/SeaSurfaceV24/SeaSurfaceBuildV24.cs"
+    },
+    {
+        "sha256":  "223181dd7ec900ca14b54ca5fb008b5e690408ebcbf5a8c103fcd759d3651d56",
+        "path":  "Assets/Deepsea/Scripts/Editor/SeaSurfaceV26/SeaSurfaceBuildV26.cs"
+    },
+    {
+        "sha256":  "abd58fcb6cd9060741299ab814c131f361b87d5c41a9db4be7b31ad9477f34d8",
+        "path":  "Assets/Deepsea/Scripts/Runtime/AmbientAudio.cs"
+    },
+    {
+        "sha256":  "25e6d14dce00c5a2abf601afbd3a43e49b67860d6567f1458a5dff78db231cc5",
+        "path":  "Assets/Deepsea/Scripts/Runtime/BaySettings.cs"
+    },
+    {
+        "sha256":  "30731d61a6c41d11748e38d941f435b4550ea892cd250f0177f80d086e91f7ef",
+        "path":  "Assets/Deepsea/Scripts/Runtime/BoatController.cs"
+    },
+    {
+        "sha256":  "41cdc09f8a7c5fc3856cb3c241168828c62253f4a81c0d6082b2eb69dcc80e9f",
+        "path":  "Assets/Deepsea/Scripts/Runtime/BoatWake.cs"
+    },
+    {
+        "sha256":  "a27e13b83148c7cc151bdd06f20730b04777ce47f203d10f74b24ce435d9a60d",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastalDetail.cs"
+    },
+    {
+        "sha256":  "2f0a5e16e12e56fbbfedf7e6a8d1b718c51883185530ce3a781265919a4dc969",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastalDetailCheck.cs"
+    },
+    {
+        "sha256":  "4a4519f2d8f9d10561f7ec02465be10a4eb8561d621473f321ca270000c98e17",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastalEcology.cs"
+    },
+    {
+        "sha256":  "6215170869896d5fe17f3d08e4c5a5774a5d05a9494fc799e63157f299418435",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastArtDetails.cs"
+    },
+    {
+        "sha256":  "93e0a3f0c249670cc4d110e01e0b8b3e59494953093ae47e79dd97973539292d",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastBlockoutCheck.cs"
+    },
+    {
+        "sha256":  "02dab5fdecb464e072158322c6eb4edd657437fa97b9baa1b8049f9735aa5c40",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastBlockoutGeometry.cs"
+    },
+    {
+        "sha256":  "4924225fb90104c2071e2dc00ab01e26fc968bcb9fa606d89e1048fc1a3245a5",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastBlockoutLayout.cs"
+    },
+    {
+        "sha256":  "e4d518c67e4b5a8014bafe79b7a3c4ca24a42ff0d5c85f585001cb926bd09b17",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastBlockoutRegion.cs"
+    },
+    {
+        "sha256":  "dfcc3e05e1236809006d24f30a44d19279ebf08fd4f047e5f58c3cb256ca1104",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastBlockoutRock.cs"
+    },
+    {
+        "sha256":  "454557349d014b6622b084558893a87d2dd62be3889656c37113ecba2756cc71",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastBlockoutSchool.cs"
+    },
+    {
+        "sha256":  "b4a97e14bef0de791baffde01e0525ccc435f6138032acbcecf2052926647f8c",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastBlockoutSession.cs"
+    },
+    {
+        "sha256":  "89a528a34deb01c7ec291297690789c0df56cc22d85e2345ab28ab7b25691428",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastDirectionRuntime.cs"
+    },
+    {
+        "sha256":  "c64a12cd5920badb4973d93121515e8494c1ccd8c850d809c5e67edf1c8fc5f5",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastEcology.cs"
+    },
+    {
+        "sha256":  "3c1c0b34ba1c91054e1898c555b4f3f712441f7c1b266a712b648da951290579",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastFineShoreRuntime.cs"
+    },
+    {
+        "sha256":  "b5b321e16c3c9d91acae41635b4b704df23e171a4994c5e651f045f3de17b261",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastFoundationAssets.cs"
+    },
+    {
+        "sha256":  "0e3f62f5b13dfb9cd1f46b4aee50a578102cecb71b27edd97a3db667f662fe3b",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastFoundationReview.cs"
+    },
+    {
+        "sha256":  "2cb184f74485fa5e56f356504c7a30aef42c3c5c7cbec9812da7399562df21fd",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastFrameMonitor.cs"
+    },
+    {
+        "sha256":  "9105701ea4669675c7e476c4130b0376fb52b0abb23ae0e384c7c1eda736f7bd",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastGroundSmoothing.cs"
+    },
+    {
+        "sha256":  "87b7eb3099bda95335cb8d0ffc0775614bd9210f7690656f8a0593b64031c28f",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastHabitat.cs"
+    },
+    {
+        "sha256":  "64ccb7faa84e149543c97ae0635ab0f7648701d39db1f90800d602f7f11ca0df",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastHabitatLayout.cs"
+    },
+    {
+        "sha256":  "e69a059e6d334d8d38d2be753e8802cb3d6ff9515ede3dd8d305086fcad03979",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastHeroRig.cs"
+    },
+    {
+        "sha256":  "b84199c4a9b0d81c2995efff11190baf27d43ef71cc17b942d4815958230a098",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastHeroVisuals.cs"
+    },
+    {
+        "sha256":  "5a49cdd52e892c569c80b32bf0b0382d2c74b86ca3bbaa500800408dd07c12fc",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastKelpData.cs"
+    },
+    {
+        "sha256":  "194832dc77095c08d07e5c4e14e95a08cabf436e75e28b6bca767bab0d021ead",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastMapleLeaves.cs"
+    },
+    {
+        "sha256":  "8ad3c16fff44be11b77940941cc7ec5273d6280fa705a7827a515c1779d1a582",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastMapleRuntime.cs"
+    },
+    {
+        "sha256":  "9018ba6f1cd7cff4edb6ef597b2f17b5f6d91fcd26abf3fcbcb5669c82395ec3",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastMaterialsAppearance.cs"
+    },
+    {
+        "sha256":  "028aca2a3aa9188908543a58b711b202347f1c3a4acece2728f225b6201814a9",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastMixCapture.cs"
+    },
+    {
+        "sha256":  "4ed6e3759579c1c43e97b3c40c4df154f19c3d55738bde24db8d2d395cfc40a3",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastPlayerCapture.cs"
+    },
+    {
+        "sha256":  "1c7050a9303a1faeba668d45d8b75855926977484279bed21d6494e452db89bc",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastReefCanopy.cs"
+    },
+    {
+        "sha256":  "d0baee4918ebfbd292082c73e80f4ec27be2721cce1394d82fbc7c4223d0d890",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastRefinementRuntime.cs"
+    },
+    {
+        "sha256":  "29cc047bcbc35fea07a9b860e0899f34b1e5e43b92afcfef0951c86767919958",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastRockSurfaces.cs"
+    },
+    {
+        "sha256":  "42617e95420e0532f9777be64e83b031fe6b08d8f779435d7ed7d7318ef09e82",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastShelfLandform.cs"
+    },
+    {
+        "sha256":  "ed376534a5a4b0df82438befd07489d2b86b50ba4be16b09d292fa635bd5aed6",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastShelfShape.cs"
+    },
+    {
+        "sha256":  "b31d010a47067c0aab2ad3ecaf68adc416af21160d6a4f43c2b324ad0f7bde63",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastShoreFinish.cs"
+    },
+    {
+        "sha256":  "342141c8582bfc6fc835f6c29d817e5850540734a20d9ee692ccdeddc0d1ac51",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastShowcaseData.cs"
+    },
+    {
+        "sha256":  "18971ffed7536fa6348bd553820944de63d2cb1a52dca2895a7f53ed28ea7451",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastShowcaseRuntime.cs"
+    },
+    {
+        "sha256":  "d5de54395ee33aeaad3797696a06ef71e39024bd57ba696557574931b9f618e1",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastSlice.cs"
+    },
+    {
+        "sha256":  "83385572dc3c6a79495ac51a5882264e47294bd790817667afe22643b05ce60e",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastSliceCommunities.cs"
+    },
+    {
+        "sha256":  "0205bca7d54f9c07fbfbbf402307a32e28b9d064cc73dd6fc054edb6667e12ac",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastSliceOptimization.cs"
+    },
+    {
+        "sha256":  "1daa176cf8aa095e039d85f17b61657c45571396134baa42a3a8c0be92cc241f",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastSlicePerformance.cs"
+    },
+    {
+        "sha256":  "f191ac0535d59a0414d979128f8620acc59e92eebb74f4a4cb26292cb19bfed4",
+        "path":  "Assets/Deepsea/Scripts/Runtime/CoastVisualSurface.cs"
+    },
+    {
+        "sha256":  "c56e4e3a3ddb8e922a8e5600aa778f89f45fbca79dbbcabf3dc937434d71d736",
+        "path":  "Assets/Deepsea/Scripts/Runtime/EcologyPlayerCapture.cs"
+    },
+    {
+        "sha256":  "16f0ba48b934bc2aca0f10b3ea8f46c01bf6d5d04aaeef4edf71afa020d297f7",
+        "path":  "Assets/Deepsea/Scripts/Runtime/ExpeditionAssets.cs"
+    },
+    {
+        "sha256":  "786dbb16e9eae9f268f45a4c6f4cd66c363d2d5b7a45956620b1f22c131a1424",
+        "path":  "Assets/Deepsea/Scripts/Runtime/ExpeditionController.cs"
+    },
+    {
+        "sha256":  "5dfa934ddc9a56e5cd419909f47f78cfbdcb6a72f1100e29e9577e2492b1a5fc",
+        "path":  "Assets/Deepsea/Scripts/Runtime/ExpeditionSmoke.cs"
+    },
+    {
+        "sha256":  "6623a849b3bfbeb039f8350fb40ce916e6bbae1eae9ea9687c18ad6a75b07b23",
+        "path":  "Assets/Deepsea/Scripts/Runtime/ExplorerController.cs"
+    },
+    {
+        "sha256":  "eb08e2a76f55322c28fa118b94b64a798e0a9b430d57d6c724b89fa608a7869a",
+        "path":  "Assets/Deepsea/Scripts/Runtime/FollowCamera.cs"
+    },
+    {
+        "sha256":  "c4095891afffccbc1b4715114529d9be8b8cd1ef283c3b6b96dc3a5d26bc8375",
+        "path":  "Assets/Deepsea/Scripts/Runtime/GameDirector.cs"
+    },
+    {
+        "sha256":  "7799688c9362070d961cadd0d434d25607e31d8099df9f65ee0c420bd02277ae",
+        "path":  "Assets/Deepsea/Scripts/Runtime/GameRules.cs"
+    },
+    {
+        "sha256":  "1f61238acb88a6110e65cd187c8cb599764de65af1def75d67309c84a7ecc5ab",
+        "path":  "Assets/Deepsea/Scripts/Runtime/HarbourDefense.cs"
+    },
+    {
+        "sha256":  "b72cf4423509840e8baeb1cdde9bf6ff70b6c9d8883ff6196411bc4db0dd514e",
+        "path":  "Assets/Deepsea/Scripts/Runtime/IslandTerrain.cs"
+    },
+    {
+        "sha256":  "d8588b44453cf00ee323f3435b50ef662fcc2ae712d24f758b5a885255359b3c",
+        "path":  "Assets/Deepsea/Scripts/Runtime/LivingReef.cs"
+    },
+    {
+        "sha256":  "11ff1d773ff7aa49ef97ac8d74e694adfaad6413762c32d7d81309814e996d30",
+        "path":  "Assets/Deepsea/Scripts/Runtime/MarinePlayerCapture.cs"
+    },
+    {
+        "sha256":  "2bce104392d4822b8703d176915bdef2892004f31ded0b251b6b12c7db5f7c3c",
+        "path":  "Assets/Deepsea/Scripts/Runtime/MarineWaterEffects.cs"
+    },
+    {
+        "sha256":  "935e180f58b9eb9cd84c487bff6e8e4d1de650af042b32a110cecb299138b3c6",
+        "path":  "Assets/Deepsea/Scripts/Runtime/NaturalCoast.cs"
+    },
+    {
+        "sha256":  "dea8043a9d79acb4188947005af95e394d12a9fca4e902687e82288294c0ec64",
+        "path":  "Assets/Deepsea/Scripts/Runtime/NaturalCoastCheck.cs"
+    },
+    {
+        "sha256":  "1f40155b36cbcf45c6351db3bf96201496609888e44c890178a3330bf270d245",
+        "path":  "Assets/Deepsea/Scripts/Runtime/NaturalCoastPreview.cs"
+    },
+    {
+        "sha256":  "28e815fc53ea23b632f8bbbc20f1d327546efe61d2590be96151a0aefcb6c64b",
+        "path":  "Assets/Deepsea/Scripts/Runtime/OceanSurface.cs"
+    },
+    {
+        "sha256":  "df84c6638bab39cf49eb2c9e4641306050d140a3bfec371e9fb216b34e7da129",
+        "path":  "Assets/Deepsea/Scripts/Runtime/ReefDetails.cs"
+    },
+    {
+        "sha256":  "822720c1da6298109f092abb287a83372006805a3ae194b4b34c8c708b947a62",
+        "path":  "Assets/Deepsea/Scripts/Runtime/ReefGarden.cs"
+    },
+    {
+        "sha256":  "f6894bd9e61846b77b4d53c3171b2be46bf034b44ff989f2d5c4600db6215e38",
+        "path":  "Assets/Deepsea/Scripts/Runtime/ReefGardenCheck.cs"
+    },
+    {
+        "sha256":  "fa1d513f2726fc09944daf076702e431555419eee4318529909c4ff4ce368c32",
+        "path":  "Assets/Deepsea/Scripts/Runtime/ReefLifeCheck.cs"
+    },
+    {
+        "sha256":  "85296aba6af9496e33be183ecc5729d98afaeaad0ee513a0d41d38a7305f120a",
+        "path":  "Assets/Deepsea/Scripts/Runtime/ReefLifeGarden.cs"
+    },
+    {
+        "sha256":  "3dc84fd73b8b32704f654de3dfbb04d7ea8fe5c50237f747fe157a36ede7e875",
+        "path":  "Assets/Deepsea/Scripts/Runtime/ReefResidents.cs"
+    },
+    {
+        "sha256":  "7969126eefbb3db0a22df0cbe55229e803bc53aa3023d774a215b35a543b74a7",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SaveStore.cs"
+    },
+    {
+        "sha256":  "4d09b263858d060f4594d8e3bec59b238fe4c40fec8a3e0109d478a40049c76c",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SchoolSteering.cs"
+    },
+    {
+        "sha256":  "486711d6067fe2dd2a4febf03b82d1d7f64df5ab1cc6db0c30d74f0c4d890fa1",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeabedRelief.cs"
+    },
+    {
+        "sha256":  "22db410697c92058ade9fabb53732a51703c2e740a4ae252bf7eb0460c2b0922",
+        "path":  "Assets/Deepsea/Scripts/Runtime/ShallowWaterFlow.cs"
+    },
+    {
+        "sha256":  "6eca0a8ffe94ed564b9e3b3c8bc7a09c353466b996d614879b0bb6c054d75e05",
+        "path":  "Assets/Deepsea/Scripts/Runtime/ShoreCompanion.cs"
+    },
+    {
+        "sha256":  "00047c6c9fc398ec77b3d40e42adec0e477618cc0929328c828037df08a53af2",
+        "path":  "Assets/Deepsea/Scripts/Runtime/ShoreCycle.cs"
+    },
+    {
+        "sha256":  "1363fd6b49ff13a2321385af09f000400b695e5b29d1ac1de63d7156e9c0372a",
+        "path":  "Assets/Deepsea/Scripts/Runtime/ShoreHabitat.cs"
+    },
+    {
+        "sha256":  "c07f14abc3bd431519774d0710b268574a10d020850b3b5bdf8686c123b12759",
+        "path":  "Assets/Deepsea/Scripts/Runtime/ShorelineAtmosphere.cs"
+    },
+    {
+        "sha256":  "af14c7d50fab30c585c0ae6f72d51b575ab2650355c2cf940d743d4b8f886a83",
+        "path":  "Assets/Deepsea/Scripts/Runtime/ShorePlayerCapture.cs"
+    },
+    {
+        "sha256":  "99ed92b1a4f7ff6d9ed32c130e34bb33667ec09f5c4311cf9eedbe717901ad8f",
+        "path":  "Assets/Deepsea/Scripts/Runtime/ShoreWildlife.cs"
+    },
+    {
+        "sha256":  "db1cbad3755965f46f01f590ffba923dae1c8a27844f1e71adc4ffc7f539d8a4",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SmokeRoutine.cs"
+    },
+    {
+        "sha256":  "5a71aa4a6f81538de993cc60f89042bf877780fc9e3c14367bf52a9e4893e446",
+        "path":  "Assets/Deepsea/Scripts/Runtime/StyleTrial.cs"
+    },
+    {
+        "sha256":  "d596188a7e7937ad7f00db058c6730449e8dec354f9ff2584f405e8cb9d5a212",
+        "path":  "Assets/Deepsea/Scripts/Runtime/TimberWork.cs"
+    },
+    {
+        "sha256":  "7ca9add5573293cc242b2100a7214d1183f834fdd232ee18325689bcc273de10",
+        "path":  "Assets/Deepsea/Scripts/Runtime/ToolModels.cs"
+    },
+    {
+        "sha256":  "f469d0013e5ca52087494eea87a916c06457af74d419443ca60d45f167264d6e",
+        "path":  "Assets/Deepsea/Scripts/Runtime/Towable.cs"
+    },
+    {
+        "sha256":  "402b9f7a48ca70d10cb47498fdfe03ee71fb85fbfa8d9ed8410ef94ed9c50299",
+        "path":  "Assets/Deepsea/Scripts/Runtime/UIRoot.cs"
+    },
+    {
+        "sha256":  "beb009cc490dbd88b07f4d9d24ad7e4bd2e61a34a59cc46e602b69e5945d736a",
+        "path":  "Assets/Deepsea/Scripts/Runtime/UIWorkSmoke.cs"
+    },
+    {
+        "sha256":  "ad0288fa90e0471afb3b2e544be0af70c263d9d74505d8ab35a835fd3b2f3492",
+        "path":  "Assets/Deepsea/Scripts/Runtime/VisualFactory.cs"
+    },
+    {
+        "sha256":  "8715aed83428c5c8ec8f9d22862cadc878eb65e8f8e1326fb00025f9b8cf0fd5",
+        "path":  "Assets/Deepsea/Scripts/Runtime/WaterFinish.cs"
+    },
+    {
+        "sha256":  "5fbed9ebd0d69b5e295049cd8c29f4fda859a60e1feecc6571262bc78f3bed5a",
+        "path":  "Assets/Deepsea/Scripts/Runtime/WaterFinishCheck.cs"
+    },
+    {
+        "sha256":  "62e4fe771a1d8f41f74ed1fbab0ebcca285107490384be6818429e53d26a669a",
+        "path":  "Assets/Deepsea/Scripts/Runtime/WaterFlowCheck.cs"
+    },
+    {
+        "sha256":  "83000bad701bb38c1c9336df01da1233769dae69881fe6073c22c3ec06c57ea0",
+        "path":  "Assets/Deepsea/Scripts/Runtime/WaterPlayerCapture.cs"
+    },
+    {
+        "sha256":  "96eb7b9a02103fd58c86c2547f5b10338d3a36f9b5b613eae6add2b711839689",
+        "path":  "Assets/Deepsea/Scripts/Runtime/WaterPolishCheck.cs"
+    },
+    {
+        "sha256":  "e9dea41ffeab2c8888a8c381ab55877fba14536a446cb6fac3279d5f8e3a2ca9",
+        "path":  "Assets/Deepsea/Scripts/Runtime/WaterSmoke.cs"
+    },
+    {
+        "sha256":  "2710889ef36b8a200d8f44e8620f631668bc3abbcd0cfe8ef9b56d034dcf95bf",
+        "path":  "Assets/Deepsea/Scripts/Runtime/Wildlife.cs"
+    },
+    {
+        "sha256":  "1c43fe1d219b472713916af493856d532f0595a02440a866239fe8e3ede97248",
+        "path":  "Assets/Deepsea/Scripts/Runtime/WorldBuilder.cs"
+    },
+    {
+        "sha256":  "cde3c95fdfd2fd4a4eef30659010dfc56378e65e87c90c850c36a86f58c3dfa9",
+        "path":  "Assets/Deepsea/Scripts/Runtime/WorldInteractable.cs"
+    },
+    {
+        "sha256":  "ae2d2ecbc5224b2ef5923a746b2527574bd6b12fbef7dc32313cecd8f856168f",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeNavigationV23/NavigationResistanceV23.cs"
+    },
+    {
+        "sha256":  "d0dfb1e8567e191d7f134848affdb4857bff738e26783fb18c8e255995a44eb3",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeNavigationV23/NavigationWaveV23.cs"
+    },
+    {
+        "sha256":  "3a5d4c350640019908d0289f1a67a8178ba65aa38b00bcd46076f29a14e90333",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeNavigationV23/SeaLifeNavigationHooksV23.cs"
+    },
+    {
+        "sha256":  "d2ee31f0405cbe119f6de9da6254f99ff50e50d17b6e0a47e7519c108f2f9eee",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeNavigationV23/SeaLifeNavigationMotorV23.cs"
+    },
+    {
+        "sha256":  "5631bd049afcbf8f5de3b4a82ffa335ff750c36bcf4b015da6022234103a8c01",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeNavigationV23/SeaLifeNavigationReviewV23.cs"
+    },
+    {
+        "sha256":  "356b1c42f00747fbed3f32721e1386ff8759f44c307a178bce202bdbd681e9da",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeNavigationV23/SeaLifeNavigationV23.cs"
+    },
+    {
+        "sha256":  "8c8695a5939b27a589f7ab34a593b482827a234165a45e8e72d9952a0b6d2ba9",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeActivities.cs"
+    },
+    {
+        "sha256":  "033f89158c7232d088f3aa20e027cfa70c2ff04ce57a221e79911d548e3f1eac",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeAquarium.cs"
+    },
+    {
+        "sha256":  "8117ea49228b8694434c6cca28609a5909e46b2857dedd6530ab8f71ce22fd85",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeAquariumGlassV25.shader"
+    },
+    {
+        "sha256":  "0005bcac1f4ceb4e812862e537da95fad9139fa6403fcea4856d6ad7b5ba3530",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeFishSwimmerV25.cs"
+    },
+    {
+        "sha256":  "9661a365d07648b544d260466283fac0015d0525d9d9b3c9c3e7aa173e8cbef5",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeFishSwimV25.shader"
+    },
+    {
+        "sha256":  "2dfd937d2341ebcf879066052c9c6bade06645a6f41995cbf8fbeedabe34b85f",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeGlass.shader"
+    },
+    {
+        "sha256":  "c90a40cec48dee1c5170816a77daeadddef478b6442d411a47be620e59e86024",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeReview.cs"
+    },
+    {
+        "sha256":  "23737a24a4bd9d1b6d0384944d7e4e0a0c2131e434ad34ef3ee255f7b198531a",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeRuntime.cs"
+    },
+    {
+        "sha256":  "63209d5ca88ed43dd5405c9755b92abac0896cc0411b4318c5a67cd129ce7543",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeState.cs"
+    },
+    {
+        "sha256":  "4ea3264cda4a6ebbbd283a4afff548b038660629e5a987e8a565338657db7c57",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeSurface.shader"
+    },
+    {
+        "sha256":  "3da82917579f65b2702decea13ae0d77069b5db1e6c84abe8d449d2f713a38de",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeUI.cs"
+    },
+    {
+        "sha256":  "c55fb18a8c03b96732bf2e02054676504d5dc22f30f051f30d460c2f5c9f2ec8",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeVisualReviewV25.cs"
+    },
+    {
+        "sha256":  "89dfc8fecc6a344256f17e3daa32055b29a1129ea6e44b1b1bc969e0b71ea32f",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeVisualUpgradeV25.cs"
+    },
+    {
+        "sha256":  "4aee61689a126c678e5369140c2941a041c9d084a952c383e3195b2f395c023d",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeWaterV22/SeaLifeWaterHooksV22.cs"
+    },
+    {
+        "sha256":  "39ec05b7d5efa71975de25703045b05541e36fe24a322ea1fa54ca4aab40f292",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeWaterV22/SeaLifeWaterReviewV22.cs"
+    },
+    {
+        "sha256":  "ad05f249786ea33db2b6dc4cff4e455361371e41b15f2874d3e08250ed702afb",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeWaterV22/SeaLifeWaterV22.cs"
+    },
+    {
+        "sha256":  "aa2f2606abee74464bb51e7abcec974b3faa1034a5e41463e91be8df191f7011",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/OceanWaveV24.cs"
+    },
+    {
+        "sha256":  "6cc4fb409372d1fa31b320f50d715652b5e27d21f5a3db31493741284ab87c4a",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaAmbientBudgetV24.cs"
+    },
+    {
+        "sha256":  "dfa912bde74ef30eb68ba8b9c7e901d6d2418541f90bb44765416497bb3a2107",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaDepthBudgetV24.cs"
+    },
+    {
+        "sha256":  "520d3dc6a15fa341f64db44f16c795ed4b58e63c3db34e0c6d7e01bcd18c0dd0",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaFrameDescriptorV24.cs"
+    },
+    {
+        "sha256":  "864d8758682c623e802da90463c0924a886a5940f8083d9d312eb74b200fa99b",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaSurfaceReviewV24.cs"
+    },
+    {
+        "sha256":  "bb4648492c026c24b1deb5cced805399ec2d9af101eb853f1b1d71d3a5d357d0",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaSurfaceV24.cs"
+    },
+    {
+        "sha256":  "b3db988df1fdc8d2d077c9b2e5bcf693059dfd8ab2880e7b6b09c1fe001f97ee",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaWaterArtUpgradeV26.cs"
+    },
+    {
+        "sha256":  "a7f28d24943bd0e02d281ddb260e280027e2cc2e899bd83d2895c13013af25bd",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaWaterReviewV26.cs"
+    },
+    {
+        "sha256":  "77060ef86d6d8e51101a2782c01e0a674566fd8130dad8438421480383712c4e",
+        "path":  "Assets/Deepsea/Shaders/CoastalGround.shader"
+    },
+    {
+        "sha256":  "693cfdbfbe1a94d4901f6084e1f5c92242cb429ec956cc5893dcf61e29e0c9c4",
+        "path":  "Assets/Deepsea/Shaders/CoastalTimber.shader"
+    },
+    {
+        "sha256":  "94220574bc54fd84e666475f50dd452272c23653ff9b147fca5c6b2ceed0933a",
+        "path":  "Assets/Deepsea/Shaders/CoastArchitecture.shader"
+    },
+    {
+        "sha256":  "ba1093feac7f06b215dbf357e02c5ad2d318cbb0cdfe4d0f2b4aa58129a58b0b",
+        "path":  "Assets/Deepsea/Shaders/CoastBlockoutClay.shader"
+    },
+    {
+        "sha256":  "720eb0ba7ea25e5c96ce8e98ce29480ad6b5efed2f338064f6454dae492b9a77",
+        "path":  "Assets/Deepsea/Shaders/CoastBlockoutWater.shader"
+    },
+    {
+        "sha256":  "bb8e709d98c9e3ee9f93dc57c6eb2655c9b06627ca587e70dd510c5bf55b25b1",
+        "path":  "Assets/Deepsea/Shaders/CoastCoralLit.shader"
+    },
+    {
+        "sha256":  "14df74a8e65382db2270ec03dd956efcf2ddc56c7f75600c155ca6d686186d99",
+        "path":  "Assets/Deepsea/Shaders/CoastEcology.shader"
+    },
+    {
+        "sha256":  "bc1a598383ddbfeaa77c36988d320055f56620b42e4841dade6a063a36c2d120",
+        "path":  "Assets/Deepsea/Shaders/CoastFineStone.shader"
+    },
+    {
+        "sha256":  "f6f2bc466e9193720705d364a6184067bddbb3a319b9459831db8188d3f05893",
+        "path":  "Assets/Deepsea/Shaders/CoastFoundation.shader"
+    },
+    {
+        "sha256":  "4a7fdfa9164a208a8136c192cb3284ea335d2b60e5ec03f7fe7a652ac02c015c",
+        "path":  "Assets/Deepsea/Shaders/CoastFoundationWater.shader"
+    },
+    {
+        "sha256":  "156fdedcada6f14ddf6e922a8fc93e0b30db4a9a41f937eda1660d240ec16778",
+        "path":  "Assets/Deepsea/Shaders/CoastHabitatGround.shader"
+    },
+    {
+        "sha256":  "57f7bd5e9da35453e4ccb96f817c73727ac036a04be51c0f704a23f47cded430",
+        "path":  "Assets/Deepsea/Shaders/CoastHeroCloth.shader"
+    },
+    {
+        "sha256":  "aa07113cffda00d9b4ac9903210e872b9310e56b2944cda5d679c1dfdef0bb3f",
+        "path":  "Assets/Deepsea/Shaders/CoastLeafRipple.shader"
+    },
+    {
+        "sha256":  "ffc97801c042ee45ebea0fab99e29c0c8a80d2f9e6137d3bc2d12eca4c89efdc",
+        "path":  "Assets/Deepsea/Shaders/CoastMapleSurface.shader"
+    },
+    {
+        "sha256":  "34dbec758a378560a65d66f301a3889f5704de13c1f914c374264db336303371",
+        "path":  "Assets/Deepsea/Shaders/CoastMarine.shader"
+    },
+    {
+        "sha256":  "3cc5cfc47f0cad3a58f5cb2ba7a35c0c45034d9027de6856014d129490cd9fcf",
+        "path":  "Assets/Deepsea/Shaders/CoastPalette.hlsl"
+    },
+    {
+        "sha256":  "2c7d2e709bf02de998d76496a4e7bbd96b707289183d99e760a0ed7382669a5a",
+        "path":  "Assets/Deepsea/Shaders/CoastPaletteArchitecture.shader"
+    },
+    {
+        "sha256":  "a86cbdec74abd34c6707cc9dc722b1d22755464d73cacf7ad7ea653f59b80b68",
+        "path":  "Assets/Deepsea/Shaders/CoastPaletteStone.shader"
+    },
+    {
+        "sha256":  "9dbab7247b970c72c91039f04c7f78ecd534b71a935dd5feaf7b69cac6881a75",
+        "path":  "Assets/Deepsea/Shaders/CoastPaletteSurface.shader"
+    },
+    {
+        "sha256":  "60defd57112cafa2e672d9be9137c3fd6ef8da8116fcdfccb82b286da5b663ad",
+        "path":  "Assets/Deepsea/Shaders/CoastReefStone.shader"
+    },
+    {
+        "sha256":  "8a6bf99e2ee1fbd90a96f1b6fefec3045bf74c1ccc70dbfef7ebdbc7226cd2a1",
+        "path":  "Assets/Deepsea/Shaders/CoastRefinedArchitecture.shader"
+    },
+    {
+        "sha256":  "77c3f309892553d5ca00dcd6fd5aad2290e2df50877654ea8252543a0eecc048",
+        "path":  "Assets/Deepsea/Shaders/CoastRefinedStone.shader"
+    },
+    {
+        "sha256":  "20b39cacd12c03ddc33710428a42c243cd10b3c09bbaf67519db6b4fb2c37af7",
+        "path":  "Assets/Deepsea/Shaders/CoastRockLit.shader"
+    },
+    {
+        "sha256":  "e08b0f95ddb1066cc76b41c2bf5a28a3e33e9fb8a84f729b9dfe094bad21bcdc",
+        "path":  "Assets/Deepsea/Shaders/CoastRockSurface.shader"
+    },
+    {
+        "sha256":  "0b58934f2b1bb457682f17cdb9f7ecbd1dd02a07e65d90277273970eb625e621",
+        "path":  "Assets/Deepsea/Shaders/CoastShelfLit.shader"
+    },
+    {
+        "sha256":  "9f53d2de488638d9090f32ac9c7f4279dc48ab1e57d965a0fbfd1890158c4146",
+        "path":  "Assets/Deepsea/Shaders/CoastShowcaseFoam.shader"
+    },
+    {
+        "sha256":  "0996950f06d64eb08a6951b29e3840f73d7d6253b317a25719a8df60e9f828ca",
+        "path":  "Assets/Deepsea/Shaders/CoastShowcaseSurface.shader"
+    },
+    {
+        "sha256":  "a1dd8048a217bd777ee14eaaf2806b6f8f9fd985070fb49d40576d0569b8ed40",
+        "path":  "Assets/Deepsea/Shaders/CoastSunGlintStudy.shader"
+    },
+    {
+        "sha256":  "c774a4ce0ba2eb8ee0a49c535d670e879fcf93308d4eb2beec55b7e69a67952b",
+        "path":  "Assets/Deepsea/Shaders/MarineFish.shader"
+    },
+    {
+        "sha256":  "19fab1b2a8521909b1e3e6bb896bfe7390d183bc23e0d7f70eb44af0e642c48d",
+        "path":  "Assets/Deepsea/Shaders/MarineSplash.shader"
+    },
+    {
+        "sha256":  "a53cbc614e623306849c7e310d60eca8d2c6991ba1983baa52ad293058ccf458",
+        "path":  "Assets/Deepsea/Shaders/NaturalFoliage.shader"
+    },
+    {
+        "sha256":  "2229990f51ce7485e7d8677e0a877c26c1ed9443740644c56b231e26b0339df1",
+        "path":  "Assets/Deepsea/Shaders/Ocean.shader"
+    },
+    {
+        "sha256":  "6ac97684c0258492830f53f3138cbd523996723070c2392a37ac384532f0d7c1",
+        "path":  "Assets/Deepsea/Shaders/ReefBenthos.shader"
+    },
+    {
+        "sha256":  "131e8a036719b08401306c5319748aaa25dcf2b508489888475d5ce81656df64",
+        "path":  "Assets/Deepsea/Shaders/ReefCoral.shader"
+    },
+    {
+        "sha256":  "691b742109824ef818cfbc388d27001776866ac40037a8c02a6304999d3f1303",
+        "path":  "Assets/Deepsea/Shaders/ReefFish.shader"
+    },
+    {
+        "sha256":  "bc2f8c9efb9fe5eafc33c0eee320b2db24666f45f68a746afc13a01ecaf9cb82",
+        "path":  "Assets/Deepsea/Shaders/ReefFoliage.shader"
+    },
+    {
+        "sha256":  "86c1a5aecd5a58eba37eb510f4804b0000bfaf6e1d87113b6cc95e31995be879",
+        "path":  "Assets/Deepsea/Shaders/ReefWildlife.shader"
+    },
+    {
+        "sha256":  "cb3099a620555ab5cc2c8767c98f276e4b80c06b599f3877da8624c4b8a74f2a",
+        "path":  "Assets/Deepsea/Shaders/Seabird.shader"
+    },
+    {
+        "sha256":  "7f37840968bfad9649b21d6dfb3a2bef6e4fc49a32b361fd4aa3da7a4dca5939",
+        "path":  "Assets/Deepsea/Shaders/SeabirdShadow.shader"
+    },
+    {
+        "sha256":  "6528f893542f6c643ef6bca06e63d281413c9928ce028be1293305c526a1c66d",
+        "path":  "Assets/Deepsea/Shaders/Seagrass.shader"
+    },
+    {
+        "sha256":  "a6a65dcb7db02412c4b49d7a7a641003c4a3eba22fbdce77446fc5c540b8c8ea",
+        "path":  "Assets/Deepsea/Shaders/ShoreSwash.shader"
+    },
+    {
+        "sha256":  "deb6e25c6e5e8850a1f141ba93a21a143fdecb59bf576cffb04833d56ec7ff14",
+        "path":  "Assets/Deepsea/Shaders/SoftLine.shader"
+    },
+    {
+        "sha256":  "d65bc0e162aa7284dd1d222a8d2e12510bb2996b88f976f9ed8e79da40299ddf",
+        "path":  "Assets/Deepsea/Shaders/StylizedSurface.shader"
+    },
+    {
+        "sha256":  "12c2e08f6bac423fc04ce1cd1262cfbf2641f27199fe882e1951e5973df0e8e7",
+        "path":  "Assets/Deepsea/Shaders/WakeFoam.shader"
+    },
+    {
+        "sha256":  "fab65a976e7dd82fd7a3ebaf64bb5cebecdf68c17e36e52c1ea48390338c7cba",
+        "path":  "Assets/Deepsea/Shaders/Includes/CoastDetail.hlsl"
+    },
+    {
+        "sha256":  "e3fcb7cb55594af422840caf251f09465a23bceecbc941bb07b899d9a60ddd10",
+        "path":  "Assets/Deepsea/Shaders/Includes/SurfWash.hlsl"
+    },
+    {
+        "sha256":  "fbc5975d9596e6f96a5678d8c60fcdacddf463acca2e0a8aa85738e7971140f3",
+        "path":  "Assets/Deepsea/Shaders/Includes/TiledCurrent.hlsl"
+    },
+    {
+        "sha256":  "aed613da437c51f974f46d23a5af4d0ee8fb081e1d9710cf95f9a045cb65f656",
+        "path":  "Assets/Deepsea/Shaders/SeaLifeNavigationV23/SeaLifeNavigationV23.shader"
+    },
+    {
+        "sha256":  "0b5e9c6a7d89ae8c377719cdcb6268474f2707add635caf34b9cf011ad27eb6e",
+        "path":  "Assets/Deepsea/Shaders/SeaLifeNavigationV23/SeaLifeWakeV23.shader"
+    },
+    {
+        "sha256":  "b1c58a5b5b99fd6e044574a803b619237dc4b1886582b2410e1c0761e2fa50f2",
+        "path":  "Assets/Deepsea/Shaders/SeaLifeNavigationV23/WaterV23Waves.hlsl"
+    },
+    {
+        "sha256":  "d0000260dd0376bc5e72b787a0541163ce1eebd1969f63f2e1ebdbf5845656fb",
+        "path":  "Assets/Deepsea/Shaders/SeaLifeWaterV22/SeaLifeWakeV22.shader"
+    },
+    {
+        "sha256":  "8b529b67aa1d6778a66f1880a21de4e5385ae0297f0101124ce8985953a1a19a",
+        "path":  "Assets/Deepsea/Shaders/SeaLifeWaterV22/SeaLifeWaterV22.shader"
+    },
+    {
+        "sha256":  "17f37218c245107fda92a89e6320e6d548c3944418574619abd11e63a411af55",
+        "path":  "Assets/Deepsea/Shaders/SeaLifeWaterV22/WaterV22Waves.hlsl"
+    },
+    {
+        "sha256":  "0792dcbec640cbfa258e3649c2e108d81dce5a0a4e0a1de02b5e2a099df40d98",
+        "path":  "Assets/Deepsea/Shaders/SeaSurfaceV24/OceanV24Waves.hlsl"
+    },
+    {
+        "sha256":  "244d1d0b0ae6ce75adaa9940607de28405082944121245119ac2d775cb924bee",
+        "path":  "Assets/Deepsea/Shaders/SeaSurfaceV24/SeaSurfaceSparkleV26.shader"
+    },
+    {
+        "sha256":  "a772e47f5b388edd470736abbadcb8afd5aba7da3fe2e5051825c034d5effcc6",
+        "path":  "Assets/Deepsea/Shaders/SeaSurfaceV24/SeaSurfaceV24.shader"
+    },
+    {
+        "sha256":  "e71ba9f160c8f66b31cb9f728f31c64c3fc071b59b85402ad8f79d03b06cbeeb",
+        "path":  "Assets/Deepsea/Shaders/SeaSurfaceV24/V24CoastFoundation.shader"
+    },
+    {
+        "sha256":  "9ef232e177563eae5c43f7acc5f9e7a0d262b558b6e9677c4fbfd0cc0c535c4f",
+        "path":  "Assets/Deepsea/Shaders/SeaSurfaceV24/V24CoastMapleSurface.shader"
+    },
+    {
+        "sha256":  "a768707f47aec9642cd66b95db5056e267a344ea6726f0cd1126301beebeecf3",
+        "path":  "Assets/Deepsea/Shaders/SeaSurfaceV24/V24CoastShelfLit.shader"
+    },
+    {
+        "sha256":  "4732a1829e76f8887262be549b9527b129145ac0e2ec47aee78f4cd8773de6b4",
+        "path":  "Assets/Deepsea/Shaders/SeaSurfaceV24/V24CoastShowcaseSurface.shader"
+    },
+    {
+        "sha256":  "d58320cbc4533f4399eafd7a78b8ed74f86d7960d411856e07ab053ee14e333e",
+        "path":  "Assets/Deepsea/Scenes/CoastArtFineShore.unity"
+    },
+    {
+        "sha256":  "184722cd9ea5cd46255986d20986094f3edd6a14adb60c30219d3dc48e0214e9",
+        "path":  "Assets/Deepsea/Scenes/CoastArtMaple.unity"
+    },
+    {
+        "sha256":  "3661893db7494fd5fd24cc18b8da6812268be49ada370ef3045ad99a721b9393",
+        "path":  "Assets/Deepsea/Scenes/CoastArtPalette.unity"
+    },
+    {
+        "sha256":  "fc3273d9bfbc9b5ea85349531896102b73d26b4aefcad2d36b7e503337d9f1e1",
+        "path":  "Assets/Deepsea/Scenes/CoastArtRefined.unity"
+    },
+    {
+        "sha256":  "56b0d4bc8487092ef5521437a47e01bd22e207d16df108dd28e2bdcc991cb515",
+        "path":  "Assets/Deepsea/Scenes/CoastArtShowcase.unity"
+    },
+    {
+        "sha256":  "f2c7f21e0b23d081ce4d7e35e1cfb5c573097a7c41824062ed0f5c14d249ccb7",
+        "path":  "Assets/Deepsea/Scenes/CoastBlockout.unity"
+    },
+    {
+        "sha256":  "a52979f1680ea8ca0d67bf8012491debd4bff605e28af7209ea479b34cbecb76",
+        "path":  "Assets/Deepsea/Scenes/CoastSeaLife.unity"
+    },
+    {
+        "sha256":  "43f607473e9561361315242695aa2082937e50511294089e60faa656a5aaff11",
+        "path":  "Assets/Deepsea/Scenes/CoastSeaLifeNavigationV23.unity"
+    },
+    {
+        "sha256":  "a39d82f1d3946e4a8fe4f0dfeadfa0bbb50af34f7ccccb50309d19335e4bfc92",
+        "path":  "Assets/Deepsea/Scenes/CoastSeaLifeV25.unity"
+    },
+    {
+        "sha256":  "b1f5e5ff622f2f6105d4618d8c98e9caf6d5db6e1c184b44ec140d1044e42fc8",
+        "path":  "Assets/Deepsea/Scenes/CoastSeaLifeWaterV22.unity"
+    },
+    {
+        "sha256":  "544340dc4ed7b2fcc6f4543b7106aa5403d11eadc14b6497b2efdb12fc2f1107",
+        "path":  "Assets/Deepsea/Scenes/CoastSeaSurfaceV24.unity"
+    },
+    {
+        "sha256":  "4dbeba05b6d7cdbd05975ff1395f9cb90edb482000ce54add2ac0fcae7807f53",
+        "path":  "Assets/Deepsea/Scenes/CoastSeaSurfaceV26.unity"
+    },
+    {
+        "sha256":  "8b39b961399f361e6759cecf2b85fef16f24f39bcbdb9cca76c0383f28a35825",
+        "path":  "Assets/Deepsea/Scenes/GuichaoBay.unity"
+    },
+    {
+        "sha256":  "9a554916fe138ebcad8443ee9b079363ecc72795c39d0e80f5f7ca99e2c6f5e7",
+        "path":  "ProjectSettings/AudioManager.asset"
+    },
+    {
+        "sha256":  "40e65dd214bf254955d2c8829ca8ce2130fd3510485560ce012e9a1ddd93e623",
+        "path":  "ProjectSettings/ClusterInputManager.asset"
+    },
+    {
+        "sha256":  "62fd35da36080a098d3e9f90cf4af6c655fe582091c33e505b812cf9aa36fee1",
+        "path":  "ProjectSettings/DynamicsManager.asset"
+    },
+    {
+        "sha256":  "038e0e0821595a0cc34e7b39a9009c161e8874788e53c1086668441308ad71b4",
+        "path":  "ProjectSettings/EditorBuildSettings.asset"
+    },
+    {
+        "sha256":  "6f8761b516f06ff2f0373b6310571cf7951f63afb86c56bfd7be832e06a9987b",
+        "path":  "ProjectSettings/EditorSettings.asset"
+    },
+    {
+        "sha256":  "5a5d118ce346a41eb374a7a830fa3d3055597a49b980a4b74132a19beef02a11",
+        "path":  "ProjectSettings/GraphicsSettings.asset"
+    },
+    {
+        "sha256":  "60c83ae48e29a782141f99032eb38e803d18475124ff5224fbd1fd81b233f051",
+        "path":  "ProjectSettings/InputManager.asset"
+    },
+    {
+        "sha256":  "1e8379a461b10ae09f3f696911088c16875d63e87ed5f2d95df9e1892703f9fd",
+        "path":  "ProjectSettings/MemorySettings.asset"
+    },
+    {
+        "sha256":  "7ebbf8f53b8033104e1878b95ca07a28d0954092d81c220f14196a42f651e658",
+        "path":  "ProjectSettings/NavMeshAreas.asset"
+    },
+    {
+        "sha256":  "531861618163b01648a075414f6e864506ad8fe0a0d4d0096aa1fbbfcd3937dc",
+        "path":  "ProjectSettings/Physics2DSettings.asset"
+    },
+    {
+        "sha256":  "29c125923fe6e29f90190d4fce1c82d660e7051546e2c9d02908d18c9cf2436c",
+        "path":  "ProjectSettings/PresetManager.asset"
+    },
+    {
+        "sha256":  "19cdb9b272f236dc8ec7b698f15583856146a42d3d6575106c5f84208c57539f",
+        "path":  "ProjectSettings/ProjectSettings.asset"
+    },
+    {
+        "sha256":  "cb0348117398b0d8b914d57e4a4ce72608299af404a58cb4d756d374d2cdbe4f",
+        "path":  "ProjectSettings/QualitySettings.asset"
+    },
+    {
+        "sha256":  "733eb0b08f2d9e57a51cef99c450140b18ddd101065cad1b9cde9330899ed8c7",
+        "path":  "ProjectSettings/ShaderGraphSettings.asset"
+    },
+    {
+        "sha256":  "8e18b1c820e9c09e16bbd1f1b7842e9fb3b0158a0921b0964e0b8fa12c6e2c01",
+        "path":  "ProjectSettings/TagManager.asset"
+    },
+    {
+        "sha256":  "1a83e54adbbda7c9f4851103a0c6ab7f6448a3343d4ea5b7620452fa08416ecd",
+        "path":  "ProjectSettings/TimeManager.asset"
+    },
+    {
+        "sha256":  "5af4c69bb69f1d9dfbbc47b01eb6522e3ea41e672791e080a003c8deacae9ab5",
+        "path":  "ProjectSettings/UnityConnectSettings.asset"
+    },
+    {
+        "sha256":  "3e9d9f824875297ef6b9315fa7a3ac7ec1b047042395404a23c368fc971a8f3e",
+        "path":  "ProjectSettings/URPProjectSettings.asset"
+    },
+    {
+        "sha256":  "e7bda45bf7a394745fee1316e6c71fa676004d591ad1f3aa247fd3e4ceb86071",
+        "path":  "ProjectSettings/VersionControlSettings.asset"
+    },
+    {
+        "sha256":  "3f31266c7c1910447586e71b041dabd58d8371715ac3142d3e38ace46121f4ab",
+        "path":  "ProjectSettings/VFXManager.asset"
+    }
+]
