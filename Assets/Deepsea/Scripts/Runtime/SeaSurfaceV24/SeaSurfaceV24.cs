@@ -38,7 +38,7 @@ namespace Deepsea {
    if(fourK!=null&&fourK.antiAliasing!=pipeline.msaaSampleCount){fourK.Release();fourK.antiAliasing=pipeline.msaaSampleCount;fourK.Create();}
   }
   void Update(){if(!ready)return;if(!game.Paused&&!manual)Clock+=Time.deltaTime;Shader.SetGlobalFloat("_OceanV24Time",Clock);
-   if(!checking&&Input.GetKeyDown(KeyCode.F7)){SetMode(!Rolling,true);game.Notify(Rolling?"v24滚动海面与浅水层次。F7对照v23。":"v23透明水面对照。F7返回v24。");}
+   if(!checking&&SeaWaterArtUpgradeV26.Active==null&&Input.GetKeyDown(KeyCode.F7)){SetMode(!Rolling,true);game.Notify(Rolling?"v24滚动海面与浅水层次。F7对照v23。":"v23透明水面对照。F7返回v24。");}
    if(Input.GetKeyDown(KeyCode.F9))showFPS=!showFPS;
    displayTimer+=Time.unscaledDeltaTime;displayFrames++;if(displayTimer>.5f){fpsText="FPS "+(displayFrames/displayTimer).ToString("F0");displayTimer=0;displayFrames=0;}
   }

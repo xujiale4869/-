@@ -1,0 +1,82 @@
+﻿[
+    {
+        "sha256":  "cbba80cde945618a841ad1a6403e61678742481a6241758694423313aabda2e9",
+        "path":  "Assets/Deepsea/Resources/SeaSurfaceV26/Textures.meta"
+    },
+    {
+        "sha256":  "aa08eb1a33e0062332ffc0bf0cc18351a9cf95210256daca02b76481a48a3545",
+        "path":  "Assets/Deepsea/Resources/SeaSurfaceV26/Water.mat"
+    },
+    {
+        "sha256":  "47413ea59f6026aa4c18fdcf65cf6f89e1679c873c9384353837797dd9330826",
+        "path":  "Assets/Deepsea/Resources/SeaSurfaceV26/Water.mat.meta"
+    },
+    {
+        "sha256":  "23aaf93213d1a09afe43b1b922f4228b19988768e8afd0e0aea56eb04bdd821a",
+        "path":  "Assets/Deepsea/Resources/SeaSurfaceV26/Textures/ShoreFoamNoise_V26.png"
+    },
+    {
+        "sha256":  "d439d074876fa31c3f5ddbd0419b9edd0d18fb2b971ba21f9ebede1e4d6c3351",
+        "path":  "Assets/Deepsea/Resources/SeaSurfaceV26/Textures/ShoreFoamNoise_V26.png.meta"
+    },
+    {
+        "sha256":  "497f5b24b2f300d64954200e65dcf8760edf68549a428ce1077e9a15239ef976",
+        "path":  "Assets/Deepsea/Resources/SeaSurfaceV26/Textures/WaterCaustics_V26.png"
+    },
+    {
+        "sha256":  "193228bff46b4c0b3cce81ff55405815e93ee74d554c9d2e637400f14a60a090",
+        "path":  "Assets/Deepsea/Resources/SeaSurfaceV26/Textures/WaterCaustics_V26.png.meta"
+    },
+    {
+        "sha256":  "6ee4d29e4577574790187461442022c79ff564c8027115344b3cd45590ab1d75",
+        "path":  "Assets/Deepsea/Resources/SeaSurfaceV26/Textures/WaterDepthRamp_V26.png"
+    },
+    {
+        "sha256":  "a6b38cc45803ae964fd9a69771d5049af34079f7334fcb3effeeaaa1ca745fbd",
+        "path":  "Assets/Deepsea/Resources/SeaSurfaceV26/Textures/WaterDepthRamp_V26.png.meta"
+    },
+    {
+        "sha256":  "223181dd7ec900ca14b54ca5fb008b5e690408ebcbf5a8c103fcd759d3651d56",
+        "path":  "Assets/Deepsea/Scripts/Editor/SeaSurfaceV26/SeaSurfaceBuildV26.cs"
+    },
+    {
+        "sha256":  "651f3730ea3a1b06c4e2ff8dbd2a71d6cee1bcf071b7ded5c689aeaf1fa3d73e",
+        "path":  "Assets/Deepsea/Scripts/Editor/SeaSurfaceV26/SeaSurfaceBuildV26.cs.meta"
+    },
+    {
+        "sha256":  "06379931615350a1902e4daacefe1254652127fcd6549b5a3443bdbf7a7ef308",
+        "path":  "Tools/SeaSurfaceV26/OriginalInputs/generate_water_optics_v26.py"
+    },
+    {
+        "sha256":  "83fccb5afcb1cfab694e67da9cb5ad89cf9bb11654da696dda986a9051b0d9e1",
+        "path":  "Tools/SeaSurfaceV26/OriginalInputs/gpt_v26_water_art_prompt.md"
+    },
+    {
+        "sha256":  "6957ee04d7bc39c3529f7817ca56e295d5b906bacce2b034d929acefbea83021",
+        "path":  "Tools/SeaSurfaceV26/OriginalInputs/SeaSurfaceSparkleV26.shader"
+    },
+    {
+        "sha256":  "12cccdb6746efc1caa4a67b773be163f094bcc12634bb3c31ced17b85181304f",
+        "path":  "Tools/SeaSurfaceV26/OriginalInputs/SeaSurfaceV24-before.cs"
+    },
+    {
+        "sha256":  "b58e2cf44109318a9cdf435a6661d77a6613b31afa008078e590ad2d353b611a",
+        "path":  "Tools/SeaSurfaceV26/OriginalInputs/seawaterartupgradev26.cs"
+    },
+    {
+        "sha256":  "b3db988df1fdc8d2d077c9b2e5bcf693059dfd8ab2880e7b6b09c1fe001f97ee",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaWaterArtUpgradeV26.cs"
+    },
+    {
+        "sha256":  "a7f28d24943bd0e02d281ddb260e280027e2cc2e899bd83d2895c13013af25bd",
+        "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaWaterReviewV26.cs"
+    },
+    {
+        "sha256":  "244d1d0b0ae6ce75adaa9940607de28405082944121245119ac2d775cb924bee",
+        "path":  "Assets/Deepsea/Shaders/SeaSurfaceV24/SeaSurfaceSparkleV26.shader"
+    },
+    {
+        "sha256":  "4dbeba05b6d7cdbd05975ff1395f9cb90edb482000ce54add2ac0fcae7807f53",
+        "path":  "Assets/Deepsea/Scenes/CoastSeaSurfaceV26.unity"
+    }
+]

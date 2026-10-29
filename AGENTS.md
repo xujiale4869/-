@@ -143,3 +143,10 @@ Tools/AgentSkillSources保存五个已有美术/UI工具的185个文件，来源
 Blender 实际导出六FBX、三张512贴图与六个可编辑源文件。修复原稿重复反向面异常、PNG上下翻转、眼睛UV、FBX朝向/单位、柜体沙床尺寸与材质槽；数据主类拆到匹配文件名。运行时等待Ready，鱼/缸创建时更新，无每帧全场景反射扫描；路径拥有朝向，摆尾不累积偏航，暂停立即停止。旧源码只在SeaLifeActivities/SeaLifeAquarium各加一个可选钩子，旧场景未挂组件时为空操作。
 最终 build-02 成功，仍有历史 OceanSurface.cs 过时API警告；Verification/sea-life-v25-review02 60项检查通过、运行0错误0警告。正常存档SHA前后相同，256旧输入仅上述两文件变化（254项哈希相同）。review01暂停失败已修复，不作为最终证据。1080p固定镜头600帧，旧鱼137.88FPS/P95 8.23ms、新鱼136.99/P95 9.12ms；单缸近景369.23/P95 3.19ms。非全地图、长期或4K测试。
 六秒视频为144帧/24fps固定步长引擎录制，分享720p，非实时性能证据。未将SO经济字段接管旧鱼价/容量，未做完整PBR贴图、真实体积散射、微气泡、UI/人物钓鱼动作/海湾生态重做；不称最终美术认可。普通再构建 Deepsea.Editor.SeaLifeV25Build.Build；显式 ImportAndBuild 才重新生成v25资产/场景。旧版本构建保留。
+
+
+## 2026-10-29 v26：用户水面光学包接入
+用户提供三份核心代码与交接说明，两份C#附件相同。独立场景CoastSeaSurfaceV26.unity继承v25，程序Builds/SeaSurfaceV26/Guichao-SeaSurfaceV26.exe；桌面深海灯塔－最新版，F6只对照水面材质，F9帧率。原v25及更早程序保留。
+原始包在Tools/SeaSurfaceV26/OriginalInputs，详细适配与范围见Docs/SeaSurfaceV26/README.md。控制器等待Ready并只在v26场景/显式参数启动，继承v24波形与暂停时钟，接入焦散/泡沫/渐变贴图并保留Shader资源引用。修复384贴图被Unity缩放、原稿规则亮点、过强焦散、静止尾流与生态路径跳变；新增蝠鲼/72银鱼仍为程序化原型，不作为高精生态或全海湾路径验收。
+263项旧输入中262项哈希一致；唯一变化为SeaSurfaceV24.cs的F7条件加v26 Active判空，避免新旧模式冲突。正常存档SHA不变。build-02成功、新Shader编译错误0，但全包仍24项历史警告；review-02的21项检查通过，运行0错误0警告。1080p可见固定镜头480帧：对照138.90FPS/P95 8.31ms，v26 129.49FPS/P95 8.70ms；非长期/全地图/4K性能声明。
+最终截图与result.json在Docs/SeaSurfaceV26；draft01导入缩放失败且有规则亮点，不作交付依据。本轮未收到目标原图本体，不能称已匹配原图或用户已认可；未做完整人工钓鱼/水族馆回归。新生态两侧保留，F6不是全旧版二进制还原。重建使用Deepsea.Editor.SeaSurfaceBuildV26.Build；ImportAndBuild会显式重建场景。
