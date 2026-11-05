@@ -1,0 +1,37 @@
+{
+    "passed": false,
+    "resolution": "1920x1080",
+    "gpu": "Intel(R) Arc(TM) 130T GPU (16GB)",
+    "savePath": "C:/Users/许嘉乐/AppData/Local/Temp/GuichaoStudio/深海灯塔 · 海湾生活 v21\\harbor-v27-639294587316504543.json",
+    "scope": "Native 1080p integration and bounded fixed-camera performance; visual captures are not user art approval.",
+    "checks": [
+        "Windows F8 disables v27: False",
+        "Windows F8 restores every material and legacy lamp mesh: False",
+        "Windows F8 hides decorations and restores water shader: False",
+        "native-off visible frame: True",
+        "native-off no magenta shader: True",
+        "Windows F8 restores v27 layer: True",
+        "Windows F8 restores harbor water reflection: True",
+        "native-on visible frame: True",
+        "native-on no magenta shader: True"
+    ],
+    "failed": [
+        "Windows F8 disables v27",
+        "Windows F8 restores every material and legacy lamp mesh",
+        "Windows F8 hides decorations and restores water shader"
+    ],
+    "errors": [],
+    "warnings": [],
+    "changedRenderers": 0,
+    "importedMeshUses": 0,
+    "reefClusters": 0,
+    "kelpClusters": 0,
+    "addedColliders": 0,
+    "frames": 480,
+    "baselineFps": 0.0,
+    "v27Fps": 0.0,
+    "baselineP95Ms": 0.0,
+    "v27P95Ms": 0.0,
+    "walkDistance": 0.0,
+    "boatDistance": 0.0
+}

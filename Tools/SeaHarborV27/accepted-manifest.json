@@ -1,0 +1,290 @@
+﻿{
+    "files":  [
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27.meta",
+                      "sha256":  "D956E79250E7F742ACC577BCB4F34399029D67AE934E463DCA037CB38F1D5690",
+                      "bytes":  172
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/Baked.meta",
+                      "sha256":  "3BB7D8C30A238C4816E07297A09BA6A11D902455A32A407692C0B6A5F5D18428",
+                      "bytes":  172
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/Baked/Coral_V27_Cluster.asset",
+                      "sha256":  "26760CAC6F67B63435576E11DE65F813A7351D708A3C498821D326B40C295554",
+                      "bytes":  136880
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/Baked/Coral_V27_Cluster.asset.meta",
+                      "sha256":  "1DA9AE91132700712F2B350FB2B074E1D7CB501D640641BF5C29E6F0835975F0",
+                      "bytes":  188
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/Baked/Kelp_V27_GiantFrond.asset",
+                      "sha256":  "82BC03920D8524FE8A2923E730584E5C78CDB69775701660C78136548888B247",
+                      "bytes":  27231
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/Baked/Kelp_V27_GiantFrond.asset.meta",
+                      "sha256":  "904D472AAE684A9C1F481DDDFC8618C9F8E02736258E032DBAA925CDD8BB6769",
+                      "bytes":  188
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/Baked/Lantern_V27_Hanging.asset",
+                      "sha256":  "44663810CC25781662C6224E21159A5BF72C74B2C47C7248B1EFA3BDF367EA1B",
+                      "bytes":  51747
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/Baked/Lantern_V27_Hanging.asset.meta",
+                      "sha256":  "826518801D403D3F3CE1590AD72407821DDA05F87533F69E5743DE32AD7EE0BA",
+                      "bytes":  188
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/Baked/Pier_V27_BarrelsAndCrates.asset",
+                      "sha256":  "E5165540A08720BBB74072E587BD694ECCEF46CF5CD57C3AC1545011BD8A7F17",
+                      "bytes":  64275
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/Baked/Pier_V27_BarrelsAndCrates.asset.meta",
+                      "sha256":  "F5D6C0DC73CB2E68AB07BDBF27B9494701662DB5385A58FA1E168AD91184F197",
+                      "bytes":  188
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/GlowShaderKeep.mat",
+                      "sha256":  "0C026916994C264E12C99E0AD0878A9EA6D8070D56D405C091AC01AE4D8A9B76",
+                      "bytes":  1680
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/GlowShaderKeep.mat.meta",
+                      "sha256":  "712BC5C490380D35F2E128699D4FDD3CD00A18A43DDD1ED336B0FE2363595DEC",
+                      "bytes":  188
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/HarborShaderKeep.mat",
+                      "sha256":  "5E3D2166BDC2C67603D7EDB82792F029E3754AF55FB97265B764498131FAF5E8",
+                      "bytes":  966
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/HarborShaderKeep.mat.meta",
+                      "sha256":  "352608430160AAD6C663699EE4534A0FA29F5064257F9526F25F226C0371B2F9",
+                      "bytes":  188
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/Models.meta",
+                      "sha256":  "D1B795C117A5EDD7D23C44C2B29C94752120987B8F14C6A9EADA93E8751DD91F",
+                      "bytes":  172
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/Models/Coral_V27_Cluster.fbx",
+                      "sha256":  "F3301AE23E2F63FC2A9325BF09EDB924E83B96DCD2B07F2B0A82B7BD66F0A74D",
+                      "bytes":  54444
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/Models/Coral_V27_Cluster.fbx.meta",
+                      "sha256":  "A3866149406C4B9D534D0CC124EA6610809CCC091738B8991B5B6B8D47B65ADF",
+                      "bytes":  2830
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/Models/Kelp_V27_GiantFrond.fbx",
+                      "sha256":  "BD373A86480692171BB1350B9AC33E916ADACDFB584230A0C0E13D15F36E3E8B",
+                      "bytes":  21100
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/Models/Kelp_V27_GiantFrond.fbx.meta",
+                      "sha256":  "867BAD89DC53B84CB315486A179326E69C9D23895AAD3C107B8C5182BCA6EF81",
+                      "bytes":  2830
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/Models/Lantern_V27_Hanging.fbx",
+                      "sha256":  "93C70E440648B81532BBACED50CE7D2C2F9C7E50AA24E6CD2D4EC92D585ACD49",
+                      "bytes":  18636
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/Models/Lantern_V27_Hanging.fbx.meta",
+                      "sha256":  "4C948EFF97248A470ECDBC6A5E2EE0063F06EAB6663A53A5495F3804044F2541",
+                      "bytes":  2830
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/Models/Pier_V27_BarrelsAndCrates.fbx",
+                      "sha256":  "C51B31C930413462FE91B7967D1E2807381753262463F5B37A189E268FC629C2",
+                      "bytes":  19996
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/Models/Pier_V27_BarrelsAndCrates.fbx.meta",
+                      "sha256":  "EA6C7827BB49E206CCB34EBB4A98DE676CEDA663D38EDAB7626971794F2BAEDC",
+                      "bytes":  2830
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/ReefShaderKeep.mat",
+                      "sha256":  "70A5194A542216DF10A216E208FFEE943415DE6583D5B3D24C4CB18F374876AC",
+                      "bytes":  1061
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/ReefShaderKeep.mat.meta",
+                      "sha256":  "65BC590FE5D3178EB57C0A1B5A42B26B12B27F7103E0661F870CA0C606E70EBB",
+                      "bytes":  188
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/Textures.meta",
+                      "sha256":  "2CAA1E2C448E2C2962C5AB8BDA8F8FB6D6F03D1B07F28DF8C1C64B385719B25D",
+                      "bytes":  172
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/Textures/CoralPaletteLUT_V27.png",
+                      "sha256":  "123575CB48A3BA8D0B95CC62D7CC088906945BF68083748F093E109A1900EFCF",
+                      "bytes":  23240
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/Textures/CoralPaletteLUT_V27.png.meta",
+                      "sha256":  "D4A7477EC410C6965B7CF7D407F88C2D62D1B4E654E8F24820C3FFC6EF1608A9",
+                      "bytes":  2945
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/Textures/WeatheredPierWood_V27.png",
+                      "sha256":  "E35152680BC15D1A7E0D7F467EFB710E02D8FF892BD9D1B0471D840C9832F3E0",
+                      "bytes":  219662
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/Textures/WeatheredPierWood_V27.png.meta",
+                      "sha256":  "C17C8B3D4477B219D45C0F7F0A51ED9C5F950D3FFAEC975070B8286329434293",
+                      "bytes":  2945
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/WaterShaderKeep.mat",
+                      "sha256":  "295D552545D602F8907CF7C30789259882AC6398B19EBF9ED71696CE86B29495",
+                      "bytes":  1849
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaHarborV27/WaterShaderKeep.mat.meta",
+                      "sha256":  "5E0CEAD4966F6A5C63B665D61E760848884E40068D8407357D3647350F9E256E",
+                      "bytes":  188
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scenes/CoastSeaHarborV27.unity",
+                      "sha256":  "7F9D33EA840D23E13CC171143D3027268104A68CF2F6C0B89C2CA8F159100175",
+                      "bytes":  270362
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scenes/CoastSeaHarborV27.unity.meta",
+                      "sha256":  "615E830AAC07484EB134DF949F7381A54DC67F97A18673C68EA8329C44DEFD17",
+                      "bytes":  155
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Editor/SeaHarborV27.meta",
+                      "sha256":  "52909F8AB54DAE048FDFE7F94E325138968AA51388ECFF7C33639095E7F59C94",
+                      "bytes":  172
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Editor/SeaHarborV27/SeaHarborBuildV27.cs",
+                      "sha256":  "0D391BAAC08BC298E229EBA456968A5B0F92804D2F843FBF9994AAF8AD35FE2F",
+                      "bytes":  6828
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Editor/SeaHarborV27/SeaHarborBuildV27.cs.meta",
+                      "sha256":  "F4BF57090A4066EFB76213327FDD266FBB8439E5670EE34B7EF5A0441449F494",
+                      "bytes":  243
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaHarborAndReefUpgradeV27.cs",
+                      "sha256":  "7A2D5CA2E1AA2DAA91B68A583DF23BD6E95C3AE8CBE1C76569D1A2B421C5ACD4",
+                      "bytes":  17927
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaHarborAndReefUpgradeV27.cs.meta",
+                      "sha256":  "91C2B8D613B94B62076C311BB6487EF1E062AF7B3B78C5A94C9D9A842D4B1306",
+                      "bytes":  243
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaHarborReviewV27.cs",
+                      "sha256":  "71D6493FD02E59282DFABD9CA1443349402B77602B753A7B5B41F9DA7D366BB5",
+                      "bytes":  9889
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaHarborReviewV27.cs.meta",
+                      "sha256":  "48175CD2558FCADD1B900417824600A221BB2CA98FC2223664350392684C7250",
+                      "bytes":  243
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Shaders/HarborLightingV27.hlsl",
+                      "sha256":  "65A0432B9DAF014783F27B49DF6F6B86F6ED52E50293E381E821460E3088580B",
+                      "bytes":  1026
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Shaders/HarborLightingV27.hlsl.meta",
+                      "sha256":  "BC454E92213E97C60212C130FBF81D0FF14B82EF94C61F28D5AB06276A2DE882",
+                      "bytes":  161
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Shaders/HarborSurfaceV27.shader",
+                      "sha256":  "DD937F713094F99B7DC6917DA410D652E215A3DAD5532225A7DB02029A7A01DB",
+                      "bytes":  3648
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Shaders/HarborSurfaceV27.shader.meta",
+                      "sha256":  "E3A0B01D9972DDFA284C1B7FA9F2D6C5B9B96E22DC6D1C350A96044514ED1B33",
+                      "bytes":  204
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Shaders/SeaSurfaceV24/SeaSurfaceSparkleHarborV27.shader",
+                      "sha256":  "0D20AFEC6422700BC2C812C31A4D4FA436CDABA970A1CCB568B606F7CBB5E27D",
+                      "bytes":  20493
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Shaders/SeaSurfaceV24/SeaSurfaceSparkleHarborV27.shader.meta",
+                      "sha256":  "7F0766D46DD353C8744045C867522C196C209161B66FDFED63D4E55071BC8263",
+                      "bytes":  204
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Shaders/UnderwaterReefVibrantV27.shader",
+                      "sha256":  "79B0EBF1BD1FCC13F9B3B26B307A05E67F95BB8B339626788EC2AC61147A3B00",
+                      "bytes":  4353
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Shaders/UnderwaterReefVibrantV27.shader.meta",
+                      "sha256":  "E350C4F572E0CDE41C608185F7F862F5FB70536B4B199EED82EB1BBD994D9AE5",
+                      "bytes":  204
+                  },
+                  {
+                      "path":  "Tools/SeaHarborV27/generate_harbor_and_reef_v27.py",
+                      "sha256":  "6BCAF19885F7F1BCC02A29BEC0B3FB5477E1FF53EC1D2E9BF23142923F02750F",
+                      "bytes":  13439
+                  },
+                  {
+                      "path":  "Tools/SeaHarborV27/OriginalInputs/gpt_v27_harbor_reef_all_in_one.md",
+                      "sha256":  "CCC243E0EA6651250683391F3B509B95E343FD2E32E85D6303A2FBC33B86CC96",
+                      "bytes":  60574
+                  },
+                  {
+                      "path":  "Tools/SeaHarborV27/Rebuild-Harbor.ps1",
+                      "sha256":  "1786ED1D3974784E82500AA43569E434F19AB4BD265AA565D83D99ADB2365795",
+                      "bytes":  1616
+                  },
+                  {
+                      "path":  "Tools/SeaHarborV27/Sources/Coral_V27_Cluster.blend",
+                      "sha256":  "33A6E463D38092C5F89189234A1E8FA81D06DBD0EF18088B7138EA7C7508FEF2",
+                      "bytes":  118432
+                  },
+                  {
+                      "path":  "Tools/SeaHarborV27/Sources/Kelp_V27_GiantFrond.blend",
+                      "sha256":  "8626563E05C78358F248B6BF32391CEA47A57FD305D0972558EFC6873A53B2D8",
+                      "bytes":  90658
+                  },
+                  {
+                      "path":  "Tools/SeaHarborV27/Sources/Lantern_V27_Hanging.blend",
+                      "sha256":  "C694E2AA51B057B91B6E230C7D0657DCE8251299C415339E774B547574B10977",
+                      "bytes":  90111
+                  },
+                  {
+                      "path":  "Tools/SeaHarborV27/Sources/Pier_V27_BarrelsAndCrates.blend",
+                      "sha256":  "FAD2B884CDBC81CE3251EBE6B3C832015332F0374D2ABB4049F2BA8C3AA51DD7",
+                      "bytes":  91616
+                  },
+                  {
+                      "path":  "Tools/SeaHarborV27/Test-NativeF8.ps1",
+                      "sha256":  "84CA47BCC87C4DB2F28917F70FCD40F605FC0EC130F8A7902605331B7A984AA9",
+                      "bytes":  1748
+                  }
+              ],
+    "scope":  "Accepted new v27 inputs only; depends on the existing Unity project"
+}

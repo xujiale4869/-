@@ -1,0 +1,5 @@
+﻿{
+    "scope":  "Handwritten v27 code and README; preserve native Unity serialization and original supplied package bytes",
+    "finalGeneratorChange":  "Removed trailing empty EOF line only after generation, no geometry or runtime code change",
+    "passed":  true
+}

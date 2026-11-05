@@ -168,3 +168,11 @@ Blender 实际导出六FBX、三张512贴图与六个可编辑源文件。修复
 用户新包明确将焦散/碎光/聚焦/泡沫默认值改为.92/1.85/72/.95，取代v26.1仅针对旧包的禁止削弱要求。Shader按新附件原文；C#光学/波形/生态按附件，GUI因实机重叠改为下移68px、实色背景和颜色状态恢复，并加v26.2提示。鼠标滑块输入通过可选指针判断拦截，原F7保护/旧鱼群隔离保留。
 最终build-02成功、Shader错误0，仍有1项历史API编译警告。Verification/water-v262-review02的44项检查通过、运行0错误0警告；另water-v262-input01的11项通过，包括Windows实际F7、焦散滑块、黄金预设和关闭，操作时真实取竿仍保持未投钩。其余四滑块未逐一OS拖动；三预设5参数程序检查通过。正常存档SHA前后相同。270旧输入266哈希不变、4项预期源码变动，Water.mat另同步新参数。
 原生1080p每状态480帧，最终原水128.64FPS/P95 8.58ms，v26.2为120.65/P95 8.87ms；短窗有波动，不外推长期/全图/4K。报告Docs/SeaSurfaceV262/README.md；Docs/SeaSurfaceV26正式预览与结果已更新。review01重叠截图不是最终版。旧v26.1在Builds/SeaSurfaceV26-v26.1-backup，旧版本入口指备份；最新版与v26.2入口指当前SeaSurfaceV26程序，-forceV26Water，F7调参/F6对照/F9帧率。普通重建SeaSurfaceBuildV26.Build；同步后重建SeaSurfacePolishV262.SyncAndBuild，勿用v26.1的旧参数断言入口。GUI滑块仅本次运行，不存玩家档。未做完整人工钓鱼/展缸/全海湾回归、目标图匹配或用户美术认可。
+
+
+## 2026-11-05 v27：港湾提灯与两片浅礁实机交付
+用户提供 gpt_v27_harbor_reef_all_in_one 包，原文保存在 Tools/SeaHarborV27/OriginalInputs。独立场景 CoastSeaHarborV27.unity、程序 Builds/SeaHarborV27/Guichao-SeaHarborV27.exe；桌面最新版/v27入口指新程序，旧 v26.2 完整保留，正常产品名/存档沿用 v21。
+四个 Blender FBX、两张颜色贴图、四个 .blend 实际生成，基准空节点校准导入朝向/米制单位；不是原注释里的六个整件 FBX，也不是完整 PBR 贴图组。灯笼开放框架避免遮灯芯，船灯/货物挂随波视觉层；桥头暖灯、合并网格绳栏留靠船开口、小馆木檐接入。原包粗枝珊瑚增分叉与盘层，新群落6珊瑚/5海带收成两片，按可见海床落根/预算限制，继续保留干净绿色海带。
+F8恢复所有材质槽、覆盖的旧灯网格和原水面Shader；F7/F6仍为v26.2调参/水面材质对照，.92/1.85/72/.95默认参数保留。新材质使用两盏无阴影灯的位置/颜色做局部暖光，无新增反射相机/碰撞体/阴影贴图；初始化后没有全场景反射扫描。暂停冻结新增动画。
+最终build-03成功，v27三Shader错误0，全包仍24项既有警告。Runtime 33项 + Windows原生F8 9项检查通过，两次运行均0错误0警告；实际推进/栈桥步行/上下船通过，测试唯一临时存档。2772项旧源码/资源/场景/设置/包文件全部哈希不变，正常存档SHA不变。1920x1080固定镜头每状态480帧，对照143.06FPS/P95 7.91ms，v27 143.35/P95 8.03ms；仅短窗，先前120–134FPS有波动，非全地图/长期/4K结论。
+正式 Docs/SeaHarborV27/README.md、Runtime和NativeInput；首轮零新增群落、原生输入前台保护中止，以及第二轮草稿均不作最终美术证据。尚未拿到目标原图或用户美术认可，未做完整人工钓鱼/展缸回归。普通重建 SeaHarborBuildV27.Build；ImportAndBuild显式重生成。Tools/SeaHarborV27/Rebuild-Harbor.ps1默认只核对冻结输入，-Build重建，-Regenerate -Build生成新稿需重验。

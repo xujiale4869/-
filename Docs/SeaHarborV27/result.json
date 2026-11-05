@@ -1,0 +1,123 @@
+﻿{
+    "baseline":  {
+                     "passed":  true,
+                     "normalSaveUnchanged":  true,
+                     "differences":  [
+
+                                     ],
+                     "normalSaveSHA256":  "1A8FF2BF3F0FCBB22EA0CEB22654196F0D152545EFC42A32D6FF089D472213E9",
+                     "total":  2772,
+                     "unchanged":  2772
+                 },
+    "passed":  true,
+    "originalPackageSHA256":  "CCC243E0EA6651250683391F3B509B95E343FD2E32E85D6303A2FBC33B86CC96",
+    "finalRuntime":  "harbor-v27-review03",
+    "runtime":  {
+                    "passed":  true,
+                    "resolution":  "1920x1080",
+                    "gpu":  "Intel(R) Arc(TM) 130T GPU (16GB)",
+                    "savePath":  "C:/Users/许嘉乐/AppData/Local/Temp/GuichaoStudio/深海灯塔 · 海湾生活 v21\\harbor-v27-639294591176987009.json",
+                    "scope":  "Native 1080p integration and bounded fixed-camera performance; visual captures are not user art approval.",
+                    "checks":  [
+                                   "native 1920x1080 game window: True",
+                                   "isolated temporary player save: True",
+                                   "existing reef renderers use v27 palette: True",
+                                   "five asset uses from four Blender models, no primitive model fallback: True",
+                                   "decorative layer adds no colliders: True",
+                                   "near-bay new reef and kelp rooted on visible seabed: True",
+                                   "stern lamp and cargo inherit wave-driven hull transform: True",
+                                   "two bounded point lights add no shadow maps: True",
+                                   "reef materials retain instancing support: True",
+                                   "all v27 shaders supported: True",
+                                   "v26.2 water optical defaults retained: True",
+                                   "F8 restores every replaced material slot and legacy lamp mesh: True",
+                                   "F8 off restores water shader and hides new geometry 0: True",
+                                   "F8 off restores water shader and hides new geometry 1: True",
+                                   "F8 off restores water shader and hides new geometry 2: True",
+                                   "F8 off restores water shader and hides new geometry 3: True",
+                                   "repeated comparison reuses assets and objects: True",
+                                   "preview visible frame: True",
+                                   "preview no magenta shader: True",
+                                   "01-baseline visible frame: True",
+                                   "01-baseline no magenta shader: True",
+                                   "02-harbor visible frame: True",
+                                   "02-harbor no magenta shader: True",
+                                   "03-stern-lantern visible frame: True",
+                                   "03-stern-lantern no magenta shader: True",
+                                   "04-reef visible frame: True",
+                                   "04-reef no magenta shader: True",
+                                   "pause freezes lamp, reef clock and light flicker: True",
+                                   "existing propulsion moves boat with v27 details attached: True",
+                                   "existing disembark route retained: True",
+                                   "actual controller traverses pier centre past cargo: True",
+                                   "existing reboard route retained: True",
+                                   "test writes temporary save only: True"
+                               ],
+                    "failed":  [
+
+                               ],
+                    "errors":  [
+
+                               ],
+                    "warnings":  [
+
+                                 ],
+                    "changedRenderers":  39,
+                    "importedMeshUses":  5,
+                    "reefClusters":  6,
+                    "kelpClusters":  5,
+                    "addedColliders":  0,
+                    "frames":  480,
+                    "baselineFps":  143.06336975097657,
+                    "v27Fps":  143.3475799560547,
+                    "baselineP95Ms":  7.911499977111816,
+                    "v27P95Ms":  8.029899597167969,
+                    "walkDistance":  5.610194206237793,
+                    "boatDistance":  3.532078742980957
+                },
+    "build":  {
+                  "passed":  true,
+                  "warnings":  24,
+                  "shaderErrors":  0
+              },
+    "nativeInput":  {
+                        "passed":  true,
+                        "resolution":  "1920x1080",
+                        "gpu":  "Intel(R) Arc(TM) 130T GPU (16GB)",
+                        "savePath":  "C:/Users/许嘉乐/AppData/Local/Temp/GuichaoStudio/深海灯塔 · 海湾生活 v21\\harbor-v27-639294591368945994.json",
+                        "scope":  "Native 1080p integration and bounded fixed-camera performance; visual captures are not user art approval.",
+                        "checks":  [
+                                       "Windows F8 disables v27: True",
+                                       "Windows F8 restores every material and legacy lamp mesh: True",
+                                       "Windows F8 hides decorations and restores water shader: True",
+                                       "native-off visible frame: True",
+                                       "native-off no magenta shader: True",
+                                       "Windows F8 restores v27 layer: True",
+                                       "Windows F8 restores harbor water reflection: True",
+                                       "native-on visible frame: True",
+                                       "native-on no magenta shader: True"
+                                   ],
+                        "failed":  [
+
+                                   ],
+                        "errors":  [
+
+                                   ],
+                        "warnings":  [
+
+                                     ],
+                        "changedRenderers":  0,
+                        "importedMeshUses":  0,
+                        "reefClusters":  0,
+                        "kelpClusters":  0,
+                        "addedColliders":  0,
+                        "frames":  480,
+                        "baselineFps":  0.0,
+                        "v27Fps":  0.0,
+                        "baselineP95Ms":  0.0,
+                        "v27P95Ms":  0.0,
+                        "walkDistance":  0.0,
+                        "boatDistance":  0.0
+                    },
+    "finalNativeInput":  "harbor-v27-native03"
+}
