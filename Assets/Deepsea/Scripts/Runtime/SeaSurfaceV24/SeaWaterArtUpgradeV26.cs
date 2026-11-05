@@ -1,14 +1,15 @@
 // ============================================================================
-// 深海灯塔·归潮湾 (v26.1) — “雾岬岛·东岸”原图级波光、高锐度焦散与海沟 S 型银鱼走廊控制器
+// 深海灯塔·归潮湾 (v26.2) — “雾岬岛·东岸”黄金平衡版水面控制器 (内置 F7 实时光学调参面板)
 // File: Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaWaterArtUpgradeV26.cs
 // ============================================================================
-// v26.1 针对实机 preview.jpg 的四大精准升级:
-// 1. 恢复并强化浅滩高对比 Voronoi 焦散网 (_CausticsIntensity = 1.68) 与海面波光粼粼星芒碎光 (_GlintIntensity = 3.45)。
-// 2. 修正右侧深海海沟 96 条银鱼的巡游轨迹：摒弃 v26 中的椭圆圆圈轨迹，改为真正从远海延伸至前景海沟的
-//    双股交织 S 型流线鱼群走廊 (S-Curve Baitball Ribbon)，并加入银鳞侧闪动效。
-// 3. 水下珊瑚礁盘焕彩提亮 (Coral Reef Vibrancy Boost)：自动为水下礁盘珊瑚赋予原图标志性的粉紫、珊瑚橙、
-//    翡翠绿与暖金高饱和度色彩层次，配合 Shader 的浅礁透彩窗口清晰透出水面。
-// 4. 在左右两处珊瑚礁盘边缘新增 28 条暖金色雀鲷小鱼群 (Golden Reef Anthias)，还原原图礁盘周边的鲜活生态。
+// v26.2 针对“1.水底焦散太抢戏”与“2.海面波光太刺眼”的精准收敛:
+// 1. 水底焦散强度从 1.68 收敛至黄金甜点值 0.92，Shader 改为双层几何交汇 + 水底明度柔和调制，
+//    只在受光浅滩沙地上呈现通透温润的光网，绝不发白抢戏。
+// 2. 海面波光强度从 3.45 收敛至 1.85，新增光锥聚焦参数 _GlintFocus = 72，并在浅水焦散区自动淡出表面碎光，
+//    避免水面波光与水底焦散重叠打架。
+// 3. 新增实机【F7 水面美术实时调参台】：在游戏里按 F7 键即可弹出半透明滑块面板，
+//    实时拖动“水底焦散强度”、“海面波光强度”、“波光聚焦范围”、“岸浪泡沫强度”、“水体通透度”，
+//    并带有一键预设切换：【清雅柔和】/【v26.2 黄金平衡 (默认)】/【璀璨烈日】！
 // ============================================================================
 
 using System;
@@ -25,9 +26,20 @@ namespace Deepsea
     {
         public static SeaWaterArtUpgradeV26 Active { get; private set; }
 
-        [Header("v26.1 水体艺术开关 (按 F6 实时对比新旧水面)")]
+        [Header("v26.2 水体艺术开关 (F6: 对比新旧水面 | F7: 呼出实时光学调参滑块)")]
         public bool v26WaterEnabled = true;
         public bool spawnAmbientMarineLife = true;
+        public bool showTuningPanel = false;
+
+        [Header("v26.2 实时可调核心光学参数")]
+        [Range(0f, 2.5f)] public float causticsIntensity = 0.92f;
+        [Range(0.08f, 0.5f)] public float causticsScale = 0.23f;
+        [Range(0f, 1.0f)] public float causticsSpeed = 0.26f;
+        [Range(0f, 4.5f)] public float glintIntensity = 1.85f;
+        [Range(25f, 160f)] public float glintFocus = 72.0f;
+        [Range(5f, 24f)] public float glintScale = 12.5f;
+        [Range(0f, 2.0f)] public float foamIntensity = 0.95f;
+        [Range(0.3f, 1.0f)] public float waterVisibility = 0.86f;
 
         private MeshRenderer _waterRenderer;
         private Material _originalWaterMaterial;
@@ -117,6 +129,7 @@ namespace Deepsea
             }
 
             Ready = _waterRenderer != null && _v26WaterMaterial != null;
+            if (Ready) _game.Notify("v26.2 水面光学 · F7实时调参 · F6水面对照 · F9帧率。");
             if (Environment.GetCommandLineArgs().Contains("-water-v26-check")) StartCoroutine(ReviewV26());
         }
 
@@ -131,12 +144,18 @@ namespace Deepsea
                 ApplyWaterMode(v26WaterEnabled);
             }
 
+            if (Input.GetKeyDown(KeyCode.F7))
+            {
+                showTuningPanel = !showTuningPanel;
+            }
+
             if (v26WaterEnabled && _waterRenderer != null && _v26WaterMaterial != null)
             {
                 if (_waterRenderer.sharedMaterial != _v26WaterMaterial)
                 {
                     _waterRenderer.sharedMaterial = _v26WaterMaterial;
                 }
+                SyncLiveParametersToMaterial();
             }
 
             if (!_game.Paused) AnimateMarineEcology(Time.deltaTime);
@@ -188,26 +207,105 @@ namespace Deepsea
             _v26WaterMaterial.SetTexture("_CausticsMap", _causticsTex);
             _v26WaterMaterial.SetTexture("_FoamMap", _foamTex);
 
-            // v26.1 原图级五级水深色阶与高锐度焦散/波光参数（禁止削弱）
-            _v26WaterMaterial.SetColor("_CrystalShoreColor", new Color(0.82f, 0.94f, 0.80f, 1f)); // 极浅滩清透暖沙绿
-            _v26WaterMaterial.SetColor("_Shallow", new Color(0.06f, 0.72f, 0.64f, 1f));           // 栈桥内湾高饱和翡翠薄荷绿
-            _v26WaterMaterial.SetColor("_ReefMidColor", new Color(0.02f, 0.42f, 0.54f, 1f));      // 珊瑚礁盘边缘孔雀青蓝
-            _v26WaterMaterial.SetColor("_Deep", new Color(0.006f, 0.10f, 0.22f, 1f));             // 右侧外海深沟午夜靛蓝
+            // v26.2 黄金平衡版色彩与光学参数
+            _v26WaterMaterial.SetColor("_CrystalShoreColor", new Color(0.78f, 0.90f, 0.78f, 1f));
+            _v26WaterMaterial.SetColor("_Shallow", new Color(0.08f, 0.66f, 0.60f, 1f));
+            _v26WaterMaterial.SetColor("_ReefMidColor", new Color(0.03f, 0.39f, 0.50f, 1f));
+            _v26WaterMaterial.SetColor("_Deep", new Color(0.008f, 0.11f, 0.21f, 1f));
 
-            _v26WaterMaterial.SetFloat("_Refraction", 0.0038f);
-            _v26WaterMaterial.SetFloat("_Visibility", 0.90f);
-            _v26WaterMaterial.SetFloat("_SurfaceWeight", 0.36f);
-            _v26WaterMaterial.SetFloat("_CausticsIntensity", 1.68f);
-            _v26WaterMaterial.SetFloat("_CausticsScale", 0.22f);
-            _v26WaterMaterial.SetFloat("_CausticsSpeed", 0.34f);
-            _v26WaterMaterial.SetFloat("_CausticsMaxDepth", 7.5f);
+            _v26WaterMaterial.SetFloat("_Refraction", 0.0034f);
+            _v26WaterMaterial.SetFloat("_SurfaceWeight", 0.38f);
+            _v26WaterMaterial.SetFloat("_CausticsMaxDepth", 5.6f);
             _v26WaterMaterial.SetFloat("_GlintEnable", 1.0f);
-            _v26WaterMaterial.SetFloat("_GlintIntensity", 3.45f);
-            _v26WaterMaterial.SetFloat("_GlintScale", 13.5f);
-            _v26WaterMaterial.SetFloat("_GlintSpeed", 0.95f);
-            _v26WaterMaterial.SetColor("_SunPathColor", new Color(1.0f, 0.95f, 0.76f, 1f));
-            _v26WaterMaterial.SetFloat("_FoamIntensity", 1.28f);
-            _v26WaterMaterial.SetFloat("_FoamWidth", 0.62f);
+            _v26WaterMaterial.SetFloat("_GlintSpeed", 0.72f);
+            _v26WaterMaterial.SetColor("_SunPathColor", new Color(1.0f, 0.94f, 0.78f, 1f));
+            _v26WaterMaterial.SetFloat("_FoamWidth", 0.48f);
+
+            SyncLiveParametersToMaterial();
+        }
+
+        private void SyncLiveParametersToMaterial()
+        {
+            if (_v26WaterMaterial == null) return;
+            _v26WaterMaterial.SetFloat("_CausticsIntensity", causticsIntensity);
+            _v26WaterMaterial.SetFloat("_CausticsScale", causticsScale);
+            _v26WaterMaterial.SetFloat("_CausticsSpeed", causticsSpeed);
+            _v26WaterMaterial.SetFloat("_GlintIntensity", glintIntensity);
+            if (_v26WaterMaterial.HasProperty("_GlintFocus"))
+                _v26WaterMaterial.SetFloat("_GlintFocus", glintFocus);
+            _v26WaterMaterial.SetFloat("_GlintScale", glintScale);
+            _v26WaterMaterial.SetFloat("_FoamIntensity", foamIntensity);
+            _v26WaterMaterial.SetFloat("_Visibility", waterVisibility);
+        }
+
+        public void ApplyPreset(int presetIndex)
+        {
+            if (presetIndex == 0) // 清雅柔和 (Subtle & Serene)
+            {
+                causticsIntensity = 0.62f;
+                glintIntensity = 1.25f;
+                glintFocus = 95.0f;
+                foamIntensity = 0.78f;
+                waterVisibility = 0.84f;
+            }
+            else if (presetIndex == 1) // v26.2 黄金平衡 (Default Sweet Spot)
+            {
+                causticsIntensity = 0.92f;
+                glintIntensity = 1.85f;
+                glintFocus = 72.0f;
+                foamIntensity = 0.95f;
+                waterVisibility = 0.86f;
+            }
+            else // 璀璨烈日 (Vivid Sunlit)
+            {
+                causticsIntensity = 1.32f;
+                glintIntensity = 2.65f;
+                glintFocus = 48.0f;
+                foamIntensity = 1.15f;
+                waterVisibility = 0.90f;
+            }
+            SyncLiveParametersToMaterial();
+        }
+
+        private void OnGUI()
+        {
+            if (!Ready || !showTuningPanel) return;
+
+            Color previousBackground = GUI.backgroundColor;
+            Color previousColor = GUI.color;
+            GUI.backgroundColor = new Color(0.06f, 0.12f, 0.16f, 0.92f);
+            Rect boxRect = new Rect(24f, 148f, 360f, 310f);
+            GUI.color = new Color(0.025f, 0.06f, 0.075f, 0.96f);
+            GUI.DrawTexture(boxRect, Texture2D.whiteTexture);
+            GUI.color = previousColor;
+            GUI.Box(boxRect, "【雾岬岛·东岸】水面光学实时调参台 (按 F7 隐藏)");
+
+            GUILayout.BeginArea(new Rect(38f, 180f, 332f, 268f));
+
+            GUILayout.BeginHorizontal();
+            if (GUILayout.Button("预设1: 清雅柔和")) ApplyPreset(0);
+            if (GUILayout.Button("预设2: 黄金平衡")) ApplyPreset(1);
+            if (GUILayout.Button("预设3: 璀璨烈日")) ApplyPreset(2);
+            GUILayout.EndHorizontal();
+
+            GUILayout.Space(8f);
+            GUILayout.Label($"1. 浅滩水底焦散亮度 (Caustics): {causticsIntensity:F2}");
+            causticsIntensity = GUILayout.HorizontalSlider(causticsIntensity, 0.15f, 2.0f);
+
+            GUILayout.Label($"2. 海面波光碎金强度 (Sparkle): {glintIntensity:F2}");
+            glintIntensity = GUILayout.HorizontalSlider(glintIntensity, 0.20f, 3.6f);
+
+            GUILayout.Label($"3. 波光收束度 (越大越聚拢): {glintFocus:F0}");
+            glintFocus = GUILayout.HorizontalSlider(glintFocus, 28f, 140f);
+
+            GUILayout.Label($"4. 岸石与船尾泡沫亮度 (Foam): {foamIntensity:F2}");
+            foamIntensity = GUILayout.HorizontalSlider(foamIntensity, 0.30f, 1.6f);
+
+            GUILayout.Label($"5. 水底清澈透光度 (Clarity): {waterVisibility:F2}");
+            waterVisibility = GUILayout.HorizontalSlider(waterVisibility, 0.50f, 0.96f);
+
+            GUILayout.EndArea();
+            GUI.backgroundColor = previousBackground;
         }
 
         public void ApplyWaterMode(bool useV26)
@@ -218,12 +316,6 @@ namespace Deepsea
             _waterRenderer.sharedMaterial = useV26 ? _v26WaterMaterial : _originalWaterMaterial;
         }
 
-        // ====================================================================
-        // 还原《雾岬岛·东岸》原图标志性水下生态焦点：
-        // 1. 左下方翡翠浅滩沙底上方优雅滑翔的深色蝠鲼 (Manta Ray)
-        // 2. 右侧深海海沟中沿 S 型走廊蜿蜒游弋的银鱼流线带 (S-Curve Baitball Ribbon)
-        // 3. 珊瑚礁盘边缘游弋的暖金橙色雀鲷鱼群 (Golden Reef Anthias)
-        // ====================================================================
         private void SetupReferenceMarineEcology()
         {
             if (_waterRenderer == null) return;
@@ -236,7 +328,6 @@ namespace Deepsea
                 ?? Shader.Find("Deepsea/SeaLifeSurface")
                 ?? Shader.Find("Universal Render Pipeline/Lit");
 
-            // 1. 构建浅滩滑翔蝠鲼 (Manta Ray)
             Mesh mantaMesh = BuildMantaRayMesh();
             _owned.Add(mantaMesh);
             Material mantaMat = new Material(litShader) { name = "V26_MantaRayMat" };
@@ -252,15 +343,14 @@ namespace Deepsea
             mantaGo.AddComponent<MeshRenderer>().sharedMaterial = mantaMat;
             _mantaRay = mantaGo.transform;
 
-            // 2. 构建右侧深海海沟 S 型流线银鱼走廊 (保持 72 条以兼容自动化验收检查，但形态改为 S 型开放流线丝带)
             Mesh silverFishMesh = BuildSlenderSilverFishMesh();
             _owned.Add(silverFishMesh);
             Material silverMat = new Material(litShader) { name = "V26_TrenchSilverSchoolMat" };
             _owned.Add(silverMat);
-            if (silverMat.HasProperty("_BaseColor")) silverMat.SetColor("_BaseColor", new Color(0.88f, 0.96f, 1.0f, 1f));
-            if (silverMat.HasProperty("_RimColor")) silverMat.SetColor("_RimColor", new Color(0.75f, 0.95f, 1.0f, 1f));
-            if (silverMat.HasProperty("_Smoothness")) silverMat.SetFloat("_Smoothness", 0.95f);
-            if (silverMat.HasProperty("_Metallic")) silverMat.SetFloat("_Metallic", 0.72f);
+            if (silverMat.HasProperty("_BaseColor")) silverMat.SetColor("_BaseColor", new Color(0.86f, 0.95f, 0.99f, 1f));
+            if (silverMat.HasProperty("_RimColor")) silverMat.SetColor("_RimColor", new Color(0.72f, 0.92f, 0.98f, 1f));
+            if (silverMat.HasProperty("_Smoothness")) silverMat.SetFloat("_Smoothness", 0.92f);
+            if (silverMat.HasProperty("_Metallic")) silverMat.SetFloat("_Metallic", 0.68f);
 
             var randomState = UnityEngine.Random.state;
             UnityEngine.Random.InitState(26029);
@@ -270,8 +360,8 @@ namespace Deepsea
             {
                 var fg = new GameObject("V26_TrenchSilverFish_" + i);
                 fg.transform.SetParent(_marineEcologyRoot, false);
-                float scale = UnityEngine.Random.Range(0.24f, 0.36f);
-                fg.transform.localScale = new Vector3(scale * 0.68f, scale * 0.75f, scale * 1.32f);
+                float scale = UnityEngine.Random.Range(0.24f, 0.35f);
+                fg.transform.localScale = new Vector3(scale * 0.68f, scale * 0.75f, scale * 1.30f);
                 fg.AddComponent<MeshFilter>().sharedMesh = silverFishMesh;
                 fg.AddComponent<MeshRenderer>().sharedMaterial = silverMat;
 
@@ -287,12 +377,11 @@ namespace Deepsea
                 });
             }
 
-            // 3. 在珊瑚礁盘边缘新增 28 条暖金橙色雀鲷小鱼群 (还原原图礁石旁成群的橙黄色小鱼)
             Material goldenReefMat = new Material(litShader) { name = "V26_ReefGoldenAnthiasMat" };
             _owned.Add(goldenReefMat);
-            if (goldenReefMat.HasProperty("_BaseColor")) goldenReefMat.SetColor("_BaseColor", new Color(1.0f, 0.68f, 0.16f, 1f));
-            if (goldenReefMat.HasProperty("_RimColor")) goldenReefMat.SetColor("_RimColor", new Color(1.0f, 0.88f, 0.35f, 1f));
-            if (goldenReefMat.HasProperty("_Smoothness")) goldenReefMat.SetFloat("_Smoothness", 0.82f);
+            if (goldenReefMat.HasProperty("_BaseColor")) goldenReefMat.SetColor("_BaseColor", new Color(0.98f, 0.66f, 0.16f, 1f));
+            if (goldenReefMat.HasProperty("_RimColor")) goldenReefMat.SetColor("_RimColor", new Color(1.0f, 0.86f, 0.35f, 1f));
+            if (goldenReefMat.HasProperty("_Smoothness")) goldenReefMat.SetFloat("_Smoothness", 0.80f);
 
             Vector3[] reefAnchors =
             {
@@ -306,7 +395,7 @@ namespace Deepsea
             {
                 var gf = new GameObject("V26_ReefGoldenFish_" + i);
                 gf.transform.SetParent(_marineEcologyRoot, false);
-                float sc = UnityEngine.Random.Range(0.20f, 0.30f);
+                float sc = UnityEngine.Random.Range(0.20f, 0.29f);
                 gf.transform.localScale = new Vector3(sc * 0.85f, sc * 1.15f, sc * 1.05f);
                 gf.AddComponent<MeshFilter>().sharedMesh = silverFishMesh;
                 gf.AddComponent<MeshRenderer>().sharedMaterial = goldenReefMat;
@@ -336,7 +425,6 @@ namespace Deepsea
             if (_marineEcologyRoot == null || _waterRenderer == null) return;
             float seaLevel = _waterRenderer.bounds.center.y;
 
-            // 1. 浅滩蝠鲼优雅盘旋滑翔
             if (_mantaRay != null)
             {
                 _mantaPhase += dt * 0.28f;
@@ -360,7 +448,6 @@ namespace Deepsea
                 }
             }
 
-            // 2. 右侧深海海沟 S 型流线银鱼群巡游
             for (int i = 0; i < _trenchSchool.Count; i++)
             {
                 var f = _trenchSchool[i];
@@ -373,13 +460,12 @@ namespace Deepsea
                 Vector3 fwd = p1 - p0;
                 if (fwd.sqrMagnitude > 0.00001f)
                 {
-                    float shimmerRoll = Mathf.Sin(_clock * 4.5f + f.phase) * 18f;
+                    float shimmerRoll = Mathf.Sin(_clock * 4.5f + f.phase) * 16f;
                     f.tr.rotation = Quaternion.LookRotation(fwd.normalized, Vector3.up) * Quaternion.Euler(0f, 0f, shimmerRoll);
                 }
                 _trenchSchool[i] = f;
             }
 
-            // 3. 珊瑚礁盘边缘暖金雀鲷群游
             for (int i = 0; i < _reefGoldenSchool.Count; i++)
             {
                 var gf = _reefGoldenSchool[i];
@@ -398,14 +484,9 @@ namespace Deepsea
 
         private Vector3 EvaluateTrenchSpline(float t, float seaLevel, float branch, float latOffset, float vertOffset, float wave)
         {
-            // 采用平滑往返或单向流动的 S 型长走廊曲线 (z 从 -11m 延伸至 +13m)，彻底告别圆圈感！
-            // 使用平滑三角波 s in [0, 1] 让鱼群沿 S 型海沟走廊自然折返巡游，不形成圆环
             float s = 0.5f - 0.5f * Mathf.Cos(t * Mathf.PI * 2f);
             float z = Mathf.Lerp(-11.5f, 13.5f, s);
-
-            // 还原原图右侧海沟的 S 型弯曲走势：中段向内湾凹进，两端向外海舒展
             float sCurveX = 8.4f - 2.35f * Mathf.Sin(s * Mathf.PI * 1.35f - 0.35f) + 0.85f * Mathf.Cos(s * Mathf.PI * 2.7f);
-            // 鱼群在走廊中段收束成密集流线带，两端略微散开
             float pinch = 0.42f + 0.58f * Mathf.Sin(s * Mathf.PI);
             float branchShift = branch * 0.38f * Mathf.Sin(s * Mathf.PI * 2f + 0.6f);
             float x = sCurveX + branchShift + latOffset * pinch + Mathf.Sin(wave) * 0.09f;

@@ -1,0 +1,38 @@
+﻿{
+    "passed":  true,
+    "resolution":  "1920x1080",
+    "gpu":  "Intel(R) Arc(TM) 130T GPU (16GB)",
+    "savePath":  "isolated temporary save; normal player progress unchanged",
+    "scope":  "Actual OS F7, slider and preset interaction with isolated fishing fixture",
+    "checks":  [
+                   "native test prepares actual fishing rig: True",
+                   "native-open visible frame: True",
+                   "native-open no magenta shader: True",
+                   "OS F7 opens actual tuning panel: True",
+                   "OS pointer changes actual caustics slider: True",
+                   "OS preset button restores all five balanced values: True",
+                   "OS F7 closes actual tuning panel: True",
+                   "slider and preset clicks do not cast fishing line: True",
+                   "tuned value reaches active water material: True",
+                   "native-final visible frame: True",
+                   "native-final no magenta shader: True"
+               ],
+    "failed":  [
+
+               ],
+    "errors":  [
+
+               ],
+    "warnings":  [
+
+                 ],
+    "baselineFps":  0.0,
+    "v26Fps":  0.0,
+    "baselineP95Ms":  0.0,
+    "v26P95Ms":  0.0,
+    "frames":  0,
+    "fishCount":  0,
+    "visibleFish":  0,
+    "goldenFishCount":  0,
+    "visibleGoldenFish":  0
+}

@@ -1,0 +1,12 @@
+﻿{
+    "changed":  [
+                    "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeUI.cs",
+                    "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaWaterArtUpgradeV26.cs",
+                    "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaWaterReviewV26.cs",
+                    "Assets/Deepsea/Shaders/SeaSurfaceV24/SeaSurfaceSparkleV26.shader"
+                ],
+    "unchanged":  266,
+    "normalPlayerSaveUnchanged":  true,
+    "count":  270,
+    "passed":  true
+}

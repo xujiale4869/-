@@ -41,24 +41,25 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _CausticsIntensity: 1.68
-    - _CausticsMaxDepth: 7.5
-    - _CausticsScale: 0.22
-    - _CausticsSpeed: 0.34
-    - _FoamIntensity: 1.28
-    - _FoamWidth: 0.62
+    - _CausticsIntensity: 0.92
+    - _CausticsMaxDepth: 5.6
+    - _CausticsScale: 0.23
+    - _CausticsSpeed: 0.26
+    - _FoamIntensity: 0.95
+    - _FoamWidth: 0.48
     - _GlintEnable: 1
-    - _GlintIntensity: 3.45
-    - _GlintScale: 13.5
-    - _GlintSpeed: 0.95
-    - _Refraction: 0.0038
-    - _SurfaceWeight: 0.36
+    - _GlintFocus: 72
+    - _GlintIntensity: 1.85
+    - _GlintScale: 12.5
+    - _GlintSpeed: 0.72
+    - _Refraction: 0.0034
+    - _SurfaceWeight: 0.38
     - _UseDepthRamp: 1
-    - _Visibility: 0.9
+    - _Visibility: 0.86
     m_Colors:
-    - _CrystalShoreColor: {r: 0.82, g: 0.94, b: 0.8, a: 1}
-    - _Deep: {r: 0.006, g: 0.1, b: 0.22, a: 1}
-    - _ReefMidColor: {r: 0.02, g: 0.42, b: 0.54, a: 1}
-    - _Shallow: {r: 0.06, g: 0.72, b: 0.64, a: 1}
-    - _SunPathColor: {r: 1, g: 0.95, b: 0.76, a: 1}
+    - _CrystalShoreColor: {r: 0.78, g: 0.9, b: 0.78, a: 1}
+    - _Deep: {r: 0.008, g: 0.11, b: 0.21, a: 1}
+    - _ReefMidColor: {r: 0.03, g: 0.39, b: 0.5, a: 1}
+    - _Shallow: {r: 0.08, g: 0.66, b: 0.6, a: 1}
+    - _SunPathColor: {r: 1, g: 0.94, b: 0.78, a: 1}
   m_BuildTextureStacks: []
