@@ -1,0 +1,10 @@
+﻿{
+    "passed":  true,
+    "playerSHA256":  "059C313352892718258A120B87BDC6FC7C23CE67181084ABE14F86F204F5DDDB",
+    "nativeChecks":  12,
+    "runtimeChecks":  48,
+    "acceptedInputs":  36,
+    "oldV27Unchanged":  true,
+    "normalSavesUnchanged":  true,
+    "managedAssemblySHA256":  "EDCEA5FFC984860BC8BE523B5E2D9FE61182336BE50E854522F8760F0B8F5935"
+}

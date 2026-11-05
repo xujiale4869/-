@@ -1,0 +1,12 @@
+﻿{
+    "passed":  true,
+    "oldFiles":  2937,
+    "v27PlayerUnchanged":  true,
+    "expectedChanges":  [
+                            "Assets/Deepsea/Scripts/Runtime/SeaLifeNavigationV23/SeaLifeNavigationMotorV23.cs",
+                            "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeRuntime.cs",
+                            "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaWaterArtUpgradeV26.cs"
+                        ],
+    "unchanged":  2934,
+    "normalSavesUnchanged":  true
+}

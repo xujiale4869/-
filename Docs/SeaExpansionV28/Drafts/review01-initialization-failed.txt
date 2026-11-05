@@ -1,0 +1,6 @@
+﻿ArgumentNullException: Value cannot be null.
+Parameter name: parent
+  at Deepsea.SeaBayExpansionAndBuildSpaceV28.GroundAt (UnityEngine.Vector3 p) [0x00092] in <22708df1886b4ffa86bc3f5b02cb4024>:0 
+  at Deepsea.SeaBayExpansionAndBuildSpaceV28.DepthAt (UnityEngine.Vector3 p) [0x00000] in <22708df1886b4ffa86bc3f5b02cb4024>:0 
+  at Deepsea.SeaBayExpansionAndBuildSpaceV28.SetupGrid () [0x00047] in <22708df1886b4ffa86bc3f5b02cb4024>:0 
+  at Deepsea.SeaBayExpansionAndBuildSpaceV28+<Start>d__99.MoveNext () [0x000ff] in <22708df1886b4ffa86bc3f5b02cb4024>:0 

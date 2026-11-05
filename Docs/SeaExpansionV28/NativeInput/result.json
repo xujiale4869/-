@@ -1,0 +1,33 @@
+{
+    "passed": true,
+    "scope": "Native 1080p bay building integration; bounded frame sampling, not whole-map or 4K proof.",
+    "resolution": "1920x1080",
+    "gpu": "Intel(R) Arc(TM) 130T GPU (16GB)",
+    "playerSave": "C:/Users/许嘉乐/AppData/Local/Temp/GuichaoStudio/深海灯塔 · 海湾生活 v21\\bay-v28-player-639294705229981320.json",
+    "buildingSave": "C:/Users/许嘉乐/AppData/Local/Temp/GuichaoStudio/深海灯塔 · 海湾生活 v21\\bay-v28-layout-639294705229981320.json",
+    "checks": [
+        "Windows G enters planning: True",
+        "Windows W pans planning camera: True",
+        "Windows WASD does not drive boat in planning: True",
+        "Windows 3 selects coral without changing boat tool: True",
+        "Windows R rotates construction preview: True",
+        "native left click constructs on selected cell: True",
+        "native-placed visible frame: True",
+        "native-placed no shader fallback: True",
+        "native right click dismantles and refunds: True",
+        "Windows G restores navigation camera and control: True",
+        "native-return visible frame: True",
+        "native-return no shader fallback: True"
+    ],
+    "failed": [],
+    "errors": [],
+    "warnings": [],
+    "starterCount": 10,
+    "buildings": 0,
+    "terrainVertices": 0,
+    "normalFps": 0.0,
+    "normalP95": 0.0,
+    "planningFps": 0.0,
+    "planningP95": 0.0,
+    "travelDistance": 0.0
+}

@@ -1,0 +1,9 @@
+﻿Focus changed; stop native input
+At C:\Users\许嘉乐\Desktop\深海灯塔-全部版本\深海灯塔-Unity项目合集\深海灯塔-Unity海陆-v0.3\Tools\SeaExpansionV28\Test-NativeBuild.ps1:30 char:1
+11
++ ...  $target.MainWindowHandle){throw 'Focus changed; stop native input'}}
++                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Focus changed; stop native input:String) [], RuntimeException
+    + FullyQualifiedErrorId : Focus changed; stop native input
+ 
+

@@ -176,3 +176,12 @@ Blender 实际导出六FBX、三张512贴图与六个可编辑源文件。修复
 F8恢复所有材质槽、覆盖的旧灯网格和原水面Shader；F7/F6仍为v26.2调参/水面材质对照，.92/1.85/72/.95默认参数保留。新材质使用两盏无阴影灯的位置/颜色做局部暖光，无新增反射相机/碰撞体/阴影贴图；初始化后没有全场景反射扫描。暂停冻结新增动画。
 最终build-03成功，v27三Shader错误0，全包仍24项既有警告。Runtime 33项 + Windows原生F8 9项检查通过，两次运行均0错误0警告；实际推进/栈桥步行/上下船通过，测试唯一临时存档。2772项旧源码/资源/场景/设置/包文件全部哈希不变，正常存档SHA不变。1920x1080固定镜头每状态480帧，对照143.06FPS/P95 7.91ms，v27 143.35/P95 8.03ms；仅短窗，先前120–134FPS有波动，非全地图/长期/4K结论。
 正式 Docs/SeaHarborV27/README.md、Runtime和NativeInput；首轮零新增群落、原生输入前台保护中止，以及第二轮草稿均不作最终美术证据。尚未拿到目标原图或用户美术认可，未做完整人工钓鱼/展缸回归。普通重建 SeaHarborBuildV27.Build；ImportAndBuild显式重生成。Tools/SeaHarborV27/Rebuild-Harbor.ps1默认只核对冻结输入，-Build重建，-Regenerate -Build生成新稿需重验。
+
+
+## 2026-11-05 v28：海域扩建与G键建造空间交付
+用户提供 gpt_v28_bay_expansion_all_in_one 并要求接入、构建、截图及推送。独立场景 CoastSeaExpansionV28.unity，程序 Builds/SeaExpansionV28/Guichao-SeaExpansionV28.exe；桌面最新版/v28入口指新程序，旧 v27 保留，正常产品名/存档沿用 v21，建造另存 sea-bay-expansion-v28.json。
+航行边界仅 v28 扩至 X[-10,86] Z[-50,66]（矩形面积约5.06倍，不是可建面积声明），惯性/后备推进、恢复/保存坐标同步；水面用300m网格保留世界坐标波浪而非拉伸Transform。连续A暖沙、B南北礁坪、C向东开口新月环礁；2m网格原点(-1,2.4)。四设施为桥/灯/珊瑚花园/蟹笼；按深度落根并验证四角、碰撞、船/上下船区域和物资。固定接口(0,0)允许旧栈桥重叠并实测连续步行，其他格保留限制。复用v27模型/木纹/绿色海带；缓存预览、合并静态网格、释放拆除几何、最多四盏新增无阴影灯。建造时停船、隐藏旧HUD、拦截旧操作与F7，退出恢复。
+最终 build-06 增量构建有1项历史API警告，本轮完整构建曾24项；Shader错误0。Verification/bay-v28-review06的48项与bay-v28-native05的12项通过，两次运行均0错误0警告。原生G/W/3/R/鼠标左建右拆/G退出已测。总旧输入2937项，2934哈希不变，唯一三预期源码为SeaLifeRuntime、SeaLifeNavigationMotorV23、SeaWaterArtUpgradeV26；正常存档未改，旧v27 exe哈希未改。详见Docs/SeaExpansionV28/result.json。
+1920x1080宽视野每镜头480帧：扩建全景105.53FPS/P95 10.74ms，规划网格108.58FPS/P95 10.23ms；镜头比v27测量宽，不作直接新旧开销对比、长期/全地图/4K结论。正式图在Docs/SeaExpansionV28。原生报告的性能计数为未采样默认0，勿引用。
+原包在Tools/SeaExpansionV28/OriginalInputs。旧版全局自动加载、SmoothStep边缘、空布局重生、悬空固定深度、输入/镜头争用、材质粉色、边界保存和桥接缝已适配；失败/停止记录在Drafts，不作正式依据。native03/04的鼠标验收曾错误追踪变化中的hovered格，最终固定局部目标；驱动显式模块、前台PID保护、客户端坐标/DPI映射。普通重建Deepsea.Editor.SeaBayExpansionBuildV28.Build；Rebuild-Bay.ps1默认仅校验36输入，-Build构建，-Prepare才从v27重生成。
+本轮不是完整经营系统：蟹笼无自动产蟹/收益，建材无采集补给链，未新增外海鱼点或新登船位置；普通游戏无测试补给按钮。新区域未完成整体环境精修，未收到用户美术认可。自由布局不保证所有步行路径连通；源包/冻结清单依赖原工程，非完整独立项目备份。

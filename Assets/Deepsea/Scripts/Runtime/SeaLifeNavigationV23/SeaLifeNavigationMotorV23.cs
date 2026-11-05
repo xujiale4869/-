@@ -36,7 +36,7 @@ namespace Deepsea {
    if(!control&&Mathf.Abs(along)<.2f)yawRate=0;
    game.body.MoveRotation(game.body.rotation*Quaternion.Euler(0,yawRate*dt,0));
    if(input.sqrMagnitude<.001f&&game.body.velocity.sqrMagnitude<.001f)game.body.velocity=Vector3.zero;
-   var p=game.body.position;if(p.x>34||p.x< -6||p.z>32||p.z< -23){p.x=Mathf.Clamp(p.x,-6,34);p.z=Mathf.Clamp(p.z,-23,32);game.body.position=p;game.body.velocity*=.5f;}
+   SeaBayExpansionAndBuildSpaceV28.ClampBoat(game.body);
   }
   Vector3 HullNormal(Vector3 p){
    var forward=game.boat.forward;var right=game.boat.right;

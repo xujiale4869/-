@@ -1,0 +1,185 @@
+﻿{
+    "files":  [
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaExpansionV28.meta",
+                      "sha256":  "C81116EC548058442B901C9656DCF59D4E0F9F55D4E22D0B025AB06D6B713A9B",
+                      "bytes":  172
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaExpansionV28/LandmarkRock.asset",
+                      "sha256":  "1457179413F167B1EB19FAEBDEF6B9501452FBB20544E53E3BAA4D84D10EB338",
+                      "bytes":  71116
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaExpansionV28/LandmarkRock.asset.meta",
+                      "sha256":  "5866F0013025A380EE5C4FFD11D2A1E0A8A4C86784DFEAF9E4BB577C03919BD3",
+                      "bytes":  188
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaExpansionV28/OverlayKeep.mat",
+                      "sha256":  "DE5D1810BDF0A38FE9131605FBFADB1C4C7E5D2EC8F861C9963BD0F888CFA67E",
+                      "bytes":  791
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaExpansionV28/OverlayKeep.mat.meta",
+                      "sha256":  "218C89CC49986106B300B29F593AECFE0C77A915DC0C18BA65F56708A920FFC2",
+                      "bytes":  188
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaExpansionV28/SurfaceKeep.mat",
+                      "sha256":  "FCE6F0272E64D28DF3B3A2BAF6501B41E540DD14D773C5E33F616018D8913ECF",
+                      "bytes":  961
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaExpansionV28/SurfaceKeep.mat.meta",
+                      "sha256":  "DB7B721360D4E07BE309DD9372A33D2B38DDC3AF89111D6E7F53E37FC401B58A",
+                      "bytes":  188
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scenes/CoastSeaExpansionV28.unity",
+                      "sha256":  "1C648836F3AE02EF17732C7CA589E1A1CC8B073C1FFABDDBA24DAEF589EF0D4F",
+                      "bytes":  270919
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scenes/CoastSeaExpansionV28.unity.meta",
+                      "sha256":  "28DBF511C7C71F2116CDE16D0E2E8B9310BF1A1C39C5B4BE579A0FFBCF80F1D2",
+                      "bytes":  155
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Editor/SeaExpansionV28.meta",
+                      "sha256":  "62885536DDFBB3C36F0D7A061A85692E2642FD2DCC0F9E9EDF87DF8D18703E79",
+                      "bytes":  172
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Editor/SeaExpansionV28/SeaBayExpansionBuildV28.cs",
+                      "sha256":  "7A19D4744AADDCF02CE240A6EC6FC177131EF9DCDFC251BD20FCB873798B48BB",
+                      "bytes":  4526
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Editor/SeaExpansionV28/SeaBayExpansionBuildV28.cs.meta",
+                      "sha256":  "6F340E7903025B67D9C54F2B02E85BD494AD0408EB8FDD773D242ED8115EC00B",
+                      "bytes":  243
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaExpansionV28.meta",
+                      "sha256":  "36D33FD0A6F54C0F59AD1BDC35A98A1EF853DB92709236056C60D93DADC3D727",
+                      "bytes":  172
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaExpansionV28/BayOwnedGeometryV28.cs",
+                      "sha256":  "E1767B094CB2956C30104A208D163C3FEA5667E872673969202AEA342E6D0FF5",
+                      "bytes":  256
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaExpansionV28/BayOwnedGeometryV28.cs.meta",
+                      "sha256":  "BBAB6BA8976C76E0F130597EDF5C9998F219D8283D939A8BC1B70FD5B50D3EC5",
+                      "bytes":  243
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaExpansionV28/SeaBayBuildUIV28.cs",
+                      "sha256":  "510296A870FD49621E100A9DC21D081D01C5B4ECFF38EF089142ADA1550DFCB1",
+                      "bytes":  5275
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaExpansionV28/SeaBayBuildUIV28.cs.meta",
+                      "sha256":  "CC2D26E1A3E117634A0DF4630A81A7A0437D5157E3E96B359B06C13524D56748",
+                      "bytes":  243
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaExpansionV28/SeaBayExpansionAndBuildSpaceV28.cs",
+                      "sha256":  "DCA6A3FF9F07B8CB2B96D3D54552AA3440D97E37440FB8C552F9A0FF9B21FBD5",
+                      "bytes":  16021
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaExpansionV28/SeaBayExpansionAndBuildSpaceV28.cs.meta",
+                      "sha256":  "CC6B4903300071981A8706CD0322B04999C437616C62C005AA8A3DC339B2607A",
+                      "bytes":  243
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaExpansionV28/SeaBayExpansionReviewV28.cs",
+                      "sha256":  "5328234BEDA94A9BB096441917FC558319165B2F35D7BBD2158F0E7916827D5A",
+                      "bytes":  13006
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaExpansionV28/SeaBayExpansionReviewV28.cs.meta",
+                      "sha256":  "8996A38441C9BE5616B5A7B66166377D717B1EBA2184BA687CDFD77B403E965E",
+                      "bytes":  243
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaExpansionV28/SeaBayGeometryV28.cs",
+                      "sha256":  "A5A308B6063EBAB261E1355DD35A0CD4EFE13A437E80604966A2F91D03B8B8AB",
+                      "bytes":  7876
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaExpansionV28/SeaBayGeometryV28.cs.meta",
+                      "sha256":  "456D14CAC85B99156A359528A5C04524426191DEA59C16A3C94521D954BFC43F",
+                      "bytes":  243
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaExpansionV28/SeaBayStructuresV28.cs",
+                      "sha256":  "98810196D915AE70A66A08330CB3517F84E41E8CCA90157947164661760CC777",
+                      "bytes":  7123
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaExpansionV28/SeaBayStructuresV28.cs.meta",
+                      "sha256":  "C5A98603D8DA0FAF99700AEF4536A8BCA6F8D3403A2229B1C10A2A9E446C8D07",
+                      "bytes":  243
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeNavigationV23/SeaLifeNavigationMotorV23.cs",
+                      "sha256":  "8860AA5DC7A54D127CF16DFB1E46D490CFFACBD2DDF94285AC1DAB6F3CE574EA",
+                      "bytes":  3756
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeRuntime.cs",
+                      "sha256":  "DBC1A703AF4FE62FE3AEE737019508203AA187713FDF24827020E766E6A19CF9",
+                      "bytes":  17854
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaWaterArtUpgradeV26.cs",
+                      "sha256":  "41376F63C1B87FF207EC3947C091283B5DE483EC083AEA8892F805A69D906213",
+                      "bytes":  29728
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Shaders/SeaExpansionV28.meta",
+                      "sha256":  "188A51E977ECAFBECD55B735677110FD6028695002726D12B2A194C47D9792E7",
+                      "bytes":  172
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Shaders/SeaExpansionV28/BayOverlayV28.shader",
+                      "sha256":  "0B71FB90ACA9BCB41E617CF85EB36B416CE75B577458BC44B4653E67E68E00D3",
+                      "bytes":  657
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Shaders/SeaExpansionV28/BayOverlayV28.shader.meta",
+                      "sha256":  "B04DF1D8BF1F9C55FA2B3247A52AEF9C42F720273E48D5AAD6FE7335B0BBB632",
+                      "bytes":  204
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Shaders/SeaExpansionV28/BaySurfaceV28.shader",
+                      "sha256":  "7D7A322B28EC5095949CBF32F9B6057E30193E0143F9F4A6BEC0692F3A59F2CD",
+                      "bytes":  3921
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Shaders/SeaExpansionV28/BaySurfaceV28.shader.meta",
+                      "sha256":  "BD018F31B629B7CADC70B7CA93E73F248D749B4C08C1DD2011DD68227F25E3B5",
+                      "bytes":  204
+                  },
+                  {
+                      "path":  "Tools/SeaExpansionV28/OriginalInputs/gpt_v28_bay_expansion_all_in_one.md",
+                      "sha256":  "A94B4C6BB760100C6E79E3D12BFEDF525CEF8ED30D44F86F0CF31F05835E65E0",
+                      "bytes":  51322
+                  },
+                  {
+                      "path":  "Tools/SeaExpansionV28/Rebuild-Bay.ps1",
+                      "sha256":  "89C4D2B8D5382AE63C1C5A5204E5C5D1D964A9DBB24241C833E25E96D2DACC3A",
+                      "bytes":  1450
+                  },
+                  {
+                      "path":  "Tools/SeaExpansionV28/Test-NativeBuild.ps1",
+                      "sha256":  "A6DAAA9ACC02324917D1B3713B4B339E6F3DEAD01D4ECB1F1D2D51C71D83DE2E",
+                      "bytes":  4771
+                  }
+              ],
+    "scope":  "Accepted v28 inputs; depends on the existing repository, not a complete standalone project backup"
+}

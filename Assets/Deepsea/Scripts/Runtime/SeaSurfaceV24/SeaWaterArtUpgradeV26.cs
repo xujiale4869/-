@@ -144,7 +144,7 @@ namespace Deepsea
                 ApplyWaterMode(v26WaterEnabled);
             }
 
-            if (Input.GetKeyDown(KeyCode.F7))
+            if (!SeaBayExpansionAndBuildSpaceV28.CapturesInput && Input.GetKeyDown(KeyCode.F7))
             {
                 showTuningPanel = !showTuningPanel;
             }
