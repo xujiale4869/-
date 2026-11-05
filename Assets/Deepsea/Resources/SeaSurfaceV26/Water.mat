@@ -48,6 +48,7 @@ Material:
     - _FoamIntensity: 0.95
     - _FoamWidth: 0.48
     - _GlintEnable: 1
+    - _GlintFocus: 72
     - _GlintIntensity: 1.85
     - _GlintScale: 12.5
     - _GlintSpeed: 0.72
@@ -55,7 +56,6 @@ Material:
     - _SurfaceWeight: 0.38
     - _UseDepthRamp: 1
     - _Visibility: 0.86
-    - _GlintFocus: 72
     m_Colors:
     - _CrystalShoreColor: {r: 0.78, g: 0.9, b: 0.78, a: 1}
     - _Deep: {r: 0.008, g: 0.11, b: 0.21, a: 1}
@@ -63,4 +63,3 @@ Material:
     - _Shallow: {r: 0.08, g: 0.66, b: 0.6, a: 1}
     - _SunPathColor: {r: 1, g: 0.94, b: 0.78, a: 1}
   m_BuildTextureStacks: []
-

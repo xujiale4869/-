@@ -37,6 +37,11 @@ namespace Deepsea {
    _game.store=new SeaLifeStore(Path.Combine(Application.temporaryCachePath,"water-v26-"+DateTime.UtcNow.Ticks+".json"));
    _game.save=new SeaLifeSave();_game.save.Normalize();_game.RefreshWaterCollection();
    result.savePath=_game.store.PathName;result.resolution=Screen.width+"x"+Screen.height;result.gpu=SystemInfo.graphicsDeviceName;
+   if(args.Contains("-water-v26-input-check")){
+    yield return NativeTuningReviewV262();result.passed=result.failed.Count==0&&result.errors.Count==0;
+    File.WriteAllText(Path.Combine(evidence,"result.json"),JsonUtility.ToJson(result,true));Application.logMessageReceived-=NoteV26;
+    Debug.Log("WATER_V262_NATIVE_INPUT_DONE "+result.passed);Application.Quit(result.passed?0:2);yield break;
+   }
    CheckV26(Screen.width==1920&&Screen.height==1080,"native 1920x1080 game window");
    CheckV26(result.savePath.StartsWith(Application.temporaryCachePath),"isolated temporary save");
    CheckV26(_waterRenderer.gameObject.name=="ShowcaseWater","exact main water renderer");
@@ -65,7 +70,7 @@ namespace Deepsea {
    result.visibleFish=_trenchSchool.Count(f=>f.tr.GetComponent<Renderer>().enabled);CheckV26(result.visibleFish>0,"marine life has safe underwater placements");
    CheckV26(!FindObjectsOfType<SeaLifeFishMotion>().Any(f=>f.name=="沿用海岬鱼群表现"),"legacy circular school isolated from S corridor");
    result.visibleGoldenFish=_reefGoldenSchool.Count(f=>f.tr.GetComponent<Renderer>().enabled);CheckV26(result.visibleGoldenFish>0,"golden reef fish have safe underwater placements");
-   _game.PlaceBoat(new Vector3(.8f,SeaLifeRuntime.Sea,5.2f),100);_game.SnapWaterCamera();_game.NoticeTime=0;
+   _game.PlaceBoat(new Vector3(.8f,SeaLifeRuntime.Sea,5.2f),100);_game.SnapWaterCamera();_game.NoticeTime=0;_game.ui.Refresh();
    var manual=typeof(SeaSurfaceV24).GetField("manual",BindingFlags.Instance|BindingFlags.NonPublic);manual.SetValue(_surface,true);
    typeof(SeaSurfaceV24).GetProperty("Clock").SetValue(_surface,1.5f,null);
    _game.Paused=true; // Freeze ecology for the same-camera material pair.

@@ -1,4 +1,4 @@
-﻿# 深海灯塔当前工程
+# 深海灯塔当前工程
 
 原可玩版本仍为 v15；最新独立美术样板为 v20 局部岸岩与水面碎光，见 Docs/岸岩精修-v20.md，输出 Builds/CoastArtV20/MistCape-FineShore.exe。v19与更早版本均保留，以下历史记录仅供追溯。
 
@@ -163,7 +163,8 @@ Blender 实际导出六FBX、三张512贴图与六个可编辑源文件。修复
 重建Deepsea.Editor.SeaSurfacePolishV261.SyncAndBuild从核心C#同步原始数值并构建现有场景；普通Build保留材质/场景，ImportAndBuild会重生成。review-01旧圈鱼叠加图不作为最终画面，旧v26证据在Docs/SeaSurfaceV261/PreviousV26。本轮仍未收到目标原图，未完成原图匹配/用户美术认可，也未作完整人工钓鱼展缸回归。
 
 
-## 2026-11-05 v26.2：源码准备，待电脑上线验证
-用户提供 gpt_v26_2_sweetspot_all_in_one.md，明确将焦散/碎光/聚焦/泡沫默认值收敛为 .92/1.85/72/.95，并增加F7调参台，取代上一节仅针对v26.1的禁止削弱要求。两份核心源码按新附件提取；Water.mat同步当前默认值与颜色、保留纹理引用。新增SeaWaterTuningInputV262配合SeaLifeUI指针判断，避免调参鼠标输入穿透；保留现有F7保护、QA与旧鱼群隔离partial。
-本轮电脑端离线，只准备草稿分支源码。Unity编译、Shader实机、F7实际输入、截图、性能、玩家存档与桌面构建均未更新或验收，不可引用v26.1旧报告声称v26.2完成。状态见Docs/SeaSurfaceV262/README.md。恢复连接后先核对本地未提交改动、备份原v26.1程序，再执行Deepsea.Editor.SeaSurfacePolishV262.SyncAndBuild及该文档中的检查；v26.1同步入口仍断言旧参数，不用于v26.2。正式main更新须在新构建和实机验证后进行。
 
+## 2026-11-05 v26.2：焦散/波光收敛与F7调参实机交付
+用户新包明确将焦散/碎光/聚焦/泡沫默认值改为.92/1.85/72/.95，取代v26.1仅针对旧包的禁止削弱要求。Shader按新附件原文；C#光学/波形/生态按附件，GUI因实机重叠改为下移68px、实色背景和颜色状态恢复，并加v26.2提示。鼠标滑块输入通过可选指针判断拦截，原F7保护/旧鱼群隔离保留。
+最终build-02成功、Shader错误0，仍有1项历史API编译警告。Verification/water-v262-review02的44项检查通过、运行0错误0警告；另water-v262-input01的11项通过，包括Windows实际F7、焦散滑块、黄金预设和关闭，操作时真实取竿仍保持未投钩。其余四滑块未逐一OS拖动；三预设5参数程序检查通过。正常存档SHA前后相同。270旧输入266哈希不变、4项预期源码变动，Water.mat另同步新参数。
+原生1080p每状态480帧，最终原水128.64FPS/P95 8.58ms，v26.2为120.65/P95 8.87ms；短窗有波动，不外推长期/全图/4K。报告Docs/SeaSurfaceV262/README.md；Docs/SeaSurfaceV26正式预览与结果已更新。review01重叠截图不是最终版。旧v26.1在Builds/SeaSurfaceV26-v26.1-backup，旧版本入口指备份；最新版与v26.2入口指当前SeaSurfaceV26程序，-forceV26Water，F7调参/F6对照/F9帧率。普通重建SeaSurfaceBuildV26.Build；同步后重建SeaSurfacePolishV262.SyncAndBuild，勿用v26.1的旧参数断言入口。GUI滑块仅本次运行，不存玩家档。未做完整人工钓鱼/展缸/全海湾回归、目标图匹配或用户美术认可。

@@ -1,23 +1,29 @@
-{
-  "scope": "source extraction and integration consistency only",
-  "baseCommit": "bdc59d90fb518850c4c6d3429c8588f18d8a29d7",
-  "coreSources": {
-    "Assets/Deepsea/Shaders/SeaSurfaceV24/SeaSurfaceSparkleV26.shader": {
-      "matchesProvidedSource": true,
-      "sha256": "0a114f706913a9c479287bacb7fa8201b16644151b0253f1b7d403ac9698fe0a"
-    },
-    "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaWaterArtUpgradeV26.cs": {
-      "matchesProvidedSource": true,
-      "sha256": "26e0b61b6141d0980b473d7f9af332a0e753d90445484f950b0f37c013bb116e"
-    }
-  },
-  "runtimeAndMaterialDefaultsAgree": true,
-  "existingTextureReferencesPreserved": 4,
-  "existingF7GuardRetained": true,
-  "sceneHasNoStaleOpticalDefaults": true,
-  "unityCompile": "not run; device offline",
-  "shaderCompile": "not run",
-  "runtimeReview": "not run",
-  "normalPlayerSave": "not accessed",
-  "newPreviews": "not captured"
+﻿{
+    "scope":  "source consistency plus Unity build and visible runtime validation",
+    "baseCommit":  "bdc59d90fb518850c4c6d3429c8588f18d8a29d7",
+    "coreSources":  {
+                        "Assets/Deepsea/Shaders/SeaSurfaceV24/SeaSurfaceSparkleV26.shader":  {
+                                                                                                 "matchesProvidedSource":  true,
+                                                                                                 "sha256":  "0a114f706913a9c479287bacb7fa8201b16644151b0253f1b7d403ac9698fe0a"
+                                                                                             },
+                        "Assets/Deepsea/Scripts/Runtime/SeaSurfaceV24/SeaWaterArtUpgradeV26.cs":  {
+                                                                                                      "matchesProvidedSource":  false,
+                                                                                                      "sha256":  "643db0d088b953b7208379ab197c73c76077b9e23bffaa248bb7413d598ed02e"
+                                                                                                  }
+                    },
+    "runtimeAndMaterialDefaultsAgree":  true,
+    "existingTextureReferencesPreserved":  4,
+    "existingF7GuardRetained":  true,
+    "sceneHasNoStaleOpticalDefaults":  true,
+    "unityCompile":  "passed; build-02; one existing obsolete API warning",
+    "shaderCompile":  "0 errors",
+    "runtimeReview":  "44 checks passed; runtime 0 errors 0 warnings",
+    "normalPlayerSave":  "SHA256 unchanged after all tests",
+    "newPreviews":  "Docs/SeaSurfaceV26 and Docs/SeaSurfaceV262/Runtime",
+    "controllerCompatibilityChanges":  [
+                                           "tuner moved down 68px below HUD",
+                                           "opaque tuner backing and GUI color restoration",
+                                           "v26.2 startup hint"
+                                       ],
+    "nativeInputReview":  "11 checks passed; actual OS F7/caustics slider/balanced preset; no accidental cast"
 }

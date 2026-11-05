@@ -129,6 +129,7 @@ namespace Deepsea
             }
 
             Ready = _waterRenderer != null && _v26WaterMaterial != null;
+            if (Ready) _game.Notify("v26.2 水面光学 · F7实时调参 · F6水面对照 · F9帧率。");
             if (Environment.GetCommandLineArgs().Contains("-water-v26-check")) StartCoroutine(ReviewV26());
         }
 
@@ -270,11 +271,16 @@ namespace Deepsea
         {
             if (!Ready || !showTuningPanel) return;
 
+            Color previousBackground = GUI.backgroundColor;
+            Color previousColor = GUI.color;
             GUI.backgroundColor = new Color(0.06f, 0.12f, 0.16f, 0.92f);
-            Rect boxRect = new Rect(24f, 80f, 360f, 310f);
+            Rect boxRect = new Rect(24f, 148f, 360f, 310f);
+            GUI.color = new Color(0.025f, 0.06f, 0.075f, 0.96f);
+            GUI.DrawTexture(boxRect, Texture2D.whiteTexture);
+            GUI.color = previousColor;
             GUI.Box(boxRect, "【雾岬岛·东岸】水面光学实时调参台 (按 F7 隐藏)");
 
-            GUILayout.BeginArea(new Rect(38f, 112f, 332f, 268f));
+            GUILayout.BeginArea(new Rect(38f, 180f, 332f, 268f));
 
             GUILayout.BeginHorizontal();
             if (GUILayout.Button("预设1: 清雅柔和")) ApplyPreset(0);
@@ -299,6 +305,7 @@ namespace Deepsea
             waterVisibility = GUILayout.HorizontalSlider(waterVisibility, 0.50f, 0.96f);
 
             GUILayout.EndArea();
+            GUI.backgroundColor = previousBackground;
         }
 
         public void ApplyWaterMode(bool useV26)
