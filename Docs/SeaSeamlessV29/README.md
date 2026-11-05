@@ -1,3 +1,5 @@
+> 当前四张预览已按 v30 交接更新；v29 原图与报告保存在 PreviousV29，最新说明见 [SeaUnifiedV30](../SeaUnifiedV30/README.md)。旧 v29 程序保留；核心共享源码已升级，精确重建 v29 请检出 58525e1。
+
 # v29 雾岬岛·东岸：连续海岸与航海 UI
 
 独立场景 `CoastSeaSeamlessV29.unity`，程序 `Builds/SeaSeamlessV29/Guichao-SeaSeamlessV29.exe`。继承 v28 航行、建造与 v26.2 水面，旧 v28 程序和入口保留。

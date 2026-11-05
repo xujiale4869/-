@@ -1,0 +1,10 @@
+﻿{
+    "passed":  true,
+    "acceptedInputs":  51,
+    "nativeChecks":  20,
+    "oldV29Unchanged":  true,
+    "runtimeChecks":  78,
+    "normalSavesUnchangedDuringTests":  true,
+    "visualStatus":  "provisional",
+    "assemblySHA256":  "A51054A82C666BFA250F1FE64EA1F669B5D13308C434AFEF0E2FE6C45B74D0D3"
+}

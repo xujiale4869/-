@@ -1,0 +1,2 @@
+# Benchmark v2, fixed scenario contract
+Primary images: sailing/building/north/south1080p, sailing/building720p. Regression images: fishing, inventory, pause, gallery1080p. Seven icons across native tool/cards; selected coral visible; actual material cost and shallow/slope error shown. Required broader normal/selected/disabled pairs, populated inventory,720p modal/fishing, character expressions and unseen transfer remain explicit gaps; no whole-system score or lock if absent. Function checks and art observations reported separately.

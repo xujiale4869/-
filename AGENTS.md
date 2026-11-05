@@ -1,6 +1,6 @@
 # 深海灯塔当前工程
 
-原可玩版本仍为 v15；最新独立美术样板为 v20 局部岸岩与水面碎光，见 Docs/岸岩精修-v20.md，输出 Builds/CoastArtV20/MistCape-FineShore.exe。v19与更早版本均保留，以下历史记录仅供追溯。
+当前最新版为 v30：一体半岛、生态沙草过渡与斜切海洋界面，见 Docs/SeaUnifiedV30/README.md，程序 Builds/SeaUnifiedV30/Guichao-SeaUnifiedV30.exe，桌面“深海灯塔—最新版”。旧版本程序保留；整体美术仍为可运行初稿。普通重建 Tools/SeaUnifiedV30/Rebuild-Unified.ps1，以下历史记录仅供追溯。
 
 历史海岸美术版本：v11，2026-10-23 完成独立程序验收。主要分析与制作记录在 `C:/Users/许嘉乐/Documents/ChatGPT/深海灯塔/art-v11/reference-analysis.md`，项目内副本见 `Docs/原图对照与美术推进-v11.md`。
 
@@ -193,3 +193,11 @@ B/G营造、WASD漫游、滚轮规划缩放、1–4设施、R旋转、左建右�
 最终build-07增量构建1项历史API警告，完整构建24项；Verification/seamless-v29-review07的58项与seamless-v29-native02的12项通过，两次运行0错误0警告。实际Windows G/W/3/R/左右键/G/滚轮均测，测试存档在加载前隔离。2967旧工程文件仅六预期源码变化，2961哈希相同；正常收藏/旧布局测试前后相同。review06修地形块外缘权重和陆地肩坡，review07让Busy当前动作优先于旧Notice并加一致性检查。正式Docs/SeaSeamlessV29/result.json、Runtime、NativeInput；review01功能通过仍有可见缺陷、review04植被检查失败、review05旧地形直边与钓鱼阶段提示冲突，均保留Drafts。
 原生1920x1080宽视野每状态480帧，航行71.84FPS/P95 15.70ms，规划67.00FPS/P95 17.27ms；非全图/长期/4K结论，不与不同镜头旧版本直接比较。航行/规划另有原生720p截图。普通重建Deepsea.Editor.SeaSeamlessBuildV29.Build；Rebuild-Seamless.ps1默认校验冻结清单，-Build构建保存场景，-Prepare显式重新采样/烘焙/生成，需重验。
 美术状态为可运行初稿，独立视觉评审原文和缺失覆盖见Docs/SeaSeamlessV29/VisualReview；未完成全状态图标对照、720p全部弹窗/钓鱼、独立新内容迁移，不声称全游戏风格验证或用户美术认可。仍无新外海鱼点/登船点、蟹笼自动收益与材料补给链，自由建造不保证任意步行连通；源包/冻结清单依赖原工程，非全工程独立备份。
+
+## 2026-11-06 v30：一体半岛、生态渐变与斜切海洋界面
+用户上传 gpt_v30_unified_island_and_persona_ui_all_in_one，要求覆盖3核心源码、浅水平坡网格、实机截图、桌面最新版、GitHub提交推送。已在原SeaSeamlessWorldV29目录升级并补齐真实接口；原包留Tools/SeaUnifiedV30/OriginalInputs。独立场景CoastSeaUnifiedV30.unity，程序Builds/SeaUnifiedV30/Guichao-SeaUnifiedV30.exe，正常产品名/收藏仍v21；布局新sea-bay-expansion-v30.json首次复制v29而不改旧档。v29 exe/Assembly完整保留，精确旧源码检出58525e1。
+350x340m单地形73341顶点，520m水面，58m余弦大陆坡，四边与背景同为sea-14m。修正原稿资源路径、未定义变量/方法、SmoothStep参数、背景高度不一致、旧HUD/弹窗争层、材质通道和植物高度预算。北南内陆完整抬升，46岸岩56礁52珊瑚42绿海草18红枫；原模型/材质只运行时克隆。旧大沙块实际来自六张MapleSubstrate条带的旧Ground渲染，已与FineShore/Land_Rock/内陆/岬角/根部统一生态过渡。南湾仍一段直线形薄岸坎，属已知局部minor，不称全图100%无接缝。普通放置与网格统一0.45–3.2m及四邻2m高差≤0.65；四块继承的起始码头接头保留以免断步道，不能用作任意深水放置。
+七个SDF图标、青色错位斜切面、金色选中/菱形/抬升缩放倾斜、水印键、独立石/苗资源栏；黄铜库存保留。室内V观赏/B布置/F返回，空位禁用观赏并给前置条件提示；A/B/C按钮与对应命名地面框同步金青状态。图标一次烘焙、无逐帧创建纹理；原人物/船/绿色海带/光学参数继续保留。
+最终build06增量1项既有API警告，首构建24项；review06为78项运行、native03为20项实际Windows键鼠检查，均0错误0警告。native02的V失败是空缸不满足前置条件；native03在唯一隔离档实际建首缸再验V。首轮旧接头未生成、错误叶片路径、沙块和快捷键混淆均保留草稿。3008旧输入仅七处预期源码变化，正常存档测试时不改，旧v29二进制不改。最终数据Docs/SeaUnifiedV30/result.json。
+原生1080p每视角480帧最终航行68.09FPS/P95 17.09ms、规划64.96/P95 18.11ms；前一同类窗口航行56.93/P95 25.00ms，不挑选快值作稳定60/全图长期/4K结论。1080p航行/规划/北/南/钓鱼/鱼箱/暂停/展室，720p航行/规划，另A/B/C三态实机图。独立p030/p031原文及后续自验分开；无完整状态/满鱼箱/全部720p弹窗/人物表情/独立新内容迁移，全游戏风格仍provisional，未获用户美术定稿认可。
+按交接更新Docs/SeaSeamlessV29四图，原v29图/README归PreviousV29；v30独立正式证据和可复用UI说明在Docs/SeaUnifiedV30。Rebuild-Unified.ps1默认哈希校验，-Build构建保存场景，-Prepare从v29另存生成新场景需重验。Finalize-Unified为首次隔离验收后交付流程，正常启动创建v30档后勿重跑其“新档应不存在”的基线断言。旧v29冻结清单会正确拒绝本次共享源码升级，别自动恢复旧包覆盖v30。仍无新增外海鱼点/登船点/材料采集/蟹笼自动收益，任意自由建造路径不保证连通。

@@ -1,0 +1,9 @@
+﻿{
+    "passed":  true,
+    "scope":  "Normal startup and first v29-to-v30 layout migration, no test flags",
+    "structures":  19,
+    "newV30LayoutExactCopy":  true,
+    "ready":  true,
+    "managedAssemblySHA256":  "A51054A82C666BFA250F1FE64EA1F669B5D13308C434AFEF0E2FE6C45B74D0D3",
+    "oldV29LayoutUnchanged":  true
+}

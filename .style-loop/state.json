@@ -1,23 +1,23 @@
 ﻿{
     "schema_version":  1,
-    "mode":  "validate",
-    "phase":  "delivery",
+    "mode":  "refine",
+    "phase":  "handoff",
     "status":  "provisional",
-    "benchmark_version":  1,
+    "benchmark_version":  2,
     "limits":  {
                    "candidates":  1,
-                   "refinements":  2,
+                   "refinements":  6,
                    "stress":  2,
                    "packages":  18,
                    "generation_calls":  0,
-                   "judge_calls":  4
+                   "judge_calls":  8
                },
     "used":  {
-                 "refinements":  2,
+                 "refinements":  6,
                  "stress":  0,
-                 "packages":  4,
+                 "packages":  11,
                  "generation_calls":  0,
-                 "judge_calls":  2
+                 "judge_calls":  5
              },
     "candidates":  {
                        "c01":  {
@@ -26,6 +26,14 @@
                                    "blockers":  [
                                                     "EV-001"
                                                 ]
+                               },
+                       "c30":  {
+                                   "round":  "round-04",
+                                   "epoch":  "v30-explicit-UI-and-terrain-redesign",
+                                   "best_eligible_round":  null,
+                                   "unresolved_minors":  [
+                                                             "LAND-01"
+                                                         ]
                                }
                    },
     "pending_jobs":  [
@@ -72,10 +80,66 @@
                         "outcome":  "58 runtime and12 native passed,0 errors/0 warnings; UI-001 active instruction assertion passed; visual closure pending screenshot review; UI-002 known minor; no style lock"
                     },
                     {
-                        "outcome":  "UI-001 visibly resolved; UI-002 and EV-001 remain; no score or whole-game lock",
-                        "time":  "2026-11-05T13:11:51.8587577Z",
-                        "action":  "final native fishing screenshot self-review"
+                        "time":  "2026-11-05T16:22:43.926071+00:00",
+                        "action":  "user supplied explicit v30 redesign; new comparison epoch, retain prior consumption",
+                        "input":  "Tools/SeaUnifiedV30/OriginalInputs/gpt_v30_unified_island_and_persona_ui_all_in_one.md",
+                        "outcome":  "single user-selected direction; code-native skew, offset plates, gold/cyan; no imagegen; new task allocation allows four further targeted repairs and six judge calls; no old/new score comparison"
+                    },
+                    {
+                        "time":  "2026-11-05T16:30:46.550378+00:00",
+                        "action":  "repair inherited starter pier, native ecology material channels and canonical red-maple leaf reference; true58m cosine slope; shared rock/coral instancing",
+                        "evidence":  "unified-v30-review01",
+                        "outcome":  "66/67 checks passed; source meshes retained, ordinary construction criteria unchanged"
+                    },
+                    {
+                        "time":  "2026-11-05T16:34:17.227274+00:00",
+                        "action":  "reserve p030 independent judge; screenshot source unified-v30-review02",
+                        "packet":  "p030"
+                    },
+                    {
+                        "time":  "2026-11-05T16:42:34.690880+00:00",
+                        "action":  "diagnostic package plus repair gallery contextual shortcuts and inspect all active old broad sand / LOD terrain meshes",
+                        "evidence":  "p030 + unified-v30-review03/terrain-materials.json",
+                        "outcome":  "CTRL-01 major, LAND-01 minor; retain STATE-01 as known minor; add actual native B/V/F verification"
+                    },
+                    {
+                        "time":  "2026-11-05T16:47:06.980900+00:00",
+                        "action":  "LAND-01 root cause verified in runtime diagnostic: six EN_MapleSubstrate strips retained old Ground shader/color data; include in runtime ecology transition",
+                        "evidence":  "unified-v30-review04/terrain-materials.json",
+                        "outcome":  "current68function checks pass; add six-strip ecological binding assertion, expected69"
+                    },
+                    {
+                        "time":  "2026-11-05T16:51:15.570167+00:00",
+                        "action":  "p031 current+complete previous packet; reserve independent verdict; added available sailing720/pause evidence",
+                        "source":  "unified-v30-review05"
+                    },
+                    {
+                        "time":  "2026-11-05T16:58:20.306675+00:00",
+                        "action":  "final bounded repair: STATE-01 linked slot buttons and labeled world footprints; V availability in empty room and valid native fixture",
+                        "evidence":  "p031 + native02 view precondition failure",
+                        "outcome":  "not a changed keyboard binding; native fixture lacked a built tank; show prerequisite to player; preserve final refinement limit6"
+                    },
+                    {
+                        "time":  "2026-11-05T17:05:39.805110+00:00",
+                        "action":  "p031 verdict archived; final STATE-01 A/B/C self-review and78 runtime checks passed",
+                        "outcome":  "no numerical score or lock; native03 actual valid V fixture pending"
+                    },
+                    {
+                        "time":  "2026-11-05T17:09:47.261011+00:00",
+                        "action":  "reconcile inherited v29 restored-guide amendment as one judge correction; no new request",
+                        "outcome":  "old invocation was undercounted; current actual5 calls includes two v30 independent packets; no reset"
+                    },
+                    {
+                        "time":  "2026-11-05T17:09:47.261026+00:00",
+                        "action":  "review06/native03 observed pass78+20, final A/B/C native screenshot self-review",
+                        "outcome":  "STATE-01 visually and programmatically resolved; LAND-01 localbankminor retained; broad style provisional; no further refinement budget"
+                    },
+                    {
+                        "outcome":  "98checks passed, oldv29 layout/binaries preserved, provisional visual state",
+                        "time":  "2026-11-05T17:34:34.4029121Z",
+                        "action":  "finalized51inputs; normal startup loaded19 original facilities as exact v29 copy"
                     }
                 ],
-    "next_action":  "commit/push accepted integration and confirm normal save migration"
+    "next_action":  "User review of delivered v30; optional future bank/performance/state-transfer work under a new instruction",
+    "comparison_epoch":  "v30-explicit-UI-and-terrain-redesign"
 }

@@ -1,0 +1,72 @@
+[
+  {
+    "file": "images/K01-sailing-1080.jpg",
+    "pixels": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "file": "images/K02-building-1080.jpg",
+    "pixels": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "file": "images/K03-north-1080.jpg",
+    "pixels": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "file": "images/K04-south-1080.jpg",
+    "pixels": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "file": "images/K05-building-720.jpg",
+    "pixels": [
+      1280,
+      720
+    ]
+  },
+  {
+    "file": "images/K06-fishing-1080.jpg",
+    "pixels": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "file": "images/K07-inventory-1080.jpg",
+    "pixels": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "file": "images/K08-gallery-1080.jpg",
+    "pixels": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "file": "images/K09-sailing-720.jpg",
+    "pixels": [
+      1280,
+      720
+    ]
+  },
+  {
+    "file": "images/K10-pause-1080.jpg",
+    "pixels": [
+      1920,
+      1080
+    ]
+  }
+]

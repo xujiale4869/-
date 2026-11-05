@@ -103,7 +103,8 @@ namespace Deepsea {
    var p=CellPosition(cell);if(p.x<(SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?-20:-8)||p.x>(SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?126:84)||p.z<(SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?-86:-48)||p.z>(SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?106:64)){reason="超出海湾范围";return false;}
    if(buildings.Count>=512){reason="设施数量已达上限";return false;}
    if(buildings.ContainsKey(cell)){reason="此格已有设施";return false;}
-   float min=type==2?.85f:SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?.35f:.50f,max=SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?6.2f:type==0?3.8f:5.5f;
+   if(SeaSeamlessWorldAndNauticalUIV29.IsV30&&!V30FlatCell(p)){reason="需在平缓浅湾建造（水深0.45–3.2m，邻格高差≤0.65m）";return false;}
+   float min=type==2?.85f:SeaSeamlessWorldAndNauticalUIV29.IsV30?.45f:SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?.35f:.50f,max=SeaSeamlessWorldAndNauticalUIV29.IsV30?3.2f:SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?6.2f:type==0?3.8f:5.5f;
    foreach(var o in new[]{Vector3.zero,new Vector3(-.86f,0,-.86f),new Vector3(.86f,0,-.86f),new Vector3(-.86f,0,.86f),new Vector3(.86f,0,.86f)}){float d=DepthAt(p+o,Connector(cell,type));if(d<min||d>max){reason=d<min?"水太浅或与岸礁重叠":"水太深，桩基不足";return false;}}
    int n=Physics.OverlapBoxNonAlloc(p+Vector3.up*.5f,new Vector3(.96f,.58f,.96f),overlap,Quaternion.identity,~0,QueryTriggerInteraction.Ignore);
    for(int i=0;i<n;i++){var c=overlap[i];if(c!=null&&Connector(cell,type)&&c.transform.name.StartsWith("EN_Pier_"))continue;if(c==null||c.transform.IsChildOf(cursorRoot)||c.transform.IsChildOf(terrainRoot))continue;reason=c.transform.IsChildOf(game.boat)?"请给船只留出位置":"与码头、岸礁或设施重叠";return false;}
@@ -130,14 +131,14 @@ namespace Deepsea {
   void Message(string s){message=s;messageUntil=Time.unscaledTime+4;}
   bool SaveLayout(){if(!saveWritable)return false;try{Directory.CreateDirectory(Path.GetDirectoryName(savePath));string tmp=savePath+".tmp";File.WriteAllText(tmp,JsonUtility.ToJson(data,true));if(File.Exists(savePath))File.Replace(tmp,savePath,savePath+".bak");else File.Move(tmp,savePath);return true;}catch(Exception e){Message("保存失败："+e.Message);Debug.LogWarning("BAY_V28_SAVE_FAILED "+e.Message);return false;}}
   void LoadLayout(){
-   if(SeaSeamlessWorldAndNauticalUIV29.SceneEnabled&&!Checking&&!File.Exists(savePath)){var old=Path.Combine(Application.persistentDataPath,"sea-bay-expansion-v28.json");if(File.Exists(old))File.Copy(old,savePath,false);}
+   if(SeaSeamlessWorldAndNauticalUIV29.SceneEnabled&&!Checking&&!File.Exists(savePath)){var old=Path.Combine(Application.persistentDataPath,SeaSeamlessWorldAndNauticalUIV29.IsV30?"sea-bay-expansion-v29.json":"sea-bay-expansion-v28.json");if(File.Exists(old))File.Copy(old,savePath,false);}
    if(File.Exists(savePath)){try{string json=File.ReadAllText(savePath);if(!json.TrimStart().StartsWith("{"))throw new InvalidDataException("Not a JSON object");var loaded=JsonUtility.FromJson<BayExpansionSaveData>(json);if(loaded==null||loaded.version!=28||loaded.placedBuildings==null||loaded.placedBuildings.Count>512||loaded.wood<0||loaded.stone<0||loaded.coralSeed<0||loaded.brass<0)throw new InvalidDataException("Invalid bay save");
      data=loaded;var used=new HashSet<Vector2Int>();foreach(var b in data.placedBuildings){var c=new Vector2Int(b.gridX,b.gridZ);if(b.buildType<0||b.buildType>3||!used.Add(c)||b.gridX < (SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?-6:-3)||b.gridX>(SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?62:42)||b.gridZ < (SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?-42:-25)||b.gridZ>(SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?48:30)||b.rotationStep<0||b.rotationStep>3)throw new InvalidDataException("Invalid or duplicate placement");}
      foreach(var b in data.placedBuildings)Spawn(b);return;
     }catch(Exception e){saveWritable=false;Message("建造存档无法读取，已保留原文件");Debug.LogWarning("BAY_V28_LOAD_FAILED "+e.Message);return;}}
    // Starter demonstration is a one-time free layout; an empty saved bay stays empty.
    var seeds=new[]{new[]{0,0,0},new[]{1,0,0},new[]{2,0,0},new[]{2,-1,0},new[]{3,0,1},new[]{4,-4,2},new[]{6,-6,2},new[]{8,2,3},new[]{14,-1,0},new[]{14,0,1}};
-   foreach(var s in seeds){var c=new Vector2Int(s[0],s[1]);string why;if(CanPlace(c,s[2],0,false,out why)){var b=new BayPlacedBuildingEntry{gridX=s[0],gridZ=s[1],buildType=s[2]};data.placedBuildings.Add(b);Spawn(b);Physics.SyncTransforms();}}
+   foreach(var s in seeds){var c=new Vector2Int(s[0],s[1]);string why;bool inheritedStarter=SeaSeamlessWorldAndNauticalUIV29.IsV30&&s[2]==0&&s[0]<=2; if(inheritedStarter||CanPlace(c,s[2],0,false,out why)){var b=new BayPlacedBuildingEntry{gridX=s[0],gridZ=s[1],buildType=s[2]};data.placedBuildings.Add(b);Spawn(b);Physics.SyncTransforms();}}
    SaveLayout();
   }
   void OnDestroy(){if(godBuildMode&&game!=null){if(game.body!=null)game.body.isKinematic=oldKinematic;if(oldHud!=null)oldHud.enabled=oldHudEnabled;}if(waterFilter!=null){waterFilter.sharedMesh=oldWaterMesh;waterFilter.transform.localScale=oldWaterScale;waterFilter.transform.localPosition=oldWaterPosition;}if(root!=null)Destroy(root.gameObject);foreach(var a in owned)if(a!=null)Destroy(a);if(Active==this)Active=null;}
