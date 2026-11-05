@@ -1,0 +1,260 @@
+﻿{
+    "files":  [
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaSeamlessV29.meta",
+                      "sha256":  "DC478F45F25FBA7BE35AB591742A8A3B06AD192F2ACA3AF227BF500CC978F017",
+                      "bytes":  172
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaSeamlessV29/MapleBark.asset",
+                      "sha256":  "CD5E233FEF49154EDC4B3D16B85699E5EF8F268BA44924A7CE97CF5B5BBD4EA4",
+                      "bytes":  441056
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaSeamlessV29/MapleBark.asset.meta",
+                      "sha256":  "3971A50739CB18EFA8A99BFACC7671BE733C0DB0C828BAFBAE2A9354CA5D60FD",
+                      "bytes":  188
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaSeamlessV29/MapleLeaves.asset",
+                      "sha256":  "EFBBFDC4DEE9CA2EB6CAFD3B37E311D66B36575910CC079DD7D0F3FA240CCB73",
+                      "bytes":  4972655
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaSeamlessV29/MapleLeaves.asset.meta",
+                      "sha256":  "7C3ECA20E1B8EFC72609F52F2FDBBD47F974326F40CEFDBFC608155F126178D7",
+                      "bytes":  188
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaSeamlessV29/NativeHeightfield.asset",
+                      "sha256":  "DCD7180A40F6DB40FF19122BC67A86561BFE1F0E1D07B183B961C50459BAE243",
+                      "bytes":  1302501
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaSeamlessV29/NativeHeightfield.asset.meta",
+                      "sha256":  "AA7A763FB39D1C61ED7BD6A2957680523364B02FBF34DA9DB0D664C35814AFC4",
+                      "bytes":  189
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaSeamlessV29/Rock0.asset",
+                      "sha256":  "9418639B234B9BDAA93916D7F31AE531838B4CDF0F045DE88B060366F70E4416",
+                      "bytes":  71167
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaSeamlessV29/Rock0.asset.meta",
+                      "sha256":  "3D3F16F33CFC36C9C82BEDD8BD46C98CCE88873674C0ABF57563214DDB27E889",
+                      "bytes":  188
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaSeamlessV29/Rock1.asset",
+                      "sha256":  "FE755A86712C171BCBB3283DD58FF5E3F20833F909E8B91ABC149CCA6DA13617",
+                      "bytes":  71175
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaSeamlessV29/Rock1.asset.meta",
+                      "sha256":  "7F9DC0915A9CCD0EF51233DEFCB8DAA88598C306D100E2C3630BC5974440163B",
+                      "bytes":  188
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaSeamlessV29/Rock2.asset",
+                      "sha256":  "388BE84F2D5A69DB7C8CC221E9BA4B6C84A773A176B17721B00695591AFC0349",
+                      "bytes":  71171
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaSeamlessV29/Rock2.asset.meta",
+                      "sha256":  "88375054F95684BE13AA267D1C56FEEF6FB8A0AC4F013A7966AD064D774F8400",
+                      "bytes":  188
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaSeamlessV29/Rock3.asset",
+                      "sha256":  "047697F54F046CFE0F9E47AD68039BA6ECD396EE4265BFF0736272E7E451A859",
+                      "bytes":  71169
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaSeamlessV29/Rock3.asset.meta",
+                      "sha256":  "48C32DF9BADD338DB9853E282F9454DECA4CB332CC95770A42BBFB249AD71AAF",
+                      "bytes":  188
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaSeamlessV29/Rock4.asset",
+                      "sha256":  "95978CAC9F2F495512CE96FD1D14B01E20F0F87C89A1D7C156C7C985CEAA6E70",
+                      "bytes":  71167
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaSeamlessV29/Rock4.asset.meta",
+                      "sha256":  "3B1AF06D18A91CA46390989DCA0E79E42A0ECBDC92EAF15C2FA1B0A83B9129CB",
+                      "bytes":  188
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaSeamlessV29/Rock5.asset",
+                      "sha256":  "2D8A4A255F3507D4A4C1B1F195A7E1D5FC72EA4CBBC1471EFEDAD1CF0989A7B2",
+                      "bytes":  71169
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Resources/SeaSeamlessV29/Rock5.asset.meta",
+                      "sha256":  "E7531754D9A78A4050590512DB8B780690A48A153F1B78514807CA8DB550C928",
+                      "bytes":  188
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scenes/CoastSeaSeamlessV29.unity",
+                      "sha256":  "1824ABCC7CC3EB1905E2F1B500C8F4E934C2B809127E57CE72CCCE2F24449AB6",
+                      "bytes":  271396
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scenes/CoastSeaSeamlessV29.unity.meta",
+                      "sha256":  "432E52D35ACABEB710CABBEB1A29F131A3FE8BCDD8470B023FCE38297396E246",
+                      "bytes":  155
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Editor/SeaSeamlessWorldV29.meta",
+                      "sha256":  "E4871130E4732B5AF1B07026ADD3A83C5641591B75DCA69228D4D4D8FD90478E",
+                      "bytes":  172
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Editor/SeaSeamlessWorldV29/SeaSeamlessBuildV29.cs",
+                      "sha256":  "7EE1F6771BA66FC95E8C98E15EE5DA288389923007A116389CCCA8001AC5F0F1",
+                      "bytes":  8381
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Editor/SeaSeamlessWorldV29/SeaSeamlessBuildV29.cs.meta",
+                      "sha256":  "FC89E050D41EA2F9AD20A2D4FC4410F2EBCC5EE7FDDD0479CD00957D4C8A8A6B",
+                      "bytes":  243
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaExpansionV28/SeaBayBuildUIV28.cs",
+                      "sha256":  "3C201120A4207F7D2624B4F2CA6ADF0CFAA0733F9F1754C6FCCF3F06E9589DE8",
+                      "bytes":  5436
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaExpansionV28/SeaBayExpansionAndBuildSpaceV28.cs",
+                      "sha256":  "8A2DA04D44356030528707B9783AE2456C6CF823ECB61C98FD834FF25F0971D1",
+                      "bytes":  18108
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaExpansionV28/SeaBayGeometryV28.cs",
+                      "sha256":  "E11850EA794E3B4F0F4A8346406A8015FB05511A7D81A0C91E76E16CB3273373",
+                      "bytes":  8183
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaExpansionV28/SeaBayStructuresV28.cs",
+                      "sha256":  "068916E392D9EAC37F8169EBE7A6DF2F89F9ACA5C15738CF077A2071066267DA",
+                      "bytes":  7172
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeRuntime.cs",
+                      "sha256":  "FF5FCC0729970A06054275021947BAFA8D49CE952D22BA563A30B854EDE14EDB",
+                      "bytes":  17919
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeUI.cs",
+                      "sha256":  "8763058A26A3E365A87823956CC04B8A9F3FEBAEB4BEFE9F72A47AB2917756CB",
+                      "bytes":  12043
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSeamlessWorldV29.meta",
+                      "sha256":  "530D9414C010D2D5109697F855D9842BCA53B72606ED7B0AB7EF3EF62A0FEC6D",
+                      "bytes":  172
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSeamlessWorldV29/BayWorldBridgeV29.cs",
+                      "sha256":  "4920B64E93C899DEB45D1E4E55F5DAEEF195F02EFB4FF99A342DEED9F63FD15E",
+                      "bytes":  1086
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSeamlessWorldV29/BayWorldBridgeV29.cs.meta",
+                      "sha256":  "5687DCFC9C33B3D3A7ACE9E249CEF46394069EE11CACAAD68F0EDFB1C37F384F",
+                      "bytes":  243
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSeamlessWorldV29/NativeBayHeightfieldV29.cs",
+                      "sha256":  "55873F3E0FA1783D968BCA27A7918F355C280F27B6886F9F19AA6378BCC2A103",
+                      "bytes":  1387
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSeamlessWorldV29/NativeBayHeightfieldV29.cs.meta",
+                      "sha256":  "53EB09BDF2541E90E4DA0F14476D3C4EB459F2F0257685DCD145FA4E5EB24CBF",
+                      "bytes":  243
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSeamlessWorldV29/NauticalHUDV29.cs",
+                      "sha256":  "03430C65D464601019D2F1E4E7FAF4DAE0625F7D5799F23FF892AB64739CFC27",
+                      "bytes":  9571
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSeamlessWorldV29/NauticalHUDV29.cs.meta",
+                      "sha256":  "972A762310683D79CA2841752BDCE740AC8D1A14CB2CDA3141ECC7F098E8A2EE",
+                      "bytes":  243
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSeamlessWorldV29/NauticalSpritesV29.cs",
+                      "sha256":  "A1E7A76F292D419C50176C54A096EEE12FF03875ABF9DFF3A01D68D2A2FBE0E9",
+                      "bytes":  8684
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSeamlessWorldV29/NauticalSpritesV29.cs.meta",
+                      "sha256":  "B40D298344087098B960878DA5E28BC82984CFD61AA8D14B0E384D30E8D6893F",
+                      "bytes":  243
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSeamlessWorldV29/SeaLifeSkinV29.cs",
+                      "sha256":  "69B077B4A94BAE217EC060F096609BDB44FE64EFF04427FF16725014052D6B33",
+                      "bytes":  1106
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSeamlessWorldV29/SeaLifeSkinV29.cs.meta",
+                      "sha256":  "5A9F69334D87A01742F934B7382BA19F4CBA4E198980250B7405DDB9916D8659",
+                      "bytes":  243
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSeamlessWorldV29/SeamlessReviewV29.cs",
+                      "sha256":  "1CF89AB9224E84B9FCD2EA41E821FF27B0BDD2ED466F075CE606C56CE83A9B66",
+                      "bytes":  14266
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSeamlessWorldV29/SeamlessReviewV29.cs.meta",
+                      "sha256":  "BD1821D14F69CE2F835FE8AC1BB0252BA6D0641B4B8C157A56A255C3D594D570",
+                      "bytes":  243
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSeamlessWorldV29/SeamlessTerrainV29.cs",
+                      "sha256":  "1EB27A98160180A1B023F9B399E3581A0AECD50807826DD0A3C2592889802B4A",
+                      "bytes":  14551
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSeamlessWorldV29/SeamlessTerrainV29.cs.meta",
+                      "sha256":  "C87988FF5C5947B76D0177D1F8F6807B1069BDE9FEC41E207E66D0F374E47B75",
+                      "bytes":  243
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSeamlessWorldV29/SeaSeamlessWorldAndNauticalUIV29.cs",
+                      "sha256":  "3589A8C2CAA841EB8EBA1957839B7B77E3A177F025C6E68259D4A21D456041DA",
+                      "bytes":  4466
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSeamlessWorldV29/SeaSeamlessWorldAndNauticalUIV29.cs.meta",
+                      "sha256":  "B83F6F97E7283A5CADC2A64E10DD3F89817DDA0773178B1CF056A572C6C676AA",
+                      "bytes":  243
+                  },
+                  {
+                      "path":  "Tools/SeaSeamlessV29/Finalize-Seamless.ps1",
+                      "sha256":  "9C6E50C5B3FCC32D2D2344CCE2BC8E9121D63AD43D1CD2D6CC80B0465FC4DCA4",
+                      "bytes":  5719
+                  },
+                  {
+                      "path":  "Tools/SeaSeamlessV29/OriginalInputs/gpt_v29_seamless_world_and_ui_all_in_one.md",
+                      "sha256":  "13B092098990173F27FB0241B01964D43F39DF83761BB6B15A0C317A31FEB3C4",
+                      "bytes":  63627
+                  },
+                  {
+                      "path":  "Tools/SeaSeamlessV29/Rebuild-Seamless.ps1",
+                      "sha256":  "783FC2018CD2B89FF915EFF7004B4D1B9F57E09F56B9F7F778F6E7D50EA84006",
+                      "bytes":  1345
+                  },
+                  {
+                      "path":  "Tools/SeaSeamlessV29/Test-NativeUI.ps1",
+                      "sha256":  "0291F3C9C4961CF37179D7D3DEB2634C43F51A37769F58FA34E7DC87D333C9DA",
+                      "bytes":  5068
+                  }
+              ],
+    "scope":  "Accepted v29 inputs; depends on the existing repository, not a complete standalone project backup"
+}

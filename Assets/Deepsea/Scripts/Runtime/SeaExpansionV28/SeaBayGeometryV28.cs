@@ -52,7 +52,7 @@ namespace Deepsea {
   }
   void SetupGrid(){
    gridRoot=Group("V28_2m_BuildGrid",root,Vector3.zero);var v=new List<Vector3>();var tr=new List<int>();
-   for(int gz=-23;gz<=30;gz++)for(int gx=-3;gx<=42;gx++){var p=CellPosition(new Vector2Int(gx,gz));float d=DepthAt(p);if(d<.5f||d>5.5f)continue;float s=.99f,w=.013f;
+   for(int gz=SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?-42:-23;gz<=(SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?48:30);gz++)for(int gx=SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?-6:-3;gx<=(SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?62:42);gx++){var p=CellPosition(new Vector2Int(gx,gz));float d=DepthAt(p);if(d<(SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?.35f:.5f)||d>(SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?6.2f:5.5f))continue;float s=.99f,w=.013f;
     Quad(v,tr,p+new Vector3(-s,.035f,-s),new Vector3(w,0,2*s));Quad(v,tr,p+new Vector3(s,.035f,-s),new Vector3(w,0,2*s));Quad(v,tr,p+new Vector3(-s,.035f,-s),new Vector3(2*s,0,w));Quad(v,tr,p+new Vector3(-s,.035f,s),new Vector3(2*s,0,w));}
    var m=new Mesh{name="V28_GridQuads",indexFormat=IndexFormat.UInt32};m.SetVertices(v);m.SetTriangles(tr,0);m.RecalculateBounds();owned.Add(m);MeshObject("BuildableCellLines",gridRoot,Vector3.zero,Vector3.one,m,gridMat);gridRoot.gameObject.SetActive(false);
    cursorRoot=Group("V28_Cursor",root,Vector3.zero);for(int i=0;i<4;i++){cursorTemplates[i]=Structure((BayBuildableType)i,true,1.3f);cursorTemplates[i].transform.SetParent(cursorRoot,false);cursorTemplates[i].SetActive(i==selected);}cursorRoot.gameObject.SetActive(false);SetupUI();

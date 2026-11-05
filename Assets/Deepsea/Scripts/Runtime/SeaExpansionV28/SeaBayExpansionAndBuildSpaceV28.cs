@@ -15,14 +15,14 @@ namespace Deepsea {
  [DefaultExecutionOrder(920)]
  public sealed partial class SeaBayExpansionAndBuildSpaceV28:MonoBehaviour {
   public static SeaBayExpansionAndBuildSpaceV28 Active {get;private set;}
-  public static bool SceneEnabled {get{return SceneManager.GetActiveScene().name=="CoastSeaExpansionV28"||Environment.GetCommandLineArgs().Contains("-bay-v28");}}
-  public static bool Checking {get{return Environment.GetCommandLineArgs().Contains("-bay-v28-check");}}
+  public static bool SceneEnabled {get{return SeaSeamlessWorldAndNauticalUIV29.SceneEnabled||SceneManager.GetActiveScene().name=="CoastSeaExpansionV28"||Environment.GetCommandLineArgs().Contains("-bay-v28");}}
+  public static bool Checking {get{return SeaSeamlessWorldAndNauticalUIV29.Checking||Environment.GetCommandLineArgs().Contains("-bay-v28-check");}}
   static readonly string TestId=DateTime.UtcNow.Ticks.ToString();
-  public static bool CapturesInput {get{return Active!=null&&Active.Ready&&(Active.godBuildMode||(Input.GetKeyDown(KeyCode.G)&&Active.CanEnter));}}
-  public static string PlayerSavePath(bool oldReview){return Checking?Path.Combine(Application.temporaryCachePath,"bay-v28-player-"+TestId+".json"):oldReview?Path.Combine(Application.temporaryCachePath,"sea-life-review-v21.json"):Path.Combine(Application.persistentDataPath,"sea-life-v21.json");}
-  public static bool ValidBoatPosition(float x,float z){return !float.IsNaN(x)&&!float.IsNaN(z)&&(SceneEnabled?x>=-10&&x<=86&&z>=-50&&z<=66:x>-5&&x<35&&z>-22&&z<32);}
-  public static Vector3 SavedBoatPosition(Vector3 p){if(SceneEnabled){p.x=Mathf.Clamp(p.x,-10,86);p.z=Mathf.Clamp(p.z,-50,66);}return p;}
-  public static void ClampBoat(Rigidbody body){var p=body.position;float minX=SceneEnabled?-10:-6,maxX=SceneEnabled?86:34,minZ=SceneEnabled?-50:-23,maxZ=SceneEnabled?66:32;if(p.x<minX||p.x>maxX||p.z<minZ||p.z>maxZ){p.x=Mathf.Clamp(p.x,minX,maxX);p.z=Mathf.Clamp(p.z,minZ,maxZ);body.position=p;body.velocity*=.5f;}}
+  public static bool CapturesInput {get{return Active!=null&&Active.Ready&&(Active.godBuildMode||((Input.GetKeyDown(KeyCode.G)||(SeaSeamlessWorldAndNauticalUIV29.SceneEnabled&&Input.GetKeyDown(KeyCode.B)))&&Active.CanEnter));}}
+  public static string PlayerSavePath(bool oldReview){return SeaSeamlessWorldAndNauticalUIV29.Checking?SeaSeamlessWorldAndNauticalUIV29.TestPlayerPath:Checking?Path.Combine(Application.temporaryCachePath,"bay-v28-player-"+TestId+".json"):oldReview?Path.Combine(Application.temporaryCachePath,"sea-life-review-v21.json"):Path.Combine(Application.persistentDataPath,"sea-life-v21.json");}
+  public static bool ValidBoatPosition(float x,float z){return !float.IsNaN(x)&&!float.IsNaN(z)&&(SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?x>=-22&&x<=128&&z>=-88&&z<=108:SceneEnabled?x>=-10&&x<=86&&z>=-50&&z<=66:x>-5&&x<35&&z>-22&&z<32);}
+  public static Vector3 SavedBoatPosition(Vector3 p){if(SceneEnabled){p.x=Mathf.Clamp(p.x,SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?-22:-10,SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?128:86);p.z=Mathf.Clamp(p.z,SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?-88:-50,SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?108:66);}return p;}
+  public static void ClampBoat(Rigidbody body){var p=body.position;float minX=SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?-22:SceneEnabled?-10:-6,maxX=SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?128:SceneEnabled?86:34,minZ=SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?-88:SceneEnabled?-50:-23,maxZ=SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?108:SceneEnabled?66:32;if(p.x<minX||p.x>maxX||p.z<minZ||p.z>maxZ){p.x=Mathf.Clamp(p.x,minX,maxX);p.z=Mathf.Clamp(p.z,minZ,maxZ);body.position=p;body.velocity*=.5f;}}
   public bool expansionEnabled=true,godBuildMode;
   public float gridCellSize=2,godOrthoSize=22,godPanSpeed=24;
   public Vector2 expandedBoundsX=new Vector2(-10,86),expandedBoundsZ=new Vector2(-50,66);
@@ -41,20 +41,20 @@ namespace Deepsea {
   bool CanEnter {get{return game!=null&&!game.InRoom&&!game.Paused&&!game.Busy&&game.Panel==0;}}
   [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
   static void Bootstrap(){if(!SceneEnabled||FindObjectOfType<SeaBayExpansionAndBuildSpaceV28>()!=null)return;var rt=FindObjectOfType<SeaLifeRuntime>();if(rt!=null)rt.gameObject.AddComponent<SeaBayExpansionAndBuildSpaceV28>();}
-  void Awake(){Active=this;savePath=Path.Combine(Checking?Application.temporaryCachePath:Application.persistentDataPath,Checking?"bay-v28-layout-"+TestId+".json":"sea-bay-expansion-v28.json");}
+  void Awake(){Active=this;savePath=SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?SeaSeamlessWorldAndNauticalUIV29.LayoutPath:Path.Combine(Checking?Application.temporaryCachePath:Application.persistentDataPath,Checking?"bay-v28-layout-"+TestId+".json":"sea-bay-expansion-v28.json");}
   IEnumerator Start(){
    if(!SceneEnabled){enabled=false;yield break;}
    game=GetComponent<SeaLifeRuntime>();if(game==null)yield break;
    while(!game.Ready||SeaHarborAndReefUpgradeV27.Active==null||!SeaHarborAndReefUpgradeV27.Active.Ready)yield return null;
    root=Group("V28_BayExpansionAndBuildSpace",game.world,Vector3.zero);terrainRoot=Group("V28_SeabedTerraces",root,Vector3.zero);buildRoot=Group("V28_PlacedStructures",root,Vector3.zero);
-   InitMaterials();ExpandWaterAndTerraces();Physics.SyncTransforms();terrainColliders=terrainRoot.GetComponentsInChildren<Collider>();
+   InitMaterials();if(SeaSeamlessWorldAndNauticalUIV29.SceneEnabled)GetComponent<SeaSeamlessWorldAndNauticalUIV29>().PrepareWorld(game,terrainRoot);else ExpandWaterAndTerraces();Physics.SyncTransforms();terrainColliders=terrainRoot.GetComponentsInChildren<Collider>();
    SetupGrid();LoadLayout();Ready=true;
    game.Notify("归潮湾 v28 · G 规划与建造 · 1–4 选设施 · R 旋转 · F7 水面调参。");Debug.Log("BAY_V28_READY structures="+buildings.Count+" save="+savePath);
-   if(Checking)StartCoroutine(Review());
+   if(Checking&&!SeaSeamlessWorldAndNauticalUIV29.SceneEnabled)StartCoroutine(Review());
   }
   void Update(){
    if(!Ready)return;
-   if(Input.GetKeyDown(KeyCode.G))ToggleGodBuildMode(!godBuildMode);
+   if(Input.GetKeyDown(KeyCode.G)||(SeaSeamlessWorldAndNauticalUIV29.SceneEnabled&&!game.InRoom&&Input.GetKeyDown(KeyCode.B)))ToggleGodBuildMode(!godBuildMode);
    if(!godBuildMode)return;
    if(Input.GetKeyDown(KeyCode.Escape)){ToggleGodBuildMode(false);return;}
    if(game.Paused||game.InRoom){ToggleGodBuildMode(false);return;}
@@ -62,8 +62,8 @@ namespace Deepsea {
    if(Input.GetKeyDown(KeyCode.R))rotation=(rotation+1)%4;
    var move=Quaternion.Euler(0,-38,0)*new Vector3(Input.GetAxisRaw("Horizontal"),0,Input.GetAxisRaw("Vertical"));
    focus+=Vector3.ClampMagnitude(move,1)*godPanSpeed*Time.unscaledDeltaTime*godOrthoSize/20;
-   focus.x=Mathf.Clamp(focus.x,-10,86);focus.z=Mathf.Clamp(focus.z,-50,66);
-   if(!PointerOverPanel())godOrthoSize=Mathf.Clamp(godOrthoSize-Input.mouseScrollDelta.y*2.2f,10,38);
+   focus.x=Mathf.Clamp(focus.x,SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?-22:-10,SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?128:86);focus.z=Mathf.Clamp(focus.z,SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?-88:-50,SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?108:66);
+   if(!PointerOverPanel())godOrthoSize=Mathf.Clamp(godOrthoSize-Input.mouseScrollDelta.y*2.2f,10,SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?55:38);
    UpdateHover();
    if(!PointerOverPanel()&&hasHover){if(Input.GetMouseButtonDown(0))TryPlaceBuildingAt(hovered,selected,rotation,true);else if(Input.GetMouseButtonDown(1))TryRemoveBuildingAt(hovered,true);}
   }
@@ -100,10 +100,10 @@ namespace Deepsea {
   string Zone(Vector3 p,float depth){if(depth<.15f)return "岸礁 / 已有设施";if(depth>5.5f)return "深水航道";if(p.x>=25)return "C · 新月环礁";if(p.z>=-8&&p.z<=16)return "A · 暖沙浅湾";return "B · 珊瑚花园";}
   bool CanPlace(Vector2Int cell,int type,int rot,bool cost,out string reason){
    reason="";if(!Ready&&terrainColliders==null){reason="正在准备海湾";return false;}if(type<0||type>3){reason="无效设施";return false;}
-   var p=CellPosition(cell);if(p.x<-8||p.x>84||p.z<-48||p.z>64){reason="超出海湾范围";return false;}
+   var p=CellPosition(cell);if(p.x<(SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?-20:-8)||p.x>(SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?126:84)||p.z<(SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?-86:-48)||p.z>(SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?106:64)){reason="超出海湾范围";return false;}
    if(buildings.Count>=512){reason="设施数量已达上限";return false;}
    if(buildings.ContainsKey(cell)){reason="此格已有设施";return false;}
-   float min=type==2?.85f:.50f,max=type==0?3.8f:5.5f;
+   float min=type==2?.85f:SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?.35f:.50f,max=SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?6.2f:type==0?3.8f:5.5f;
    foreach(var o in new[]{Vector3.zero,new Vector3(-.86f,0,-.86f),new Vector3(.86f,0,-.86f),new Vector3(-.86f,0,.86f),new Vector3(.86f,0,.86f)}){float d=DepthAt(p+o,Connector(cell,type));if(d<min||d>max){reason=d<min?"水太浅或与岸礁重叠":"水太深，桩基不足";return false;}}
    int n=Physics.OverlapBoxNonAlloc(p+Vector3.up*.5f,new Vector3(.96f,.58f,.96f),overlap,Quaternion.identity,~0,QueryTriggerInteraction.Ignore);
    for(int i=0;i<n;i++){var c=overlap[i];if(c!=null&&Connector(cell,type)&&c.transform.name.StartsWith("EN_Pier_"))continue;if(c==null||c.transform.IsChildOf(cursorRoot)||c.transform.IsChildOf(terrainRoot))continue;reason=c.transform.IsChildOf(game.boat)?"请给船只留出位置":"与码头、岸礁或设施重叠";return false;}
@@ -130,8 +130,9 @@ namespace Deepsea {
   void Message(string s){message=s;messageUntil=Time.unscaledTime+4;}
   bool SaveLayout(){if(!saveWritable)return false;try{Directory.CreateDirectory(Path.GetDirectoryName(savePath));string tmp=savePath+".tmp";File.WriteAllText(tmp,JsonUtility.ToJson(data,true));if(File.Exists(savePath))File.Replace(tmp,savePath,savePath+".bak");else File.Move(tmp,savePath);return true;}catch(Exception e){Message("保存失败："+e.Message);Debug.LogWarning("BAY_V28_SAVE_FAILED "+e.Message);return false;}}
   void LoadLayout(){
+   if(SeaSeamlessWorldAndNauticalUIV29.SceneEnabled&&!Checking&&!File.Exists(savePath)){var old=Path.Combine(Application.persistentDataPath,"sea-bay-expansion-v28.json");if(File.Exists(old))File.Copy(old,savePath,false);}
    if(File.Exists(savePath)){try{string json=File.ReadAllText(savePath);if(!json.TrimStart().StartsWith("{"))throw new InvalidDataException("Not a JSON object");var loaded=JsonUtility.FromJson<BayExpansionSaveData>(json);if(loaded==null||loaded.version!=28||loaded.placedBuildings==null||loaded.placedBuildings.Count>512||loaded.wood<0||loaded.stone<0||loaded.coralSeed<0||loaded.brass<0)throw new InvalidDataException("Invalid bay save");
-     data=loaded;var used=new HashSet<Vector2Int>();foreach(var b in data.placedBuildings){var c=new Vector2Int(b.gridX,b.gridZ);if(b.buildType<0||b.buildType>3||!used.Add(c)||b.gridX < -3||b.gridX>42||b.gridZ < -25||b.gridZ>30||b.rotationStep<0||b.rotationStep>3)throw new InvalidDataException("Invalid or duplicate placement");}
+     data=loaded;var used=new HashSet<Vector2Int>();foreach(var b in data.placedBuildings){var c=new Vector2Int(b.gridX,b.gridZ);if(b.buildType<0||b.buildType>3||!used.Add(c)||b.gridX < (SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?-6:-3)||b.gridX>(SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?62:42)||b.gridZ < (SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?-42:-25)||b.gridZ>(SeaSeamlessWorldAndNauticalUIV29.SceneEnabled?48:30)||b.rotationStep<0||b.rotationStep>3)throw new InvalidDataException("Invalid or duplicate placement");}
      foreach(var b in data.placedBuildings)Spawn(b);return;
     }catch(Exception e){saveWritable=false;Message("建造存档无法读取，已保留原文件");Debug.LogWarning("BAY_V28_LOAD_FAILED "+e.Message);return;}}
    // Starter demonstration is a one-time free layout; an empty saved bay stays empty.

@@ -1,0 +1,10 @@
+﻿{
+    "passed":  true,
+    "acceptedInputs":  51,
+    "nativeChecks":  12,
+    "runtimeChecks":  58,
+    "oldV28ExeAndAssemblyUnchanged":  true,
+    "playerSHA256":  "059C313352892718258A120B87BDC6FC7C23CE67181084ABE14F86F204F5DDDB",
+    "normalSavesUnchangedDuringTests":  true,
+    "visualStatus":  "provisional"
+}

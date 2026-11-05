@@ -12,7 +12,7 @@ namespace Deepsea {
   RectTransform Panel(string name,Transform parent,Rect r){var n=UINode(name,parent,r);n.gameObject.AddComponent<Image>().color=new Color(.026f,.075f,.09f,.97f);return n;}
   TextMeshProUGUI Label(string name,Transform parent,string text,Rect r,int size,Color color){var t=UINode(name,parent,r).gameObject.AddComponent<TextMeshProUGUI>();t.font=font;t.text=text;t.fontSize=size;t.color=color;t.enableWordWrapping=true;t.raycastTarget=false;return t;}
   Button UIButton(string title,Transform parent,Rect r,Action action){var n=UINode(title,parent,r);var image=n.gameObject.AddComponent<Image>();image.color=new Color(.08f,.18f,.20f);var b=n.gameObject.AddComponent<Button>();b.targetGraphic=image;b.onClick.AddListener(()=>{game.Cue();action();});Label("Label",n,title,new Rect(14,8,r.width-28,r.height-16),21,ink);return b;}
-  void SetupUI(){
+  void SetupUI(){if(SeaSeamlessWorldAndNauticalUIV29.SceneEnabled)return;
    font=Resources.Load<TMP_FontAsset>("SeaLifeV21/SeaLifeChinese");var node=new GameObject("V28_BayPlanningUI",typeof(RectTransform),typeof(Canvas),typeof(CanvasScaler),typeof(GraphicRaycaster));node.transform.SetParent(root,false);bayCanvas=node.GetComponent<Canvas>();bayCanvas.renderMode=RenderMode.ScreenSpaceOverlay;bayCanvas.sortingOrder=45;var scaler=node.GetComponent<CanvasScaler>();scaler.uiScaleMode=CanvasScaler.ScaleMode.ScaleWithScreenSize;scaler.referenceResolution=new Vector2(1920,1080);scaler.matchWidthOrHeight=.5f;
    var panel=Panel("PlanningPanel",node.transform,new Rect(28,28,414,644));planningPanel=panel.gameObject;
    Label("Title",panel,"归潮湾  /  海湾规划",new Rect(22,20,370,42),29,gold);Label("Subtitle",panel,"选择设施，将你的港湾向海面延伸",new Rect(22,65,370,32),19,muted);
@@ -32,6 +32,6 @@ namespace Deepsea {
    hoverLabel.text=hasHover?hoverZone+" · 水深 "+(hoverDepth>50?"未探测":hoverDepth.ToString("F2")+" m")+"\n"+(hoverValid?"可建造  /  朝向 "+rotation*90+"°":hoverReason):"将鼠标移至海面，查看建造位置";
    messageLabel.text=Time.unscaledTime<messageUntil?message:"建造与拆除会自动保存。";
   }
-  bool PointerOverPanel(){if(!godBuildMode)return false;var p=Input.mousePosition;float scale=Mathf.Sqrt(Screen.width/1920f*Screen.height/1080f);float x=p.x/scale,y=(Screen.height-p.y)/scale;return (x>=28&&x<=442&&y>=28&&y<=672)||(x>=1480&&y<=200)||(x>=480&&x<=1480&&y>=984);}
+  bool PointerOverPanel(){if(SeaSeamlessWorldAndNauticalUIV29.SceneEnabled)return SeaSeamlessWorldAndNauticalUIV29.PointerOverUI();if(!godBuildMode)return false;var p=Input.mousePosition;float scale=Mathf.Sqrt(Screen.width/1920f*Screen.height/1080f);float x=p.x/scale,y=(Screen.height-p.y)/scale;return (x>=28&&x<=442&&y>=28&&y<=672)||(x>=1480&&y<=200)||(x>=480&&x<=1480&&y>=984);}
  }
 }
