@@ -161,3 +161,9 @@ Blender 实际导出六FBX、三张512贴图与六个可编辑源文件。修复
 最终build-02成功、Shader编译错误0；增量构建报告1项历史过时API警告，首轮完整构建24项历史警告，不能称全工程0警告。最终review-02证据Docs/SeaSurfaceV26/result.json及三图：34项通过、运行0错误0警告；原生1080p固定镜头每状态480帧，原水155.72FPS/P95 8.21ms，新水143.55/P95 7.93ms，不外推全地图/长期/4K。F6共用材质切换方法经过检查，非OS键盘事件注入。正常存档SHA不变，临时存档隔离。268项旧输入265不变、3项预期源码变化；Water.mat另有参数序列化更新。完整原始包、基线与交付哈希在Tools/SeaSurfaceV261。
 
 重建Deepsea.Editor.SeaSurfacePolishV261.SyncAndBuild从核心C#同步原始数值并构建现有场景；普通Build保留材质/场景，ImportAndBuild会重生成。review-01旧圈鱼叠加图不作为最终画面，旧v26证据在Docs/SeaSurfaceV261/PreviousV26。本轮仍未收到目标原图，未完成原图匹配/用户美术认可，也未作完整人工钓鱼展缸回归。
+
+
+## 2026-11-05 v26.2：源码准备，待电脑上线验证
+用户提供 gpt_v26_2_sweetspot_all_in_one.md，明确将焦散/碎光/聚焦/泡沫默认值收敛为 .92/1.85/72/.95，并增加F7调参台，取代上一节仅针对v26.1的禁止削弱要求。两份核心源码按新附件提取；Water.mat同步当前默认值与颜色、保留纹理引用。新增SeaWaterTuningInputV262配合SeaLifeUI指针判断，避免调参鼠标输入穿透；保留现有F7保护、QA与旧鱼群隔离partial。
+本轮电脑端离线，只准备草稿分支源码。Unity编译、Shader实机、F7实际输入、截图、性能、玩家存档与桌面构建均未更新或验收，不可引用v26.1旧报告声称v26.2完成。状态见Docs/SeaSurfaceV262/README.md。恢复连接后先核对本地未提交改动、备份原v26.1程序，再执行Deepsea.Editor.SeaSurfacePolishV262.SyncAndBuild及该文档中的检查；v26.1同步入口仍断言旧参数，不用于v26.2。正式main更新须在新构建和实机验证后进行。
+
