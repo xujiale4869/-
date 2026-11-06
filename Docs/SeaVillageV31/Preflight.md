@@ -1,3 +1,5 @@
+> 历史记录：以下为接入前检查。电脑后来已短暂恢复连接并完成首轮构建/检查；当前制作状态见 [Work-in-progress.md](Work-in-progress.md)。下文“未修改运行时/电脑离线”描述的是当时状态。
+
 # v31 接入前检查（尚未构建）
 
 2026-11-06，基于已交付 v30 提交 `906958513bc6efaf4855f6dd3fc2e7c76f726304`，读取用户提供的 `gpt_v31_village_and_biodiversity_all_in_one.md`。原包完整保存在 `Tools/SeaVillageV31/OriginalInputs/`，SHA256 为 `2ca28e70884a04a6ae991982edd6a8b0d2834fbdc48a78ffba5f1cee7f809d06`。
