@@ -14,6 +14,13 @@ namespace Deepsea {
     for(int side=-1;side<=1;side+=2)Box("DeckBearer",t,new Vector3(side*.78f,.82f,0),new Vector3(.13f,.20f,1.99f),wood);
     foreach(float x in new[]{-.82f,.82f})foreach(float z in new[]{-.82f,.82f})Rod("SeabedPile",t,new Vector3(x,-depth-.18f,z),new Vector3(x,1.1f,z),.18f,wood);
     foreach(float x in new[]{-.82f,.82f})foreach(float z in new[]{-.82f,.82f})Box("IronPin",t,new Vector3(x,1.033f,z),new Vector3(.045f,.014f,.045f),bronze);
+    var craft = CoastalCraftsmanshipUpgradeV32.For(this);
+    if (craft != null)
+    {
+     int board = 0;
+     foreach (Transform part in t)
+      craft.PierPart(part.gameObject, part.name == "WeatheredPlank" ? board++ : 0);
+    }
     if(!preview){var c=g.AddComponent<BoxCollider>();c.center=new Vector3(0,.96f,0);c.size=new Vector3(2,.18f,2);foreach(float x in new[]{-.82f,.82f})foreach(float z in new[]{-.82f,.82f}){c=g.AddComponent<BoxCollider>();c.center=new Vector3(x,(1-depth)*.5f,z);c.size=new Vector3(.18f,1+depth,.18f);}}
    }else if(type==BayBuildableType.PierLanternPost){
     Rod("GroundedLampPile",t,new Vector3(0,-depth-.16f,0),new Vector3(0,2.8f,0),.16f,wood);Box("LampArm",t,new Vector3(.27f,2.76f,0),new Vector3(.70f,.10f,.10f),wood);Rod("DiagonalBrace",t,new Vector3(.03f,2.28f,0),new Vector3(.40f,2.72f,0),.07f,wood);
@@ -34,6 +41,18 @@ namespace Deepsea {
    }
    CombineStaticParts(g);return g;
   }
+  internal bool VerifyCraftPierV32(bool preview)
+  {
+   var pier = Structure(BayBuildableType.WoodenPierDeck, preview, 1.2f);
+   pier.SetActive(false);
+   var deck = pier.transform.Find("Combined_V32_WeatheredPlank");
+   bool valid = deck != null && deck.GetComponent<MeshFilter>().sharedMesh.colors.Length > 0
+     && deck.GetComponent<MeshRenderer>().sharedMaterial.shader.name == "Deepsea/StylizedCoastalCraftV32"
+     && pier.GetComponents<BoxCollider>().Length == (preview ? 0 : 5);
+   Destroy(pier);
+   return valid;
+  }
+
   // Merge same-material static parts once per construction, leaving coral sway and buoy motion intact.
   void CombineStaticParts(GameObject go){
    var staticParts=go.GetComponentsInChildren<MeshFilter>().Where(f=>f.GetComponent<Renderer>()!=null&&!f.name.Contains("Accepted")&&!f.name.Contains("Kelp")&&!f.transform.parent.name.Equals("Float")).ToArray();
