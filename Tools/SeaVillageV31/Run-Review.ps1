@@ -1,16 +1,21 @@
-param([string]$Evidence='village-v31-review06',[switch]$Native)
+param([string]$Evidence='village-v31-review06',[switch]$Native,[switch]$CoralContrast,[switch]$CoralSurvey,[int]$TableSample=-1,[int]$AnemoneSample=-1)
 $ErrorActionPreference='Stop'
 Import-Module 'C:/Windows/System32/WindowsPowerShell/v1.0/Modules/Microsoft.PowerShell.Utility/Microsoft.PowerShell.Utility.psd1'
 if($Evidence -notmatch '^village-v31-[a-z0-9-]+$'){throw 'Invalid evidence folder'}
 $r=Split-Path (Split-Path $PSScriptRoot -Parent) -Parent
 Push-Location $r
 try{
- if(Get-Process Unity,Guichao-SeaVillageV31 -ErrorAction SilentlyContinue){throw 'Existing Unity or v31 game is active'}
+ if(Get-Process Unity,Guichao-SeaVillageV31,Guichao-SeaVillageV31.1 -ErrorAction SilentlyContinue){throw 'Existing Unity or v31 game is active'}
  $folder=$r+'/Verification/'+$Evidence;$log=$r+'/Temp/'+$Evidence+'.log'
  if(Test-Path -LiteralPath ($folder+'/result.json')){throw 'Evidence result already exists; preserve it and select a new round'}
  $args=@('-village-v31','-village-v31-check','-seamless-v29-dir',('Verification/'+$Evidence),'-screen-fullscreen','0','-screen-width','1920','-screen-height','1080','-logFile',('"'+$log+'"'))
  if($Native){$args+='-seamless-v29-native'}else{$args+='-seamless-v29-720'}
- $p=Start-Process ($r+'/Builds/SeaVillageV31/Guichao-SeaVillageV31.exe') -ArgumentList $args -WorkingDirectory $r -PassThru
+ if($CoralSurvey){$args+='-coral-survey'}
+ if($TableSample -ge 0){$args+=@('-coral-table-coral-sample',[string]$TableSample)}
+ if($AnemoneSample -ge 0){$args+=@('-coral-anemone-sample',[string]$AnemoneSample)}
+
+ $binary=if($CoralContrast){'Builds/SeaVillageV31.1/Guichao-SeaVillageV31.1.exe'}else{'Builds/SeaVillageV31/Guichao-SeaVillageV31.exe'}
+ $p=Start-Process ($r+'/'+$binary) -ArgumentList $args -WorkingDirectory $r -PassThru
   $null=$p.Handle
  [IO.File]::WriteAllText($r+'/Temp/'+$Evidence+'-pid.txt',[string]$p.Id)
  $driver=$null

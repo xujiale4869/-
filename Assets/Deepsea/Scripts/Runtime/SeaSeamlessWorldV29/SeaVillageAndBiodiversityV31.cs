@@ -45,6 +45,7 @@ namespace Deepsea
 
             InitV31MaterialsAndMeshes();
             ReplaceRepetitiveUnderwaterFloraWithBiodiversity();
+            ApplyCoralContrastV311();
             PopulateShorelineEcotoneTransition();
             BuildThreeCoastalNpcVillageHouses();
             MergePathPartsV31();

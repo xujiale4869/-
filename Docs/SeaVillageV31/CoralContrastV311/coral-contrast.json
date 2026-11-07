@@ -1,0 +1,33 @@
+{
+    "tables": 14,
+    "anemones": 13,
+    "nested": 6,
+    "limitedGrowth": 2,
+    "minimumTipClearance": 0.3267834484577179,
+    "views": [
+        {
+            "species": "table-coral",
+            "position": {
+                "x": 30.251724243164064,
+                "y": -1.757251501083374,
+                "z": 99.35537719726563
+            },
+            "rootDepth": 1.5372514724731446,
+            "closeSailFov": 9.392561912536621,
+            "farSailFov": 36.165313720703128,
+            "index": 10
+        },
+        {
+            "species": "anemone",
+            "position": {
+                "x": 36.02949523925781,
+                "y": -1.201370120048523,
+                "z": 101.2589111328125
+            },
+            "rootDepth": 0.9813700914382935,
+            "closeSailFov": 9.392633438110352,
+            "farSailFov": 36.16466522216797,
+            "index": 9
+        }
+    ]
+}

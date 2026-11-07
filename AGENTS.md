@@ -1,6 +1,6 @@
 # 深海灯塔当前工程
 
-当前最新版为 v31：六类水下植物、潮间带过渡与三座海岬渔村建筑，见 Docs/SeaVillageV31/README.md，程序 Builds/SeaVillageV31/Guichao-SeaVillageV31.exe。v30 与旧存档保留；整体美术仍为 provisional。
+当前最新版为 v31.1。保留 v30 界面及 v31 存档，用独立 Windows 程序增强桌珊瑚与海葵。见 Docs/SeaVillageV31/CoralContrastV311/README.md，程序 Builds/SeaVillageV31.1/Guichao-SeaVillageV31.1.exe。
 
 历史海岸美术版本：v11，2026-10-23 完成独立程序验收。主要分析与制作记录在 `C:/Users/许嘉乐/Documents/ChatGPT/深海灯塔/art-v11/reference-analysis.md`，项目内副本见 `Docs/原图对照与美术推进-v11.md`。
 

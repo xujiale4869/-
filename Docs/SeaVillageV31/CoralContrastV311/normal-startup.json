@@ -1,0 +1,10 @@
+﻿{
+    "pid":  25948,
+    "layoutMatchesDeliveredV31":  true,
+    "executableSHA256":  "059C313352892718258A120B87BDC6FC7C23CE67181084ABE14F86F204F5DDDB",
+    "savedBuiltTanks":  1,
+    "layout":  "sea-bay-expansion-v31.json",
+    "scope":  "Live ordinary startup log verified after replacing the stale failed-run log. Existing layout and player data read without modification.",
+    "loadedBuildings":  19,
+    "passed":  true
+}

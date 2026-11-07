@@ -43,5 +43,6 @@ namespace Deepsea { public sealed partial class SeaSeamlessWorldAndNauticalUIV29
 
   File.WriteAllText(Path.Combine(evidence,"village-plots.json"),"{\"positions\":["+string.Join(",",housesV31.Select(h=>JsonUtility.ToJson(h.position)).ToArray())+"],\"relocatedGeneratedMaples\":"+relocatedMaplesV31.Count+",\"slipwayDepth\":"+annexDepthV31.ToString(System.Globalization.CultureInfo.InvariantCulture)+"}");
   game.SnapWaterCamera();
+  if (CoralContrastV311) yield return ReviewCoralContrastV311();
  }
 }}

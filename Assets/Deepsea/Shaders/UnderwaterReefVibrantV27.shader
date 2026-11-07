@@ -9,6 +9,11 @@ Shader "Deepsea/UnderwaterReefVibrantV27" {
   _SubsurfaceGlow("Tip transmitted light",Range(0,1.5))=.55
   _CausticsStrength("Caustics",Range(0,1.5))=.30
   _IsKelp("Kelp",Float)=0
+  _RimColor("Coral rim tint",Color)=(.55,.98,.92,1)
+  _RimPower("Coral rim falloff",Range(1,6))=2.4
+  _RimIntensity("Coral rim contrast",Range(0,3))=0
+  _EdgeGlowBoost("Coral growth highlight",Range(0,2))=0
+  [HideInInspector] _TableGrowthProfile("Highlight table cap sides",Float)=0
  }
  SubShader {
   Tags {"RenderType"="Opaque" "RenderPipeline"="UniversalPipeline"}
@@ -19,6 +24,8 @@ Shader "Deepsea/UnderwaterReefVibrantV27" {
   CBUFFER_START(UnityPerMaterial)
   half4 _BaseColor;
   float _PaletteBand,_SwayAmplitude,_SwayFrequency,_CoralVibrancy,_SubsurfaceGlow,_CausticsStrength,_IsKelp;
+  half4 _RimColor;
+  float _RimPower, _RimIntensity, _EdgeGlowBoost, _TableGrowthProfile;
   CBUFFER_END
   TEXTURE2D(_PaletteMap);SAMPLER(sampler_PaletteMap);
   float4 _CoastBoat;float _HarborV27Time;
@@ -60,6 +67,17 @@ Shader "Deepsea/UnderwaterReefVibrantV27" {
     float caustics=pow(cw,3)*_CausticsStrength*saturate(1-abs(i.world.y)/6.5)*detail;
     half3 color=baseCol*pores*(sun.color*ndotl*lerp(.45,1,sun.shadowAttenuation)+ambient);
     color+=sss*tip*.30+half3(.25,.60,.55)*caustics;
+    // Only materials that opt in receive silhouette lighting.
+    if (_IsKelp < .5 && (_RimIntensity > 0 || _EdgeGlowBoost > 0))
+    {
+     float growth = smoothstep(.32, .94, i.height);
+     float fresnel = pow(1.0 - saturate(dot(n, GetWorldSpaceNormalizeViewDir(i.world))), _RimPower);
+     // Table corals emphasise each tier's side, while anemones use the tube-tip UV ramp.
+     float edge = lerp(growth, growth * smoothstep(.28, .86, 1.0 - abs(n.y)), _TableGrowthProfile);
+     half3 tint = lerp(_RimColor.rgb, baseCol, .24);
+     half3 shadowFill = half3(.055, .060, .100) * (1.0 - ndotl);
+     color += shadowFill + tint * (fresnel * _RimIntensity * .36 + edge * _EdgeGlowBoost * .24);
+    }
     return half4(color,1);
    }
    ENDHLSL
