@@ -109,6 +109,10 @@ namespace Deepsea {
   void RemoveCoveredLegacyLamp(){
    foreach(var mf in game.world.GetComponentsInChildren<MeshFilter>()){
     if(!mf.name.StartsWith("EN_Pier_"))continue;var original=mf.sharedMesh;if(original==null)continue;
+    var renderer = mf.GetComponent<MeshRenderer>();
+    var craft = CoastalCraftsmanshipUpgradeV32.For(this);
+    if (renderer != null && craft != null && craft.TryPierMaterials(renderer, out var materials))
+     SwapSlots(renderer,materials);
     var vertices=original.vertices;var mesh=Instantiate(original);bool changed=false;
     for(int sub=0;sub<original.subMeshCount;sub++){var src=original.GetTriangles(sub);var dst=new List<int>();for(int i=0;i<src.Length;i+=3){bool inside=true,high=false;for(int k=0;k<3;k++){var v=mf.transform.TransformPoint(vertices[src[i+k]]);inside&=v.x> -2.62f&&v.x< -1.60f&&v.z>3.48f&&v.z<3.90f;high|=v.y>1.40f;}if(inside&&high){changed=true;continue;}dst.Add(src[i]);dst.Add(src[i+1]);dst.Add(src[i+2]);}mesh.SetTriangles(dst,sub);}
     if(changed){mesh.RecalculateBounds();owned.Add(mesh);var filter=mf;originalMeshes[filter]=original;restores.Add(on=>{if(filter!=null)filter.sharedMesh=on?mesh:original;});}else Destroy(mesh);
@@ -116,11 +120,34 @@ namespace Deepsea {
   }
   void BuildGallery(){
    var front=game.exterior.Find("室外活动/海洋小馆 · 码头入口");if(front==null)return;
-   foreach(var r in front.GetComponentsInChildren<MeshRenderer>())if(r.name=="廊柱"||r.name.Contains("廊架")||r.name=="小馆木平台")Swap(r,wood);
+   var craft = CoastalCraftsmanshipUpgradeV32.For(this);
+   foreach(var r in front.GetComponentsInChildren<MeshRenderer>())
+   {
+    bool timber = r.name == "廊柱" || r.name.Contains("廊架") || r.name == "小馆木平台";
+    if (!timber && (craft == null || r.name != "低矮栏墙")) continue;
+    var crafted = craft?.GalleryMesh(r);
+    if (crafted == null) { if (timber) Swap(r,wood); continue; }
+    var filter = r.GetComponent<MeshFilter>();
+    var original = filter.sharedMesh;
+    originalMeshes[filter] = original;
+    restores.Add(on => { if (filter != null) filter.sharedMesh = on ? crafted : original; });
+    Swap(r,craft.GalleryMaterial(r.name));
+   }
    var roof=Group("V27_GalleryTimberEaves",worldRoot,Vector3.zero);roof.position=front.position;
-   for(int side=-1;side<=1;side+=2)Box("斜屋檐",roof,new Vector3(side*1.24f,3.16f,0),new Vector3(2.6f,.10f,4.15f),Quaternion.Euler(0,0,-side*12),wood);
+   for (int side=-1;side<=1;side+=2)
+   {
+    var eave = Box("斜屋檐",roof,new Vector3(side*1.24f,3.16f,0),new Vector3(2.6f,.10f,4.15f),Quaternion.Euler(0,0,-side*12),wood);
+    craft?.GalleryEave(eave);
+   }
   }
-  void Swap(Renderer renderer,Material material){var original=renderer.sharedMaterials;originalMaterials[renderer]=original;var next=original.Select(_=>material).ToArray();restores.Add(on=>{if(renderer!=null)renderer.sharedMaterials=on?next:original;});ChangedRenderers++;}
+  void Swap(Renderer renderer,Material material) => SwapSlots(renderer,renderer.sharedMaterials.Select(_=>material).ToArray());
+  void SwapSlots(Renderer renderer,Material[] next)
+  {
+   var original = renderer.sharedMaterials;
+   originalMaterials[renderer] = original;
+   restores.Add(on => { if (renderer != null) renderer.sharedMaterials = on ? next : original; });
+   ChangedRenderers++;
+  }
   int Band(string name){if(name.Contains("Gold"))return 3;if(name.Contains("Mint"))return 2;if(name.Contains("Salmon")||name.Contains("Orange"))return 1;return 0;}
   void UpgradeReef(){
    foreach(var r in game.world.GetComponentsInChildren<MeshRenderer>(true)){

@@ -1,6 +1,6 @@
 # 深海灯塔当前工程
 
-当前最新版为 v31.1。保留 v30 界面及 v31 存档，用独立 Windows 程序增强桌珊瑚与海葵。见 Docs/SeaVillageV31/CoralContrastV311/README.md，程序 Builds/SeaVillageV31.1/Guichao-SeaVillageV31.1.exe。
+当前最新版为 v32。沿用 v30 界面与 v31.1 水面、珊瑚及存档路径，升级三座房屋、船坞和木石构件。见 Docs/SeaCraftV32/README.md，程序 Builds/SeaCraftV32/Guichao-SeaCraftV32.exe。
 
 历史海岸美术版本：v11，2026-10-23 完成独立程序验收。主要分析与制作记录在 `C:/Users/许嘉乐/Documents/ChatGPT/深海灯塔/art-v11/reference-analysis.md`，项目内副本见 `Docs/原图对照与美术推进-v11.md`。
 

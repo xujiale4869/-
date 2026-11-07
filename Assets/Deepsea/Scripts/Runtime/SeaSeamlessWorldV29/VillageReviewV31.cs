@@ -42,6 +42,7 @@ namespace Deepsea { public sealed partial class SeaSeamlessWorldAndNauticalUIV29
   for(int i=0;i<6;i++)if(samplesV31[i]!=null){var sample=samplesV31[i];var bounds=sample.GetComponent<Renderer>().bounds;float specimenSize=Mathf.Clamp(Mathf.Max(bounds.size.x,Mathf.Max(bounds.size.y,bounds.size.z))*.9f,1.6f,3.0f);yield return VillageFrameV31("14-flora-"+i,bounds.center,specimenSize,i==3?58:36,sample.eulerAngles.y+180);}
 
   File.WriteAllText(Path.Combine(evidence,"village-plots.json"),"{\"positions\":["+string.Join(",",housesV31.Select(h=>JsonUtility.ToJson(h.position)).ToArray())+"],\"relocatedGeneratedMaples\":"+relocatedMaplesV31.Count+",\"slipwayDepth\":"+annexDepthV31.ToString(System.Globalization.CultureInfo.InvariantCulture)+"}");
+  if (CoastalCraftsmanshipUpgradeV32.Enabled) yield return ReviewCraftV32();
   game.SnapWaterCamera();
   if (CoralContrastV311) yield return ReviewCoralContrastV311();
  }

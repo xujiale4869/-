@@ -1,0 +1,83 @@
+{
+  "models": [
+    {
+      "name": "Village_V32_Boatwright",
+      "triangles": 20538,
+      "pieces": {
+        "Timber": 65,
+        "SlateRoof": 176,
+        "SeaStone": 66,
+        "WarmGlass": 3,
+        "Brass": 0,
+        "Rope": 0,
+        "Beam": 34
+      },
+      "roles": [
+        "Timber",
+        "SlateRoof",
+        "SeaStone",
+        "WarmGlass",
+        "Beam"
+      ]
+    },
+    {
+      "name": "Village_V32_Tavern",
+      "triangles": 45024,
+      "pieces": {
+        "Timber": 94,
+        "SlateRoof": 406,
+        "SeaStone": 192,
+        "WarmGlass": 5,
+        "Brass": 0,
+        "Rope": 0,
+        "Beam": 58
+      },
+      "roles": [
+        "Timber",
+        "SlateRoof",
+        "SeaStone",
+        "WarmGlass",
+        "Beam"
+      ]
+    },
+    {
+      "name": "Village_V32_Observatory",
+      "triangles": 24602,
+      "pieces": {
+        "Timber": 53,
+        "SlateRoof": 157,
+        "SeaStone": 171,
+        "WarmGlass": 7,
+        "Brass": 2,
+        "Rope": 0,
+        "Beam": 30
+      },
+      "roles": [
+        "Timber",
+        "SlateRoof",
+        "SeaStone",
+        "WarmGlass",
+        "Brass",
+        "Beam"
+      ]
+    },
+    {
+      "name": "Village_V32_Slipway",
+      "triangles": 1696,
+      "pieces": {
+        "Timber": 20,
+        "SlateRoof": 0,
+        "SeaStone": 0,
+        "WarmGlass": 0,
+        "Brass": 0,
+        "Rope": 0,
+        "Beam": 8
+      },
+      "roles": [
+        "Timber",
+        "Beam"
+      ]
+    }
+  ],
+  "basis": "Y-up metre Unity source, Z-up Blender masters"
+}

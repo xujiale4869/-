@@ -374,7 +374,12 @@ namespace Deepsea
             groundPos.y=high-.20f;compound.localPosition=groundPos;compound.localRotation=rotation;
             var mesh=_v31HouseMeshes[houseType];
             var model=AddMesh("Authored_"+mesh.name,mesh,_v31VillageWoodMat,Vector3.zero,Vector3.one,false,compound);
-            model.GetComponent<MeshRenderer>().sharedMaterials=MaterialsV31(mesh.name);
+            var craft = CoastalCraftsmanshipUpgradeV32.For(this);
+            if (craft == null)
+                model.GetComponent<MeshRenderer>().sharedMaterials=MaterialsV31(mesh.name);
+            else
+                craft.AssignAuthored(model, new[] { "Boatwright", "Tavern", "Observatory" }[houseType],
+                    _v31WarmWindowMat, BrassV31(), _v31VillageWoodMat);
             // Continuous ground skirt spans the sampled slope; facade and original routes stay unchanged.
             float height=Mathf.Max(.35f,high-low+.5f);
             AddBoxPart("GroundedSeaStoneSkirt",compound,new Vector3(houseType==1?1.0f:houseType==2?.6f:0,.35f-height*.5f,0),new Vector3(houseType==1?8.4f:houseType==2?6.5f:4.9f,height,houseType==1?6.8f:5.1f),Quaternion.identity,_v31VillageStoneMat,true);
@@ -421,7 +426,10 @@ namespace Deepsea
             for(int i=0;i<all.Length;i+=3){var a=vertices[all[i]];var b=vertices[all[i+1]];var c=vertices[all[i+2]];if((a.z+b.z+c.z)/3>3&&Mathf.Max(a.y,Mathf.Max(b.y,c.y))<1.8f)indices.AddRange(new[]{all[i],all[i+1],all[i+2]});}
             var used=indices.Distinct().ToArray();var map=used.Select((id,i)=>new{id,i}).ToDictionary(q=>q.id,q=>q.i);var normals=source.normals;var uv=source.uv;var mesh=new Mesh{name="V31_AuthoredBoatwrightSlipway"};mesh.vertices=used.Select(id=>vertices[id]).ToArray();mesh.normals=used.Select(id=>normals[id]).ToArray();mesh.uv=used.Select(id=>uv[id]).ToArray();var deck=new List<int>();var hull=new List<int>();for(int j=0;j<indices.Count;j+=3){var target=(vertices[indices[j]].y+vertices[indices[j+1]].y+vertices[indices[j+2]].y)/3>.62f?hull:deck;target.AddRange(new[]{map[indices[j]],map[indices[j+1]],map[indices[j+2]]});}mesh.subMeshCount=2;mesh.SetTriangles(deck,0);mesh.SetTriangles(hull,1);mesh.RecalculateBounds();_owned.Add(mesh);
             var rotation=Quaternion.Euler(0,78,0);var center=new Vector3(x,SeaLifeRuntime.Sea+.08f,z);
-            var go=AddMesh(mesh.name,mesh,_v31VillageWoodMat,center-rotation*new Vector3(0,0,4.4f),Vector3.one,true,_v31Root.Find("V31_CoastalNpcVillage"));go.transform.localRotation=rotation;go.GetComponent<MeshRenderer>().sharedMaterials=new[]{_v31VillageWoodMat,HullAccentV31()};boatyardAnnexV31=go.transform;BuildSlipwayBridgeV31(route);
+            var go=AddMesh(mesh.name,mesh,_v31VillageWoodMat,center-rotation*new Vector3(0,0,4.4f),Vector3.one,true,_v31Root.Find("V31_CoastalNpcVillage"));go.transform.localRotation=rotation;go.GetComponent<MeshRenderer>().sharedMaterials=new[]{_v31VillageWoodMat,HullAccentV31()};
+            CoastalCraftsmanshipUpgradeV32.For(this)?.AssignAuthored(go, "Slipway",
+                _v31WarmWindowMat, BrassV31(), _v31VillageWoodMat);
+            boatyardAnnexV31=go.transform;BuildSlipwayBridgeV31(route);
             // Reuse the authored deck, hull ribs and piles; add supports all the way to the actual bed.
             for(int i=0;i<4;i++){var top=go.transform.TransformPoint(new Vector3((i&1)==0?-1.7f:1.7f,.36f,(i&2)==0?3.2f:5.5f));float floor=V31Ground(top.x,top.z)-.10f;float h=Mathf.Max(.2f,top.y-floor);var support=AddBoxPart("SlipwayRootedPile_"+i,_v31Root,new Vector3(top.x,floor+h*.5f,top.z),new Vector3(.18f,h,.18f),Quaternion.identity,_v31VillageWoodMat,true);}
         }
@@ -497,6 +505,8 @@ namespace Deepsea
             {
                 go.AddComponent<BoxCollider>();
             }
+            CoastalCraftsmanshipUpgradeV32.For(this)?.VillagePart(go,
+                mat == _v31VillageStoneMat, mat == _v31VillageWoodMat);
             return go;
         }
 
