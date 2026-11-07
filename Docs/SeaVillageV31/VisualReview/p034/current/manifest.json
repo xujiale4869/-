@@ -1,0 +1,194 @@
+{
+  "candidate": "K",
+  "round": "p034",
+  "contract": "same local environment extension as p032, not a complete whole-game benchmark",
+  "cells": [
+    {
+      "cell": "B01",
+      "file": "images/B01.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "e51d81e4f4e13a3c14dcc25759ab27f98ec626dde2253c9632920e7c941ed507",
+      "capture": "current runtime revision06"
+    },
+    {
+      "cell": "B02",
+      "file": "images/B02.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "636515e8256c3b825b566269f5181cd0d75b56b5837b9c592cda82eb39b98fef",
+      "capture": "revision05 unchanged cell; same geometry/material/camera rules"
+    },
+    {
+      "cell": "B03",
+      "file": "images/B03.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "0f2cc340836f04705cd6b42c1a6780b502eb26f443276c2f7e86abd43ea453f8",
+      "capture": "current runtime revision06"
+    },
+    {
+      "cell": "B04",
+      "file": "images/B04.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "2504b6b32f8d51380fe395b6df1785d548b8e1292f30eb07f0226a7ac2a2c2fe",
+      "capture": "revision05 unchanged cell; same geometry/material/camera rules"
+    },
+    {
+      "cell": "B05",
+      "file": "images/B05.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "9a8e36c1cd8900f4d9a54641c6a7dd45c2a1f36ca88170dcdfbf5337eb4d5a18",
+      "capture": "revision05 unchanged cell; same geometry/material/camera rules"
+    },
+    {
+      "cell": "B06",
+      "file": "images/B06.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "634423143edd3eacef127d8941b526988f723950e672326f2d347fe2edfe3641",
+      "capture": "current runtime revision06"
+    },
+    {
+      "cell": "B07",
+      "file": "images/B07.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "9866bfdc27cd6827c6996511b78c493cc02bb76f84a44ea7921511ac90386177",
+      "capture": "revision05 unchanged cell; same geometry/material/camera rules"
+    },
+    {
+      "cell": "B08",
+      "file": "images/B08.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "6ff0867797c3ad759e5708760d3022749f6691c61a07ad53b1c8ada36d9fdf0a",
+      "capture": "revision05 unchanged cell; same geometry/material/camera rules"
+    },
+    {
+      "cell": "B09",
+      "file": "images/B09.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "b4244376aaec12e7923cd7dab213214f4c8ee05f49fcbdcac826f0579c60ec60",
+      "capture": "revision05 unchanged cell; same geometry/material/camera rules"
+    },
+    {
+      "cell": "B10",
+      "file": "images/B10.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "c81b74cfb2c02a417832779de43d2b55c31a55ee6bcbd071621b6352ddb82fd8",
+      "capture": "revision05 unchanged cell; same geometry/material/camera rules"
+    },
+    {
+      "cell": "F01",
+      "file": "images/F01.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "090b3cd5a15e691fb4c2628c37ab2dfb0d687b3bc154441095659db9a20f1916",
+      "capture": "revision05 unchanged cell; same geometry/material/camera rules"
+    },
+    {
+      "cell": "F02",
+      "file": "images/F02.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "586d37b1e465913f0738927c6988ff5e2e9da564db30350b159cbbe4b493215f",
+      "capture": "revision05 unchanged cell; same geometry/material/camera rules"
+    },
+    {
+      "cell": "F03",
+      "file": "images/F03.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "74d93bb8e611776f62d0bdad5ebb9c7297396900b35d8721285f1d2b012a3ba1",
+      "capture": "revision05 unchanged cell; same geometry/material/camera rules"
+    },
+    {
+      "cell": "F04",
+      "file": "images/F04.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "8f4b03a08de89154062ffc8e06cacfd5f97f85bacf89d8ac03c03951792a584f",
+      "capture": "revision05 unchanged cell; same geometry/material/camera rules"
+    },
+    {
+      "cell": "F05",
+      "file": "images/F05.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "508774ce332ad45832b178776bc22f28aa38affc3ca2fd01cd39322515217c73",
+      "capture": "revision05 unchanged cell; same geometry/material/camera rules"
+    },
+    {
+      "cell": "F06",
+      "file": "images/F06.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "72497eb92117da31444be7b90c8b6bab21b84ad0a08e4e88356f035303c4ff39",
+      "capture": "revision05 unchanged cell; same geometry/material/camera rules"
+    },
+    {
+      "cell": "U01",
+      "file": "images/U01.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "e071ce00e0544e95a812d0d87329985d0332eed697cedfec9a8b2cb6d9c6aa44",
+      "capture": "current runtime revision06"
+    },
+    {
+      "cell": "U02",
+      "file": "images/U02.jpg",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "50957ba9495714ccaa65b33d513887aa16fb2df6d6c4d6563b366a326ebb842b",
+      "capture": "current runtime revision06"
+    }
+  ],
+  "missing": [
+    "complete all-state minimum-size UI benchmark",
+    "character expression sheets",
+    "independent new-content transfer"
+  ],
+  "best_eligible_round": "not established",
+  "comparison": "evidence correction; unchanged construction contract; no new art direction"
+}

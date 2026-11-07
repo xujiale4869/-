@@ -1,0 +1,8 @@
+{
+    "paths": [
+        "Assets/Deepsea/Scripts/Runtime/SeaLifeV21/SeaLifeFishSwimV25.shader",
+        "Assets/Deepsea/Resources/SeaLifeV25/Materials/Fish0.mat",
+        "Assets/Deepsea/Resources/SeaLifeV25/Textures/Fish_0_SilverBream_Albedo.png",
+        "Assets/Deepsea/Resources/SeaLifeV25/Meshes/Fish_0_SilverBream.asset"
+    ]
+}

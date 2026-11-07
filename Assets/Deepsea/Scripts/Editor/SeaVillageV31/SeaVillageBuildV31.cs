@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using UnityEditor;
+using UnityEditor.SceneManagement;
+using UnityEditor.Build.Reporting;
+using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
+namespace Deepsea.Editor {
+ public static class SeaVillageBuildV31 {
+  const string Scene="Assets/Deepsea/Scenes/CoastSeaVillageV31.unity", Root="Assets/Deepsea/Resources/SeaVillageV31/";
+  [Serializable] class Dependencies {public string[] paths;}
+  [Serializable] class Part {public string role;public int[] triangles;}
+  [Serializable] class Source {public string name;public float[] vertices,normals,uv;public Part[] parts;}
+  public static void PrepareAndBuild(){Prepare();Build();}
+  public static void Prepare(){
+   AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
+   Directory.CreateDirectory(Root+"Baked");int count=0,total=0;
+   foreach(var f in Directory.GetFiles(Root+"SourceMeshes","*.json")){
+    var d=JsonUtility.FromJson<Source>(File.ReadAllText(f));if(d.vertices==null||d.vertices.Length%3!=0||d.parts.Length==0)throw new Exception("Invalid authored geometry "+f);
+    var vertices=new Vector3[d.vertices.Length/3];var normals=new Vector3[vertices.Length];var uv=new Vector2[vertices.Length];
+    for(int i=0;i<vertices.Length;i++){vertices[i]=new Vector3(d.vertices[i*3],d.vertices[i*3+1],d.vertices[i*3+2]);normals[i]=new Vector3(d.normals[i*3],d.normals[i*3+1],d.normals[i*3+2]);uv[i]=new Vector2(d.uv[i*2],d.uv[i*2+1]);}
+    var mesh=new Mesh{name=d.name,indexFormat=vertices.Length>65535?IndexFormat.UInt32:IndexFormat.UInt16};mesh.vertices=vertices;mesh.normals=normals;mesh.uv=uv;mesh.subMeshCount=d.parts.Length;
+    for(int k=0;k<d.parts.Length;k++){mesh.SetTriangles(d.parts[k].triangles,k);total+=d.parts[k].triangles.Length/3;}
+    mesh.RecalculateBounds();if(mesh.bounds.size.y<.05f||mesh.bounds.size.y>15f)throw new Exception("Incorrect metre/Y-up bounds "+d.name);
+    string path=Root+"Baked/"+d.name+".asset";var prior=AssetDatabase.LoadAssetAtPath<Mesh>(path);if(prior!=null){EditorUtility.CopySerialized(mesh,prior);UnityEngine.Object.DestroyImmediate(mesh);}else AssetDatabase.CreateAsset(mesh,path);count++;
+   }
+   if(count!=11)throw new Exception("Expected 11 authored models, found "+count);
+   foreach(var f in Directory.GetFiles(Root+"Models","*.fbx")){var importer=AssetImporter.GetAtPath(f) as ModelImporter;if(importer!=null){importer.materialImportMode=ModelImporterMaterialImportMode.None;importer.globalScale=1;importer.SaveAndReimport();}}
+   AssetDatabase.SaveAssets();EditorSceneManager.OpenScene("Assets/Deepsea/Scenes/CoastSeaUnifiedV30.unity");var scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene();EditorSceneManager.SaveScene(scene,Scene);
+   Directory.CreateDirectory("Tools/SeaVillageV31");File.WriteAllText("Tools/SeaVillageV31/bake.json","{\"models\":"+count+",\"triangles\":"+total+",\"basis\":\"Y-up metres; identical Blender source triangles\"}");Debug.Log("VILLAGE_V31_PREPARED models="+count+" triangles="+total);
+  }
+  public static void Build(){
+   EditorSceneManager.OpenScene(Scene);var files=new[]{"ProjectSettings/ProjectSettings.asset","ProjectSettings/GraphicsSettings.asset","ProjectSettings/QualitySettings.asset","ProjectSettings/EditorBuildSettings.asset"};var bytes=files.Select(File.ReadAllBytes).ToArray();var name=PlayerSettings.productName;bool timing=PlayerSettings.enableFrameTimingStats;var gp=GraphicsSettings.renderPipelineAsset;var qp=QualitySettings.renderPipeline;BuildReport report=null;
+   try{PlayerSettings.productName="深海灯塔 · 海湾生活 v21";PlayerSettings.enableFrameTimingStats=true;GraphicsSettings.renderPipelineAsset=Resources.Load<UniversalRenderPipelineAsset>("SeaSurfaceV24/Pipeline");QualitySettings.renderPipeline=GraphicsSettings.renderPipelineAsset;Directory.CreateDirectory("Builds/SeaVillageV31");report=BuildPipeline.BuildPlayer(new BuildPlayerOptions{scenes=new[]{Scene},locationPathName="Builds/SeaVillageV31/Guichao-SeaVillageV31.exe",target=BuildTarget.StandaloneWindows64,options=BuildOptions.None});}
+   finally{PlayerSettings.productName=name;PlayerSettings.enableFrameTimingStats=timing;GraphicsSettings.renderPipelineAsset=gp;QualitySettings.renderPipeline=qp;AssetDatabase.SaveAssets();for(int i=0;i<files.Length;i++)File.WriteAllBytes(files[i],bytes[i]);}
+   if(report==null||report.summary.result!=BuildResult.Succeeded)throw new Exception("v31 build failed");foreach(var f in Directory.GetFiles("Builds/SeaUnifiedV30/Licenses","*",SearchOption.AllDirectories)){var dst=Path.Combine("Builds/SeaVillageV31/Licenses",f.Substring("Builds/SeaUnifiedV30/Licenses".Length+1));Directory.CreateDirectory(Path.GetDirectoryName(dst));File.Copy(f,dst,true);}File.WriteAllText("Tools/SeaVillageV31/build.json","{\"passed\":true,\"warnings\":"+report.summary.totalWarnings+"}");var dependencies=AssetDatabase.GetDependencies(new[]{"Assets/Deepsea/Resources/SeaLifeV25/Meshes/Fish_0_SilverBream.asset","Assets/Deepsea/Resources/SeaLifeV25/Materials/Fish0.mat"},true);File.WriteAllText("Tools/SeaVillageV31/asset-dependencies.json",JsonUtility.ToJson(new Dependencies{paths=dependencies},true));Debug.Log("VILLAGE_V31_BUILD_OK");
+  }
+ }
+}

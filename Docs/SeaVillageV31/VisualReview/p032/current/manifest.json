@@ -1,0 +1,102 @@
+{
+  "candidate": "K",
+  "cells": [
+    {
+      "cell": "B01",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "cell": "B02",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "cell": "B03",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "cell": "B04",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "cell": "B05",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "cell": "F01",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "cell": "F02",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "cell": "F03",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "cell": "F04",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "cell": "F05",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "cell": "F06",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "cell": "U01",
+      "size": [
+        1920,
+        1080
+      ]
+    },
+    {
+      "cell": "U02",
+      "size": [
+        1280,
+        720
+      ]
+    }
+  ],
+  "missing": [
+    "complete all-state minimum-size UI benchmark",
+    "character expression sheets",
+    "independent new-content transfer"
+  ],
+  "scope": "local environment extension evidence; no whole-game style score/lock"
+}

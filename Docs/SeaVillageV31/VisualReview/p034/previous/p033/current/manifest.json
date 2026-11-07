@@ -1,0 +1,175 @@
+{
+  "candidate": "K",
+  "round": "p033",
+  "contract": "same local environment extension as p032, not a complete whole-game benchmark",
+  "cells": [
+    {
+      "cell": "B01",
+      "file": "images/B01.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "b4fe3ed52c288a89d3f91c111f954d23f87e0ba1044178fabe698c07d9f1aef8"
+    },
+    {
+      "cell": "B02",
+      "file": "images/B02.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "636515e8256c3b825b566269f5181cd0d75b56b5837b9c592cda82eb39b98fef"
+    },
+    {
+      "cell": "B03",
+      "file": "images/B03.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "eb71b9b91e2209489feb506e54ffdf78f91f6d1301dfc7028bf92fa7ce32ee08"
+    },
+    {
+      "cell": "B04",
+      "file": "images/B04.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "2504b6b32f8d51380fe395b6df1785d548b8e1292f30eb07f0226a7ac2a2c2fe"
+    },
+    {
+      "cell": "B05",
+      "file": "images/B05.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "9a8e36c1cd8900f4d9a54641c6a7dd45c2a1f36ca88170dcdfbf5337eb4d5a18"
+    },
+    {
+      "cell": "B06",
+      "file": "images/B06.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "ecef5605fa7fe81f4d15a1526e24242231abddf571dfd9a616ed2de2eb14b71e"
+    },
+    {
+      "cell": "B07",
+      "file": "images/B07.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "9866bfdc27cd6827c6996511b78c493cc02bb76f84a44ea7921511ac90386177"
+    },
+    {
+      "cell": "B08",
+      "file": "images/B08.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "6ff0867797c3ad759e5708760d3022749f6691c61a07ad53b1c8ada36d9fdf0a"
+    },
+    {
+      "cell": "B09",
+      "file": "images/B09.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "b4244376aaec12e7923cd7dab213214f4c8ee05f49fcbdcac826f0579c60ec60"
+    },
+    {
+      "cell": "B10",
+      "file": "images/B10.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "c81b74cfb2c02a417832779de43d2b55c31a55ee6bcbd071621b6352ddb82fd8"
+    },
+    {
+      "cell": "F01",
+      "file": "images/F01.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "090b3cd5a15e691fb4c2628c37ab2dfb0d687b3bc154441095659db9a20f1916"
+    },
+    {
+      "cell": "F02",
+      "file": "images/F02.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "586d37b1e465913f0738927c6988ff5e2e9da564db30350b159cbbe4b493215f"
+    },
+    {
+      "cell": "F03",
+      "file": "images/F03.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "74d93bb8e611776f62d0bdad5ebb9c7297396900b35d8721285f1d2b012a3ba1"
+    },
+    {
+      "cell": "F04",
+      "file": "images/F04.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "8f4b03a08de89154062ffc8e06cacfd5f97f85bacf89d8ac03c03951792a584f"
+    },
+    {
+      "cell": "F05",
+      "file": "images/F05.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "508774ce332ad45832b178776bc22f28aa38affc3ca2fd01cd39322515217c73"
+    },
+    {
+      "cell": "F06",
+      "file": "images/F06.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "72497eb92117da31444be7b90c8b6bab21b84ad0a08e4e88356f035303c4ff39"
+    },
+    {
+      "cell": "U01",
+      "file": "images/U01.jpg",
+      "size": [
+        1920,
+        1080
+      ],
+      "sha256": "ce20d40951ad94320ab98da4edf71839c11ce4e0393e04e840102c8f441645b7"
+    },
+    {
+      "cell": "U02",
+      "file": "images/U02.jpg",
+      "size": [
+        1280,
+        720
+      ],
+      "sha256": "06740dd71994da0353031e09059519a46384f0e8f6fab2b8b2ecc155241fd543"
+    }
+  ],
+  "missing": [
+    "complete all-state minimum-size UI benchmark",
+    "character expression sheets",
+    "independent new-content transfer"
+  ],
+  "best_eligible_round": "not established"
+}

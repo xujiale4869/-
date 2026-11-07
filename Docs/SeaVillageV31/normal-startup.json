@@ -1,0 +1,17 @@
+﻿{
+    "sourceBuildings":  19,
+    "pid":  29548,
+    "time":  "2026-11-07T06:08:41.3256815Z",
+    "passed":  true,
+    "sourceSHA256":  "CB77E8580D4F867C5D11873BB2219766FAC3B9DBC7F1F90E3DA4E3B87BFC179C",
+    "byteExactCopy":  true,
+    "newLayout":  "sea-bay-expansion-v31.json",
+    "ready":  true,
+    "sourceLayout":  "sea-bay-expansion-v30.json",
+    "uiBase":  "v30",
+    "scope":  "First ordinary v31 startup, no check/isolation flags; game intentionally left open",
+    "newSHA256":  "CB77E8580D4F867C5D11873BB2219766FAC3B9DBC7F1F90E3DA4E3B87BFC179C",
+    "loadedBuildings":  19,
+    "copiedBuildings":  19,
+    "oldV30LayoutUnchanged":  true
+}

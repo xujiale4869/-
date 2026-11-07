@@ -1,23 +1,23 @@
 ﻿{
     "schema_version":  1,
-    "mode":  "refine",
-    "phase":  "handoff",
+    "mode":  "extend",
+    "phase":  "delivery",
     "status":  "provisional",
     "benchmark_version":  2,
     "limits":  {
                    "candidates":  1,
-                   "refinements":  6,
+                   "refinements":  9,
                    "stress":  2,
                    "packages":  18,
                    "generation_calls":  0,
                    "judge_calls":  8
                },
     "used":  {
-                 "refinements":  6,
+                 "refinements":  9,
                  "stress":  0,
-                 "packages":  11,
+                 "packages":  18,
                  "generation_calls":  0,
-                 "judge_calls":  5
+                 "judge_calls":  8
              },
     "candidates":  {
                        "c01":  {
@@ -34,6 +34,16 @@
                                    "unresolved_minors":  [
                                                              "LAND-01"
                                                          ]
+                               },
+                       "c31":  {
+                                   "round":  "round-03",
+                                   "epoch":  "v31-village-biodiversity-extension",
+                                   "blockers":  [
+                                                    "HOUSE-01",
+                                                    "ROLE-01",
+                                                    "BIO-01"
+                                                ],
+                                   "best_eligible_round":  null
                                }
                    },
     "pending_jobs":  [
@@ -138,8 +148,60 @@
                         "outcome":  "98checks passed, oldv29 layout/binaries preserved, provisional visual state",
                         "time":  "2026-11-05T17:34:34.4029121Z",
                         "action":  "finalized51inputs; normal startup loaded19 original facilities as exact v29 copy"
+                    },
+                    {
+                        "outcome":  "initial v31 package reserved; canonical water, character and UI preserved",
+                        "time":  "2026-11-06T07:24:31.5403711Z",
+                        "action":  "Explicit new v31 package; allocate three further targeted refinements, retain prior usage"
+                    },
+                    {
+                        "outcome":  "107 runtime passed, actual geometry/placement still failed visual self-review; reserve one repair",
+                        "time":  "2026-11-06T07:43:06.2284207Z",
+                        "evidence":  "village-v31-review01/12-south-boatwright.jpg",
+                        "action":  "HOUSE-01: observed native near-cliff tall plinth and obscured boatyard; choose gentle canopy-free plots; reduce neon shore reeds"
+                    },
+                    {
+                        "outcome":  "startup repair, bounded external watchdog; user explicitly retains delivered v30 UI",
+                        "time":  "2026-11-06T09:16:35.1337518Z",
+                        "evidence":  "Tools/SeaVillageV31/Diagnostics/plot-runtime.json",
+                        "action":  "Runtime plot probe: only two gentle sites, both blocked by generated maple canopies; preserve canonical trees, relocate generated blockers, ignore leaf-litter/shadow bounds; authored waterline repair platform"
+                    },
+                    {
+                        "outcome":  "112 runtime checks pass; no global style score or lock from incomplete broader coverage",
+                        "time":  "2026-11-06T09:26:06.5211476Z",
+                        "action":  "Reserve independent p032 environment-extension critic with 13 native current images and two prior self-review frames"
+                    },
+                    {
+                        "outcome":  "Retain exact v30 UI; final refinement reserved; no art lock or global score",
+                        "time":  "2026-11-06T10:14:31.2887567Z",
+                        "action":  "p032 HOUSE-01/ROLE-01/BIO-01 final bounded repair: supported timber courts, rock-clear slipway with rooted access, stronger authored flora traits and distinct actual habitat views"
+                    },
+                    {
+                        "outcome":  "review04 passed124 but platform occluded; native02 in-player20 passed but wrapper exit code missing; counters retained, no new art refinement",
+                        "time":  "2026-11-06T10:22:57.7215732Z",
+                        "action":  "Final repair implementation correction: static LOD visibility must not depend on startup renderer.enabled; include tree clearance; add post-LOD clearance assertion; retain process Handle before native driver exits"
+                    },
+                    {
+                        "outcome":  "125 runtime checks passed; no global score/lock; final bounded art refinement already consumed",
+                        "time":  "2026-11-06T10:29:11.0928336Z",
+                        "action":  "Reserve independent p033 current repair critique: eighteen native actual-world images, complete p032 prior packet/verdict"
+                    },
+                    {
+                        "outcome":  "No further art refinement; preserve counters and p033 raw visual failures; rebuild and retest exact final inputs",
+                        "time":  "2026-11-06T10:34:41.3536863Z",
+                        "action":  "Final implementation correction: clamp each access tread above sea surface; frame entire shore access; restore original font after unsaved Editor probe glyph-cache write"
+                    },
+                    {
+                        "outcome":  "126 runtime +20 native passed; no further art refinement; known p033 majors retained unless visibly resolved",
+                        "time":  "2026-11-06T10:39:53.9449832Z",
+                        "action":  "Reserve final p034 evidence correction review after above-water access fix and original font restoration; five affected native cells updated, thirteen unchanged cells reused with disclosed rules"
+                    },
+                    {
+                        "outcome":  "Three art blockers remain. Final functional126+20. v30 UI and font retained.",
+                        "time":  "2026-11-07T06:07:23.9426915Z",
+                        "action":  "Stop art loop at recorded limit. Preserve p032 and p033 complete independent verdicts, p034 independent initial observations, and coordinator self-review amendment."
                     }
                 ],
-    "next_action":  "User review of delivered v30; optional future bank/performance/state-transfer work under a new instruction",
-    "comparison_epoch":  "v30-explicit-UI-and-terrain-redesign"
+    "next_action":  "Functional prototype delivery. Future art work must resolve HOUSE-01/ROLE-01/BIO-01.",
+    "comparison_epoch":  "v31-village-biodiversity-extension"
 }

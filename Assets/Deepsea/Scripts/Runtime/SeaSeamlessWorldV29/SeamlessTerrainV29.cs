@@ -91,6 +91,7 @@ namespace Deepsea
 
             ApplyNativeEcologyV30();
             PopulateCoastAndBarrier();
+            if(IsV31)BuildVillageAndBiodiversityV31();
         }
 
         /// <summary>

@@ -1,0 +1,17 @@
+﻿{
+    "visualStatus":  "provisional",
+    "normalSavesUnchangedDuringTests":  true,
+    "acceptedInputs":  146,
+    "assemblySHA256":  "F4A54C6FC4CCB9826280EEDBCD4BAEFE939AA0D36717A7D9BC22F64C47AB43A3",
+    "artAccepted":  false,
+    "passed":  true,
+    "scope":  "functional prototype, incomplete art acceptance",
+    "oldV30Unchanged":  true,
+    "nativeChecks":  20,
+    "runtimeChecks":  126,
+    "unresolvedMajorIssueIds":  [
+                                    "HOUSE-01",
+                                    "ROLE-01",
+                                    "BIO-01"
+                                ]
+}

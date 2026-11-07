@@ -1,0 +1,300 @@
+﻿{
+    "verified":  true,
+    "note":  "Unchanged cells are reused only with disclosed unchanged construction/camera rules; raw independent verdicts retained.",
+    "cells":  [
+                  {
+                      "packet":  "p032",
+                      "sha256":  "E4A8DA5923761F5D0184440ACC43A298564CD573BAEA117169AEF9378E3B4894",
+                      "capture":  "village-v31-review03",
+                      "cell":  "B01"
+                  },
+                  {
+                      "packet":  "p032",
+                      "sha256":  "E3188A2808D88BD8D6BA525AC1EB2A7725E850AD8C8A9ECB33EF82FACE47D169",
+                      "capture":  "village-v31-review03",
+                      "cell":  "B02"
+                  },
+                  {
+                      "packet":  "p032",
+                      "sha256":  "74854167E5D5D2B3F13F888F6BB64A0A601241A945D9BD92D34F3E402995B0BC",
+                      "capture":  "village-v31-review03",
+                      "cell":  "B03"
+                  },
+                  {
+                      "packet":  "p032",
+                      "sha256":  "F522D87F025FFC6167F6D0B66D5FDF5D5F9828E365750D4AC7EE7B3AFE3A2E72",
+                      "capture":  "village-v31-review03",
+                      "cell":  "B04"
+                  },
+                  {
+                      "packet":  "p032",
+                      "sha256":  "65D37EDE8CD2BE914CD07178AFFF7A7F68612CD63EF073B4327007B9CF800C3F",
+                      "capture":  "village-v31-review03",
+                      "cell":  "B05"
+                  },
+                  {
+                      "packet":  "p032",
+                      "sha256":  "881961A0CC0A6E0EA3D6007AD44F026DD03D4EA8E6752A5909D10A9A90B4C44C",
+                      "capture":  "village-v31-review03",
+                      "cell":  "F01"
+                  },
+                  {
+                      "packet":  "p032",
+                      "sha256":  "8FC43290502DB58F582E16BA06D83F0CFFBB4E040C26CFC7E709CADD0265DF2D",
+                      "capture":  "village-v31-review03",
+                      "cell":  "F02"
+                  },
+                  {
+                      "packet":  "p032",
+                      "sha256":  "DA124140841007FBFBAA781B72D7B4406B25310A08EE67975115B591CB9CE1A8",
+                      "capture":  "village-v31-review03",
+                      "cell":  "F03"
+                  },
+                  {
+                      "packet":  "p032",
+                      "sha256":  "A0B9BFDB0C39B63535962C0B64825F5DE25A802E0DFCFC418F7DD9AF93A93403",
+                      "capture":  "village-v31-review03",
+                      "cell":  "F04"
+                  },
+                  {
+                      "packet":  "p032",
+                      "sha256":  "0A60D615DAE6635D95CB10C1F1AD37252086BA734BC2B541F2F7C568FD248661",
+                      "capture":  "village-v31-review03",
+                      "cell":  "F05"
+                  },
+                  {
+                      "packet":  "p032",
+                      "sha256":  "BAC41FEDAFEE28F08E2B14E57BF22FD3732891DD7E028C5967D20CDD8EC2A0D7",
+                      "capture":  "village-v31-review03",
+                      "cell":  "F06"
+                  },
+                  {
+                      "packet":  "p032",
+                      "sha256":  "D0B17107DAD0D4F49B3D7ED81975DF0CA47B1C9D09F40943897A76F4EDF4852F",
+                      "capture":  "village-v31-review03",
+                      "cell":  "U01"
+                  },
+                  {
+                      "packet":  "p032",
+                      "sha256":  "7E39E5E8A153B503094540816DC83F2A22CB80EDFF499D48FC87E26E0824CF2B",
+                      "capture":  "village-v31-review03",
+                      "cell":  "U02"
+                  },
+                  {
+                      "packet":  "p033",
+                      "sha256":  "B4FE3ED52C288A89D3F91C111F954D23F87E0BA1044178FABE698C07D9F1AEF8",
+                      "capture":  "village-v31-review05",
+                      "cell":  "B01"
+                  },
+                  {
+                      "packet":  "p033",
+                      "sha256":  "636515E8256C3B825B566269F5181CD0D75B56B5837B9C592CDA82EB39B98FEF",
+                      "capture":  "village-v31-review05",
+                      "cell":  "B02"
+                  },
+                  {
+                      "packet":  "p033",
+                      "sha256":  "EB71B9B91E2209489FEB506E54FFDF78F91F6D1301DFC7028BF92FA7CE32EE08",
+                      "capture":  "village-v31-review05",
+                      "cell":  "B03"
+                  },
+                  {
+                      "packet":  "p033",
+                      "sha256":  "2504B6B32F8D51380FE395B6DF1785D548B8E1292F30EB07F0226A7AC2A2C2FE",
+                      "capture":  "village-v31-review05",
+                      "cell":  "B04"
+                  },
+                  {
+                      "packet":  "p033",
+                      "sha256":  "9A8E36C1CD8900F4D9A54641C6A7DD45C2A1F36CA88170DCDFBF5337EB4D5A18",
+                      "capture":  "village-v31-review05",
+                      "cell":  "B05"
+                  },
+                  {
+                      "packet":  "p033",
+                      "sha256":  "ECEF5605FA7FE81F4D15A1526E24242231ABDDF571DFD9A616ED2DE2EB14B71E",
+                      "capture":  "village-v31-review05",
+                      "cell":  "B06"
+                  },
+                  {
+                      "packet":  "p033",
+                      "sha256":  "9866BFDC27CD6827C6996511B78C493CC02BB76F84A44EA7921511AC90386177",
+                      "capture":  "village-v31-review05",
+                      "cell":  "B07"
+                  },
+                  {
+                      "packet":  "p033",
+                      "sha256":  "6FF0867797C3AD759E5708760D3022749F6691C61A07AD53B1C8ADA36D9FDF0A",
+                      "capture":  "village-v31-review05",
+                      "cell":  "B08"
+                  },
+                  {
+                      "packet":  "p033",
+                      "sha256":  "B4244376AAEC12E7923CD7DAB213214F4C8EE05F49FCBDCAC826F0579C60EC60",
+                      "capture":  "village-v31-review05",
+                      "cell":  "B09"
+                  },
+                  {
+                      "packet":  "p033",
+                      "sha256":  "C81B74CFB2C02A417832779DE43D2B55C31A55EE6BCBD071621B6352DDB82FD8",
+                      "capture":  "village-v31-review05",
+                      "cell":  "B10"
+                  },
+                  {
+                      "packet":  "p033",
+                      "sha256":  "090B3CD5A15E691FB4C2628C37AB2DFB0D687B3BC154441095659DB9A20F1916",
+                      "capture":  "village-v31-review05",
+                      "cell":  "F01"
+                  },
+                  {
+                      "packet":  "p033",
+                      "sha256":  "586D37B1E465913F0738927C6988FF5E2E9DA564DB30350B159CBBE4B493215F",
+                      "capture":  "village-v31-review05",
+                      "cell":  "F02"
+                  },
+                  {
+                      "packet":  "p033",
+                      "sha256":  "74D93BB8E611776F62D0BDAD5EBB9C7297396900B35D8721285F1D2B012A3BA1",
+                      "capture":  "village-v31-review05",
+                      "cell":  "F03"
+                  },
+                  {
+                      "packet":  "p033",
+                      "sha256":  "8F4B03A08DE89154062FFC8E06CACFD5F97F85BACF89D8AC03C03951792A584F",
+                      "capture":  "village-v31-review05",
+                      "cell":  "F04"
+                  },
+                  {
+                      "packet":  "p033",
+                      "sha256":  "508774CE332AD45832B178776BC22F28AA38AFFC3CA2FD01CD39322515217C73",
+                      "capture":  "village-v31-review05",
+                      "cell":  "F05"
+                  },
+                  {
+                      "packet":  "p033",
+                      "sha256":  "72497EB92117DA31444BE7B90C8B6BAB21B84AD0A08E4E88356F035303C4FF39",
+                      "capture":  "village-v31-review05",
+                      "cell":  "F06"
+                  },
+                  {
+                      "packet":  "p033",
+                      "sha256":  "CE20D40951AD94320AB98DA4EDF71839C11CE4E0393E04E840102C8F441645B7",
+                      "capture":  "village-v31-review05",
+                      "cell":  "U01"
+                  },
+                  {
+                      "packet":  "p033",
+                      "sha256":  "06740DD71994DA0353031E09059519A46384F0E8F6FAB2B8B2ECC155241FD543",
+                      "capture":  "village-v31-review05",
+                      "cell":  "U02"
+                  },
+                  {
+                      "packet":  "p034",
+                      "sha256":  "E51D81E4F4E13A3C14DCC25759AB27F98EC626DDE2253C9632920E7C941ED507",
+                      "capture":  "village-v31-review06",
+                      "cell":  "B01"
+                  },
+                  {
+                      "packet":  "p034",
+                      "sha256":  "636515E8256C3B825B566269F5181CD0D75B56B5837B9C592CDA82EB39B98FEF",
+                      "capture":  "village-v31-review05",
+                      "cell":  "B02"
+                  },
+                  {
+                      "packet":  "p034",
+                      "sha256":  "0F2CC340836F04705CD6B42C1A6780B502EB26F443276C2F7E86ABD43EA453F8",
+                      "capture":  "village-v31-review06",
+                      "cell":  "B03"
+                  },
+                  {
+                      "packet":  "p034",
+                      "sha256":  "2504B6B32F8D51380FE395B6DF1785D548B8E1292F30EB07F0226A7AC2A2C2FE",
+                      "capture":  "village-v31-review05",
+                      "cell":  "B04"
+                  },
+                  {
+                      "packet":  "p034",
+                      "sha256":  "9A8E36C1CD8900F4D9A54641C6A7DD45C2A1F36CA88170DCDFBF5337EB4D5A18",
+                      "capture":  "village-v31-review05",
+                      "cell":  "B05"
+                  },
+                  {
+                      "packet":  "p034",
+                      "sha256":  "634423143EDD3EACEF127D8941B526988F723950E672326F2D347FE2EDFE3641",
+                      "capture":  "village-v31-review06",
+                      "cell":  "B06"
+                  },
+                  {
+                      "packet":  "p034",
+                      "sha256":  "9866BFDC27CD6827C6996511B78C493CC02BB76F84A44EA7921511AC90386177",
+                      "capture":  "village-v31-review05",
+                      "cell":  "B07"
+                  },
+                  {
+                      "packet":  "p034",
+                      "sha256":  "6FF0867797C3AD759E5708760D3022749F6691C61A07AD53B1C8ADA36D9FDF0A",
+                      "capture":  "village-v31-review05",
+                      "cell":  "B08"
+                  },
+                  {
+                      "packet":  "p034",
+                      "sha256":  "B4244376AAEC12E7923CD7DAB213214F4C8EE05F49FCBDCAC826F0579C60EC60",
+                      "capture":  "village-v31-review05",
+                      "cell":  "B09"
+                  },
+                  {
+                      "packet":  "p034",
+                      "sha256":  "C81B74CFB2C02A417832779DE43D2B55C31A55EE6BCBD071621B6352DDB82FD8",
+                      "capture":  "village-v31-review05",
+                      "cell":  "B10"
+                  },
+                  {
+                      "packet":  "p034",
+                      "sha256":  "090B3CD5A15E691FB4C2628C37AB2DFB0D687B3BC154441095659DB9A20F1916",
+                      "capture":  "village-v31-review05",
+                      "cell":  "F01"
+                  },
+                  {
+                      "packet":  "p034",
+                      "sha256":  "586D37B1E465913F0738927C6988FF5E2E9DA564DB30350B159CBBE4B493215F",
+                      "capture":  "village-v31-review05",
+                      "cell":  "F02"
+                  },
+                  {
+                      "packet":  "p034",
+                      "sha256":  "74D93BB8E611776F62D0BDAD5EBB9C7297396900B35D8721285F1D2B012A3BA1",
+                      "capture":  "village-v31-review05",
+                      "cell":  "F03"
+                  },
+                  {
+                      "packet":  "p034",
+                      "sha256":  "8F4B03A08DE89154062FFC8E06CACFD5F97F85BACF89D8AC03C03951792A584F",
+                      "capture":  "village-v31-review05",
+                      "cell":  "F04"
+                  },
+                  {
+                      "packet":  "p034",
+                      "sha256":  "508774CE332AD45832B178776BC22F28AA38AFFC3CA2FD01CD39322515217C73",
+                      "capture":  "village-v31-review05",
+                      "cell":  "F05"
+                  },
+                  {
+                      "packet":  "p034",
+                      "sha256":  "72497EB92117DA31444BE7B90C8B6BAB21B84AD0A08E4E88356F035303C4FF39",
+                      "capture":  "village-v31-review05",
+                      "cell":  "F06"
+                  },
+                  {
+                      "packet":  "p034",
+                      "sha256":  "E071CE00E0544E95A812D0D87329985D0332EED697CEDFEC9A8B2CB6D9C6AA44",
+                      "capture":  "village-v31-review06",
+                      "cell":  "U01"
+                  },
+                  {
+                      "packet":  "p034",
+                      "sha256":  "50957BA9495714CCAA65B33D513887AA16FB2DF6D6C4D6563B366A326EBB842B",
+                      "capture":  "village-v31-review06",
+                      "cell":  "U02"
+                  }
+              ]
+}

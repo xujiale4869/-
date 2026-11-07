@@ -1,0 +1,271 @@
+{
+  "assets": [
+    {
+      "name": "Flora_0_SpiralEelgrass",
+      "triangles": 280,
+      "boundsUnity": [
+        [
+          -0.5964148640632629,
+          0.5791062116622925
+        ],
+        [
+          0.0,
+          1.1100000143051147
+        ],
+        [
+          -0.5477181077003479,
+          0.5017984509468079
+        ]
+      ],
+      "materials": [
+        "Timber"
+      ],
+      "anchor": "ground centre; metres",
+      "animated": "existing vertex shader sway from UV.y for flora; static architecture"
+    },
+    {
+      "name": "Flora_1_BullKelpPneumatocyst",
+      "triangles": 924,
+      "boundsUnity": [
+        [
+          -0.4257841408252716,
+          0.4796344041824341
+        ],
+        [
+          -0.007328378036618233,
+          2.450000047683716
+        ],
+        [
+          -0.5379816293716431,
+          0.382213294506073
+        ]
+      ],
+      "materials": [
+        "Timber"
+      ],
+      "anchor": "ground centre; metres",
+      "animated": "existing vertex shader sway from UV.y for flora; static architecture"
+    },
+    {
+      "name": "Flora_2_GorgonianSeaFan",
+      "triangles": 1272,
+      "boundsUnity": [
+        [
+          -0.7890297174453735,
+          0.7750664353370667
+        ],
+        [
+          -0.02156304381787777,
+          0.7827726602554321
+        ],
+        [
+          -0.08870398998260498,
+          0.08873242884874344
+        ]
+      ],
+      "materials": [
+        "Timber"
+      ],
+      "anchor": "ground centre; metres",
+      "animated": "existing vertex shader sway from UV.y for flora; static architecture"
+    },
+    {
+      "name": "Flora_3_OrganPipeSponge",
+      "triangles": 1080,
+      "boundsUnity": [
+        [
+          -0.37515100836753845,
+          0.5359315872192383
+        ],
+        [
+          -0.01913825236260891,
+          0.7903721928596497
+        ],
+        [
+          -0.3633713722229004,
+          0.3324461877346039
+        ]
+      ],
+      "materials": [
+        "Timber"
+      ],
+      "anchor": "ground centre; metres",
+      "animated": "existing vertex shader sway from UV.y for flora; static architecture"
+    },
+    {
+      "name": "Flora_4_TableAcropora",
+      "triangles": 256,
+      "boundsUnity": [
+        [
+          -0.6467193365097046,
+          0.7384083867073059
+        ],
+        [
+          0.0,
+          0.5383156538009644
+        ],
+        [
+          -0.6844000220298767,
+          0.5817086696624756
+        ]
+      ],
+      "materials": [
+        "Timber"
+      ],
+      "anchor": "ground centre; metres",
+      "animated": "existing vertex shader sway from UV.y for flora; static architecture"
+    },
+    {
+      "name": "Flora_5_SeaAnemoneCluster",
+      "triangles": 1220,
+      "boundsUnity": [
+        [
+          -0.42812272906303406,
+          0.42812272906303406
+        ],
+        [
+          0.0,
+          0.4354521334171295
+        ],
+        [
+          -0.4478154480457306,
+          0.4478154480457306
+        ]
+      ],
+      "materials": [
+        "Timber"
+      ],
+      "anchor": "ground centre; metres",
+      "animated": "existing vertex shader sway from UV.y for flora; static architecture"
+    },
+    {
+      "name": "Shore_0_CoastalReedAndSedge",
+      "triangles": 1100,
+      "boundsUnity": [
+        [
+          -0.7816853523254395,
+          0.6976415514945984
+        ],
+        [
+          -0.05000000074505806,
+          1.811437726020813
+        ],
+        [
+          -0.6909660696983337,
+          0.7555039525032043
+        ]
+      ],
+      "materials": [
+        "Timber"
+      ],
+      "anchor": "ground centre; metres",
+      "animated": "existing vertex shader sway from UV.y for flora; static architecture"
+    },
+    {
+      "name": "Shore_1_BeachedDriftwoodSet",
+      "triangles": 316,
+      "boundsUnity": [
+        [
+          -0.8978440761566162,
+          1.144827961921692
+        ],
+        [
+          -0.07999999076128006,
+          0.4777557849884033
+        ],
+        [
+          -0.5699999928474426,
+          0.7200000286102295
+        ]
+      ],
+      "materials": [
+        "Timber",
+        "SeaStone"
+      ],
+      "anchor": "ground centre; metres",
+      "animated": "existing vertex shader sway from UV.y for flora; static architecture"
+    },
+    {
+      "name": "Village_0_BoatwrightHouse",
+      "triangles": 786,
+      "boundsUnity": [
+        [
+          -2.7734808921813965,
+          2.7734808921813965
+        ],
+        [
+          -1.0499999523162842,
+          4.549999713897705
+        ],
+        [
+          -3.190000057220459,
+          6.900000095367432
+        ]
+      ],
+      "materials": [
+        "Timber",
+        "SlateRoof",
+        "SeaStone",
+        "WarmGlass"
+      ],
+      "anchor": "ground centre; metres",
+      "animated": "existing vertex shader sway from UV.y for flora; static architecture"
+    },
+    {
+      "name": "Village_1_HarborTavernInn",
+      "triangles": 1062,
+      "boundsUnity": [
+        [
+          -3.601891040802002,
+          5.332374572753906
+        ],
+        [
+          0.0,
+          5.304999828338623
+        ],
+        [
+          -3.5899999141693115,
+          5.400000095367432
+        ]
+      ],
+      "materials": [
+        "Timber",
+        "SlateRoof",
+        "SeaStone",
+        "WarmGlass",
+        "Rope"
+      ],
+      "anchor": "ground centre; metres",
+      "animated": "existing vertex shader sway from UV.y for flora; static architecture"
+    },
+    {
+      "name": "Village_2_ScholarObservatory",
+      "triangles": 594,
+      "boundsUnity": [
+        [
+          -2.5754072666168213,
+          3.75
+        ],
+        [
+          0.0,
+          5.650000095367432
+        ],
+        [
+          -2.7899999618530273,
+          4.650000095367432
+        ]
+      ],
+      "materials": [
+        "Timber",
+        "SlateRoof",
+        "SeaStone",
+        "WarmGlass",
+        "Brass"
+      ],
+      "anchor": "ground centre; metres",
+      "animated": "existing vertex shader sway from UV.y for flora; static architecture"
+    }
+  ],
+  "basis": "Unity JSON Y-up; Blender master Z-up,-Y-forward; metres",
+  "scope": "procedural brief; no reference-image match claimed"
+}

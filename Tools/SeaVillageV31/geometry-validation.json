@@ -1,0 +1,130 @@
+{
+  "passed": true,
+  "models": 11,
+  "triangles": 8890,
+  "assets": [
+    {
+      "asset": "Flora_0_SpiralEelgrass",
+      "triangles": 280,
+      "degenerateTriangles": 0,
+      "heightMetres": 1.1100000143051147,
+      "materialRoles": [
+        "Timber"
+      ],
+      "failed": []
+    },
+    {
+      "asset": "Flora_1_BullKelpPneumatocyst",
+      "triangles": 924,
+      "degenerateTriangles": 0,
+      "heightMetres": 2.457328425720334,
+      "materialRoles": [
+        "Timber"
+      ],
+      "failed": []
+    },
+    {
+      "asset": "Flora_2_GorgonianSeaFan",
+      "triangles": 1272,
+      "degenerateTriangles": 0,
+      "heightMetres": 0.8043357040733099,
+      "materialRoles": [
+        "Timber"
+      ],
+      "failed": []
+    },
+    {
+      "asset": "Flora_3_OrganPipeSponge",
+      "triangles": 1080,
+      "degenerateTriangles": 0,
+      "heightMetres": 0.8095104452222586,
+      "materialRoles": [
+        "Timber"
+      ],
+      "failed": []
+    },
+    {
+      "asset": "Flora_4_TableAcropora",
+      "triangles": 256,
+      "degenerateTriangles": 0,
+      "heightMetres": 0.5383156538009644,
+      "materialRoles": [
+        "Timber"
+      ],
+      "failed": []
+    },
+    {
+      "asset": "Flora_5_SeaAnemoneCluster",
+      "triangles": 1220,
+      "degenerateTriangles": 0,
+      "heightMetres": 0.4354521334171295,
+      "materialRoles": [
+        "Timber"
+      ],
+      "failed": []
+    },
+    {
+      "asset": "Shore_0_CoastalReedAndSedge",
+      "triangles": 1100,
+      "degenerateTriangles": 0,
+      "heightMetres": 1.861437726765871,
+      "materialRoles": [
+        "Timber"
+      ],
+      "failed": []
+    },
+    {
+      "asset": "Shore_1_BeachedDriftwoodSet",
+      "triangles": 316,
+      "degenerateTriangles": 0,
+      "heightMetres": 0.5577557757496834,
+      "materialRoles": [
+        "Timber",
+        "SeaStone"
+      ],
+      "failed": []
+    },
+    {
+      "asset": "Village_0_BoatwrightHouse",
+      "triangles": 786,
+      "degenerateTriangles": 0,
+      "heightMetres": 5.599999666213989,
+      "materialRoles": [
+        "Timber",
+        "SlateRoof",
+        "SeaStone",
+        "WarmGlass"
+      ],
+      "failed": []
+    },
+    {
+      "asset": "Village_1_HarborTavernInn",
+      "triangles": 1062,
+      "degenerateTriangles": 0,
+      "heightMetres": 5.304999828338623,
+      "materialRoles": [
+        "Timber",
+        "SlateRoof",
+        "SeaStone",
+        "WarmGlass",
+        "Rope"
+      ],
+      "failed": []
+    },
+    {
+      "asset": "Village_2_ScholarObservatory",
+      "triangles": 594,
+      "degenerateTriangles": 0,
+      "heightMetres": 5.650000095367432,
+      "materialRoles": [
+        "Timber",
+        "SlateRoof",
+        "SeaStone",
+        "WarmGlass",
+        "Brass"
+      ],
+      "failed": []
+    }
+  ],
+  "scope": "geometry contract only; not Unity compilation, runtime, performance or visual acceptance"
+}

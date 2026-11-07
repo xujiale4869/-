@@ -1,0 +1,26 @@
+﻿{
+    "baseVersion":  "v30",
+    "userInstruction":  "Use previous delivered v30 UI",
+    "files":  [
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSeamlessWorldV29/NauticalHUDV29.cs",
+                      "sha256":  "0F6AA2076E2D637B5ED2362238B2C3C60BC3F90A006755C5B253F85F7F53A748",
+                      "unchanged":  true
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSeamlessWorldV29/NauticalSpritesV29.cs",
+                      "sha256":  "0B1D859435B494713F09FF65E044918156D1A4F70EB3E14D22DA0A95C97435CA",
+                      "unchanged":  true
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSeamlessWorldV29/GallerySelectionV30.cs",
+                      "sha256":  "E3BFD035ED09CCB066345E8F7B4EFFDD7741C2A8687CF886586297D6CF375AF2",
+                      "unchanged":  true
+                  },
+                  {
+                      "path":  "Assets/Deepsea/Scripts/Runtime/SeaSeamlessWorldV29/SeaLifeSkinV29.cs",
+                      "sha256":  "69B077B4A94BAE217EC060F096609BDB44FE64EFF04427FF16725014052D6B33",
+                      "unchanged":  true
+                  }
+              ]
+}

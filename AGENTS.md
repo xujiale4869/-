@@ -1,6 +1,6 @@
 # 深海灯塔当前工程
 
-当前最新版为 v30：一体半岛、生态沙草过渡与斜切海洋界面，见 Docs/SeaUnifiedV30/README.md，程序 Builds/SeaUnifiedV30/Guichao-SeaUnifiedV30.exe，桌面“深海灯塔—最新版”。旧版本程序保留；整体美术仍为可运行初稿。普通重建 Tools/SeaUnifiedV30/Rebuild-Unified.ps1，以下历史记录仅供追溯。
+当前最新版为 v31：六类水下植物、潮间带过渡与三座海岬渔村建筑，见 Docs/SeaVillageV31/README.md，程序 Builds/SeaVillageV31/Guichao-SeaVillageV31.exe。v30 与旧存档保留；整体美术仍为 provisional。
 
 历史海岸美术版本：v11，2026-10-23 完成独立程序验收。主要分析与制作记录在 `C:/Users/许嘉乐/Documents/ChatGPT/深海灯塔/art-v11/reference-analysis.md`，项目内副本见 `Docs/原图对照与美术推进-v11.md`。
 
@@ -201,3 +201,8 @@ B/G营造、WASD漫游、滚轮规划缩放、1–4设施、R旋转、左建右�
 最终build06增量1项既有API警告，首构建24项；review06为78项运行、native03为20项实际Windows键鼠检查，均0错误0警告。native02的V失败是空缸不满足前置条件；native03在唯一隔离档实际建首缸再验V。首轮旧接头未生成、错误叶片路径、沙块和快捷键混淆均保留草稿。3008旧输入仅七处预期源码变化，正常存档测试时不改，旧v29二进制不改。最终数据Docs/SeaUnifiedV30/result.json。
 原生1080p每视角480帧最终航行68.09FPS/P95 17.09ms、规划64.96/P95 18.11ms；前一同类窗口航行56.93/P95 25.00ms，不挑选快值作稳定60/全图长期/4K结论。1080p航行/规划/北/南/钓鱼/鱼箱/暂停/展室，720p航行/规划，另A/B/C三态实机图。独立p030/p031原文及后续自验分开；无完整状态/满鱼箱/全部720p弹窗/人物表情/独立新内容迁移，全游戏风格仍provisional，未获用户美术定稿认可。
 按交接更新Docs/SeaSeamlessV29四图，原v29图/README归PreviousV29；v30独立正式证据和可复用UI说明在Docs/SeaUnifiedV30。Rebuild-Unified.ps1默认哈希校验，-Build构建保存场景，-Prepare从v29另存生成新场景需重验。Finalize-Unified为首次隔离验收后交付流程，正常启动创建v30档后勿重跑其“新档应不存在”的基线断言。旧v29冻结清单会正确拒绝本次共享源码升级，别自动恢复旧包覆盖v30。仍无新增外海鱼点/登船点/材料采集/蟹笼自动收益，任意自由建造路径不保证连通。
+
+
+## 2026-11-06 v31：渔村与生态多样性
+用户提供v31一键包。原文Tools/SeaVillageV31/OriginalInputs，实际适配资源烘焙、材质槽、导入坐标、姿态限高、可见地面、温和空地和重入保护。11个Blender FBX/源文件与8890三角，运行时使用同源JSON烘焙的Unity Mesh，三座生成建筑实际渲染；非原稿方块回退。界面按本轮用户要求沿用已交付v30，四UI源码和原字体保持不变；保留绿色海带、水光学、人物/船与旧玩法。三建筑是后续NPC据点，没有NPC行为/室内/新收益系统。布局sea-bay-expansion-v31.json首次从v30复制，正常产品名仍v21。
+最终运行126项/原生键鼠20项通过；旧3017输入仅四旧源码变化，正常档测试时不改，v30exe/dll保留。精确数据与视觉限制见Docs/SeaVillageV31，首稿高石基/遮挡失败证据保留Drafts，功能通过不等于美术认可。短窗性能不得称全图长期稳定或4K表现。默认Rebuild-Village校验冻结输入，-Build重建，-Prepare显式重生成需重新验收。不要重跑已普通启动后的首轮Finalize基线断言；旧v30冻结清单会拒绝共享源码升级，精确v30源码检出9069585。
